@@ -2,7 +2,7 @@ import React from 'react'
 import {type StyleProp, StyleSheet, View, type ViewStyle} from 'react-native'
 import {type AnimatedRef, useAnimatedRef} from 'react-native-reanimated'
 import {type AppBskyEmbedImages} from '@atproto/api'
-
+import {isAndroid} from '#/platform/detection'
 import {atoms as a, useBreakpoints} from '#/alf'
 import {PostEmbedViewContext} from '#/components/Post/Embed/types'
 import {type Dimensions} from '../../lightbox/ImageViewing/@types'
@@ -62,11 +62,13 @@ function ImageLayoutGridInner(props: ImageLayoutGridInnerProps) {
   const containerRef4 = useAnimatedRef()
   const thumbDimsRef = React.useRef<(Dimensions | null)[]>([])
 
+  const outerFlex = isAndroid ? a.flex_1 : a.flex_shrink
+
   switch (count) {
     case 2: {
       const containerRefs = [containerRef1, containerRef2]
       return (
-        <View style={[a.flex_1, a.flex_row, gap]}>
+        <View style={[outerFlex, a.flex_row, gap]}>
           <View style={[a.flex_1, {aspectRatio: 1}]}>
             <GalleryItem
               {...props}
@@ -92,7 +94,7 @@ function ImageLayoutGridInner(props: ImageLayoutGridInnerProps) {
     case 3: {
       const containerRefs = [containerRef1, containerRef2, containerRef3]
       return (
-        <View style={[a.flex_1, a.flex_row, gap]}>
+        <View style={[outerFlex, a.flex_row, gap]}>
           <View style={[a.flex_1, {aspectRatio: 1}]}>
             <GalleryItem
               {...props}
