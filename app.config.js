@@ -1,5 +1,7 @@
 const pkg = require('./package.json')
 
+const DARK_SPLASH_ANDROID_BACKGROUND = '#0f141b'
+
 module.exports = function (_config) {
   /**
    * App version number. Should be incremented as part of a release cycle.
@@ -33,10 +35,10 @@ module.exports = function (_config) {
   return {
     expo: {
       version: VERSION,
-      name: 'Bluesky',
-      slug: 'bluesky',
-      scheme: 'bluesky',
-      owner: 'blueskysocial',
+      name: 'deer.social',
+      slug: 'deer',
+      scheme: ['bluesky', 'deer'],
+      // owner: 'blueskysocial',
       runtimeVersion: {
         policy: 'appVersion',
       },
