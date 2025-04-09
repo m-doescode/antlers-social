@@ -49,6 +49,7 @@ import { useLingui } from '@lingui/react'
 import { useDirectFetchRecords } from '#/state/preferences/direct-fetch-records'
 import { useDirectFetchRecord } from '#/state/queries/direct-fetch-record'
 import { ViewRecord } from '@atproto/api/dist/client/types/app/bsky/embed/record'
+import { Loader } from '#/components/Loader'
 
 export {PostEmbedViewContext, QuoteEmbedViewContext} from './types'
 
@@ -222,7 +223,7 @@ function RecordEmbed({
       }
 
       return (
-        <PostPlaceholderText>
+        <PostPlaceholderText directFetchEnabled={directFetchEnabled}>
           <Trans>Blocked</Trans>
         </PostPlaceholderText>
       )
@@ -254,7 +255,7 @@ function RecordEmbed({
         )
       }
 
-      return <PostDetachedEmbed embed={embed} />
+      return <PostDetachedEmbed embed={embed} directFetchEnabled={directFetchEnabled} />
     }
     default: {
       return null
@@ -264,16 +265,19 @@ function RecordEmbed({
 
 export function PostDetachedEmbed({
   embed,
+  directFetchEnabled,
 }: {
   embed: EmbedType<'post_detached'>
+  directFetchEnabled?: boolean
 }) {
   const {currentAccount} = useSession()
+  const pal = usePalette('default')
   const isViewerOwner = currentAccount?.did
     ? embed.view.uri.includes(currentAccount.did)
     : false
 
   return (
-    <PostPlaceholderText>
+    <PostPlaceholderText directFetchEnabled={directFetchEnabled}>
       {isViewerOwner ? (
         <Trans>Removed by you</Trans>
       ) : (

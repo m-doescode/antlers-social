@@ -4,14 +4,19 @@ import {usePalette} from '#/lib/hooks/usePalette'
 import {InfoCircleIcon} from '#/lib/icons'
 import {Text} from '#/view/com/util/text/Text'
 import {atoms as a, useTheme} from '#/alf'
+import { Loader } from '#/components/Loader'
 
-export function PostPlaceholder({children}: {children: React.ReactNode}) {
+export function PostPlaceholder({children, directFetchEnabled}: {children: React.ReactNode, directFetchEnabled?: boolean}) {
   const t = useTheme()
   const pal = usePalette('default')
   return (
     <View
       style={[styles.errorContainer, a.border, t.atoms.border_contrast_low]}>
-      <InfoCircleIcon size={18} style={pal.text} />
+      {directFetchEnabled ? (
+        <Loader size={'md'} style={pal.text} />
+      ) : (
+        <InfoCircleIcon size={18} style={pal.text} />
+      )}
       <Text type="lg" style={pal.text}>
         {children}
       </Text>
