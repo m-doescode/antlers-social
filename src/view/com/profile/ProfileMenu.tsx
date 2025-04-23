@@ -243,7 +243,7 @@ let ProfileMenu = ({
                 isWeb ? _(msg`Copy link to profile`) : _(msg`Share via...`)
               }
               onPress={() => {
-                if (showLoggedOutWarning) {
+                if (false && showLoggedOutWarning) {
                   loggedOutWarningPromptControl.open()
                 } else {
                   onPressShare()
