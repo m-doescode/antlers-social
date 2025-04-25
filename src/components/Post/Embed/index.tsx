@@ -47,7 +47,7 @@ import {
 import {VideoEmbed} from './VideoEmbed'
 import { useLingui } from '@lingui/react'
 import { useDirectFetchRecords } from '#/state/preferences/direct-fetch-records'
-import { useDirectFetchRecord } from '#/state/queries/direct-fetch-record'
+import { useDirectFetchEmbedRecord } from '#/state/queries/direct-fetch-record'
 import { ViewRecord } from '@atproto/api/dist/client/types/app/bsky/embed/record'
 import { Loader } from '#/components/Loader'
 
@@ -140,7 +140,7 @@ function RecordEmbed({
       embed.type == 'post_detached') &&
     directFetchEnabled
 
-  const directRecord = useDirectFetchRecord({
+  const directRecord = useDirectFetchEmbedRecord({
     uri:
       embed.type == 'post_blocked' ||
       embed.type == 'post_detached'
