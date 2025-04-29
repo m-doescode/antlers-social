@@ -1,4 +1,5 @@
-import {memo, useMemo} from 'react'
+import {memo, useMemo, useCallback} from 'react'
+import {isWeb} from '#/platform/detection'
 import {
   Platform,
   type PressableProps,
@@ -7,6 +8,8 @@ import {
 } from 'react-native'
 import * as Clipboard from 'expo-clipboard'
 import {
+  type AppBskyEmbedExternal,
+  type AppBskyEmbedVideo,
   type AppBskyFeedDefs,
   AppBskyFeedPost,
   type AppBskyFeedThreadgate,
@@ -20,6 +23,8 @@ import {useNavigation} from '@react-navigation/native'
 import {IS_INTERNAL} from '#/lib/app-info'
 import {DISCOVER_DEBUG_DIDS} from '#/lib/constants'
 import {useOpenLink} from '#/lib/hooks/useOpenLink'
+import {saveVideoToMediaLibrary} from '#/lib/media/manip'
+import {downloadVideoWeb} from '#/lib/media/manip.web'
 import {getCurrentRoute} from '#/lib/routes/helpers'
 import {makeProfileLink} from '#/lib/routes/links'
 import {
@@ -60,6 +65,7 @@ import {
 import {Atom_Stroke2_Corner0_Rounded as AtomIcon} from '#/components/icons/Atom'
 import {BubbleQuestion_Stroke2_Corner0_Rounded as Translate} from '#/components/icons/Bubble'
 import {Clipboard_Stroke2_Corner2_Rounded as ClipboardIcon} from '#/components/icons/Clipboard'
+import {Download_Stroke2_Corner0_Rounded as Download} from '#/components/icons/Download'
 import {
   EmojiSad_Stroke2_Corner0_Rounded as EmojiSad,
   EmojiSmile_Stroke2_Corner0_Rounded as EmojiSmile,
@@ -355,6 +361,45 @@ let PostMenuItems = ({
     })
   }
 
+  const onPressDownloadVideo = useCallback(async () => {
+    if (post.embed?.$type !== 'app.bsky.embed.video#view') return
+    const video = post.embed as AppBskyEmbedVideo.View
+    const did = post.author.did
+    const cid = video.cid
+    const uri = `https://bsky.social/xrpc/com.atproto.sync.getBlob?did=${did}&cid=${cid}`
+
+    Toast.show('Downloading video...', 'download')
+
+    let success
+    if (isWeb) success = await downloadVideoWeb({uri: uri})
+    else success = await saveVideoToMediaLibrary({uri: uri})
+
+    if (success) Toast.show('Video downloaded', 'check')
+    else Toast.show('Failed to download video', 'xmark')
+  }, [post])
+
+  const onPressDownloadGif = useCallback(async () => {
+    if (post.embed?.$type !== 'app.bsky.embed.external#view') return
+    const media = post.embed as AppBskyEmbedExternal.View
+
+    Toast.show('Downloading GIF...', 'download')
+
+    let success
+    if (isWeb) success = await downloadVideoWeb({uri: media.external.uri})
+    else success = await saveVideoToMediaLibrary({uri: media.external.uri})
+
+    if (success) Toast.show('GIF downloaded', 'check')
+    else Toast.show('Failed to download GIF', 'xmark')
+  }, [post])
+
+  const isEmbedGif = useCallback(() => {
+    if (post.embed?.$type !== 'app.bsky.embed.external#view') return false
+    const embed = post.embed as AppBskyEmbedExternal.View
+    // Janky workaround by checking if the domain is tenor.com
+    const url = new URL(embed.external.uri)
+    return url.host == 'media.tenor.com'
+  }, [post])
+
   const onBlockAuthor = async () => {
     try {
       await queueBlock()
@@ -430,6 +475,36 @@ let PostMenuItems = ({
                   icon={isPinPending ? Loader : PinIcon}
                   position="right"
                 />
+              </Menu.Item>
+            </Menu.Group>
+            <Menu.Divider />
+          </>
+        )}
+
+        {post.embed?.$type === 'app.bsky.embed.video#view' && (
+          <>
+            <Menu.Group>
+              <Menu.Item
+                testID="postDropdownDownloadVideoBtn"
+                label={_(msg`Download Video`)}
+                onPress={onPressDownloadVideo}>
+                <Menu.ItemText>{_(msg`Download Video`)}</Menu.ItemText>
+                <Menu.ItemIcon icon={Download} position="right" />
+              </Menu.Item>
+            </Menu.Group>
+            <Menu.Divider />
+          </>
+        )}
+
+        {isEmbedGif() && (
+          <>
+            <Menu.Group>
+              <Menu.Item
+                testID="postDropdownDownloadGifBtn"
+                label={_(msg`Download GIF`)}
+                onPress={onPressDownloadGif}>
+                <Menu.ItemText>{_(msg`Download GIF`)}</Menu.ItemText>
+                <Menu.ItemIcon icon={Download} position="right" />
               </Menu.Item>
             </Menu.Group>
             <Menu.Divider />
