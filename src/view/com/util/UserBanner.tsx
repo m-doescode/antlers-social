@@ -1,10 +1,24 @@
 import {useCallback, useState} from 'react'
-import {Pressable, StyleSheet, View} from 'react-native'
+import React from 'react'
+import {
+  Pressable,
+  StyleSheet,
+  TouchableWithoutFeedback,
+  View,
+} from 'react-native'
+import {
+  measure,
+  type MeasuredDimensions,
+  runOnJS,
+  runOnUI,
+  useAnimatedRef,
+} from 'react-native-reanimated'
 import {Image} from 'expo-image'
 import {type ModerationUI} from '@atproto/api'
 import {msg, Trans} from '@lingui/macro'
 import {useLingui} from '@lingui/react'
 
+import {usePalette} from '#/lib/hooks/usePalette'
 import {
   useCameraPermission,
   usePhotoLibraryPermission,
@@ -20,6 +34,7 @@ import {
   createComposerImage,
 } from '#/state/gallery'
 import {EditImageDialog} from '#/view/com/composer/photos/EditImageDialog'
+import {useLightboxControls} from '#/state/lightbox'
 import {EventStopper} from '#/view/com/util/EventStopper'
 import {atoms as a, tokens, useTheme} from '#/alf'
 import {useDialogControl} from '#/components/Dialog'
@@ -50,6 +65,9 @@ export function UserBanner({
   const sheetWrapper = useSheetWrapper()
   const [rawImage, setRawImage] = useState<ComposerImage | undefined>()
   const editImageDialogControl = useDialogControl()
+  const {openLightbox} = useLightboxControls()
+
+  const bannerRef = useAnimatedRef()
 
   const onOpenCamera = useCallback(async () => {
     if (!(await requestCameraAccessIfNeeded())) {
@@ -110,6 +128,35 @@ export function UserBanner({
     },
     [onSelectNewBanner],
   )
+
+  const _openLightbox = React.useCallback(
+    (uri: string, thumbRect: MeasuredDimensions | null) => {
+      openLightbox({
+        images: [
+          {
+            uri,
+            thumbUri: uri,
+            thumbRect,
+            dimensions: thumbRect,
+            thumbDimensions: null,
+            type: 'image',
+          },
+        ],
+        index: 0,
+      })
+    },
+    [openLightbox],
+  )
+
+  const onPressBanner = React.useCallback(() => {
+    if (banner && !(moderation?.blur && moderation?.noOverride)) {
+      runOnUI(() => {
+        'worklet'
+        const rect = measure(bannerRef)
+        runOnJS(_openLightbox)(banner, rect)
+      })()
+    }
+  }, [banner, moderation, _openLightbox, bannerRef])
 
   // setUserBanner is only passed as prop on the EditProfile component
   return onSelectNewBanner ? (
@@ -206,15 +253,25 @@ export function UserBanner({
     </>
   ) : banner &&
     !((moderation?.blur && isAndroid) /* android crashes with blur */) ? (
-    <Image
-      testID="userBannerImage"
-      style={[styles.bannerImage, t.atoms.bg_contrast_25]}
-      contentFit="cover"
-      source={{uri: banner}}
-      blurRadius={moderation?.blur ? 100 : 0}
-      accessible={true}
-      accessibilityIgnoresInvertColors
-    />
+    <TouchableWithoutFeedback
+      testID="profileHeaderAviButton"
+      onPress={onPressBanner}
+      accessibilityRole="image"
+      accessibilityLabel={_(msg`View profile banner`)}
+      accessibilityHint="">
+      <Image
+        testID="userBannerImage"
+        style={[
+          styles.bannerImage,
+          t.atoms.bg_contrast_25,
+        ]}
+        contentFit="cover"
+        source={{uri: banner}}
+        blurRadius={moderation?.blur ? 100 : 0}
+        accessible={true}
+        accessibilityIgnoresInvertColors
+      />
+    </TouchableWithoutFeedback>
   ) : (
     <View
       testID="userBannerFallback"
