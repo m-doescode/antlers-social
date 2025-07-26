@@ -206,6 +206,7 @@
     "react-native-uuid": "^2.0.3",
     "react-native-view-shot": "^4.0.3",
     "react-native-web": "~0.20.0",
+    "react-native-vision-camera": "^4.7.1",
     "react-native-web-webview": "^1.0.2",
     "react-native-webview": "^13.13.5",
     "react-remove-scroll-bar": "^2.3.8",
