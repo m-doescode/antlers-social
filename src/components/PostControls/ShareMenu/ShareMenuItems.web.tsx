@@ -51,8 +51,9 @@ let ShareMenuItems = ({
   }, [postUri, postAuthor])
 
   const hideInPWI = useMemo(() => {
-    return !!postAuthor.labels?.find(
-      label => label.val === '!no-unauthenticated',
+    return (
+      false &&
+      !!postAuthor.labels?.find(label => label.val === '!no-unauthenticated')
     )
   }, [postAuthor])
 
