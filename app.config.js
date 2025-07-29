@@ -149,7 +149,7 @@ module.exports = function (_config) {
           backgroundColor: '#4b9b6c',
         },
         googleServicesFile: './google-services.json',
-        package: 'social.deer',
+        package: 'dev.maelstrom.deer_social_fork',
         intentFilters: [
           {
             action: 'VIEW',
