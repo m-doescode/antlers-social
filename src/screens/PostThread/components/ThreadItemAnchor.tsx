@@ -28,6 +28,7 @@ import {
 import {useProfileShadow} from '#/state/cache/profile-shadow'
 import {FeedFeedbackProvider, useFeedFeedback} from '#/state/feed-feedback'
 import {useLanguagePrefs} from '#/state/preferences'
+import {useRenderFullMastodonPostText} from '#/state/preferences/full-mastodon-post'
 import {type ThreadItem} from '#/state/queries/usePostThread/types'
 import {useSession} from '#/state/session'
 import {type OnPostSuccessData} from '#/state/shell/composer'
@@ -186,7 +187,8 @@ const ThreadItemAnchorInner = memo(function ThreadItemAnchorInner({
   const moderation = item.moderation
   const authorShadow = useProfileShadow(post.author)
   const {isActive: live} = useActorStatus(post.author)
-  const isBridgyPost = !!record.bridgyOriginalText
+  const renderFullMastodonPostText = useRenderFullMastodonPostText()
+  const isBridgyPost = renderFullMastodonPostText && record.bridgyOriginalText
   const richText = useMemo(
     () =>
       isBridgyPost

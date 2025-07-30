@@ -22,6 +22,7 @@ import {
   isBskyPostUrl,
   makeRecordUri,
 } from '#/lib/strings/url-helpers'
+import {useRenderFullMastodonPostText} from '#/state/preferences/full-mastodon-post'
 import {useModerationOpts} from '#/state/preferences/moderation-opts'
 import {usePostQuery} from '#/state/queries/post'
 import {PostMeta} from '#/view/com/util/PostMeta'
@@ -115,6 +116,7 @@ export function MessageInputEmbed({
     [moderationOpts, post],
   )
 
+  const renderFullMastodonPostText = useRenderFullMastodonPostText()
   const {rt, record} = useMemo(() => {
     if (
       post &&
@@ -123,7 +125,8 @@ export function MessageInputEmbed({
         AppBskyFeedPost.isRecord,
       )
     ) {
-      const isBridgyPost = !!post.record.bridgyOriginalText
+      const isBridgyPost =
+        renderFullMastodonPostText && post.record.bridgyOriginalText
       return {
         rt: isBridgyPost
           ? parseMastodonRichText(post.record.bridgyOriginalText as string)
@@ -136,7 +139,7 @@ export function MessageInputEmbed({
     }
 
     return {rt: undefined, record: undefined}
-  }, [post])
+  }, [post, renderFullMastodonPostText])
 
   if (!embedUri) {
     return null

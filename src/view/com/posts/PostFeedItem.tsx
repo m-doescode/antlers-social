@@ -34,6 +34,7 @@ import {
   usePostShadow,
 } from '#/state/cache/post-shadow'
 import {useFeedFeedbackContext} from '#/state/feed-feedback'
+import {useRenderFullMastodonPostText} from '#/state/preferences/full-mastodon-post'
 import {unstableCacheProfileView} from '#/state/queries/profile'
 import {useSession} from '#/state/session'
 import {useMergedThreadgateHiddenReplies} from '#/state/threadgate-hidden-replies'
@@ -109,7 +110,8 @@ export function PostFeedItem({
   onShowLess?: (interaction: AppBskyFeedDefs.Interaction) => void
 }): React.ReactNode {
   const postShadowed = usePostShadow(post)
-  const isBridgyPost = !!record.bridgyOriginalText
+  const renderFullMastodonPostText = useRenderFullMastodonPostText()
+  const isBridgyPost = renderFullMastodonPostText && record.bridgyOriginalText
   const richText = useMemo(
     () =>
       isBridgyPost

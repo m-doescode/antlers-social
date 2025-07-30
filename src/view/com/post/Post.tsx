@@ -24,6 +24,7 @@ import {
   type Shadow,
   usePostShadow,
 } from '#/state/cache/post-shadow'
+import {useRenderFullMastodonPostText} from '#/state/preferences/full-mastodon-post'
 import {useModerationOpts} from '#/state/preferences/moderation-opts'
 import {precacheProfile} from '#/state/queries/profile'
 import {useSession} from '#/state/session'
@@ -64,7 +65,8 @@ export function Post({
     [post],
   )
   const postShadowed = usePostShadow(post)
-  const isBridgyPost = !!record?.bridgyOriginalText
+  const renderFullMastodonPostText = useRenderFullMastodonPostText()
+  const isBridgyPost = renderFullMastodonPostText && record.bridgyOriginalText
   const richText = useMemo(
     () =>
       isBridgyPost

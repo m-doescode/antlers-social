@@ -38,6 +38,7 @@ import {
 import {useProfileShadow} from '#/state/cache/profile-shadow'
 import {FeedFeedbackProvider, useFeedFeedback} from '#/state/feed-feedback'
 import {useLanguagePrefs} from '#/state/preferences'
+import {useRenderFullMastodonPostText} from '#/state/preferences/full-mastodon-post'
 import {type ThreadPost} from '#/state/queries/post-thread'
 import {useSession} from '#/state/session'
 import {type OnPostSuccessData} from '#/state/shell/composer'
@@ -113,7 +114,8 @@ export function PostThreadItem({
   anchorPostSource?: PostSource
 }) {
   const postShadowed = usePostShadow(post)
-  const isBridgyPost = !!record.bridgyOriginalText
+  const renderFullMastodonPostText = useRenderFullMastodonPostText()
+  const isBridgyPost = renderFullMastodonPostText && record.bridgyOriginalText
   const richText = useMemo(
     () =>
       isBridgyPost

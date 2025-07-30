@@ -35,6 +35,10 @@ import {
   useSetDirectFetchRecords,
 } from '#/state/preferences/direct-fetch-records'
 import {
+  useRenderFullMastodonPostText,
+  useSetRenderFullMastodonPostText,
+} from '#/state/preferences/full-mastodon-post'
+import {
   useHideFollowNotifications,
   useSetHideFollowNotifications,
 } from '#/state/preferences/hide-follow-notifications'
@@ -64,6 +68,7 @@ import * as Dialog from '#/components/Dialog'
 import * as Toggle from '#/components/forms/Toggle'
 import {Atom_Stroke2_Corner0_Rounded as DeerIcon} from '#/components/icons/Atom'
 import {Bell_Stroke2_Corner0_Rounded as BellIcon} from '#/components/icons/Bell'
+import {ChainLink_Stroke2_Corner0_Rounded as ChainLinkIcon} from '#/components/icons/ChainLink'
 import {Eye_Stroke2_Corner0_Rounded as VisibilityIcon} from '#/components/icons/Eye'
 import {Earth_Stroke2_Corner2_Rounded as GlobeIcon} from '#/components/icons/Globe'
 import {Lab_Stroke2_Corner0_Rounded as BeakerIcon} from '#/components/icons/Lab'
@@ -254,6 +259,9 @@ export function DeerSettingsScreen({}: Props) {
   const directFetchRecords = useDirectFetchRecords()
   const setDirectFetchRecords = useSetDirectFetchRecords()
 
+  const renderFullMastodonPostText = useRenderFullMastodonPostText()
+  const setRenderFullMastodonPostText = useSetRenderFullMastodonPostText()
+
   const noAppLabelers = useNoAppLabelers()
   const setNoAppLabelers = useSetNoAppLabelers()
 
@@ -436,6 +444,24 @@ export function DeerSettingsScreen({}: Props) {
               </Trans>
             </Admonition>
           </SettingsList.Item>
+
+          <SettingsList.Group contentContainerStyle={[a.gap_sm]}>
+            <SettingsList.ItemIcon icon={ChainLinkIcon} />
+            <SettingsList.ItemText>
+              <Trans>Bridging and Fediverse</Trans>
+            </SettingsList.ItemText>
+            <Toggle.Item
+              name="full_mastodon_post"
+              label={_(msg`Render full Mastodon post text`)}
+              value={renderFullMastodonPostText}
+              onChange={value => setRenderFullMastodonPostText(value)}
+              style={[a.w_full]}>
+              <Toggle.LabelText style={[a.flex_1]}>
+                <Trans>Render full Mastodon post text</Trans>
+              </Toggle.LabelText>
+              <Toggle.Platform />
+            </Toggle.Item>
+          </SettingsList.Group>
 
           <SettingsList.Group contentContainerStyle={[a.gap_sm]}>
             <SettingsList.ItemIcon icon={RaisingHandIcon} />

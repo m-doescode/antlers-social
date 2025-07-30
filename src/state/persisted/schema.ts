@@ -141,6 +141,9 @@ const schema = z.object({
     })
     .optional(),
 
+  // antlers
+  renderFullMastodonPostText: z.boolean().optional(),
+
   /** @deprecated */
   mutedThreads: z.array(z.string()),
   trendingDisabled: z.boolean().optional(),
@@ -213,6 +216,9 @@ export const defaults: Schema = {
       'did:plc:b2kutgxqlltwc6lhs724cfwr',
     ],
   },
+
+  // antlers
+  renderFullMastodonPostText: false,
 }
 
 export function tryParse(rawData: string): Schema | undefined {

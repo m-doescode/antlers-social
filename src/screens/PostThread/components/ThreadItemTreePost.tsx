@@ -18,6 +18,7 @@ import {
   type Shadow,
   usePostShadow,
 } from '#/state/cache/post-shadow'
+import {useRenderFullMastodonPostText} from '#/state/preferences/full-mastodon-post'
 import {type ThreadItem} from '#/state/queries/usePostThread/types'
 import {useSession} from '#/state/session'
 import {type OnPostSuccessData} from '#/state/shell/composer'
@@ -256,7 +257,8 @@ const ThreadItemTreePostInner = memo(function ThreadItemTreePostInner({
   const post = item.value.post
   const record = item.value.post.record
   const moderation = item.moderation
-  const isBridgyPost = !!record.bridgyOriginalText
+  const renderFullMastodonPostText = useRenderFullMastodonPostText()
+  const isBridgyPost = renderFullMastodonPostText && record.bridgyOriginalText
   const richText = useMemo(
     () =>
       isBridgyPost
