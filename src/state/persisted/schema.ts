@@ -143,6 +143,7 @@ const schema = z.object({
 
   // antlers
   renderFullMastodonPostText: z.boolean().optional(),
+  showExternalShareButtons: z.boolean().optional(),
 
   /** @deprecated */
   mutedThreads: z.array(z.string()),
@@ -219,6 +220,7 @@ export const defaults: Schema = {
 
   // antlers
   renderFullMastodonPostText: false,
+  showExternalShareButtons: false,
 }
 
 export function tryParse(rawData: string): Schema | undefined {

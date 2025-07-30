@@ -35,6 +35,10 @@ import {
   useSetDirectFetchRecords,
 } from '#/state/preferences/direct-fetch-records'
 import {
+  useSetShowExternalShareButtons,
+  useShowExternalShareButtons,
+} from '#/state/preferences/external-share-buttons'
+import {
   useRenderFullMastodonPostText,
   useSetRenderFullMastodonPostText,
 } from '#/state/preferences/full-mastodon-post'
@@ -262,6 +266,9 @@ export function DeerSettingsScreen({}: Props) {
   const renderFullMastodonPostText = useRenderFullMastodonPostText()
   const setRenderFullMastodonPostText = useSetRenderFullMastodonPostText()
 
+  const showExternalShareButtons = useShowExternalShareButtons()
+  const setShowExternalShareButtons = useSetShowExternalShareButtons()
+
   const noAppLabelers = useNoAppLabelers()
   const setNoAppLabelers = useSetNoAppLabelers()
 
@@ -458,6 +465,21 @@ export function DeerSettingsScreen({}: Props) {
               style={[a.w_full]}>
               <Toggle.LabelText style={[a.flex_1]}>
                 <Trans>Render full Mastodon post text</Trans>
+              </Toggle.LabelText>
+              <Toggle.Platform />
+            </Toggle.Item>
+            <Toggle.Item
+              name="external_share_buttons"
+              label={_(
+                msg`Show "Open original post" and "Open post in pdsls" buttons`,
+              )}
+              value={showExternalShareButtons}
+              onChange={value => setShowExternalShareButtons(value)}
+              style={[a.w_full]}>
+              <Toggle.LabelText style={[a.flex_1]}>
+                <Trans>
+                  Show "Open original post" and "Open post in pdsls" buttons
+                </Trans>
               </Toggle.LabelText>
               <Toggle.Platform />
             </Toggle.Item>
