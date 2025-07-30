@@ -17,6 +17,7 @@ import {msg, Plural, Trans} from '@lingui/macro'
 import {useLingui} from '@lingui/react'
 
 import {useActorStatus} from '#/lib/actor-status'
+import {parseMastodonRichText} from '#/lib/bridgy-utils'
 import {MAX_POST_LINES} from '#/lib/constants'
 import {useOpenComposer} from '#/lib/hooks/useOpenComposer'
 import {useOpenLink} from '#/lib/hooks/useOpenLink'
@@ -112,13 +113,16 @@ export function PostThreadItem({
   anchorPostSource?: PostSource
 }) {
   const postShadowed = usePostShadow(post)
+  const isBridgyPost = !!record.bridgyOriginalText
   const richText = useMemo(
     () =>
-      new RichTextAPI({
-        text: record.text,
-        facets: record.facets,
-      }),
-    [record],
+      isBridgyPost
+        ? parseMastodonRichText(record.bridgyOriginalText as string)
+        : new RichTextAPI({
+            text: record.text,
+            facets: record.facets,
+          }),
+    [record, isBridgyPost],
   )
   if (postShadowed === POST_TOMBSTONE) {
     return <PostThreadItemDeleted hideTopBorder={hideTopBorder} />

@@ -9,10 +9,14 @@ import {
 } from '@atproto/api'
 import {msg} from '@lingui/macro'
 import {useLingui} from '@lingui/react'
-import {RouteProp, useNavigation, useRoute} from '@react-navigation/native'
+import {type RouteProp, useNavigation, useRoute} from '@react-navigation/native'
 
+import {parseMastodonRichText} from '#/lib/bridgy-utils'
 import {makeProfileLink} from '#/lib/routes/links'
-import {CommonNavigatorParams, NavigationProp} from '#/lib/routes/types'
+import {
+  type CommonNavigatorParams,
+  type NavigationProp,
+} from '#/lib/routes/types'
 import {
   convertBskyAppUrlIfNeeded,
   isBskyPostUrl,
@@ -119,11 +123,14 @@ export function MessageInputEmbed({
         AppBskyFeedPost.isRecord,
       )
     ) {
+      const isBridgyPost = !!post.record.bridgyOriginalText
       return {
-        rt: new RichTextAPI({
-          text: post.record.text,
-          facets: post.record.facets,
-        }),
+        rt: isBridgyPost
+          ? parseMastodonRichText(post.record.bridgyOriginalText as string)
+          : new RichTextAPI({
+              text: post.record.text,
+              facets: post.record.facets,
+            }),
         record: post.record,
       }
     }

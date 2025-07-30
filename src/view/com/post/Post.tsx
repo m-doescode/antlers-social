@@ -12,6 +12,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome'
 import {Trans} from '@lingui/macro'
 import {useQueryClient} from '@tanstack/react-query'
 
+import {parseMastodonRichText} from '#/lib/bridgy-utils'
 import {MAX_POST_LINES} from '#/lib/constants'
 import {useOpenComposer} from '#/lib/hooks/useOpenComposer'
 import {usePalette} from '#/lib/hooks/usePalette'
@@ -63,15 +64,18 @@ export function Post({
     [post],
   )
   const postShadowed = usePostShadow(post)
+  const isBridgyPost = !!record?.bridgyOriginalText
   const richText = useMemo(
     () =>
-      record
-        ? new RichTextAPI({
-            text: record.text,
-            facets: record.facets,
-          })
-        : undefined,
-    [record],
+      isBridgyPost
+        ? parseMastodonRichText(record.bridgyOriginalText as string)
+        : record
+          ? new RichTextAPI({
+              text: record.text,
+              facets: record.facets,
+            })
+          : undefined,
+    [record, isBridgyPost],
   )
   const moderation = useMemo(
     () => (moderationOpts ? moderatePost(post, moderationOpts) : undefined),

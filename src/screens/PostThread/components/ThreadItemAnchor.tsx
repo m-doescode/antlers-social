@@ -186,15 +186,16 @@ const ThreadItemAnchorInner = memo(function ThreadItemAnchorInner({
   const moderation = item.moderation
   const authorShadow = useProfileShadow(post.author)
   const {isActive: live} = useActorStatus(post.author)
+  const isBridgyPost = !!record.bridgyOriginalText
   const richText = useMemo(
     () =>
-      record.bridgyOriginalText
+      isBridgyPost
         ? parseMastodonRichText(record.bridgyOriginalText as string)
         : new RichTextAPI({
             text: record.text,
             facets: record.facets,
           }),
-    [record],
+    [record, isBridgyPost],
   )
 
   const threadRootUri = record.reply?.root?.uri || post.uri

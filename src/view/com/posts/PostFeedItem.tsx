@@ -19,6 +19,7 @@ import {useQueryClient} from '@tanstack/react-query'
 
 import {useActorStatus} from '#/lib/actor-status'
 import {isReasonFeedSource, type ReasonFeedSource} from '#/lib/api/feed/types'
+import {parseMastodonRichText} from '#/lib/bridgy-utils'
 import {MAX_POST_LINES} from '#/lib/constants'
 import {useOpenComposer} from '#/lib/hooks/useOpenComposer'
 import {usePalette} from '#/lib/hooks/usePalette'
@@ -108,13 +109,16 @@ export function PostFeedItem({
   onShowLess?: (interaction: AppBskyFeedDefs.Interaction) => void
 }): React.ReactNode {
   const postShadowed = usePostShadow(post)
+  const isBridgyPost = !!record.bridgyOriginalText
   const richText = useMemo(
     () =>
-      new RichTextAPI({
-        text: record.text,
-        facets: record.facets,
-      }),
-    [record],
+      isBridgyPost
+        ? parseMastodonRichText(record.bridgyOriginalText as string)
+        : new RichTextAPI({
+            text: record.text,
+            facets: record.facets,
+          }),
+    [record, isBridgyPost],
   )
   if (postShadowed === POST_TOMBSTONE) {
     return null

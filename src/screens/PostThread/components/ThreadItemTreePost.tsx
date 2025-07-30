@@ -8,6 +8,7 @@ import {
 } from '@atproto/api'
 import {Trans} from '@lingui/macro'
 
+import {parseMastodonRichText} from '#/lib/bridgy-utils'
 import {MAX_POST_LINES} from '#/lib/constants'
 import {useOpenComposer} from '#/lib/hooks/useOpenComposer'
 import {makeProfileLink} from '#/lib/routes/links'
@@ -255,13 +256,16 @@ const ThreadItemTreePostInner = memo(function ThreadItemTreePostInner({
   const post = item.value.post
   const record = item.value.post.record
   const moderation = item.moderation
+  const isBridgyPost = !!record.bridgyOriginalText
   const richText = useMemo(
     () =>
-      new RichTextAPI({
-        text: record.text,
-        facets: record.facets,
-      }),
-    [record],
+      isBridgyPost
+        ? parseMastodonRichText(record.bridgyOriginalText as string)
+        : new RichTextAPI({
+            text: record.text,
+            facets: record.facets,
+          }),
+    [record, isBridgyPost],
   )
   const [limitLines, setLimitLines] = useState(
     () => countLines(richText?.text) >= MAX_POST_LINES,
