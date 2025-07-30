@@ -11,6 +11,7 @@ import {msg, Plural, Trans} from '@lingui/macro'
 import {useLingui} from '@lingui/react'
 
 import {useActorStatus} from '#/lib/actor-status'
+import {parseMastodonRichText} from '#/lib/bridgy-utils'
 import {useOpenComposer} from '#/lib/hooks/useOpenComposer'
 import {useOpenLink} from '#/lib/hooks/useOpenLink'
 import {makeProfileLink} from '#/lib/routes/links'
@@ -187,10 +188,12 @@ const ThreadItemAnchorInner = memo(function ThreadItemAnchorInner({
   const {isActive: live} = useActorStatus(post.author)
   const richText = useMemo(
     () =>
-      new RichTextAPI({
-        text: record.text,
-        facets: record.facets,
-      }),
+      record.bridgyOriginalText
+        ? parseMastodonRichText(record.bridgyOriginalText as string)
+        : new RichTextAPI({
+            text: record.text,
+            facets: record.facets,
+          }),
     [record],
   )
 

@@ -16829,6 +16829,11 @@ react-native-get-random-values@~1.11.0:
   dependencies:
     fast-base64-decode "^1.0.0"
 
+react-native-html-parser@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-html-parser/-/react-native-html-parser-0.1.0.tgz#c35de1dc325562da26e68befa423bac34505ba48"
+  integrity sha512-G5d0pk7TA9YgjVJhLRf2zMOOf1HXd8ItM9JYsTS2pXoEfSRfMfRU5iTj03LGwvHU2NT9kc18NDJeLgZY6+Bbvg==
+
 react-native-ios-context-menu@^1.15.3:
   version "1.15.3"
   resolved "https://registry.yarnpkg.com/react-native-ios-context-menu/-/react-native-ios-context-menu-1.15.3.tgz#c02e6a7af2df8c08d0b3e1c8f3395484b3c9c760"
