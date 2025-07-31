@@ -144,7 +144,7 @@ const schema = z.object({
   // antlers
   renderFullMastodonPostText: z.boolean().optional(),
   showExternalShareButtons: z.boolean().optional(),
-  customShareLink: z.string(),
+  customShareLink: z.string().optional(),
 
   /** @deprecated */
   mutedThreads: z.array(z.string()),

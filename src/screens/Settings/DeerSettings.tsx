@@ -239,7 +239,7 @@ function CustomShareLinkDialog({
 
   const customShareLink = useCustomShareLink()
   const setCustomShareLink = useSetCustomShareLink()
-  const [url, setUrl] = useState(customShareLink)
+  const [url, setUrl] = useState(customShareLink ?? '')
 
   const shouldDisable = () => {
     try {
@@ -260,7 +260,7 @@ function CustomShareLinkDialog({
       try {
         return new URL('https://' + url).toString()
       } catch (e) {
-        return null
+        return undefined
       }
     }
   }
@@ -377,7 +377,7 @@ export function DeerSettingsScreen({}: Props) {
   const constellationInstance = useConstellationInstance()
   const setConstellationInstanceControl = Dialog.useDialogControl()
 
-  const customShareLink = useCustomShareLink()
+  const customShareLink = useCustomShareLink() ?? 'https://deer.social/'
   const setCustomShareLink = Dialog.useDialogControl()
 
   const deerVerificationEnabled = useDeerVerificationEnabled()
