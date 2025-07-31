@@ -1032,7 +1032,7 @@ msgstr "Qualsevol que em segueixi"
 msgid "App Icon"
 msgstr "Icona de l'aplicació"
 
-#: src/screens/Settings/DeerSettings.tsx:522
+#: src/screens/Settings/DeerSettings.tsx:633
 msgid "App labelers are mandatory top-level labelers that can perform \"takedowns\". This setting does not influence geolocation based labelers."
 msgstr ""
 
@@ -1425,7 +1425,7 @@ msgstr "Difumina les imatges i filtra-ho dels canals"
 msgid "Books"
 msgstr "Llibres"
 
-#: src/screens/Settings/DeerSettings.tsx:458
+#: src/screens/Settings/DeerSettings.tsx:569
 msgid "Bridging and Fediverse"
 msgstr ""
 
@@ -1594,8 +1594,9 @@ msgid "Captions & alt text"
 msgstr "Subtítols i text alternatiu"
 
 #: src/screens/Settings/components/Email2FAToggle.tsx:31
-#: src/screens/Settings/DeerSettings.tsx:420
-#: src/screens/Settings/DeerSettings.tsx:442
+#: src/screens/Settings/DeerSettings.tsx:516
+#: src/screens/Settings/DeerSettings.tsx:538
+#: src/screens/Settings/DeerSettings.tsx:561
 msgid "Change"
 msgstr "Canvia"
 
@@ -1934,8 +1935,8 @@ msgstr "Mode de color"
 msgid "Color theme"
 msgstr "Color del tema"
 
-#: src/screens/Settings/DeerSettings.tsx:537
-#: src/screens/Settings/DeerSettings.tsx:542
+#: src/screens/Settings/DeerSettings.tsx:648
+#: src/screens/Settings/DeerSettings.tsx:653
 msgid "Combine reposts into a horizontal carousel"
 msgstr ""
 
@@ -2026,16 +2027,16 @@ msgstr "Connectant…"
 msgid "Connection issue"
 msgstr "Problema de connexió"
 
-#: src/screens/Settings/DeerSettings.tsx:417
+#: src/screens/Settings/DeerSettings.tsx:513
 msgid "Constellation Instance"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:426
+#: src/screens/Settings/DeerSettings.tsx:522
 msgid "Constellation is used to supplement AppView responses for custom verifications and nuclear block bypass, via backlinks. Current instance: {constellationInstance}"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:184
-#: src/screens/Settings/DeerSettings.tsx:187
+#: src/screens/Settings/DeerSettings.tsx:188
+#: src/screens/Settings/DeerSettings.tsx:191
 msgid "Constellations instance URL"
 msgstr ""
 
@@ -2387,6 +2388,11 @@ msgstr "Cultura"
 msgid "Custom"
 msgstr "Personalitzat"
 
+#: src/screens/Settings/DeerSettings.tsx:277
+#: src/screens/Settings/DeerSettings.tsx:280
+msgid "Custom share link URL"
+msgstr ""
+
 #: src/components/dialogs/Embed.tsx:144
 msgid "Customization options"
 msgstr "Opcions de personalització"
@@ -2437,7 +2443,7 @@ msgstr "Moderació de depuració"
 msgid "Debug panel"
 msgstr "Panell de depuració"
 
-#: src/screens/Settings/DeerSettings.tsx:312
+#: src/screens/Settings/DeerSettings.tsx:408
 #: src/screens/Settings/Settings.tsx:215
 #: src/screens/Settings/Settings.tsx:218
 msgid "Deer"
@@ -2736,16 +2742,16 @@ msgstr "Panell de DNS"
 msgid "Do not apply this mute word to users you follow"
 msgstr "No silenciïs aquesta paraula als usuaris que segueixo"
 
-#: src/screens/Settings/DeerSettings.tsx:495
+#: src/screens/Settings/DeerSettings.tsx:606
 msgid "Do not declare any app labelers"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:500
+#: src/screens/Settings/DeerSettings.tsx:611
 msgid "Do not declare any default app labelers"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:548
-#: src/screens/Settings/DeerSettings.tsx:553
+#: src/screens/Settings/DeerSettings.tsx:659
+#: src/screens/Settings/DeerSettings.tsx:664
 msgid "Do not fall back to discover feed"
 msgstr ""
 
@@ -2793,8 +2799,8 @@ msgstr "No pateixis! Tots els missatges i la configuració existents es desen i 
 #: src/screens/Onboarding/StepProfile/index.tsx:331
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:215
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:222
-#: src/screens/Settings/DeerSettings.tsx:136
-#: src/screens/Settings/DeerSettings.tsx:142
+#: src/screens/Settings/DeerSettings.tsx:140
+#: src/screens/Settings/DeerSettings.tsx:146
 #: src/view/com/auth/server-input/index.tsx:232
 #: src/view/com/auth/server-input/index.tsx:233
 #: src/view/com/composer/labels/LabelsBtn.tsx:223
@@ -3544,7 +3550,7 @@ msgstr "No s'ha pogut verificar el correu. Torna-ho a provar."
 msgid "Failed to verify handle. Please try again."
 msgstr "No s'ha pogut verificar l'identificador. Torna-ho a provar."
 
-#: src/screens/Settings/DeerSettings.tsx:361
+#: src/screens/Settings/DeerSettings.tsx:457
 msgid "Fall back to constellation api to find blocked replies"
 msgstr ""
 
@@ -3614,11 +3620,11 @@ msgstr "Canals actualitzats!"
 msgid "Feeds we think you might like."
 msgstr "Canals que creiem que t'agradaran."
 
-#: src/screens/Settings/DeerSettings.tsx:351
+#: src/screens/Settings/DeerSettings.tsx:447
 msgid "Fetch records directly from PDS to see contents of blocked and detatched quotes"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:345
+#: src/screens/Settings/DeerSettings.tsx:441
 msgid "Fetch records directly from PDS to see through quote blocks"
 msgstr ""
 
@@ -3871,7 +3877,7 @@ msgstr "De <0/>"
 msgid "Gallery"
 msgstr "Galeria"
 
-#: src/screens/Settings/DeerSettings.tsx:595
+#: src/screens/Settings/DeerSettings.tsx:706
 msgid "Gates"
 msgstr ""
 
@@ -3879,12 +3885,12 @@ msgstr ""
 msgid "Generate a starter pack"
 msgstr "Genera un starter pack"
 
-#: src/screens/Settings/DeerSettings.tsx:448
+#: src/screens/Settings/DeerSettings.tsx:544
 msgid "Geolocation country code informs required regional app labelers and currency behavior."
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:108
-#: src/screens/Settings/DeerSettings.tsx:111
+#: src/screens/Settings/DeerSettings.tsx:112
+#: src/screens/Settings/DeerSettings.tsx:115
 msgid "Geolocation ISO 3166-1 Code"
 msgstr ""
 
@@ -4169,8 +4175,8 @@ msgstr "Amaga"
 msgid "Hide customization options"
 msgstr "Amaga les opcions de personalització"
 
-#: src/screens/Settings/DeerSettings.tsx:581
-#: src/screens/Settings/DeerSettings.tsx:586
+#: src/screens/Settings/DeerSettings.tsx:692
+#: src/screens/Settings/DeerSettings.tsx:697
 msgid "Hide follow notifications"
 msgstr ""
 
@@ -4436,7 +4442,7 @@ msgstr "La safata està buida"
 msgid "Incorrect username or password"
 msgstr "Nom d'usuari o contrasenya incorrectes"
 
-#: src/screens/Settings/DeerSettings.tsx:130
+#: src/screens/Settings/DeerSettings.tsx:134
 msgid "Input 2 letter ISO 3166-1 country code to use as location"
 msgstr ""
 
@@ -4460,7 +4466,7 @@ msgstr "Introdueix la contrasenya per a eliminar el compte"
 msgid "Input the code which has been emailed to you"
 msgstr "Introdueix el codi que has rebut per correu"
 
-#: src/screens/Settings/DeerSettings.tsx:203
+#: src/screens/Settings/DeerSettings.tsx:207
 msgid "Input the url of the constellations instance to use"
 msgstr ""
 
@@ -4529,7 +4535,7 @@ msgstr "Convida els teus amics a seguir els teus canals i persones preferides"
 msgid "Invites, but personal"
 msgstr "Convida a Bluesky de manera més personalitzada"
 
-#: src/screens/Settings/DeerSettings.tsx:437
+#: src/screens/Settings/DeerSettings.tsx:533
 msgid "ISO 3166-1 Location (currently {0})"
 msgstr ""
 
@@ -4586,7 +4592,7 @@ msgstr "Etiquetat per {0}."
 msgid "Labeled by the author."
 msgstr "Etiquetat per l'autor."
 
-#: src/screens/Settings/DeerSettings.tsx:491
+#: src/screens/Settings/DeerSettings.tsx:602
 msgid "Labelers"
 msgstr ""
 
@@ -5692,7 +5698,7 @@ msgstr "Nota: Aquesta publicació només és visible per als usuaris que han ini
 msgid "Nothing here"
 msgstr "Aquí no hi ha res"
 
-#: src/screens/Settings/DeerSettings.tsx:577
+#: src/screens/Settings/DeerSettings.tsx:688
 msgid "Notification Filters"
 msgstr ""
 
@@ -5794,8 +5800,8 @@ msgstr "D'acord"
 msgid "Oldest replies first"
 msgstr "Respostes més antigues primer"
 
-#: src/screens/Settings/DeerSettings.tsx:560
-#: src/screens/Settings/DeerSettings.tsx:566
+#: src/screens/Settings/DeerSettings.tsx:671
+#: src/screens/Settings/DeerSettings.tsx:677
 msgid "On non-bsky.social handles, show a link to that URL"
 msgstr ""
 
@@ -6810,12 +6816,12 @@ msgstr "Recomanats"
 msgid "Reconnect"
 msgstr "Torna a connectar"
 
-#: src/screens/Settings/DeerSettings.tsx:326
-#: src/screens/Settings/DeerSettings.tsx:331
+#: src/screens/Settings/DeerSettings.tsx:422
+#: src/screens/Settings/DeerSettings.tsx:427
 msgid "Redirect through go.bsky.app"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:322
+#: src/screens/Settings/DeerSettings.tsx:418
 msgid "Redirects"
 msgstr ""
 
@@ -6983,8 +6989,8 @@ msgstr "Eliminat dels teus canals"
 msgid "Removed verification"
 msgstr "Verificació eliminada"
 
-#: src/screens/Settings/DeerSettings.tsx:462
-#: src/screens/Settings/DeerSettings.tsx:467
+#: src/screens/Settings/DeerSettings.tsx:573
+#: src/screens/Settings/DeerSettings.tsx:578
 msgid "Render full Mastodon post text"
 msgstr ""
 
@@ -7282,7 +7288,7 @@ msgstr "Codi de restabliment"
 msgid "Reset Code"
 msgstr "Codi de restabliment"
 
-#: src/screens/Settings/DeerSettings.tsx:610
+#: src/screens/Settings/DeerSettings.tsx:721
 msgid "Reset gates"
 msgstr ""
 
@@ -7295,7 +7301,7 @@ msgstr "Restableix l'estat de la incorporació"
 msgid "Reset password"
 msgstr "Restableix la contrasenya"
 
-#: src/screens/Settings/DeerSettings.tsx:508
+#: src/screens/Settings/DeerSettings.tsx:619
 msgid "Restart app after changing this setting."
 msgstr ""
 
@@ -7365,9 +7371,11 @@ msgstr "Ves al pas anterior"
 #: src/screens/Profile/Header/EditProfileDialog.tsx:243
 #: src/screens/Profile/Header/EditProfileDialog.tsx:257
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:262
-#: src/screens/Settings/DeerSettings.tsx:142
-#: src/screens/Settings/DeerSettings.tsx:209
-#: src/screens/Settings/DeerSettings.tsx:216
+#: src/screens/Settings/DeerSettings.tsx:146
+#: src/screens/Settings/DeerSettings.tsx:213
+#: src/screens/Settings/DeerSettings.tsx:220
+#: src/screens/Settings/DeerSettings.tsx:301
+#: src/screens/Settings/DeerSettings.tsx:308
 #: src/view/com/composer/GifAltText.tsx:193
 #: src/view/com/composer/GifAltText.tsx:202
 #: src/view/com/composer/photos/EditImageDialog.web.tsx:62
@@ -7405,7 +7413,7 @@ msgstr "Desa la imatge"
 msgid "Save image crop"
 msgstr "Desa la imatge retallada"
 
-#: src/screens/Settings/DeerSettings.tsx:136
+#: src/screens/Settings/DeerSettings.tsx:140
 msgid "Save location"
 msgstr ""
 
@@ -7688,8 +7696,8 @@ msgstr "Selecciona la teva data de naixement"
 msgid "Select your interests from the options below"
 msgstr "Selecciona els teus interessos d'entre aquestes opcions"
 
-#: src/screens/Settings/DeerSettings.tsx:384
-#: src/screens/Settings/DeerSettings.tsx:390
+#: src/screens/Settings/DeerSettings.tsx:480
+#: src/screens/Settings/DeerSettings.tsx:486
 msgid "Select your own set of trusted verifiers, and operate as a verifier"
 msgstr ""
 
@@ -7781,6 +7789,10 @@ msgstr "Estableix la icona de l'aplicació a {0}"
 #: src/screens/Moderation/index.tsx:333
 msgid "Set birthdate"
 msgstr "Estableix la data de naixement"
+
+#: src/screens/Settings/DeerSettings.tsx:296
+msgid "Set custom base url for share links"
+msgstr ""
 
 #: src/screens/Login/SetNewPasswordForm.tsx:106
 msgid "Set new password"
@@ -7921,6 +7933,10 @@ msgstr "Comparteix aquest starter pack"
 msgid "Share this starter pack and help people join your community on Bluesky."
 msgstr "Comparteix aquest starter pack i ajuda la gent de la teva comunitat a unir-se a Bluesky."
 
+#: src/screens/Settings/DeerSettings.tsx:554
+msgid "Share url:"
+msgstr ""
+
 #: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:162
 #: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:165
 #: src/screens/StarterPack/StarterPackScreen.tsx:611
@@ -7944,8 +7960,8 @@ msgstr "Comprovador de preferències compartides"
 msgid "Show"
 msgstr "Mostra"
 
-#: src/screens/Settings/DeerSettings.tsx:474
-#: src/screens/Settings/DeerSettings.tsx:480
+#: src/screens/Settings/DeerSettings.tsx:585
+#: src/screens/Settings/DeerSettings.tsx:591
 msgid "Show \"Open original post\" and \"Open post in pdsls\" buttons"
 msgstr ""
 
@@ -8183,7 +8199,7 @@ msgstr "Posposa el recordatori"
 msgid "Software Dev"
 msgstr "Desenvolupament de programari"
 
-#: src/screens/Settings/DeerSettings.tsx:513
+#: src/screens/Settings/DeerSettings.tsx:624
 msgid "Some appviews will default to using an app labeler if you have no labelers, so consider subscribing to at least one labeler if you have issues."
 msgstr ""
 
@@ -8805,7 +8821,7 @@ msgstr "S'ha produït un problema inesperat a l'aplicació. Fes-nos saber si aix
 msgid "There's been a rush of new users to Bluesky! We'll activate your account as soon as we can."
 msgstr "Hi ha hagut una gran quantitat d'usuaris nous a Bluesky! Activarem el teu compte tan aviat com puguem."
 
-#: src/screens/Settings/DeerSettings.tsx:620
+#: src/screens/Settings/DeerSettings.tsx:731
 msgid "These settings might summon nasel demons! Restart the app after changing if anything breaks."
 msgstr ""
 
@@ -9108,7 +9124,7 @@ msgstr "A qui vols enviar aquest informe?"
 msgid "Today"
 msgstr "Avui"
 
-#: src/screens/Settings/DeerSettings.tsx:368
+#: src/screens/Settings/DeerSettings.tsx:464
 msgid "TODO: Fall back to constellation api to find blocked replies"
 msgstr ""
 
@@ -9183,7 +9199,7 @@ msgstr "Torna-ho a provar"
 msgid "TV"
 msgstr "Televisió"
 
-#: src/screens/Settings/DeerSettings.tsx:533
+#: src/screens/Settings/DeerSettings.tsx:644
 msgid "Tweaks"
 msgstr ""
 
@@ -9621,7 +9637,7 @@ msgstr "Els usuaris als quals segueixes"
 msgid "Value:"
 msgstr "Valor:"
 
-#: src/screens/Settings/DeerSettings.tsx:379
+#: src/screens/Settings/DeerSettings.tsx:475
 msgid "Verification"
 msgstr ""
 
@@ -9888,7 +9904,7 @@ msgstr "Veure la imatge completa"
 msgid "Views video in immersive mode"
 msgstr "Veure el vídeo en el mode immersiu"
 
-#: src/screens/Settings/DeerSettings.tsx:340
+#: src/screens/Settings/DeerSettings.tsx:436
 msgid "Visibility"
 msgstr ""
 
@@ -10149,7 +10165,7 @@ msgstr "Per què s'hauria de revisar aquest starter pack?"
 msgid "Why should this user be reviewed?"
 msgstr "Per què s'hauria de revisar aquest usuari?"
 
-#: src/screens/Settings/DeerSettings.tsx:401
+#: src/screens/Settings/DeerSettings.tsx:497
 msgid "WIP. May slow down the client or fail to find all labels. Revoke and grant trust in the meatball menu on a profile. {0} trust the following verifiers:"
 msgstr ""
 

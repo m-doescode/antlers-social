@@ -1032,7 +1032,7 @@ msgstr "关注我的人"
 msgid "App Icon"
 msgstr "应用图标"
 
-#: src/screens/Settings/DeerSettings.tsx:522
+#: src/screens/Settings/DeerSettings.tsx:633
 msgid "App labelers are mandatory top-level labelers that can perform \"takedowns\". This setting does not influence geolocation based labelers."
 msgstr ""
 
@@ -1425,7 +1425,7 @@ msgstr "模糊化图片并从动态源中过滤"
 msgid "Books"
 msgstr "书籍"
 
-#: src/screens/Settings/DeerSettings.tsx:458
+#: src/screens/Settings/DeerSettings.tsx:569
 msgid "Bridging and Fediverse"
 msgstr ""
 
@@ -1594,8 +1594,9 @@ msgid "Captions & alt text"
 msgstr "字幕及替代文本"
 
 #: src/screens/Settings/components/Email2FAToggle.tsx:31
-#: src/screens/Settings/DeerSettings.tsx:420
-#: src/screens/Settings/DeerSettings.tsx:442
+#: src/screens/Settings/DeerSettings.tsx:516
+#: src/screens/Settings/DeerSettings.tsx:538
+#: src/screens/Settings/DeerSettings.tsx:561
 msgid "Change"
 msgstr "更改"
 
@@ -1934,8 +1935,8 @@ msgstr "主题模式"
 msgid "Color theme"
 msgstr "色彩主题"
 
-#: src/screens/Settings/DeerSettings.tsx:537
-#: src/screens/Settings/DeerSettings.tsx:542
+#: src/screens/Settings/DeerSettings.tsx:648
+#: src/screens/Settings/DeerSettings.tsx:653
 msgid "Combine reposts into a horizontal carousel"
 msgstr ""
 
@@ -2026,16 +2027,16 @@ msgstr "连接中……"
 msgid "Connection issue"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:417
+#: src/screens/Settings/DeerSettings.tsx:513
 msgid "Constellation Instance"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:426
+#: src/screens/Settings/DeerSettings.tsx:522
 msgid "Constellation is used to supplement AppView responses for custom verifications and nuclear block bypass, via backlinks. Current instance: {constellationInstance}"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:184
-#: src/screens/Settings/DeerSettings.tsx:187
+#: src/screens/Settings/DeerSettings.tsx:188
+#: src/screens/Settings/DeerSettings.tsx:191
 msgid "Constellations instance URL"
 msgstr ""
 
@@ -2387,6 +2388,11 @@ msgstr "文化"
 msgid "Custom"
 msgstr "自定义"
 
+#: src/screens/Settings/DeerSettings.tsx:277
+#: src/screens/Settings/DeerSettings.tsx:280
+msgid "Custom share link URL"
+msgstr ""
+
 #: src/components/dialogs/Embed.tsx:144
 msgid "Customization options"
 msgstr "自定义选项"
@@ -2437,7 +2443,7 @@ msgstr "调试内容审核"
 msgid "Debug panel"
 msgstr "调试面板"
 
-#: src/screens/Settings/DeerSettings.tsx:312
+#: src/screens/Settings/DeerSettings.tsx:408
 #: src/screens/Settings/Settings.tsx:215
 #: src/screens/Settings/Settings.tsx:218
 msgid "Deer"
@@ -2736,16 +2742,16 @@ msgstr "DNS 面板"
 msgid "Do not apply this mute word to users you follow"
 msgstr "不使用此隐藏字词来隐藏你已关注用户的帖文"
 
-#: src/screens/Settings/DeerSettings.tsx:495
+#: src/screens/Settings/DeerSettings.tsx:606
 msgid "Do not declare any app labelers"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:500
+#: src/screens/Settings/DeerSettings.tsx:611
 msgid "Do not declare any default app labelers"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:548
-#: src/screens/Settings/DeerSettings.tsx:553
+#: src/screens/Settings/DeerSettings.tsx:659
+#: src/screens/Settings/DeerSettings.tsx:664
 msgid "Do not fall back to discover feed"
 msgstr ""
 
@@ -2793,8 +2799,8 @@ msgstr ""
 #: src/screens/Onboarding/StepProfile/index.tsx:331
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:215
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:222
-#: src/screens/Settings/DeerSettings.tsx:136
-#: src/screens/Settings/DeerSettings.tsx:142
+#: src/screens/Settings/DeerSettings.tsx:140
+#: src/screens/Settings/DeerSettings.tsx:146
 #: src/view/com/auth/server-input/index.tsx:232
 #: src/view/com/auth/server-input/index.tsx:233
 #: src/view/com/composer/labels/LabelsBtn.tsx:223
@@ -3544,7 +3550,7 @@ msgstr "无法验证电子邮箱，请重试。"
 msgid "Failed to verify handle. Please try again."
 msgstr "无法验证账户代码，请重试。"
 
-#: src/screens/Settings/DeerSettings.tsx:361
+#: src/screens/Settings/DeerSettings.tsx:457
 msgid "Fall back to constellation api to find blocked replies"
 msgstr ""
 
@@ -3614,11 +3620,11 @@ msgstr "已更新动态源！"
 msgid "Feeds we think you might like."
 msgstr "我们认为你可能会喜欢的动态源。"
 
-#: src/screens/Settings/DeerSettings.tsx:351
+#: src/screens/Settings/DeerSettings.tsx:447
 msgid "Fetch records directly from PDS to see contents of blocked and detatched quotes"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:345
+#: src/screens/Settings/DeerSettings.tsx:441
 msgid "Fetch records directly from PDS to see through quote blocks"
 msgstr ""
 
@@ -3871,7 +3877,7 @@ msgstr "来自 <0/>"
 msgid "Gallery"
 msgstr "相册"
 
-#: src/screens/Settings/DeerSettings.tsx:595
+#: src/screens/Settings/DeerSettings.tsx:706
 msgid "Gates"
 msgstr ""
 
@@ -3879,12 +3885,12 @@ msgstr ""
 msgid "Generate a starter pack"
 msgstr "创建一个新手包"
 
-#: src/screens/Settings/DeerSettings.tsx:448
+#: src/screens/Settings/DeerSettings.tsx:544
 msgid "Geolocation country code informs required regional app labelers and currency behavior."
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:108
-#: src/screens/Settings/DeerSettings.tsx:111
+#: src/screens/Settings/DeerSettings.tsx:112
+#: src/screens/Settings/DeerSettings.tsx:115
 msgid "Geolocation ISO 3166-1 Code"
 msgstr ""
 
@@ -4169,8 +4175,8 @@ msgstr "隐藏"
 msgid "Hide customization options"
 msgstr "隐藏自定义选项"
 
-#: src/screens/Settings/DeerSettings.tsx:581
-#: src/screens/Settings/DeerSettings.tsx:586
+#: src/screens/Settings/DeerSettings.tsx:692
+#: src/screens/Settings/DeerSettings.tsx:697
 msgid "Hide follow notifications"
 msgstr ""
 
@@ -4436,7 +4442,7 @@ msgstr "收件箱清空啦！"
 msgid "Incorrect username or password"
 msgstr "用户名或密码不正确"
 
-#: src/screens/Settings/DeerSettings.tsx:130
+#: src/screens/Settings/DeerSettings.tsx:134
 msgid "Input 2 letter ISO 3166-1 country code to use as location"
 msgstr ""
 
@@ -4460,7 +4466,7 @@ msgstr "输入密码以删除账户"
 msgid "Input the code which has been emailed to you"
 msgstr "输入发送至你电子邮箱的验证码"
 
-#: src/screens/Settings/DeerSettings.tsx:203
+#: src/screens/Settings/DeerSettings.tsx:207
 msgid "Input the url of the constellations instance to use"
 msgstr ""
 
@@ -4529,7 +4535,7 @@ msgstr "邀请朋友关注你喜欢的动态源和用户"
 msgid "Invites, but personal"
 msgstr "以个性化的方式邀请朋友加入"
 
-#: src/screens/Settings/DeerSettings.tsx:437
+#: src/screens/Settings/DeerSettings.tsx:533
 msgid "ISO 3166-1 Location (currently {0})"
 msgstr ""
 
@@ -4586,7 +4592,7 @@ msgstr "由 {0} 标记。"
 msgid "Labeled by the author."
 msgstr "由发布者标记。"
 
-#: src/screens/Settings/DeerSettings.tsx:491
+#: src/screens/Settings/DeerSettings.tsx:602
 msgid "Labelers"
 msgstr ""
 
@@ -5692,7 +5698,7 @@ msgstr "注：这则帖文仅对已登录用户可见。"
 msgid "Nothing here"
 msgstr "这里什么也没有"
 
-#: src/screens/Settings/DeerSettings.tsx:577
+#: src/screens/Settings/DeerSettings.tsx:688
 msgid "Notification Filters"
 msgstr ""
 
@@ -5794,8 +5800,8 @@ msgstr "好的"
 msgid "Oldest replies first"
 msgstr "最早回复优先"
 
-#: src/screens/Settings/DeerSettings.tsx:560
-#: src/screens/Settings/DeerSettings.tsx:566
+#: src/screens/Settings/DeerSettings.tsx:671
+#: src/screens/Settings/DeerSettings.tsx:677
 msgid "On non-bsky.social handles, show a link to that URL"
 msgstr ""
 
@@ -6810,12 +6816,12 @@ msgstr "推荐"
 msgid "Reconnect"
 msgstr "重新连接"
 
-#: src/screens/Settings/DeerSettings.tsx:326
-#: src/screens/Settings/DeerSettings.tsx:331
+#: src/screens/Settings/DeerSettings.tsx:422
+#: src/screens/Settings/DeerSettings.tsx:427
 msgid "Redirect through go.bsky.app"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:322
+#: src/screens/Settings/DeerSettings.tsx:418
 msgid "Redirects"
 msgstr ""
 
@@ -6983,8 +6989,8 @@ msgstr "已从你的动态源中删除"
 msgid "Removed verification"
 msgstr "已撤回认证"
 
-#: src/screens/Settings/DeerSettings.tsx:462
-#: src/screens/Settings/DeerSettings.tsx:467
+#: src/screens/Settings/DeerSettings.tsx:573
+#: src/screens/Settings/DeerSettings.tsx:578
 msgid "Render full Mastodon post text"
 msgstr ""
 
@@ -7282,7 +7288,7 @@ msgstr "重置码"
 msgid "Reset Code"
 msgstr "重置码"
 
-#: src/screens/Settings/DeerSettings.tsx:610
+#: src/screens/Settings/DeerSettings.tsx:721
 msgid "Reset gates"
 msgstr ""
 
@@ -7295,7 +7301,7 @@ msgstr "重置入门引导状态"
 msgid "Reset password"
 msgstr "重置密码"
 
-#: src/screens/Settings/DeerSettings.tsx:508
+#: src/screens/Settings/DeerSettings.tsx:619
 msgid "Restart app after changing this setting."
 msgstr ""
 
@@ -7365,9 +7371,11 @@ msgstr "返回上一步"
 #: src/screens/Profile/Header/EditProfileDialog.tsx:243
 #: src/screens/Profile/Header/EditProfileDialog.tsx:257
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:262
-#: src/screens/Settings/DeerSettings.tsx:142
-#: src/screens/Settings/DeerSettings.tsx:209
-#: src/screens/Settings/DeerSettings.tsx:216
+#: src/screens/Settings/DeerSettings.tsx:146
+#: src/screens/Settings/DeerSettings.tsx:213
+#: src/screens/Settings/DeerSettings.tsx:220
+#: src/screens/Settings/DeerSettings.tsx:301
+#: src/screens/Settings/DeerSettings.tsx:308
 #: src/view/com/composer/GifAltText.tsx:193
 #: src/view/com/composer/GifAltText.tsx:202
 #: src/view/com/composer/photos/EditImageDialog.web.tsx:62
@@ -7405,7 +7413,7 @@ msgstr "保存图片"
 msgid "Save image crop"
 msgstr "保存图片裁切"
 
-#: src/screens/Settings/DeerSettings.tsx:136
+#: src/screens/Settings/DeerSettings.tsx:140
 msgid "Save location"
 msgstr ""
 
@@ -7688,8 +7696,8 @@ msgstr "输入你的出生日期"
 msgid "Select your interests from the options below"
 msgstr "在下面选择你感兴趣的选项"
 
-#: src/screens/Settings/DeerSettings.tsx:384
-#: src/screens/Settings/DeerSettings.tsx:390
+#: src/screens/Settings/DeerSettings.tsx:480
+#: src/screens/Settings/DeerSettings.tsx:486
 msgid "Select your own set of trusted verifiers, and operate as a verifier"
 msgstr ""
 
@@ -7781,6 +7789,10 @@ msgstr "将应用图标更改为 {0}"
 #: src/screens/Moderation/index.tsx:333
 msgid "Set birthdate"
 msgstr "设置出生日期"
+
+#: src/screens/Settings/DeerSettings.tsx:296
+msgid "Set custom base url for share links"
+msgstr ""
 
 #: src/screens/Login/SetNewPasswordForm.tsx:106
 msgid "Set new password"
@@ -7921,6 +7933,10 @@ msgstr "分享此新手包"
 msgid "Share this starter pack and help people join your community on Bluesky."
 msgstr "分享此新手包，以帮助其他人更快融入你在 Bluesky 上的关系网。"
 
+#: src/screens/Settings/DeerSettings.tsx:554
+msgid "Share url:"
+msgstr ""
+
 #: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:162
 #: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:165
 #: src/screens/StarterPack/StarterPackScreen.tsx:611
@@ -7944,8 +7960,8 @@ msgstr "共享偏好测试器"
 msgid "Show"
 msgstr "显示"
 
-#: src/screens/Settings/DeerSettings.tsx:474
-#: src/screens/Settings/DeerSettings.tsx:480
+#: src/screens/Settings/DeerSettings.tsx:585
+#: src/screens/Settings/DeerSettings.tsx:591
 msgid "Show \"Open original post\" and \"Open post in pdsls\" buttons"
 msgstr ""
 
@@ -8183,7 +8199,7 @@ msgstr "暂停提醒"
 msgid "Software Dev"
 msgstr "程序开发"
 
-#: src/screens/Settings/DeerSettings.tsx:513
+#: src/screens/Settings/DeerSettings.tsx:624
 msgid "Some appviews will default to using an app labeler if you have no labelers, so consider subscribing to at least one labeler if you have issues."
 msgstr ""
 
@@ -8805,7 +8821,7 @@ msgstr "应用发生意外错误，请联系我们进行错误反馈！"
 msgid "There's been a rush of new users to Bluesky! We'll activate your account as soon as we can."
 msgstr "Bluesky 目前迎来了大量新用户！我们将尽快启用你的账户。"
 
-#: src/screens/Settings/DeerSettings.tsx:620
+#: src/screens/Settings/DeerSettings.tsx:731
 msgid "These settings might summon nasel demons! Restart the app after changing if anything breaks."
 msgstr ""
 
@@ -9108,7 +9124,7 @@ msgstr "你想将向谁提交这份举报？"
 msgid "Today"
 msgstr "今天"
 
-#: src/screens/Settings/DeerSettings.tsx:368
+#: src/screens/Settings/DeerSettings.tsx:464
 msgid "TODO: Fall back to constellation api to find blocked replies"
 msgstr ""
 
@@ -9183,7 +9199,7 @@ msgstr "重试"
 msgid "TV"
 msgstr "电视节目"
 
-#: src/screens/Settings/DeerSettings.tsx:533
+#: src/screens/Settings/DeerSettings.tsx:644
 msgid "Tweaks"
 msgstr ""
 
@@ -9621,7 +9637,7 @@ msgstr "你关注的用户"
 msgid "Value:"
 msgstr "值："
 
-#: src/screens/Settings/DeerSettings.tsx:379
+#: src/screens/Settings/DeerSettings.tsx:475
 msgid "Verification"
 msgstr ""
 
@@ -9888,7 +9904,7 @@ msgstr "查看完整图片"
 msgid "Views video in immersive mode"
 msgstr "进入沉浸模式观看视频"
 
-#: src/screens/Settings/DeerSettings.tsx:340
+#: src/screens/Settings/DeerSettings.tsx:436
 msgid "Visibility"
 msgstr ""
 
@@ -10149,7 +10165,7 @@ msgstr "为什么应该审核此新手包？"
 msgid "Why should this user be reviewed?"
 msgstr "为什么应该审核此用户？"
 
-#: src/screens/Settings/DeerSettings.tsx:401
+#: src/screens/Settings/DeerSettings.tsx:497
 msgid "WIP. May slow down the client or fail to find all labels. Revoke and grant trust in the meatball menu on a profile. {0} trust the following verifiers:"
 msgstr ""
 
