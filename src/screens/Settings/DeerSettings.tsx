@@ -26,6 +26,10 @@ import {
   useSetConstellationInstance,
 } from '#/state/preferences/constellation-instance'
 import {
+  useCustomShareLink,
+  useSetCustomShareLink,
+} from '#/state/preferences/custom-share-link'
+import {
   useDeerVerificationEnabled,
   useDeerVerificationTrusted,
   useSetDeerVerificationEnabled,
@@ -65,7 +69,7 @@ import {
 } from '#/state/preferences/show-link-in-handle.tsx'
 import {useProfilesQuery} from '#/state/queries/profile'
 import * as SettingsList from '#/screens/Settings/components/SettingsList'
-import {atoms as a, useBreakpoints} from '#/alf'
+import {atoms as a, useBreakpoints, useTheme} from '#/alf'
 import {Admonition} from '#/components/Admonition'
 import {Button, ButtonText} from '#/components/Button'
 import * as Dialog from '#/components/Dialog'
@@ -225,6 +229,94 @@ function ConstellationInstanceDialog({
   )
 }
 
+function CustomShareLinkDialog({
+  control,
+}: {
+  control: Dialog.DialogControlProps
+}) {
+  const pal = usePalette('default')
+  const {_} = useLingui()
+
+  const customShareLink = useCustomShareLink()
+  const setCustomShareLink = useSetCustomShareLink()
+  const [url, setUrl] = useState(customShareLink)
+
+  const shouldDisable = () => {
+    try {
+      return !new URL(url).hostname.includes('.')
+    } catch (e) {
+      try {
+        return !new URL('https://' + url).hostname.includes('.')
+      } catch (e) {
+        return true
+      }
+    }
+  }
+
+  const parseUrl = () => {
+    try {
+      return new URL(url).toString()
+    } catch (e) {
+      try {
+        return new URL('https://' + url).toString()
+      } catch (e) {
+        return null
+      }
+    }
+  }
+
+  const submit = () => {
+    if (shouldDisable()) return // Prevents errors on enter key pressed
+    setCustomShareLink(parseUrl())
+    control.close()
+  }
+
+  return (
+    <Dialog.Outer control={control} nativeOptions={{preventExpansion: true}}>
+      <Dialog.Handle />
+      <Dialog.ScrollableInner label={_(msg`Custom share link URL`)}>
+        <View style={[a.gap_sm, a.pb_lg]}>
+          <Text style={[a.text_2xl, a.font_bold]}>
+            <Trans>Custom share link URL</Trans>
+          </Text>
+        </View>
+
+        <View style={a.gap_lg}>
+          <Dialog.Input
+            label="Text input field"
+            autoFocus
+            style={[styles.textInput, pal.border, pal.text]}
+            defaultValue={url}
+            onChangeText={value => {
+              setUrl(value)
+            }}
+            placeholder={persisted.defaults.customShareLink}
+            placeholderTextColor={pal.colors.textLight}
+            onSubmitEditing={submit}
+            accessibilityHint={_(msg`Set custom base url for share links`)}
+          />
+
+          <View style={isWeb && [a.flex_row, a.justify_end]}>
+            <Button
+              label={_(msg`Save`)}
+              size="large"
+              onPress={submit}
+              disabled={shouldDisable()}
+              variant="solid"
+              color="primary">
+              <ButtonText>
+                <Trans>Save</Trans>
+              </ButtonText>
+            </Button>
+          </View>
+        </View>
+
+        <Dialog.Close />
+      </Dialog.ScrollableInner>
+    </Dialog.Outer>
+  )
+}
+
 const TrustedVerifiers = (): React.ReactNode => {
   const trusted = useDeerVerificationTrusted()
   const moderationOpts = useModerationOpts()
@@ -253,6 +345,7 @@ const TrustedVerifiers = (): React.ReactNode => {
 
 export function DeerSettingsScreen({}: Props) {
   const {_} = useLingui()
+  const t = useTheme()
 
   const goLinksEnabled = useGoLinksEnabled()
   const setGoLinksEnabled = useSetGoLinksEnabled()
@@ -283,6 +376,9 @@ export function DeerSettingsScreen({}: Props) {
 
   const constellationInstance = useConstellationInstance()
   const setConstellationInstanceControl = Dialog.useDialogControl()
+
+  const customShareLink = useCustomShareLink()
+  const setCustomShareLink = Dialog.useDialogControl()
 
   const deerVerificationEnabled = useDeerVerificationEnabled()
   const setDeerVerificationEnabled = useSetDeerVerificationEnabled()
@@ -450,6 +546,21 @@ export function DeerSettingsScreen({}: Props) {
                 and currency behavior.
               </Trans>
             </Admonition>
+          </SettingsList.Item>
+
+          <SettingsList.Item>
+            <SettingsList.ItemIcon icon={ChainLinkIcon} />
+            <SettingsList.ItemText>
+              <Trans>{`Share url:`} </Trans>
+              {` `}
+              <Text style={[a.text_md, {color: t.palette.contrast_500}]}>
+                {customShareLink}
+              </Text>
+            </SettingsList.ItemText>
+            <SettingsList.BadgeButton
+              label={_(msg`Change`)}
+              onPress={() => setCustomShareLink.open()}
+            />
           </SettingsList.Item>
 
           <SettingsList.Group contentContainerStyle={[a.gap_sm]}>
@@ -627,6 +738,7 @@ export function DeerSettingsScreen({}: Props) {
       </Layout.Content>
       <GeolocationSettingsDialog control={setLocationControl} />
       <ConstellationInstanceDialog control={setConstellationInstanceControl} />
+      <CustomShareLinkDialog control={setCustomShareLink} />
     </Layout.Screen>
   )
 }

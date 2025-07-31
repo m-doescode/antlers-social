@@ -6,6 +6,7 @@ import {BSKY_SERVICE} from '#/lib/constants'
 import {isInvalidHandle} from '#/lib/strings/handles'
 import {startUriToStarterPackUri} from '#/lib/strings/starter-pack'
 import {logger} from '#/logger'
+import {getCustomShareLink} from '#/state/preferences/custom-share-link'
 
 export const BSKY_APP_HOST = 'https://deer.social'
 const BSKY_TRUSTED_HOSTS = [
@@ -80,7 +81,7 @@ export function toShortUrl(url: string): string {
 
 export function toShareUrl(url: string): string {
   if (!url.startsWith('https')) {
-    const urlp = new URL('https://deer.social')
+    const urlp = new URL(getCustomShareLink() ?? 'https://deer.social')
     urlp.pathname = url
     url = urlp.toString()
   }
