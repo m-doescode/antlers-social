@@ -53,9 +53,6 @@ export function ProfileHeaderHandle({
             : [a.text_md, a.leading_snug, t.atoms.text_contrast_medium],
           web({wordBreak: 'break-all'}),
         ]}>
-        {invalidHandle
-          ? _(msg`⚠Invalid Handle`)
-          : sanitizeHandle(profile.handle, '@')}
         {invalidHandle ? (
           _(msg`⚠Invalid Handle`)
         ) : showProfileInHandle && !isBskySocialHandle ? (
