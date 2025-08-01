@@ -1,0 +1,31 @@
+diff --git a/node_modules/react-native-uitextview/src/Text.tsx b/node_modules/react-native-uitextview/src/Text.tsx
+index 2b446fa..b2578e5 100644
+--- a/node_modules/react-native-uitextview/src/Text.tsx
++++ b/node_modules/react-native-uitextview/src/Text.tsx
+@@ -1,4 +1,4 @@
+-import React from 'react'
++import React, { useEffect, useRef, useState } from 'react'
+ import {
+   Platform,
+   requireNativeComponent,
+@@ -140,8 +140,19 @@ function UITextViewInner(
+ }
+ 
+ export function UITextView(props: TextProps & {uiTextView?: boolean}) {
++  // HACK: for some unholy reason selectable={true} is broken in the react native version on android
++  // BUT... for some reason setting it to false and back to true works so.... that's exactly what we do!
++  const [selectable, setSelectable] = useState(false)
++  const {selectable: shouldSelectable, ...rest} = props
++
++  useEffect(() => {
++    setTimeout(() => {
++      setSelectable(shouldSelectable ?? false)
++    }, 0)
++  }, [])
++
+   if (Platform.OS !== 'ios') {
+-    return <RNText {...props} />
++    return <RNText selectable={selectable} {...rest} />
+   }
+   return <UITextViewInner {...props} />
+ }
