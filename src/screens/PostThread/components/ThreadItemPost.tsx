@@ -9,7 +9,7 @@ import {
 import {Trans} from '@lingui/macro'
 
 import {useActorStatus} from '#/lib/actor-status'
-import {parseMastodonRichText} from '#/lib/bridgy-utils'
+import {parseBridgedPostText} from '#/lib/bridgy-utils'
 import {MAX_POST_LINES} from '#/lib/constants'
 import {useOpenComposer} from '#/lib/hooks/useOpenComposer'
 import {makeProfileLink} from '#/lib/routes/links'
@@ -194,16 +194,14 @@ const ThreadItemPostInner = memo(function ThreadItemPostInner({
   const record = item.value.post.record
   const moderation = item.moderation
   const renderFullMastodonPostText = useRenderFullMastodonPostText()
-  const isBridgyPost = renderFullMastodonPostText && !!record.bridgyOriginalText
   const richText = useMemo(
     () =>
-      isBridgyPost
-        ? parseMastodonRichText(record.bridgyOriginalText as string)
-        : new RichTextAPI({
-            text: record.text,
-            facets: record.facets,
-          }),
-    [record, isBridgyPost],
+      (renderFullMastodonPostText && parseBridgedPostText(record)) ||
+      new RichTextAPI({
+        text: record.text,
+        facets: record.facets,
+      }),
+    [record, renderFullMastodonPostText],
   )
   const [limitLines, setLimitLines] = useState(
     () => countLines(richText?.text) >= MAX_POST_LINES,

@@ -11,7 +11,7 @@ import {msg, Plural, Trans} from '@lingui/macro'
 import {useLingui} from '@lingui/react'
 
 import {useActorStatus} from '#/lib/actor-status'
-import {parseMastodonRichText} from '#/lib/bridgy-utils'
+import {parseBridgedPostText} from '#/lib/bridgy-utils'
 import {useOpenComposer} from '#/lib/hooks/useOpenComposer'
 import {useOpenLink} from '#/lib/hooks/useOpenLink'
 import {makeProfileLink} from '#/lib/routes/links'
@@ -188,16 +188,14 @@ const ThreadItemAnchorInner = memo(function ThreadItemAnchorInner({
   const authorShadow = useProfileShadow(post.author)
   const {isActive: live} = useActorStatus(post.author)
   const renderFullMastodonPostText = useRenderFullMastodonPostText()
-  const isBridgyPost = renderFullMastodonPostText && record.bridgyOriginalText
   const richText = useMemo(
     () =>
-      isBridgyPost
-        ? parseMastodonRichText(record.bridgyOriginalText as string)
-        : new RichTextAPI({
-            text: record.text,
-            facets: record.facets,
-          }),
-    [record, isBridgyPost],
+      (renderFullMastodonPostText && parseBridgedPostText(record)) ||
+      new RichTextAPI({
+        text: record.text,
+        facets: record.facets,
+      }),
+    [record, renderFullMastodonPostText],
   )
 
   const threadRootUri = record.reply?.root?.uri || post.uri

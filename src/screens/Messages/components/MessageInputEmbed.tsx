@@ -11,7 +11,7 @@ import {msg} from '@lingui/macro'
 import {useLingui} from '@lingui/react'
 import {type RouteProp, useNavigation, useRoute} from '@react-navigation/native'
 
-import {parseMastodonRichText} from '#/lib/bridgy-utils'
+import {parseBridgedPostText} from '#/lib/bridgy-utils'
 import {makeProfileLink} from '#/lib/routes/links'
 import {
   type CommonNavigatorParams,
@@ -125,15 +125,13 @@ export function MessageInputEmbed({
         AppBskyFeedPost.isRecord,
       )
     ) {
-      const isBridgyPost =
-        renderFullMastodonPostText && post.record.bridgyOriginalText
       return {
-        rt: isBridgyPost
-          ? parseMastodonRichText(post.record.bridgyOriginalText as string)
-          : new RichTextAPI({
-              text: post.record.text,
-              facets: post.record.facets,
-            }),
+        rt:
+          (renderFullMastodonPostText && parseBridgedPostText(post.record)) ||
+          new RichTextAPI({
+            text: post.record.text,
+            facets: post.record.facets,
+          }),
         record: post.record,
       }
     }
