@@ -34,10 +34,16 @@ function emitFacet(node: any, startText: string, facets: Facet[]): string {
       if (startText != '' && !startText.endsWith('\n')) text = '\n\n'
       text += emitFacetList(node.childNodes, startText + text, facets)
       return text + '\n\n'
+    } else if (node.tagName == 'blockquote') {
+      // (via bridgy) wafrn asks
+      // Likely a temporary solution, in future add an actual blockquote facet
+      return (
+        '   >> ' + emitFacetList(node.childNodes, '   >> ' + startText, facets)
+      )
     } else {
       return emitFacetList(node.childNodes, startText, facets)
     }
-  } else if (node.nodeType == NODE_TYPE_TEXT) {
+  } else if (node.nodeType == NODE_TYPE_TEXT && node.nodeValue != ' ') {
     return node.nodeValue
   } else {
     return ''
@@ -76,4 +82,26 @@ export function parseMastodonRichText(sourceText: string): RichText {
     text: strippedText,
     facets: facets,
   })
+}
+
+export function isBridgedPost(record: {[_ in string]: unknown}) {
+  return (
+    /* bridgy: */ !!record.bridgyOriginalUrl ||
+    /* wafrn: */ !!record.fediverseId
+  )
+}
+
+export function getOriginalPostUrl(record: {[_ in string]: unknown}) {
+  return /* bridgy: */ (record.bridgyOriginalUrl ||
+    /* wafrn: */ record.fediverseId) as string | undefined
+}
+
+export function parseBridgedPostText(record: {[_ in string]: unknown}) {
+  if (record.bridgyOriginalUrl)
+    // bridgy
+    return parseMastodonRichText(record.bridgyOriginalText as string)
+
+  // Wafrn's fullText field is a stripped-down raw text
+  // else if (record.fullText) // wafrn
+  //   return record.fullText
 }

@@ -5,6 +5,7 @@ import {msg, Trans} from '@lingui/macro'
 import {useLingui} from '@lingui/react'
 import {useNavigation} from '@react-navigation/native'
 
+import {getOriginalPostUrl, isBridgedPost} from '#/lib/bridgy-utils'
 import {useOpenLink} from '#/lib/hooks/useOpenLink'
 import {makeProfileLink} from '#/lib/routes/links'
 import {type NavigationProp} from '#/lib/routes/types'
@@ -94,10 +95,7 @@ let ShareMenuItems = ({
   }
 
   const showExternalShareButtons = useShowExternalShareButtons()
-  const isBridgedPost =
-    !!post.record.bridgyOriginalUrl || !!post.record.fediverseId
-  const originalPostUrl = (post.record.bridgyOriginalUrl ||
-    post.record.fediverseId) as string | undefined
+  const originalPostUrl = getOriginalPostUrl(post.record)
 
   const onOpenOriginalPost = () => {
     originalPostUrl && openLink(originalPostUrl, true)
@@ -132,7 +130,7 @@ let ShareMenuItems = ({
 
         {showExternalShareButtons && (
           <Menu.Group>
-            {isBridgedPost && (
+            {isBridgedPost(post.record) && (
               <Menu.Item
                 testID="postDropdownOpenOriginalPost"
                 label={_(msg`Open original post`)}
