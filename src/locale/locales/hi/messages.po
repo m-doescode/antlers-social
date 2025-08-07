@@ -100,8 +100,8 @@ msgstr "{0, plural, one {फ़ॉलोअर} other {फ़ॉलोअर}}"
 msgid "{0, plural, one {following} other {following}}"
 msgstr "{0, plural, one {फ़ॉलोइंग} other {फ़ॉलोइंग}}"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:474
-#: src/view/com/post-thread/PostThreadItem.tsx:547
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:472
+#: src/view/com/post-thread/PostThreadItem.tsx:545
 msgid "{0, plural, one {like} other {likes}}"
 msgstr "{0, plural, other {पसंद}}"
 
@@ -109,13 +109,13 @@ msgstr "{0, plural, other {पसंद}}"
 msgid "{0, plural, one {post} other {posts}}"
 msgstr "{0, plural, other {पोस्ट}}"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:458
-#: src/view/com/post-thread/PostThreadItem.tsx:531
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:456
+#: src/view/com/post-thread/PostThreadItem.tsx:529
 msgid "{0, plural, one {quote} other {quotes}}"
 msgstr "{0, plural, other {क्वोट}}"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:440
-#: src/view/com/post-thread/PostThreadItem.tsx:513
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:438
+#: src/view/com/post-thread/PostThreadItem.tsx:511
 #: src/view/com/posts/PostFeedItemCarousel.tsx:63
 msgid "{0, plural, one {repost} other {reposts}}"
 msgstr "{0, plural, other {रीपोस्ट}}"
@@ -490,7 +490,6 @@ msgid "<0>You</0> and<1> </1><2>{0} </2>are included in your starter pack"
 msgstr "<0>आप</0> और<1> </1><2>{0} </2>आपके स्टार्टर पैक में शामिल हैं"
 
 #: src/screens/Profile/Header/Handle.tsx:57
-#: src/screens/Profile/Header/Handle.tsx:60
 msgid "⚠Invalid Handle"
 msgstr "⚠ अमान्य हैंडल"
 
@@ -1119,15 +1118,15 @@ msgstr "डिफ़ॉल्‍ट अनुशंसित फ़ीड लगा
 msgid "Apply Pull Request"
 msgstr ""
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:643
-#: src/view/com/post-thread/PostThreadItem.tsx:961
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:641
+#: src/view/com/post-thread/PostThreadItem.tsx:959
 msgid "Archived from {0}"
 msgstr "{0} से पुरालेखित"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:612
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:651
-#: src/view/com/post-thread/PostThreadItem.tsx:930
-#: src/view/com/post-thread/PostThreadItem.tsx:969
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:610
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:649
+#: src/view/com/post-thread/PostThreadItem.tsx:928
+#: src/view/com/post-thread/PostThreadItem.tsx:967
 msgid "Archived post"
 msgstr "पुरालेखित पोस्ट"
 
@@ -1370,8 +1369,8 @@ msgstr "अवरुद्ध करने पर भी आपके खात�
 msgid "Bluesky"
 msgstr "Bluesky"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:668
-#: src/view/com/post-thread/PostThreadItem.tsx:986
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:666
+#: src/view/com/post-thread/PostThreadItem.tsx:984
 msgid "Bluesky cannot confirm the authenticity of the claimed date."
 msgstr "Bluesky दावा किए गए तिथि के प्रामाणिकता की पुष्टि नहीं कर सकता।"
 
@@ -2158,7 +2157,7 @@ msgstr "बिल्ड संस्कारण क्लिपबोर्ड 
 #: src/components/dms/MessageContextMenu.tsx:56
 #: src/components/PostControls/DiscoverDebug.tsx:42
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:241
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:77
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:78
 #: src/lib/sharing.ts:25
 #: src/lib/sharing.ts:41
 #: src/view/com/modals/InviteCodes.tsx:153
@@ -2187,8 +2186,8 @@ msgstr "ऐप पासवर्ड कॉपी करें"
 msgid "Copy at:// URI"
 msgstr ""
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:196
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:199
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:194
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:197
 msgid "Copy author DID"
 msgstr ""
 
@@ -2220,10 +2219,10 @@ msgstr "लिंक कॉपी करें"
 msgid "Copy link to list"
 msgstr "सूची पर लिंक कॉपी करें"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:172
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:175
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:106
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:109
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:170
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:173
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:104
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:107
 msgid "Copy link to post"
 msgstr "पोस्ट की लिंक कॉपी करें"
 
@@ -2241,8 +2240,8 @@ msgstr ""
 msgid "Copy message text"
 msgstr "संदेश पाठ कॉपी करें"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:187
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:190
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:185
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:188
 msgid "Copy post at:// URI"
 msgstr ""
 
@@ -3045,8 +3044,8 @@ msgstr "HTML कोड एंबेड करें"
 
 #: src/components/dialogs/Embed.tsx:104
 #: src/components/dialogs/Embed.tsx:108
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:162
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:167
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:160
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:165
 msgid "Embed post"
 msgstr "पोस्ट एंबेड करें"
 
@@ -3868,7 +3867,7 @@ msgstr ""
 msgid "From @{sanitizedAuthor}"
 msgstr "@{sanitizedAuthor} से"
 
-#: src/view/com/posts/PostFeedItem.tsx:340
+#: src/view/com/posts/PostFeedItem.tsx:338
 msgctxt "from-feed"
 msgid "From <0/>"
 msgstr "<0/> से"
@@ -4491,7 +4490,7 @@ msgstr "अमान्य 2FA पुष्टिकरण कोड"
 msgid "Invalid handle. Please try a different one."
 msgstr "अमान्य हैंडल। कृपया कुछ और चुनें।"
 
-#: src/view/com/post-thread/PostThreadItem.tsx:357
+#: src/view/com/post-thread/PostThreadItem.tsx:355
 msgid "Invalid or unsupported post record"
 msgstr "अमान्य या असमर्थित पोस्ट रिकॉर्ड"
 
@@ -4829,8 +4828,8 @@ msgstr ""
 msgid "Likes of your reposts notifications"
 msgstr ""
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:467
-#: src/view/com/post-thread/PostThreadItem.tsx:249
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:465
+#: src/view/com/post-thread/PostThreadItem.tsx:247
 msgid "Likes on this post"
 msgstr "इस पोस्ट पर पसंद"
 
@@ -5183,7 +5182,7 @@ msgstr "मॉडरेशन के औज़ार"
 msgid "Moderator has chosen to set a general warning on the content."
 msgstr "मॉडरेटर ने सामग्री पर सामान्य चेतावनी दी है।"
 
-#: src/view/com/post-thread/PostThreadItem.tsx:737
+#: src/view/com/post-thread/PostThreadItem.tsx:735
 msgid "More"
 msgstr "अधिक"
 
@@ -5690,7 +5689,7 @@ msgstr "साझा करने के बारे में"
 msgid "Note: Bluesky is an open and public network. This setting only limits the visibility of your content on the Bluesky app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
 msgstr "टिप्पणी: Bluesky एक खुला और सार्वजनिक नेटवर्क है। यह सेटिंग आपके सामग्री की दृश्यता केवल Bluesky ऐप और वेबसाइट पर सीमित करता है, और अन्य ऐप इस सेटिंग की अवमानना कर सकते हैं। अन्य ऐप और वेबसाइट पर आपके सामग्री को लॉग आउट उपयोगकर्ताओं को दिखा सकते हैं।"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:177
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:175
 msgid "Note: This post is only visible to logged-in users."
 msgstr ""
 
@@ -5784,8 +5783,8 @@ msgid "OK"
 msgstr "ठीक"
 
 #: src/screens/Login/PasswordUpdatedForm.tsx:37
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:673
-#: src/view/com/post-thread/PostThreadItem.tsx:991
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:671
+#: src/view/com/post-thread/PostThreadItem.tsx:989
 msgid "Okay"
 msgstr "ठीक है"
 
@@ -5919,10 +5918,10 @@ msgstr "मॉडरेशन डीबग पृष्ठ खोलें"
 msgid "Open muted words and tags settings"
 msgstr "म्यूट किए गए शब्द और टैग सेटिंग खोलें"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:138
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:141
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:123
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:126
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:136
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:139
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:121
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:124
 msgid "Open original post"
 msgstr ""
 
@@ -5930,11 +5929,11 @@ msgstr ""
 msgid "Open pack"
 msgstr ""
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:149
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:152
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:135
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:138
-msgid "Open post in pdsls"
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:147
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:150
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:133
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:136
+msgid "Open post in PDSls"
 msgstr ""
 
 #: src/components/PostControls/PostMenu/index.tsx:62
@@ -6219,7 +6218,7 @@ msgstr "होम में पिन करें"
 msgid "Pin to your profile"
 msgstr "अपने प्रोफ़ाइल में पिन करें"
 
-#: src/view/com/posts/PostFeedItem.tsx:421
+#: src/view/com/posts/PostFeedItem.tsx:419
 msgid "Pinned"
 msgstr "पिन किया गया"
 
@@ -6436,7 +6435,7 @@ msgstr "सभी पोस्ट करें"
 msgid "Post blocked"
 msgstr ""
 
-#: src/view/com/post-thread/PostThreadItem.tsx:241
+#: src/view/com/post-thread/PostThreadItem.tsx:239
 msgid "Post by {0}"
 msgstr "{0} द्वारा पोस्ट"
 
@@ -6723,8 +6722,8 @@ msgstr "क्वोट सेटिंग"
 msgid "Quotes"
 msgstr "क्वोट"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:451
-#: src/view/com/post-thread/PostThreadItem.tsx:275
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:449
+#: src/view/com/post-thread/PostThreadItem.tsx:273
 msgid "Quotes of this post"
 msgstr "इस पोस्ट के क्वोट"
 
@@ -6877,7 +6876,7 @@ msgstr "अवतार हटाएँ"
 msgid "Remove Banner"
 msgstr "बैनर हटाएँ"
 
-#: src/screens/Messages/components/MessageInputEmbed.tsx:219
+#: src/screens/Messages/components/MessageInputEmbed.tsx:217
 msgid "Remove embed"
 msgstr "एंबेड हटाएँ"
 
@@ -7054,24 +7053,24 @@ msgstr "जवाब सेटिंग थ्रेड का लेखक च�
 msgid "Reply sorting"
 msgstr "जवाब क्रम"
 
-#: src/view/com/post/Post.tsx:210
-#: src/view/com/posts/PostFeedItem.tsx:612
+#: src/view/com/post/Post.tsx:208
+#: src/view/com/posts/PostFeedItem.tsx:610
 msgctxt "description"
 msgid "Reply to <0><1/></0>"
 msgstr "<0><1/></0> को जवाब"
 
-#: src/view/com/posts/PostFeedItem.tsx:603
+#: src/view/com/posts/PostFeedItem.tsx:601
 msgctxt "description"
 msgid "Reply to a blocked post"
 msgstr "अवरुद्ध पोस्ट को जवाब"
 
-#: src/view/com/posts/PostFeedItem.tsx:605
+#: src/view/com/posts/PostFeedItem.tsx:603
 msgctxt "description"
 msgid "Reply to a post"
 msgstr "पोस्ट को जवाब"
 
-#: src/view/com/post/Post.tsx:208
-#: src/view/com/posts/PostFeedItem.tsx:609
+#: src/view/com/post/Post.tsx:206
+#: src/view/com/posts/PostFeedItem.tsx:607
 msgctxt "description"
 msgid "Reply to you"
 msgstr "आपको जवाब"
@@ -7201,16 +7200,16 @@ msgstr "रीपोस्ट करें या पोस्ट क्वो�
 msgid "Reposted By"
 msgstr "इन्होनें रीपोस्ट किया"
 
-#: src/view/com/posts/PostFeedItem.tsx:361
+#: src/view/com/posts/PostFeedItem.tsx:359
 msgid "Reposted by {0}"
 msgstr "{0} ने रीपोस्ट किया"
 
-#: src/view/com/posts/PostFeedItem.tsx:380
+#: src/view/com/posts/PostFeedItem.tsx:378
 msgid "Reposted by <0><1/></0>"
 msgstr "<0><1/></0> ने रीपोस्ट किया"
 
-#: src/view/com/posts/PostFeedItem.tsx:359
-#: src/view/com/posts/PostFeedItem.tsx:378
+#: src/view/com/posts/PostFeedItem.tsx:357
+#: src/view/com/posts/PostFeedItem.tsx:376
 msgid "Reposted by you"
 msgstr "आपने रीपोस्ट किया"
 
@@ -7220,8 +7219,8 @@ msgstr "आपने रीपोस्ट किया"
 msgid "Reposts"
 msgstr ""
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:433
-#: src/view/com/post-thread/PostThreadItem.tsx:254
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:431
+#: src/view/com/post-thread/PostThreadItem.tsx:252
 msgid "Reposts of this post"
 msgstr "इस पोस्ट के रीपोस्ट"
 
@@ -7767,10 +7766,10 @@ msgstr ""
 msgid "Send verification email"
 msgstr "सत्यापन ईमेल भेजें"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:120
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:126
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:147
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:153
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:118
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:124
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:145
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:151
 msgid "Send via direct message"
 msgstr "सीधा संदेश द्वारा भेजें"
 
@@ -7895,8 +7894,8 @@ msgstr "मज़ेदार बात साझा करें!"
 msgid "Share anyway"
 msgstr "फिर भी साझा करें"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:204
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:207
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:202
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:205
 msgid "Share author DID"
 msgstr ""
 
@@ -7911,8 +7910,8 @@ msgstr "लिंक साझा करें"
 msgid "Share link dialog"
 msgstr "लिंग डायलॉग साझा करें"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:195
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:198
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:193
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:196
 msgid "Share post at:// URI"
 msgstr ""
 
@@ -7937,8 +7936,8 @@ msgstr "इस स्टार्टर पैक को साझा करे�
 msgid "Share url:"
 msgstr ""
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:162
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:165
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:160
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:163
 #: src/screens/StarterPack/StarterPackScreen.tsx:611
 #: src/screens/StarterPack/StarterPackScreen.tsx:619
 #: src/view/com/profile/ProfileMenu.tsx:252
@@ -7962,7 +7961,7 @@ msgstr "दिखाएँ"
 
 #: src/screens/Settings/DeerSettings.tsx:585
 #: src/screens/Settings/DeerSettings.tsx:591
-msgid "Show \"Open original post\" and \"Open post in pdsls\" buttons"
+msgid "Show \"Open original post\" and \"Open post in PDSls\" buttons"
 msgstr ""
 
 #: src/components/Post/Embed/ExternalEmbed/Gif.tsx:178
@@ -8071,8 +8070,8 @@ msgstr "चेतावनी दिखाएँ"
 msgid "Show warning and filter from feeds"
 msgstr "चेतावनी दिखाएँ और फ़ीड से फ़िल्टर करें"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:614
-#: src/view/com/post-thread/PostThreadItem.tsx:932
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:612
+#: src/view/com/post-thread/PostThreadItem.tsx:930
 msgid "Shows information about when this post was created"
 msgstr ""
 
@@ -8973,8 +8972,8 @@ msgstr "यह सूची खाली है।"
 msgid "This moderation service is unavailable. See below for more details. If this issue persists, contact us."
 msgstr "यह मॉडरेशन सेवा अनुपलब्ध है। अधिक जानकारी के लिए नीचे देखें। यदि यहा समस्या बनी रहती है, हमसे संपर्क करें।"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:654
-#: src/view/com/post-thread/PostThreadItem.tsx:972
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:652
+#: src/view/com/post-thread/PostThreadItem.tsx:970
 msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Bluesky on <1>{1}</1>."
 msgstr "यह पोस्ट <0>{0}</0> को बनने का दावा करता है, पर इसे Bluesky पर सबसे पहले <1>{1}</1> को देखा गया।"
 
@@ -8982,11 +8981,11 @@ msgstr "यह पोस्ट <0>{0}</0> को बनने का दाव�
 msgid "This post has an unknown type of threadgate on it. Your app may be out of date."
 msgstr ""
 
-#: src/view/com/post-thread/PostThreadItem.tsx:177
+#: src/view/com/post-thread/PostThreadItem.tsx:175
 msgid "This post has been deleted."
 msgstr "इस पोस्ट को मिटा दिया गया है।"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:185
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:183
 msgid "This post is only visible to logged-in users."
 msgstr ""
 
@@ -9161,10 +9160,10 @@ msgstr "विषय"
 #: src/components/dms/MessageContextMenu.tsx:144
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:522
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:524
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:576
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:579
-#: src/view/com/post-thread/PostThreadItem.tsx:894
-#: src/view/com/post-thread/PostThreadItem.tsx:897
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:574
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:577
+#: src/view/com/post-thread/PostThreadItem.tsx:892
+#: src/view/com/post-thread/PostThreadItem.tsx:895
 msgid "Translate"
 msgstr "अनुवाद करें"
 

@@ -100,8 +100,8 @@ msgstr "{0, plural, other {팔로워}}"
 msgid "{0, plural, one {following} other {following}}"
 msgstr "{0, plural, other {팔로우 중}}"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:474
-#: src/view/com/post-thread/PostThreadItem.tsx:547
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:472
+#: src/view/com/post-thread/PostThreadItem.tsx:545
 msgid "{0, plural, one {like} other {likes}}"
 msgstr "{0, plural, other {좋아요}}"
 
@@ -109,13 +109,13 @@ msgstr "{0, plural, other {좋아요}}"
 msgid "{0, plural, one {post} other {posts}}"
 msgstr "{0, plural, other {게시물}}"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:458
-#: src/view/com/post-thread/PostThreadItem.tsx:531
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:456
+#: src/view/com/post-thread/PostThreadItem.tsx:529
 msgid "{0, plural, one {quote} other {quotes}}"
 msgstr "{0, plural, other {인용}}"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:440
-#: src/view/com/post-thread/PostThreadItem.tsx:513
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:438
+#: src/view/com/post-thread/PostThreadItem.tsx:511
 #: src/view/com/posts/PostFeedItemCarousel.tsx:63
 msgid "{0, plural, one {repost} other {reposts}}"
 msgstr "{0, plural, other {재게시}}"
@@ -490,7 +490,6 @@ msgid "<0>You</0> and<1> </1><2>{0} </2>are included in your starter pack"
 msgstr "<0>나</0>와<1> </1><2>{0} </2>님이 스타터 팩에 포함됩니다"
 
 #: src/screens/Profile/Header/Handle.tsx:57
-#: src/screens/Profile/Header/Handle.tsx:60
 msgid "⚠Invalid Handle"
 msgstr "⚠잘못된 핸들"
 
@@ -1119,15 +1118,15 @@ msgstr "기본 추천 피드 적용하기"
 msgid "Apply Pull Request"
 msgstr ""
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:643
-#: src/view/com/post-thread/PostThreadItem.tsx:961
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:641
+#: src/view/com/post-thread/PostThreadItem.tsx:959
 msgid "Archived from {0}"
 msgstr "{0}에 보관됨"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:612
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:651
-#: src/view/com/post-thread/PostThreadItem.tsx:930
-#: src/view/com/post-thread/PostThreadItem.tsx:969
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:610
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:649
+#: src/view/com/post-thread/PostThreadItem.tsx:928
+#: src/view/com/post-thread/PostThreadItem.tsx:967
 msgid "Archived post"
 msgstr "보관된 게시물"
 
@@ -1370,8 +1369,8 @@ msgstr "차단하더라도 내 계정에 라벨이 붙는 것은 막지 못하�
 msgid "Bluesky"
 msgstr "Bluesky"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:668
-#: src/view/com/post-thread/PostThreadItem.tsx:986
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:666
+#: src/view/com/post-thread/PostThreadItem.tsx:984
 msgid "Bluesky cannot confirm the authenticity of the claimed date."
 msgstr "Bluesky는 해당 날짜의 진위를 확인할 수 없습니다."
 
@@ -2158,7 +2157,7 @@ msgstr "빌드 버전을 클립보드에 복사했습니다"
 #: src/components/dms/MessageContextMenu.tsx:56
 #: src/components/PostControls/DiscoverDebug.tsx:42
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:241
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:77
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:78
 #: src/lib/sharing.ts:25
 #: src/lib/sharing.ts:41
 #: src/view/com/modals/InviteCodes.tsx:153
@@ -2187,8 +2186,8 @@ msgstr "앱 비밀번호 복사"
 msgid "Copy at:// URI"
 msgstr "at:// URI 복사"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:196
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:199
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:194
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:197
 msgid "Copy author DID"
 msgstr "작성자 DID 복사"
 
@@ -2220,10 +2219,10 @@ msgstr "링크 복사"
 msgid "Copy link to list"
 msgstr "리스트 링크 복사"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:172
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:175
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:106
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:109
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:170
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:173
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:104
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:107
 msgid "Copy link to post"
 msgstr "게시물 링크 복사"
 
@@ -2241,8 +2240,8 @@ msgstr "스타터 팩 링크 복사"
 msgid "Copy message text"
 msgstr "메시지 텍스트 복사"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:187
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:190
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:185
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:188
 msgid "Copy post at:// URI"
 msgstr "게시물 at:// URI 복사"
 
@@ -3045,8 +3044,8 @@ msgstr "임베드 HTML 코드"
 
 #: src/components/dialogs/Embed.tsx:104
 #: src/components/dialogs/Embed.tsx:108
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:162
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:167
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:160
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:165
 msgid "Embed post"
 msgstr "게시물 임베드"
 
@@ -3868,7 +3867,7 @@ msgstr "수신 대상"
 msgid "From @{sanitizedAuthor}"
 msgstr "@{sanitizedAuthor} 님의 태그"
 
-#: src/view/com/posts/PostFeedItem.tsx:340
+#: src/view/com/posts/PostFeedItem.tsx:338
 msgctxt "from-feed"
 msgid "From <0/>"
 msgstr "<0/>에서"
@@ -4491,7 +4490,7 @@ msgstr "잘못된 2단계 인증 코드입니다."
 msgid "Invalid handle. Please try a different one."
 msgstr "잘못된 핸들입니다. 다른 핸들을 사용하세요."
 
-#: src/view/com/post-thread/PostThreadItem.tsx:357
+#: src/view/com/post-thread/PostThreadItem.tsx:355
 msgid "Invalid or unsupported post record"
 msgstr "유효하지 않거나 지원되지 않는 게시물 기록"
 
@@ -4829,8 +4828,8 @@ msgstr "내 재게시물의 좋아요"
 msgid "Likes of your reposts notifications"
 msgstr "내 재게시물의 좋아요 알림"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:467
-#: src/view/com/post-thread/PostThreadItem.tsx:249
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:465
+#: src/view/com/post-thread/PostThreadItem.tsx:247
 msgid "Likes on this post"
 msgstr "이 게시물을 좋아요 표시합니다"
 
@@ -5183,7 +5182,7 @@ msgstr "검토 도구"
 msgid "Moderator has chosen to set a general warning on the content."
 msgstr "검토자가 콘텐츠에 일반 경고를 설정했습니다."
 
-#: src/view/com/post-thread/PostThreadItem.tsx:737
+#: src/view/com/post-thread/PostThreadItem.tsx:735
 msgid "More"
 msgstr "더 보기"
 
@@ -5690,7 +5689,7 @@ msgstr "공유 관련 참고 사항"
 msgid "Note: Bluesky is an open and public network. This setting only limits the visibility of your content on the Bluesky app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
 msgstr "참고: Bluesky는 개방형 공개 네트워크입니다. 이 설정은 Bluesky 앱과 웹사이트에서만 내 콘텐츠가 표시되는 것을 제한하며, 다른 앱에서는 이 설정을 준수하지 않을 수 있습니다. 다른 앱과 웹사이트에서는 로그아웃한 사용자에게 내 콘텐츠가 계속 표시될 수 있습니다."
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:177
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:175
 msgid "Note: This post is only visible to logged-in users."
 msgstr "참고: 이 게시물은 로그인한 사용자만 볼 수 있습니다."
 
@@ -5784,8 +5783,8 @@ msgid "OK"
 msgstr "확인"
 
 #: src/screens/Login/PasswordUpdatedForm.tsx:37
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:673
-#: src/view/com/post-thread/PostThreadItem.tsx:991
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:671
+#: src/view/com/post-thread/PostThreadItem.tsx:989
 msgid "Okay"
 msgstr "확인"
 
@@ -5919,10 +5918,10 @@ msgstr "검토 디버그 페이지 열기"
 msgid "Open muted words and tags settings"
 msgstr "뮤트한 단어 및 태그 설정 열기"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:138
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:141
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:123
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:126
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:136
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:139
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:121
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:124
 msgid "Open original post"
 msgstr ""
 
@@ -5930,11 +5929,11 @@ msgstr ""
 msgid "Open pack"
 msgstr "팩 열기"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:149
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:152
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:135
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:138
-msgid "Open post in pdsls"
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:147
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:150
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:133
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:136
+msgid "Open post in PDSls"
 msgstr ""
 
 #: src/components/PostControls/PostMenu/index.tsx:62
@@ -6219,7 +6218,7 @@ msgstr "홈에 고정"
 msgid "Pin to your profile"
 msgstr "내 프로필에 고정"
 
-#: src/view/com/posts/PostFeedItem.tsx:421
+#: src/view/com/posts/PostFeedItem.tsx:419
 msgid "Pinned"
 msgstr "고정됨"
 
@@ -6436,7 +6435,7 @@ msgstr "모두 게시하기"
 msgid "Post blocked"
 msgstr "게시물 차단됨"
 
-#: src/view/com/post-thread/PostThreadItem.tsx:241
+#: src/view/com/post-thread/PostThreadItem.tsx:239
 msgid "Post by {0}"
 msgstr "{0} 님의 게시물"
 
@@ -6723,8 +6722,8 @@ msgstr "인용 설정"
 msgid "Quotes"
 msgstr "인용"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:451
-#: src/view/com/post-thread/PostThreadItem.tsx:275
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:449
+#: src/view/com/post-thread/PostThreadItem.tsx:273
 msgid "Quotes of this post"
 msgstr "이 게시물의 인용"
 
@@ -6877,7 +6876,7 @@ msgstr "아바타 제거"
 msgid "Remove Banner"
 msgstr "배너 제거"
 
-#: src/screens/Messages/components/MessageInputEmbed.tsx:219
+#: src/screens/Messages/components/MessageInputEmbed.tsx:217
 msgid "Remove embed"
 msgstr "임베드 제거"
 
@@ -7054,24 +7053,24 @@ msgstr "답글 설정은 스레드 작성자가 선택합니다"
 msgid "Reply sorting"
 msgstr "답글 정렬"
 
-#: src/view/com/post/Post.tsx:210
-#: src/view/com/posts/PostFeedItem.tsx:612
+#: src/view/com/post/Post.tsx:208
+#: src/view/com/posts/PostFeedItem.tsx:610
 msgctxt "description"
 msgid "Reply to <0><1/></0>"
 msgstr "<0><1/></0> 님에게 보내는 답글"
 
-#: src/view/com/posts/PostFeedItem.tsx:603
+#: src/view/com/posts/PostFeedItem.tsx:601
 msgctxt "description"
 msgid "Reply to a blocked post"
 msgstr "차단된 게시물에 보내는 답글"
 
-#: src/view/com/posts/PostFeedItem.tsx:605
+#: src/view/com/posts/PostFeedItem.tsx:603
 msgctxt "description"
 msgid "Reply to a post"
 msgstr "게시물에 보내는 답글"
 
-#: src/view/com/post/Post.tsx:208
-#: src/view/com/posts/PostFeedItem.tsx:609
+#: src/view/com/post/Post.tsx:206
+#: src/view/com/posts/PostFeedItem.tsx:607
 msgctxt "description"
 msgid "Reply to you"
 msgstr "나에게 보내는 답글"
@@ -7201,16 +7200,16 @@ msgstr "재게시 또는 게시물 인용"
 msgid "Reposted By"
 msgstr "재게시한 사용자"
 
-#: src/view/com/posts/PostFeedItem.tsx:361
+#: src/view/com/posts/PostFeedItem.tsx:359
 msgid "Reposted by {0}"
 msgstr "{0} 님이 재게시함"
 
-#: src/view/com/posts/PostFeedItem.tsx:380
+#: src/view/com/posts/PostFeedItem.tsx:378
 msgid "Reposted by <0><1/></0>"
 msgstr "<0><1/></0> 님이 재게시함"
 
-#: src/view/com/posts/PostFeedItem.tsx:359
-#: src/view/com/posts/PostFeedItem.tsx:378
+#: src/view/com/posts/PostFeedItem.tsx:357
+#: src/view/com/posts/PostFeedItem.tsx:376
 msgid "Reposted by you"
 msgstr "내가 재게시함"
 
@@ -7220,8 +7219,8 @@ msgstr "내가 재게시함"
 msgid "Reposts"
 msgstr "재게시"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:433
-#: src/view/com/post-thread/PostThreadItem.tsx:254
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:431
+#: src/view/com/post-thread/PostThreadItem.tsx:252
 msgid "Reposts of this post"
 msgstr "이 게시물의 재게시물"
 
@@ -7767,10 +7766,10 @@ msgstr "{title}에게 신고 보내기"
 msgid "Send verification email"
 msgstr "인증 이메일 보내기"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:120
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:126
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:147
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:153
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:118
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:124
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:145
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:151
 msgid "Send via direct message"
 msgstr "다이렉트 메시지로 보내기"
 
@@ -7895,8 +7894,8 @@ msgstr "재미있는 사실을 전하세요!"
 msgid "Share anyway"
 msgstr "무시하고 공유"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:204
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:207
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:202
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:205
 msgid "Share author DID"
 msgstr "작성자 DID 공유"
 
@@ -7911,8 +7910,8 @@ msgstr "링크 공유"
 msgid "Share link dialog"
 msgstr "링크 공유 대화 상자"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:195
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:198
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:193
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:196
 msgid "Share post at:// URI"
 msgstr "게시물 at:// URI 공유"
 
@@ -7937,8 +7936,8 @@ msgstr "이 스타터 팩을 공유하여 사람들이 Bluesky에서 커뮤니�
 msgid "Share url:"
 msgstr ""
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:162
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:165
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:160
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:163
 #: src/screens/StarterPack/StarterPackScreen.tsx:611
 #: src/screens/StarterPack/StarterPackScreen.tsx:619
 #: src/view/com/profile/ProfileMenu.tsx:252
@@ -7962,7 +7961,7 @@ msgstr "표시"
 
 #: src/screens/Settings/DeerSettings.tsx:585
 #: src/screens/Settings/DeerSettings.tsx:591
-msgid "Show \"Open original post\" and \"Open post in pdsls\" buttons"
+msgid "Show \"Open original post\" and \"Open post in PDSls\" buttons"
 msgstr ""
 
 #: src/components/Post/Embed/ExternalEmbed/Gif.tsx:178
@@ -8071,8 +8070,8 @@ msgstr "경고 표시"
 msgid "Show warning and filter from feeds"
 msgstr "경고 표시 및 피드에서 필터링"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:614
-#: src/view/com/post-thread/PostThreadItem.tsx:932
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:612
+#: src/view/com/post-thread/PostThreadItem.tsx:930
 msgid "Shows information about when this post was created"
 msgstr "이 게시물이 언제 작성되었는지에 대한 정보를 표시합니다"
 
@@ -8973,8 +8972,8 @@ msgstr "이 리스트는 비어 있습니다."
 msgid "This moderation service is unavailable. See below for more details. If this issue persists, contact us."
 msgstr "이 검토 서비스는 사용할 수 없습니다. 자세한 내용은 아래를 참조하세요. 이 문제가 지속되면 문의해 주세요."
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:654
-#: src/view/com/post-thread/PostThreadItem.tsx:972
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:652
+#: src/view/com/post-thread/PostThreadItem.tsx:970
 msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Bluesky on <1>{1}</1>."
 msgstr "이 게시물은 <0>{0}</0>에 작성되었다고 주장하지만 Bluesky에서는 <1>{1}</1>에 처음 확인되었습니다."
 
@@ -8982,11 +8981,11 @@ msgstr "이 게시물은 <0>{0}</0>에 작성되었다고 주장하지만 Bluesk
 msgid "This post has an unknown type of threadgate on it. Your app may be out of date."
 msgstr "이 게시물에 알 수 없는 유형의 스레드게이트가 있습니다. 앱이 오래되었을 수 있습니다."
 
-#: src/view/com/post-thread/PostThreadItem.tsx:177
+#: src/view/com/post-thread/PostThreadItem.tsx:175
 msgid "This post has been deleted."
 msgstr "이 게시물은 삭제되었습니다."
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:185
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:183
 msgid "This post is only visible to logged-in users."
 msgstr "이 게시물은 로그인한 사용자만 볼 수 있습니다."
 
@@ -9161,10 +9160,10 @@ msgstr "주제"
 #: src/components/dms/MessageContextMenu.tsx:144
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:522
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:524
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:576
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:579
-#: src/view/com/post-thread/PostThreadItem.tsx:894
-#: src/view/com/post-thread/PostThreadItem.tsx:897
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:574
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:577
+#: src/view/com/post-thread/PostThreadItem.tsx:892
+#: src/view/com/post-thread/PostThreadItem.tsx:895
 msgid "Translate"
 msgstr "번역"
 

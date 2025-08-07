@@ -100,8 +100,8 @@ msgstr "{0, plural, one {abonné·e} other {abonné·e·s}}"
 msgid "{0, plural, one {following} other {following}}"
 msgstr "{0, plural, one {abonnement} other {abonnements}}"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:474
-#: src/view/com/post-thread/PostThreadItem.tsx:547
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:472
+#: src/view/com/post-thread/PostThreadItem.tsx:545
 msgid "{0, plural, one {like} other {likes}}"
 msgstr "{0, plural, one {a aimé} other {ont aimé}}"
 
@@ -109,13 +109,13 @@ msgstr "{0, plural, one {a aimé} other {ont aimé}}"
 msgid "{0, plural, one {post} other {posts}}"
 msgstr "{0, plural, one {post} other {posts}}"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:458
-#: src/view/com/post-thread/PostThreadItem.tsx:531
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:456
+#: src/view/com/post-thread/PostThreadItem.tsx:529
 msgid "{0, plural, one {quote} other {quotes}}"
 msgstr "{0, plural, one {citation} other {citations}}"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:440
-#: src/view/com/post-thread/PostThreadItem.tsx:513
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:438
+#: src/view/com/post-thread/PostThreadItem.tsx:511
 #: src/view/com/posts/PostFeedItemCarousel.tsx:63
 msgid "{0, plural, one {repost} other {reposts}}"
 msgstr "{0, plural, one {repost} other {reposts}}"
@@ -490,7 +490,6 @@ msgid "<0>You</0> and<1> </1><2>{0} </2>are included in your starter pack"
 msgstr "<0>Vous</0> et<1> </1><2>{0} </2>faites partie de votre kit de démarrage"
 
 #: src/screens/Profile/Header/Handle.tsx:57
-#: src/screens/Profile/Header/Handle.tsx:60
 msgid "⚠Invalid Handle"
 msgstr "⚠Pseudo invalide"
 
@@ -1119,15 +1118,15 @@ msgstr "Utiliser les fils d’actu recommandés par défaut"
 msgid "Apply Pull Request"
 msgstr ""
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:643
-#: src/view/com/post-thread/PostThreadItem.tsx:961
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:641
+#: src/view/com/post-thread/PostThreadItem.tsx:959
 msgid "Archived from {0}"
 msgstr "Archive datée du {0}"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:612
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:651
-#: src/view/com/post-thread/PostThreadItem.tsx:930
-#: src/view/com/post-thread/PostThreadItem.tsx:969
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:610
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:649
+#: src/view/com/post-thread/PostThreadItem.tsx:928
+#: src/view/com/post-thread/PostThreadItem.tsx:967
 msgid "Archived post"
 msgstr "Post archivé"
 
@@ -1370,8 +1369,8 @@ msgstr "Le blocage n’empêchera pas les étiquettes d’être appliquées à v
 msgid "Bluesky"
 msgstr "Bluesky"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:668
-#: src/view/com/post-thread/PostThreadItem.tsx:986
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:666
+#: src/view/com/post-thread/PostThreadItem.tsx:984
 msgid "Bluesky cannot confirm the authenticity of the claimed date."
 msgstr "Bluesky ne peut pas confirmer l’authenticité de la date déclarée."
 
@@ -2158,7 +2157,7 @@ msgstr "Version de build copiée dans le presse-papier"
 #: src/components/dms/MessageContextMenu.tsx:56
 #: src/components/PostControls/DiscoverDebug.tsx:42
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:241
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:77
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:78
 #: src/lib/sharing.ts:25
 #: src/lib/sharing.ts:41
 #: src/view/com/modals/InviteCodes.tsx:153
@@ -2187,8 +2186,8 @@ msgstr "Copier le mot de passe d’application"
 msgid "Copy at:// URI"
 msgstr "Copier l’URI at://"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:196
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:199
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:194
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:197
 msgid "Copy author DID"
 msgstr "Copier le DID de l’auteur·ice"
 
@@ -2220,10 +2219,10 @@ msgstr "Copier le lien"
 msgid "Copy link to list"
 msgstr "Copier le lien vers la liste"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:172
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:175
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:106
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:109
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:170
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:173
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:104
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:107
 msgid "Copy link to post"
 msgstr "Copier le lien vers le post"
 
@@ -2241,8 +2240,8 @@ msgstr "Copier le lien vers le kit de démarrage"
 msgid "Copy message text"
 msgstr "Copier le texte du message"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:187
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:190
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:185
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:188
 msgid "Copy post at:// URI"
 msgstr "Copier l’URI at:// du post"
 
@@ -3045,8 +3044,8 @@ msgstr "Code HTML à intégrer"
 
 #: src/components/dialogs/Embed.tsx:104
 #: src/components/dialogs/Embed.tsx:108
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:162
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:167
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:160
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:165
 msgid "Embed post"
 msgstr "Intégrer le post"
 
@@ -3868,7 +3867,7 @@ msgstr "Provenant de"
 msgid "From @{sanitizedAuthor}"
 msgstr "De @{sanitizedAuthor}"
 
-#: src/view/com/posts/PostFeedItem.tsx:340
+#: src/view/com/posts/PostFeedItem.tsx:338
 msgctxt "from-feed"
 msgid "From <0/>"
 msgstr "Tiré de <0/>"
@@ -4491,7 +4490,7 @@ msgstr "Code de confirmation 2FA invalide."
 msgid "Invalid handle. Please try a different one."
 msgstr "Votre pseudo est invalide. Veuillez utiliser un pseudo différent."
 
-#: src/view/com/post-thread/PostThreadItem.tsx:357
+#: src/view/com/post-thread/PostThreadItem.tsx:355
 msgid "Invalid or unsupported post record"
 msgstr "Enregistrement de post invalide ou non pris en charge"
 
@@ -4829,8 +4828,8 @@ msgstr "« J’aime » de vos reposts"
 msgid "Likes of your reposts notifications"
 msgstr "Notifications « J’aime » de vos reposts"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:467
-#: src/view/com/post-thread/PostThreadItem.tsx:249
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:465
+#: src/view/com/post-thread/PostThreadItem.tsx:247
 msgid "Likes on this post"
 msgstr "Mentions « J’aime » sur ce post"
 
@@ -5183,7 +5182,7 @@ msgstr "Outils de modération"
 msgid "Moderator has chosen to set a general warning on the content."
 msgstr "La modération a choisi d’ajouter un avertissement général sur le contenu."
 
-#: src/view/com/post-thread/PostThreadItem.tsx:737
+#: src/view/com/post-thread/PostThreadItem.tsx:735
 msgid "More"
 msgstr "Plus"
 
@@ -5690,7 +5689,7 @@ msgstr "Note sur le partage"
 msgid "Note: Bluesky is an open and public network. This setting only limits the visibility of your content on the Bluesky app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
 msgstr "Remarque : Bluesky est un réseau ouvert et public. Ce paramètre limite uniquement la visibilité de votre contenu sur l’application et le site Web de Bluesky, et d’autres applications peuvent ne pas respecter ce paramètre. Votre contenu peut toujours être montré aux personnes non connectées par d’autres applications et sites Web."
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:177
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:175
 msgid "Note: This post is only visible to logged-in users."
 msgstr "Note : Ce post n’est visible qu’aux personnes connectées."
 
@@ -5784,8 +5783,8 @@ msgid "OK"
 msgstr "OK"
 
 #: src/screens/Login/PasswordUpdatedForm.tsx:37
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:673
-#: src/view/com/post-thread/PostThreadItem.tsx:991
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:671
+#: src/view/com/post-thread/PostThreadItem.tsx:989
 msgid "Okay"
 msgstr "OK"
 
@@ -5919,10 +5918,10 @@ msgstr "Ouvrir la page de débogage de modération"
 msgid "Open muted words and tags settings"
 msgstr "Ouvrir les paramètres des mots masqués et mots-clés"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:138
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:141
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:123
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:126
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:136
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:139
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:121
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:124
 msgid "Open original post"
 msgstr ""
 
@@ -5930,11 +5929,11 @@ msgstr ""
 msgid "Open pack"
 msgstr "Ouvrir le kit"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:149
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:152
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:135
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:138
-msgid "Open post in pdsls"
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:147
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:150
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:133
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:136
+msgid "Open post in PDSls"
 msgstr ""
 
 #: src/components/PostControls/PostMenu/index.tsx:62
@@ -6219,7 +6218,7 @@ msgstr "Ajouter à l’accueil"
 msgid "Pin to your profile"
 msgstr "Épingler à votre profil"
 
-#: src/view/com/posts/PostFeedItem.tsx:421
+#: src/view/com/posts/PostFeedItem.tsx:419
 msgid "Pinned"
 msgstr "Épinglé"
 
@@ -6436,7 +6435,7 @@ msgstr "Tout poster"
 msgid "Post blocked"
 msgstr "Post bloqué"
 
-#: src/view/com/post-thread/PostThreadItem.tsx:241
+#: src/view/com/post-thread/PostThreadItem.tsx:239
 msgid "Post by {0}"
 msgstr "Post de {0}"
 
@@ -6723,8 +6722,8 @@ msgstr "Paramètres des citations"
 msgid "Quotes"
 msgstr "Citations"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:451
-#: src/view/com/post-thread/PostThreadItem.tsx:275
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:449
+#: src/view/com/post-thread/PostThreadItem.tsx:273
 msgid "Quotes of this post"
 msgstr "Citations de ce post"
 
@@ -6877,7 +6876,7 @@ msgstr "Supprimer l’avatar"
 msgid "Remove Banner"
 msgstr "Supprimer l’image d’en-tête"
 
-#: src/screens/Messages/components/MessageInputEmbed.tsx:219
+#: src/screens/Messages/components/MessageInputEmbed.tsx:217
 msgid "Remove embed"
 msgstr "Supprimer l’intégration"
 
@@ -7054,24 +7053,24 @@ msgstr "Les paramètres de réponse sont choisis par l’auteur·ice du fil de d
 msgid "Reply sorting"
 msgstr "Ordre des réponses"
 
-#: src/view/com/post/Post.tsx:210
-#: src/view/com/posts/PostFeedItem.tsx:612
+#: src/view/com/post/Post.tsx:208
+#: src/view/com/posts/PostFeedItem.tsx:610
 msgctxt "description"
 msgid "Reply to <0><1/></0>"
 msgstr "Réponse à <0><1/></0>"
 
-#: src/view/com/posts/PostFeedItem.tsx:603
+#: src/view/com/posts/PostFeedItem.tsx:601
 msgctxt "description"
 msgid "Reply to a blocked post"
 msgstr "Réponse à un post bloqué"
 
-#: src/view/com/posts/PostFeedItem.tsx:605
+#: src/view/com/posts/PostFeedItem.tsx:603
 msgctxt "description"
 msgid "Reply to a post"
 msgstr "Réponse à un post"
 
-#: src/view/com/post/Post.tsx:208
-#: src/view/com/posts/PostFeedItem.tsx:609
+#: src/view/com/post/Post.tsx:206
+#: src/view/com/posts/PostFeedItem.tsx:607
 msgctxt "description"
 msgid "Reply to you"
 msgstr "Réponse à vous"
@@ -7201,16 +7200,16 @@ msgstr "Republier ou citer"
 msgid "Reposted By"
 msgstr "Republié par"
 
-#: src/view/com/posts/PostFeedItem.tsx:361
+#: src/view/com/posts/PostFeedItem.tsx:359
 msgid "Reposted by {0}"
 msgstr "Republié par {0}"
 
-#: src/view/com/posts/PostFeedItem.tsx:380
+#: src/view/com/posts/PostFeedItem.tsx:378
 msgid "Reposted by <0><1/></0>"
 msgstr "Republié par <0><1/></0>"
 
-#: src/view/com/posts/PostFeedItem.tsx:359
-#: src/view/com/posts/PostFeedItem.tsx:378
+#: src/view/com/posts/PostFeedItem.tsx:357
+#: src/view/com/posts/PostFeedItem.tsx:376
 msgid "Reposted by you"
 msgstr "Republié par vous"
 
@@ -7220,8 +7219,8 @@ msgstr "Republié par vous"
 msgid "Reposts"
 msgstr "Reposts"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:433
-#: src/view/com/post-thread/PostThreadItem.tsx:254
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:431
+#: src/view/com/post-thread/PostThreadItem.tsx:252
 msgid "Reposts of this post"
 msgstr "Reposts de ce post"
 
@@ -7767,10 +7766,10 @@ msgstr "Envoyer le signalement à {title}"
 msgid "Send verification email"
 msgstr "Envoyer l’e-mail de vérification"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:120
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:126
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:147
-#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:153
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:118
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:124
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:145
+#: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:151
 msgid "Send via direct message"
 msgstr "Envoyer par message privé"
 
@@ -7895,8 +7894,8 @@ msgstr "Partagez une anecdote insolite !"
 msgid "Share anyway"
 msgstr "Partager quand même"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:204
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:207
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:202
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:205
 msgid "Share author DID"
 msgstr "Partager le DID de l’auteur"
 
@@ -7911,8 +7910,8 @@ msgstr "Partager le lien"
 msgid "Share link dialog"
 msgstr "Dialogue pour le partage d’un lien"
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:195
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:198
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:193
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:196
 msgid "Share post at:// URI"
 msgstr "Partager l’URI at:// du post"
 
@@ -7937,8 +7936,8 @@ msgstr "Partagez ce kit de démarrage et aidez les gens à rejoindre votre commu
 msgid "Share url:"
 msgstr ""
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:162
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:165
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:160
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:163
 #: src/screens/StarterPack/StarterPackScreen.tsx:611
 #: src/screens/StarterPack/StarterPackScreen.tsx:619
 #: src/view/com/profile/ProfileMenu.tsx:252
@@ -7962,7 +7961,7 @@ msgstr "Afficher"
 
 #: src/screens/Settings/DeerSettings.tsx:585
 #: src/screens/Settings/DeerSettings.tsx:591
-msgid "Show \"Open original post\" and \"Open post in pdsls\" buttons"
+msgid "Show \"Open original post\" and \"Open post in PDSls\" buttons"
 msgstr ""
 
 #: src/components/Post/Embed/ExternalEmbed/Gif.tsx:178
@@ -8071,8 +8070,8 @@ msgstr "Afficher l’avertissement"
 msgid "Show warning and filter from feeds"
 msgstr "Afficher l’avertissement et filtrer des fils d’actu"
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:614
-#: src/view/com/post-thread/PostThreadItem.tsx:932
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:612
+#: src/view/com/post-thread/PostThreadItem.tsx:930
 msgid "Shows information about when this post was created"
 msgstr "Affiche plus d’informations sur la date de création de ce post"
 
@@ -8973,8 +8972,8 @@ msgstr "Cette liste est vide."
 msgid "This moderation service is unavailable. See below for more details. If this issue persists, contact us."
 msgstr "Ce service de modération n’est pas disponible. Voir ci-dessous pour plus de détails. Si le problème persiste, contactez-nous."
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:654
-#: src/view/com/post-thread/PostThreadItem.tsx:972
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:652
+#: src/view/com/post-thread/PostThreadItem.tsx:970
 msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Bluesky on <1>{1}</1>."
 msgstr "Ce post déclare avoir été créé le <0>{0}</0>, mais a été vu pour la première fois par Bluesky le <1>{1}</1>."
 
@@ -8982,11 +8981,11 @@ msgstr "Ce post déclare avoir été créé le <0>{0}</0>, mais a été vu pour 
 msgid "This post has an unknown type of threadgate on it. Your app may be out of date."
 msgstr "Ce post a un type inconnu de restriction de fil. Votre appli. n’est peut-être pas à jour."
 
-#: src/view/com/post-thread/PostThreadItem.tsx:177
+#: src/view/com/post-thread/PostThreadItem.tsx:175
 msgid "This post has been deleted."
 msgstr "Ce post a été supprimé."
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:185
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:183
 msgid "This post is only visible to logged-in users."
 msgstr "Ce post n’est visible qu’aux personnes connectées."
 
@@ -9161,10 +9160,10 @@ msgstr "Sujet"
 #: src/components/dms/MessageContextMenu.tsx:144
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:522
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:524
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:576
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:579
-#: src/view/com/post-thread/PostThreadItem.tsx:894
-#: src/view/com/post-thread/PostThreadItem.tsx:897
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:574
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:577
+#: src/view/com/post-thread/PostThreadItem.tsx:892
+#: src/view/com/post-thread/PostThreadItem.tsx:895
 msgid "Translate"
 msgstr "Traduire"
 
