@@ -68,6 +68,7 @@ export function parseMastodonRichText(sourceText: string): RichText {
 
   const parser = new DOMParser()
   const result = parser.parseFromString(sourceText)
+  if (result == undefined) return new RichText({text: '', facets: []})
   strippedText = emitFacetList(result.childNodes, '', facets)
 
   // Paragraphs will add trailing newlines. When getting rid of them, we also have to account for facets, so we clamp the last facet
@@ -97,7 +98,7 @@ export function getOriginalPostUrl(record: {[_ in string]: unknown}) {
 }
 
 export function parseBridgedPostText(record: {[_ in string]: unknown}) {
-  if (record.bridgyOriginalUrl)
+  if (record.bridgyOriginalText)
     // bridgy
     return parseMastodonRichText(record.bridgyOriginalText as string)
 
