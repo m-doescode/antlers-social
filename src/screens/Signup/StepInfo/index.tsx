@@ -25,6 +25,7 @@ import {Lock_Stroke2_Corner0_Rounded as Lock} from '#/components/icons/Lock'
 import {Ticket_Stroke2_Corner0_Rounded as Ticket} from '#/components/icons/Ticket'
 import {InlineLinkText} from '#/components/Link'
 import {Loader} from '#/components/Loader'
+import {usePreemptivelyCompleteActivePolicyUpdate} from '#/components/PolicyUpdateOverlay/usePreemptivelyCompleteActivePolicyUpdate'
 import {Text} from '#/components/Typography'
 import {BackNextButtons} from '../BackNextButtons'
 
@@ -53,6 +54,8 @@ export function StepInfo({
 }) {
   const {_} = useLingui()
   const {state, dispatch} = useSignupContext()
+  const preemptivelyCompleteActivePolicyUpdate =
+    usePreemptivelyCompleteActivePolicyUpdate()
 
   const inviteCodeValueRef = useRef<string>(state.inviteCode)
   const emailValueRef = useRef<string>(state.email)
@@ -146,6 +149,7 @@ export function StepInfo({
       })
     }
 
+    preemptivelyCompleteActivePolicyUpdate()
     dispatch({type: 'setInviteCode', value: inviteCode})
     dispatch({type: 'setEmail', value: email})
     dispatch({type: 'setPassword', value: password})
@@ -161,7 +165,7 @@ export function StepInfo({
 
   return (
     <ScreenTransition>
-      <View style={[a.gap_md]}>
+      <View style={[a.gap_md, a.pt_lg]}>
         {state.serviceUrl === DEFAULT_SERVICE && (
           <View style={[a.gap_xl]}>
             <Text style={[a.gap_md, a.leading_normal]}>

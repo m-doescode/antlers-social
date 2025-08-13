@@ -9,7 +9,6 @@ import {useNavigation} from '@react-navigation/native'
 import {type NativeStackScreenProps} from '@react-navigation/native-stack'
 
 import {useActorStatus} from '#/lib/actor-status'
-import {IS_INTERNAL} from '#/lib/app-info'
 import {HELP_DESK_URL} from '#/lib/constants'
 import {useAccountSwitcher} from '#/lib/hooks/useAccountSwitcher'
 import {useApplyPullRequestOTAUpdate} from '#/lib/hooks/useOTAUpdates'
@@ -26,6 +25,7 @@ import {clearStorage} from '#/state/persisted'
 import {useModerationOpts} from '#/state/preferences/moderation-opts'
 import {useDeleteActorDeclaration} from '#/state/queries/messages/actor-declaration'
 import {useProfileQuery, useProfilesQuery} from '#/state/queries/profile'
+import {useAgent} from '#/state/session'
 import {type SessionAccount, useSession, useSessionApi} from '#/state/session'
 import {useOnboardingDispatch} from '#/state/shell'
 import {useLoggedOutViewControls} from '#/state/shell/logged-out'
@@ -36,11 +36,12 @@ import * as SettingsList from '#/screens/Settings/components/SettingsList'
 import {atoms as a, platform, tokens, useBreakpoints, useTheme} from '#/alf'
 import {AgeAssuranceDismissibleNotice} from '#/components/ageAssurance/AgeAssuranceDismissibleNotice'
 import {AvatarStackWithFetch} from '#/components/AvatarStack'
+import {Button, ButtonText} from '#/components/Button'
 import {useDialogControl} from '#/components/Dialog'
 import {SwitchAccountDialog} from '#/components/dialogs/SwitchAccount'
 import {Accessibility_Stroke2_Corner2_Rounded as AccessibilityIcon} from '#/components/icons/Accessibility'
-import {Bell_Stroke2_Corner0_Rounded as NotificationIcon} from '#/components/icons/Bell'
 import {Atom_Stroke2_Corner0_Rounded as DeerIcon} from '#/components/icons/Atom'
+import {Bell_Stroke2_Corner0_Rounded as NotificationIcon} from '#/components/icons/Bell'
 import {BubbleInfo_Stroke2_Corner2_Rounded as BubbleInfoIcon} from '#/components/icons/BubbleInfo'
 import {ChevronTop_Stroke2_Corner0_Rounded as ChevronUpIcon} from '#/components/icons/Chevron'
 import {CircleQuestion_Stroke2_Corner2_Rounded as CircleQuestionIcon} from '#/components/icons/CircleQuestion'
@@ -60,6 +61,7 @@ import {Window_Stroke2_Corner2_Rounded as WindowIcon} from '#/components/icons/W
 import * as Layout from '#/components/Layout'
 import {Loader} from '#/components/Loader'
 import * as Menu from '#/components/Menu'
+import {ID as PolicyUpdate202508} from '#/components/PolicyUpdateOverlay/updates/202508/config'
 import * as Prompt from '#/components/Prompt'
 import {Text} from '#/components/Typography'
 import {useFullVerificationState} from '#/components/verification'
@@ -67,6 +69,8 @@ import {
   shouldShowVerificationCheckButton,
   VerificationCheckButton,
 } from '#/components/verification/VerificationCheckButton'
+import {IS_INTERNAL} from '#/env'
+import {device, useStorage} from '#/storage'
 import {useActivitySubscriptionsNudged} from '#/storage/hooks/activity-subscriptions-nudged'
 
 type Props = NativeStackScreenProps<CommonNavigatorParams, 'Settings'>
@@ -370,6 +374,10 @@ function ProfilePreview({
 
 function DevOptions() {
   const {_} = useLingui()
+  const agent = useAgent()
+  const [override, setOverride] = useStorage(device, [
+    'policyUpdateDebugOverride',
+  ])
   const onboardingDispatch = useOnboardingDispatch()
   const navigation = useNavigation<NavigationProp>()
   const {mutate: deleteChatDeclarationRecord} = useDeleteActorDeclaration()
@@ -509,6 +517,40 @@ function DevOptions() {
           </SettingsList.ItemText>
         </SettingsList.PressableItem>
       ) : null}
+
+      <SettingsList.Divider />
+      <View style={[a.p_xl, a.gap_md]}>
+        <Text style={[a.text_lg, a.font_bold]}>PolicyUpdate202508 Debug</Text>
+
+        <View style={[a.flex_row, a.align_center, a.justify_between, a.gap_md]}>
+          <Button
+            onPress={() => {
+              setOverride(!override)
+            }}
+            label="Toggle"
+            color={override ? 'primary' : 'secondary'}
+            size="small"
+            style={[a.flex_1]}>
+            <ButtonText>
+              {override ? 'Disable debug mode' : 'Enable debug mode'}
+            </ButtonText>
+          </Button>
+
+          <Button
+            onPress={() => {
+              device.set([PolicyUpdate202508], false)
+              agent.bskyAppRemoveNuxs([PolicyUpdate202508])
+              Toast.show(`Done`, 'info')
+            }}
+            label="Reset policy update nux"
+            color="secondary"
+            size="small"
+            disabled={!override}>
+            <ButtonText>Reset state</ButtonText>
+          </Button>
+        </View>
+      </View>
+      <SettingsList.Divider />
     </>
   )
 }

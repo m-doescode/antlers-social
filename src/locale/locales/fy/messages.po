@@ -8,7 +8,7 @@ msgstr ""
 "Language: fy\n"
 "Project-Id-Version: 49a8cb746fbc2ae5707392ee41ddec4c\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-07-22 03:05\n"
+"PO-Revision-Date: 2025-08-12 01:46\n"
 "Last-Translator: \n"
 "Language-Team: Frisian\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -90,12 +90,12 @@ msgstr "{0, plural, one {# net-lêzen item} other {# net-lêzen items}}"
 msgid "{0, plural, one {#mo} other {#mo}}"
 msgstr "{0, plural, one {#mo} other {#mo}}"
 
-#: src/components/ProfileHoverCard/index.web.tsx:442
+#: src/components/ProfileHoverCard/index.web.tsx:444
 #: src/screens/Profile/Header/Metrics.tsx:22
 msgid "{0, plural, one {follower} other {followers}}"
 msgstr "{0, plural, one {folger} other {folgers}}"
 
-#: src/components/ProfileHoverCard/index.web.tsx:446
+#: src/components/ProfileHoverCard/index.web.tsx:448
 #: src/screens/Profile/Header/Metrics.tsx:26
 msgid "{0, plural, one {following} other {following}}"
 msgstr "{0, plural, one {folgjend} other {folgjend}}"
@@ -141,7 +141,7 @@ msgstr "{0} <0>in <1>tekst en tags</1></0>"
 
 #: src/screens/Profile/Header/Metrics.tsx:49
 msgid "{0} following"
-msgstr ""
+msgstr "{0} folgjend"
 
 #: src/components/live/LiveStatusDialog.tsx:68
 msgid "{0} is live"
@@ -150,6 +150,10 @@ msgstr "{0} is live"
 #: src/components/live/queries.ts:39
 msgid "{0} is not a valid URL"
 msgstr "{0} is net in falide URL"
+
+#: src/screens/Signup/StepHandle/index.tsx:189
+msgid "{0} is not available"
+msgstr "{0} is net beskikber"
 
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:223
 msgid "{0} joined this week"
@@ -218,7 +222,7 @@ msgid "{count, plural, one {# unread item} other {# unread items}}"
 msgstr "{count, plural, one {# net-lêzen item} other {# net-lêzen items}}"
 
 #: src/lib/generate-starterpack.ts:111
-#: src/screens/StarterPack/Wizard/index.tsx:178
+#: src/screens/StarterPack/Wizard/index.tsx:184
 msgid "{displayName}'s Starter Pack"
 msgstr "Startpakket fan {displayName}"
 
@@ -230,159 +234,159 @@ msgstr "{estimatedTimeHrs, plural, one {oere} other {oeren}}"
 msgid "{estimatedTimeMins, plural, one {minute} other {minutes}}"
 msgstr "{estimatedTimeMins, plural, one {minút} other {minuten}}"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:349
+#: src/view/com/notifications/NotificationFeedItem.tsx:353
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> followed you"
 msgstr "{firstAuthorLink} en <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}}</0> hawwe dy folge"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:375
+#: src/view/com/notifications/NotificationFeedItem.tsx:379
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> liked your custom feed"
 msgstr "{firstAuthorLink} en <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}}</0> meie wol oer dyn personalisearre feed"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:268
+#: src/view/com/notifications/NotificationFeedItem.tsx:272
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> liked your post"
 msgstr "{firstAuthorLink} en <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}}</0> meie wol oer dyn berjocht"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:480
+#: src/view/com/notifications/NotificationFeedItem.tsx:484
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> liked your repost"
 msgstr "{firstAuthorLink} en <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}}</0> meie wol oer dyn opnij-pleatsing"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:453
+#: src/view/com/notifications/NotificationFeedItem.tsx:457
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> removed their verifications from your account"
 msgstr "{firstAuthorLink} en <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}}</0> hawwe harren ferifikaasjes fan dyn account fuortsmiten"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:292
+#: src/view/com/notifications/NotificationFeedItem.tsx:296
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> reposted your post"
 msgstr "{firstAuthorLink} en <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}}</0> hawwe dyn berjocht opnij pleatst"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:504
+#: src/view/com/notifications/NotificationFeedItem.tsx:508
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> reposted your repost"
 msgstr "{firstAuthorLink} en <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}}</0> hawwe dyn berjocht opnij pleatst"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:399
+#: src/view/com/notifications/NotificationFeedItem.tsx:403
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> signed up with your starter pack"
 msgstr "{firstAuthorLink} en <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}}</0> hawwe harren registrearre mei dyn startpakket"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:428
+#: src/view/com/notifications/NotificationFeedItem.tsx:432
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> verified you"
 msgstr "{firstAuthorLink} en <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}}</0> hawwe dy ferifiearre"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:361
+#: src/view/com/notifications/NotificationFeedItem.tsx:365
 msgid "{firstAuthorLink} followed you"
 msgstr "{firstAuthorLink} folge dy"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:338
+#: src/view/com/notifications/NotificationFeedItem.tsx:342
 msgid "{firstAuthorLink} followed you back"
 msgstr "{firstAuthorLink} folge dy werom"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:387
+#: src/view/com/notifications/NotificationFeedItem.tsx:391
 msgid "{firstAuthorLink} liked your custom feed"
 msgstr "{firstAuthorLink} mei wol oer dyn personalisearre feed"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:280
+#: src/view/com/notifications/NotificationFeedItem.tsx:284
 msgid "{firstAuthorLink} liked your post"
 msgstr "{firstAuthorLink} mei wol oer dyn bericht"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:492
+#: src/view/com/notifications/NotificationFeedItem.tsx:496
 msgid "{firstAuthorLink} liked your repost"
 msgstr "{firstAuthorLink} mei wol oer dyn opnij-pleatsing"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:465
+#: src/view/com/notifications/NotificationFeedItem.tsx:469
 msgid "{firstAuthorLink} removed their verification from your account"
 msgstr "{firstAuthorLink} hat de ferifiearring fan dyn account fuortsmiten"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:304
+#: src/view/com/notifications/NotificationFeedItem.tsx:308
 msgid "{firstAuthorLink} reposted your post"
 msgstr "{firstAuthorLink} hat dyn berjocht opnij pleatst"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:516
+#: src/view/com/notifications/NotificationFeedItem.tsx:520
 msgid "{firstAuthorLink} reposted your repost"
 msgstr "{firstAuthorLink} hat dyn opnij-pleatsing opnij pleatst"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:411
+#: src/view/com/notifications/NotificationFeedItem.tsx:415
 msgid "{firstAuthorLink} signed up with your starter pack"
 msgstr "{firstAuthorLink} registrearre harren mei dyn startpakket"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:440
+#: src/view/com/notifications/NotificationFeedItem.tsx:444
 msgid "{firstAuthorLink} verified you"
 msgstr "{firstAuthorLink} hat dy ferifiearre"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:342
+#: src/view/com/notifications/NotificationFeedItem.tsx:346
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} followed you"
 msgstr "{firstAuthorName} en {additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}} hawwe dy folge"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:368
+#: src/view/com/notifications/NotificationFeedItem.tsx:372
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} liked your custom feed"
 msgstr "{firstAuthorName} en {additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}} meie wol oer dyn personalisearre feed"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:261
+#: src/view/com/notifications/NotificationFeedItem.tsx:265
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} liked your post"
 msgstr "{firstAuthorName} en {additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}} meie wol oer dyn berjocht"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:473
+#: src/view/com/notifications/NotificationFeedItem.tsx:477
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} liked your repost"
 msgstr "{firstAuthorName} en {additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}} meie wol oer dyn opnij-pleatsing"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:446
+#: src/view/com/notifications/NotificationFeedItem.tsx:450
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} removed their verifications from your account"
 msgstr "{firstAuthorName} en {additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}} hawwe harren ferifikaasjes fan dyn account fuortsmiten"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:285
+#: src/view/com/notifications/NotificationFeedItem.tsx:289
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} reposted your post"
 msgstr "{firstAuthorName} en {additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}} hawwe dyn berjocht opnij pleatst"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:497
+#: src/view/com/notifications/NotificationFeedItem.tsx:501
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} reposted your repost"
 msgstr "{firstAuthorName} en {additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}} hawwe dyn opnij-pleatsing opnij pleatst"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:392
+#: src/view/com/notifications/NotificationFeedItem.tsx:396
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} signed up with your starter pack"
 msgstr "{firstAuthorName} en {additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}} hawwe harren registrearre mei dyn startpakket"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:421
+#: src/view/com/notifications/NotificationFeedItem.tsx:425
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} verified you"
 msgstr "{firstAuthorName} en {additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}} hawwe dy ferifiearre"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:347
+#: src/view/com/notifications/NotificationFeedItem.tsx:351
 msgid "{firstAuthorName} followed you"
 msgstr "{firstAuthorName} folge dy"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:337
+#: src/view/com/notifications/NotificationFeedItem.tsx:341
 msgid "{firstAuthorName} followed you back"
 msgstr "{firstAuthorName} folge dy werom"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:373
+#: src/view/com/notifications/NotificationFeedItem.tsx:377
 msgid "{firstAuthorName} liked your custom feed"
 msgstr "{firstAuthorName} mei wol oer dyn personalisearre feed"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:266
+#: src/view/com/notifications/NotificationFeedItem.tsx:270
 msgid "{firstAuthorName} liked your post"
 msgstr "{firstAuthorName} mei wol oer dyn berjocht"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:478
+#: src/view/com/notifications/NotificationFeedItem.tsx:482
 msgid "{firstAuthorName} liked your repost"
 msgstr "{firstAuthorName} mei wol oer dyn opnij-pleatsing"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:451
+#: src/view/com/notifications/NotificationFeedItem.tsx:455
 msgid "{firstAuthorName} removed their verification from your account"
 msgstr "{firstAuthorName} hat de ferifiearring fan dyn account fuortsmiten"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:290
+#: src/view/com/notifications/NotificationFeedItem.tsx:294
 msgid "{firstAuthorName} reposted your post"
 msgstr "{firstAuthorName} hat dyn berjocht opnij pleatst"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:502
+#: src/view/com/notifications/NotificationFeedItem.tsx:506
 msgid "{firstAuthorName} reposted your repost"
 msgstr "{firstAuthorName} hat dyn opnij-pleatsing opnij pleatst"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:397
+#: src/view/com/notifications/NotificationFeedItem.tsx:401
 msgid "{firstAuthorName} signed up with your starter pack"
 msgstr "{firstAuthorName} registrearre harren mei dyn startpakket"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:426
+#: src/view/com/notifications/NotificationFeedItem.tsx:430
 msgid "{firstAuthorName} verified you"
 msgstr "{firstAuthorName} hat dy ferifiearre"
 
-#: src/components/ProfileHoverCard/index.web.tsx:570
+#: src/components/ProfileHoverCard/index.web.tsx:572
 msgid "{following} following"
 msgstr "{following} folgjend"
 
@@ -447,12 +451,12 @@ msgstr "Ferifikaasjes fan {userName}"
 msgid "+{computedTotal}"
 msgstr "+{computedTotal}"
 
-#: src/screens/StarterPack/Wizard/index.tsx:449
+#: src/screens/StarterPack/Wizard/index.tsx:488
 msgctxt "profiles"
 msgid "<0>{0}, </0><1>{1}, </1>and {2, plural, one {# other} other {# others}} are included in your starter pack"
 msgstr "<0>{0}, </0><1>{1}, </1>en {2, plural, one {# oare} other {# oaren}} binne ynbegrepen yn dyn startpakket"
 
-#: src/screens/StarterPack/Wizard/index.tsx:502
+#: src/screens/StarterPack/Wizard/index.tsx:541
 msgctxt "feeds"
 msgid "<0>{0}, </0><1>{1}, </1>and {2, plural, one {# other} other {# others}} are included in your starter pack"
 msgstr "<0>{0}, </0><1>{1}, </1>en {2, plural, one {# oare} other {# oaren}} binne ynbegrepen yn dyn startpakket"
@@ -465,11 +469,11 @@ msgstr "<0>{0}</0> {1, plural, one {folger} other {folgers}}"
 msgid "<0>{0}</0> {1, plural, one {following} other {following}}"
 msgstr "<0>{0}</0> {1, plural, one {folgjend} other {folgjend}}"
 
-#: src/screens/StarterPack/Wizard/index.tsx:490
+#: src/screens/StarterPack/Wizard/index.tsx:529
 msgid "<0>{0}</0> and<1> </1><2>{1} </2>are included in your starter pack"
 msgstr "<0>{0}</0> en<1> </1><2>{1} </2>binne ynbegrepen yn dyn startpakket"
 
-#: src/screens/StarterPack/Wizard/index.tsx:483
+#: src/screens/StarterPack/Wizard/index.tsx:522
 msgid "<0>{0}</0> is included in your starter pack"
 msgstr "<0>{0}</0> is ynbegrepen yn dyn startpakket"
 
@@ -633,7 +637,7 @@ msgstr "Aktiviteitsmeldingen"
 msgid "Add"
 msgstr "Tafoegje"
 
-#: src/screens/StarterPack/Wizard/index.tsx:551
+#: src/screens/StarterPack/Wizard/index.tsx:572
 msgid "Add {0} more to continue"
 msgstr "Foegje noch {0} ta om troch te gean"
 
@@ -663,8 +667,8 @@ msgstr "Account tafoegje"
 #: src/view/com/composer/GifAltText.tsx:76
 #: src/view/com/composer/GifAltText.tsx:144
 #: src/view/com/composer/GifAltText.tsx:210
-#: src/view/com/composer/photos/Gallery.tsx:169
-#: src/view/com/composer/photos/Gallery.tsx:216
+#: src/view/com/composer/photos/Gallery.tsx:170
+#: src/view/com/composer/photos/Gallery.tsx:217
 #: src/view/com/composer/photos/ImageAltTextDialog.tsx:88
 #: src/view/com/composer/photos/ImageAltTextDialog.tsx:93
 msgid "Add alt text"
@@ -733,7 +737,7 @@ msgstr "Reaksje tafoegje"
 msgid "Add recommended feeds"
 msgstr "Oanrekommandearre feeds tafoegje"
 
-#: src/screens/StarterPack/Wizard/index.tsx:471
+#: src/screens/StarterPack/Wizard/index.tsx:510
 msgid "Add some feeds to your starter pack!"
 msgstr "Foegje wat feeds ta oan dyn startpakket!"
 
@@ -765,7 +769,7 @@ msgstr "Tafoege oan list"
 
 #: src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:112
 msgid "Additional details (limit 1000 characters)"
-msgstr ""
+msgstr "Oanfoljende details (maksimaal 1000 tekens)"
 
 #: src/components/moderation/ReportDialog/index.tsx:421
 msgid "Additional details (limit 300 characters)"
@@ -801,20 +805,20 @@ msgstr "Avansearre"
 
 #: src/components/ageAssurance/AgeAssuranceBadge.tsx:42
 msgid "Age Assurance"
-msgstr ""
+msgstr "Leeftiidsferifikaasje"
 
 #: src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:70
 msgid "Age assurance inquiry failed to send, please try again."
-msgstr ""
+msgstr "Leeftiidsferifikaasjefersyk is net ferstjoerd, probearje it opnij."
 
 #: src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:78
 msgctxt "toast"
 msgid "Age assurance inquiry was submitted"
-msgstr ""
+msgstr "Leeftiidsferifikaasjefersyk is yntsjinne"
 
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:145
 msgid "Age assurance only takes a few minutes"
-msgstr ""
+msgstr "Leeftiidsferifikaasjefersyk duorret mar in pear minuten"
 
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:223
 msgid "alice@example.com"
@@ -876,7 +880,7 @@ msgstr "Al oanmeld as @{0}"
 
 #: src/components/Post/Embed/ExternalEmbed/Gif.tsx:186
 #: src/view/com/composer/GifAltText.tsx:100
-#: src/view/com/composer/photos/Gallery.tsx:187
+#: src/view/com/composer/photos/Gallery.tsx:188
 msgid "ALT"
 msgstr "ALT"
 
@@ -894,7 +898,7 @@ msgstr "Alt-tekst"
 msgid "Alt Text"
 msgstr "Alt-tekst"
 
-#: src/view/com/composer/photos/Gallery.tsx:255
+#: src/view/com/composer/photos/Gallery.tsx:260
 msgid "Alt text describes images for blind and low-vision users, and helps give context to everyone."
 msgstr "Alt-tekst beskriuwt ôfbyldingen foar bline en fisueel beheinde brûkers en biedt elkenien kontekst."
 
@@ -927,11 +931,11 @@ msgstr "Der is in flater bard by it opheljen fan de feed."
 msgid "An error occurred while generating your starter pack. Want to try again?"
 msgstr "Der is in flater bard by it generearjen fan dyn startpakket. Wolsto it opnij probearje?"
 
-#: src/components/Post/Embed/VideoEmbed/index.tsx:160
+#: src/components/Post/Embed/VideoEmbed/index.tsx:157
 msgid "An error occurred while loading the video. Please try again later."
 msgstr "Der is in flater bard wylst it laden fan de fideo. Probearje it letter opnij."
 
-#: src/components/Post/Embed/VideoEmbed/index.web.tsx:199
+#: src/components/Post/Embed/VideoEmbed/index.web.tsx:226
 msgid "An error occurred while loading the video. Please try again."
 msgstr "Der is in flater bard wylst it laden fan de fideo. Probearje it nochris."
 
@@ -972,8 +976,8 @@ msgstr "Der is in flater bard by it iepenjen fan de chat"
 
 #: src/components/hooks/useFollowMethods.ts:35
 #: src/components/hooks/useFollowMethods.ts:50
-#: src/components/ProfileCard.tsx:457
-#: src/components/ProfileCard.tsx:478
+#: src/components/ProfileCard.tsx:484
+#: src/components/ProfileCard.tsx:505
 #: src/view/com/profile/FollowButton.tsx:38
 #: src/view/com/profile/FollowButton.tsx:48
 msgid "An issue occurred, please try again."
@@ -1004,6 +1008,10 @@ msgstr "Bisten"
 #: src/components/Post/Embed/ExternalEmbed/Gif.tsx:149
 msgid "Animated GIF"
 msgstr "Animearre GIF"
+
+#: src/components/PolicyUpdateOverlay/Badge.tsx:33
+msgid "Announcement"
+msgstr "Meidieling"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:37
 msgid "Announcing verification on Bluesky"
@@ -1134,7 +1142,7 @@ msgstr "Argivearre berjocht"
 msgid "Are you sure you want to delete the app password \"{0}\"?"
 msgstr "Bisto wis datsto it app-wachtwurd ‘{0}’ fuorsmite wolst?"
 
-#: src/components/dms/MessageContextMenu.tsx:188
+#: src/components/dms/MessageContextMenu.tsx:183
 msgid "Are you sure you want to delete this message? The message will be deleted for you, but not for the other participant."
 msgstr "Bisto wis datsto dit priveeberjocht fuortsmite wolst? It priveeberjocht wurdt foar dy fuortsmiten, mar net foar de oare dielnimmer."
 
@@ -1201,6 +1209,11 @@ msgstr ""
 msgid "Autoplay videos and GIFs"
 msgstr "Fideo’s en GIF’s automatysk ôfspylje"
 
+#. Shown next to an available username suggestion in the account creation flow
+#: src/screens/Signup/StepHandle/HandleSuggestions.tsx:72
+msgid "Available"
+msgstr "Beskikber"
+
 #: src/components/dms/MessagesListHeader.tsx:84
 #: src/components/moderation/LabelsOnMeDialog.tsx:315
 #: src/components/moderation/LabelsOnMeDialog.tsx:316
@@ -1216,7 +1229,7 @@ msgstr "Fideo’s en GIF’s automatysk ôfspylje"
 #: src/screens/Messages/components/ChatDisabled.tsx:134
 #: src/screens/Profile/Header/Shell.tsx:158
 #: src/screens/Signup/BackNextButtons.tsx:41
-#: src/screens/StarterPack/Wizard/index.tsx:286
+#: src/screens/StarterPack/Wizard/index.tsx:303
 msgid "Back"
 msgstr "Tebek"
 
@@ -1255,15 +1268,15 @@ msgstr "Do moatst earst dyn e-mailadres befêstigje eardatsto in oare brûker in
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:318
 msgid "Begin"
-msgstr ""
+msgstr "Starte"
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:312
 msgid "Begin age assurance process"
-msgstr ""
+msgstr "Leeftiidsferifikaasjeproses starte"
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:51
 msgid "Begin the age assurance process by completing the fields below."
-msgstr ""
+msgstr "Start it leeftiidsferifikaasjeproses troch de ûndersteande fjilden yn te foljen."
 
 #: src/components/dialogs/BirthDateSettings.tsx:103
 #: src/screens/Settings/AccountSettings.tsx:140
@@ -1403,6 +1416,14 @@ msgstr "Bluesky sil dyn profyl en berjochten net toane oan ôfmelde brûkers. Oa
 msgid "Bluesky will proactively verify notable and authentic accounts."
 msgstr "Bluesky sil pro-aktyf bekende en autentike accounts ferifiearje."
 
+#: src/screens/Signup/StepInfo/Policies.tsx:26
+msgid "Bluesky's Community Guidelines"
+msgstr "Bluesky-mienskipsrjochtlinen"
+
+#: src/screens/Signup/StepInfo/Policies.tsx:32
+msgid "Bluesky's Updated Community Guidelines"
+msgstr "Bywurke Bluesky-mienskipsrjochtlinen"
+
 #: src/screens/Settings/AppIconSettings/index.tsx:99
 msgid "Bluesky+"
 msgstr "Bluesky+"
@@ -1432,19 +1453,16 @@ msgstr ""
 msgid "Browse more accounts on the Explore page"
 msgstr "Blêdzje troch brûkers op de ûntdekkingsside"
 
-#: src/components/FeedInterstitials.tsx:517
+#: src/components/FeedInterstitials.tsx:566
 msgid "Browse more feeds on the Explore page"
 msgstr "Blêdzje troch feeds op de ûntdekkingsside"
 
-#: src/components/FeedInterstitials.tsx:359
-#: src/components/FeedInterstitials.tsx:362
-#: src/components/FeedInterstitials.tsx:498
-#: src/components/FeedInterstitials.tsx:501
+#: src/components/FeedInterstitials.tsx:547
+#: src/components/FeedInterstitials.tsx:550
 msgid "Browse more suggestions"
 msgstr "Blêdzje troch mear suggestjes"
 
-#: src/components/FeedInterstitials.tsx:387
-#: src/components/FeedInterstitials.tsx:526
+#: src/components/FeedInterstitials.tsx:575
 msgid "Browse more suggestions on the Explore page"
 msgstr "Blêdzje troch mear suggestjes op de ûntdekkingsside"
 
@@ -1480,7 +1498,7 @@ msgstr ""
 #: src/components/LabelingServiceCard/index.tsx:62
 #: src/components/moderation/ReportDialog/index.tsx:683
 #: src/screens/Search/components/StarterPackCard.tsx:106
-#: src/screens/Search/Explore.tsx:934
+#: src/screens/Search/Explore.tsx:930
 msgid "By {0}"
 msgstr "Troch {0}"
 
@@ -1488,19 +1506,23 @@ msgstr "Troch {0}"
 msgid "By <0>{0}</0>"
 msgstr "Troch <0>{0}</0>"
 
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:181
+msgid "By clicking \"Continue\" you acknowledge that you understand and agree to these updates."
+msgstr "Troch op ‘Trochgean’ te klikken, erkensto datsto dizze updates begrypst en dermei akkoard giest."
+
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:329
 msgid "By continuing, you agree to the <0>KWS Terms of Use</0> and acknowledge that KWS will store your verified status with your hashed email address in accordance with the <1>KWS Privacy Policy</1>. This means you won’t need to verify again the next time you use this email for other apps, games, and services powered by KWS technology."
-msgstr ""
+msgstr "Troch fierder te gean, giest akkoard mei de <0>KWS-brûksbetingsten</0> en befêstichsto dat KWS dyn ferifiearre status bewarje sil mei dyn hashte e-mailadres yn oerienstimming mei it <1>KWS-privacybelied</1>. Dit betsjut datsto, de folgjende kear datsto dit e-mailadres brûkst foar oare apps, spultsjes en tsjinsten oandreaun troch KWS-technology, net opnij hoegst te ferifiearjen."
 
-#: src/screens/Signup/StepInfo/Policies.tsx:81
+#: src/screens/Signup/StepInfo/Policies.tsx:111
 msgid "By creating an account you agree to the <0>Privacy Policy</0>."
 msgstr "Mei it oanmeitsjen fan in account giesto akkoard mei it <0>Privacybelied</0>."
 
-#: src/screens/Signup/StepInfo/Policies.tsx:48
+#: src/screens/Signup/StepInfo/Policies.tsx:78
 msgid "By creating an account you agree to the <0>Terms of Service</0> and <1>Privacy Policy</1>."
 msgstr "Mei it oanmeitsjen fan in account giesto akkoard mei de <0>Tsjinstbetingsten</0> en it <1>Privacybelied</1>."
 
-#: src/screens/Signup/StepInfo/Policies.tsx:68
+#: src/screens/Signup/StepInfo/Policies.tsx:98
 msgid "By creating an account you agree to the <0>Terms of Service</0>."
 msgstr "Mei it oanmeitsjen fan in account giesto akkoard mei de <0>Tsjinstbetingsten</0>."
 
@@ -1678,7 +1700,7 @@ msgstr "Chat negearre"
 msgid "Chat request inbox"
 msgstr "Chatfersyk Postfek YN"
 
-#: src/screens/Messages/components/InboxPreview.tsx:64
+#: src/screens/Messages/components/InboxPreview.tsx:62
 #: src/screens/Messages/Inbox.tsx:56
 #: src/screens/Messages/Inbox.tsx:98
 msgid "Chat requests"
@@ -1723,7 +1745,7 @@ msgstr "Kontrolearje dyn Postfek YN foar in e-mailberjocht mei de befêstigingsk
 msgid "Choose domain verification method"
 msgstr "Domeinferifikaasjemetoade kieze"
 
-#: src/screens/StarterPack/Wizard/index.tsx:194
+#: src/screens/StarterPack/Wizard/index.tsx:200
 msgid "Choose Feeds"
 msgstr "Feeds kieze"
 
@@ -1731,7 +1753,7 @@ msgstr "Feeds kieze"
 msgid "Choose for me"
 msgstr "Foar my kieze"
 
-#: src/screens/StarterPack/Wizard/index.tsx:190
+#: src/screens/StarterPack/Wizard/index.tsx:196
 msgid "Choose People"
 msgstr "Persoanen kieze"
 
@@ -1784,11 +1806,11 @@ msgstr "Klik foar ynformaasje"
 msgid "click here"
 msgstr "klik hjir"
 
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:371
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:383
 msgid "Click here to restart the verification process."
 msgstr "Klik hjir om it ferifikaasjeproses opnij te starten."
 
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:273
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:275
 msgid "Click here to update your email"
 msgstr "Klik hjir om dyn e-mailadres by te wurkjen"
 
@@ -1869,7 +1891,7 @@ msgstr "Paniel ûnderoan slute"
 msgid "Close dialog"
 msgstr "Dialoochfinster slute"
 
-#: src/view/shell/index.web.tsx:89
+#: src/view/shell/index.web.tsx:100
 msgid "Close drawer menu"
 msgstr "Lademenu slute"
 
@@ -1917,11 +1939,11 @@ msgstr "Slút de emoji-kiezer"
 msgid "Closes viewer for header image"
 msgstr "Slút viewer foar headerôfbylding"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:587
+#: src/view/com/notifications/NotificationFeedItem.tsx:591
 msgid "Collapse list of users"
 msgstr "Brûkerslist ynklappe"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:801
+#: src/view/com/notifications/NotificationFeedItem.tsx:805
 msgid "Collapses list of users for a given notification"
 msgstr "Klapt de brûkerslist foar in bepaalde melding yn"
 
@@ -2024,7 +2046,7 @@ msgstr "Ferbine…"
 
 #: src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:213
 msgid "Connection issue"
-msgstr ""
+msgstr "Ferbiningsprobleem"
 
 #: src/screens/Settings/DeerSettings.tsx:513
 msgid "Constellation Instance"
@@ -2042,7 +2064,7 @@ msgstr ""
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:84
 #: src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:28
 msgid "Contact our moderation team"
-msgstr ""
+msgstr "Nim kontakt op mei ús moderaasjeteam"
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:155
 #: src/screens/Signup/index.tsx:204
@@ -2051,7 +2073,7 @@ msgstr "Kontakt opnimme mei stipe"
 
 #: src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:94
 msgid "Contact us"
-msgstr ""
+msgstr "Nim kontakt mei ús op"
 
 #: src/screens/Settings/ContentAndMediaSettings.tsx:51
 msgid "Content & Media"
@@ -2104,6 +2126,8 @@ msgstr "Ynhâldswarskôgingen"
 msgid "Context menu backdrop, click to close the menu."
 msgstr "Kontekstmenu-eftergrûn, klik om it menu te sluten."
 
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:162
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:170
 #: src/screens/Onboarding/StepInterests/index.tsx:244
 #: src/screens/Onboarding/StepProfile/index.tsx:276
 msgid "Continue"
@@ -2130,7 +2154,7 @@ msgstr "Trochgean nei folgjende stap"
 
 #: src/screens/Messages/Conversation.tsx:57
 msgid "Conversation"
-msgstr ""
+msgstr "Petear"
 
 #: src/components/dms/ReportDialog.tsx:318
 #: src/components/dms/ReportDialog.tsx:321
@@ -2235,8 +2259,8 @@ msgstr "Keppeling nei profyl kopiearje"
 msgid "Copy link to starter pack"
 msgstr "Keppeling nei startpakket kopiearje"
 
-#: src/components/dms/MessageContextMenu.tsx:149
-#: src/components/dms/MessageContextMenu.tsx:152
+#: src/components/dms/MessageContextMenu.tsx:144
+#: src/components/dms/MessageContextMenu.tsx:147
 msgid "Copy message text"
 msgstr "Berjochttekst kopiearje"
 
@@ -2343,6 +2367,7 @@ msgstr ""
 
 #: src/components/dialogs/Signin.tsx:86
 #: src/components/dialogs/Signin.tsx:88
+#: src/screens/Search/SearchResults.tsx:266
 msgid "Create an account"
 msgstr "In account oanmeitsje"
 
@@ -2512,7 +2537,7 @@ msgstr "Petear fuortsmite"
 msgid "Delete Conversation"
 msgstr "Petear fuortsmite"
 
-#: src/components/dms/MessageContextMenu.tsx:163
+#: src/components/dms/MessageContextMenu.tsx:158
 msgid "Delete for me"
 msgstr "Foar my fuortsmite"
 
@@ -2520,11 +2545,11 @@ msgstr "Foar my fuortsmite"
 msgid "Delete list"
 msgstr "List fuortsmite"
 
-#: src/components/dms/MessageContextMenu.tsx:186
+#: src/components/dms/MessageContextMenu.tsx:181
 msgid "Delete message"
 msgstr "Berjocht fuortsmite"
 
-#: src/components/dms/MessageContextMenu.tsx:161
+#: src/components/dms/MessageContextMenu.tsx:156
 msgid "Delete message for me"
 msgstr "Berjocht foar my fuortsmite"
 
@@ -2758,15 +2783,11 @@ msgstr ""
 msgid "Does not include nudity."
 msgstr "Befettet gjin neakens."
 
-#: src/screens/Signup/StepHandle.tsx:173
-msgid "Doesn't begin or end with a hyphen"
-msgstr "Begjint en einiget net mei in keppelteken"
-
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:507
 msgid "Domain verified!"
 msgstr "Domein ferifiearre!"
 
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:368
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:380
 msgid "Don't have a code or need a new one? <0>Click here.</0>"
 msgstr "Hasto gjin koade of in nije nedicht? <0>Klik hjir.</0>"
 
@@ -2781,11 +2802,11 @@ msgstr "Gjin e-mailberjocht ûntfongen? <0>Klik hjir om opnij te ferstjoeren.</0
 #: src/components/ageAssurance/AgeAssuranceDismissibleFeedBanner.tsx:113
 #: src/components/ageAssurance/AgeAssuranceDismissibleNotice.tsx:36
 msgid "Don't show again"
-msgstr ""
+msgstr "Net mear toane"
 
 #: src/components/ageAssurance/useAgeAssuranceCopy.ts:17
 msgid "Don't worry! All existing messages and settings are saved and will be available after you verify you're an adult."
-msgstr ""
+msgstr "Meitsje dy gjin soargen! Alle besteande berjochten en ynstellingen wurde bewarre en sille beskikber wêze neidatsto ferifieard hast datsto in folwoeksene bist."
 
 #: src/components/dialogs/BirthDateSettings.tsx:115
 #: src/components/dialogs/BirthDateSettings.tsx:121
@@ -2900,8 +2921,8 @@ msgstr "Elke koade wurket ien kear. Do ûntfangst periodyk mear útnûgingskoade
 #: src/screens/Settings/AccountSettings.tsx:143
 #: src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:249
 #: src/screens/StarterPack/StarterPackScreen.tsx:588
-#: src/screens/StarterPack/Wizard/index.tsx:534
-#: src/screens/StarterPack/Wizard/index.tsx:541
+#: src/screens/StarterPack/Wizard/index.tsx:319
+#: src/screens/StarterPack/Wizard/index.tsx:324
 msgid "Edit"
 msgstr "Bewurkje"
 
@@ -2922,7 +2943,7 @@ msgstr "Feeds bewurkje"
 
 #: src/view/com/composer/photos/EditImageDialog.web.tsx:85
 #: src/view/com/composer/photos/EditImageDialog.web.tsx:89
-#: src/view/com/composer/photos/Gallery.tsx:194
+#: src/view/com/composer/photos/Gallery.tsx:195
 msgid "Edit image"
 msgstr "Ofbylding bewurkje"
 
@@ -3135,7 +3156,7 @@ msgid "Enter a word or tag"
 msgstr "Fier in wurd of tag yn"
 
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Disable.tsx:201
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:318
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:320
 msgid "Enter code"
 msgstr "Koade ynfiere"
 
@@ -3176,7 +3197,7 @@ msgstr "Fier fyn wachtwurd yn"
 msgid "Enter your username and password"
 msgstr "Fier dyn brûkersnamme en wachtwurd yn"
 
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:135
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:132
 msgid "Enters full screen"
 msgstr "Iepenet folslein skerm"
 
@@ -3205,7 +3226,7 @@ msgstr "Flaterberjocht"
 msgid "Error occurred while saving file"
 msgstr "Der is in flater bard by it bewarjen fan it bestân"
 
-#: src/screens/Signup/StepCaptcha/index.tsx:55
+#: src/screens/Signup/StepCaptcha/index.tsx:124
 msgid "Error receiving captcha response."
 msgstr "Flater by ûntfangen fan captcha-antwurd."
 
@@ -3279,7 +3300,7 @@ msgstr "Ferlit ôfbyldingswerjefte"
 msgid "Expand alt text"
 msgstr "Alt-tekst útklappe"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:588
+#: src/view/com/notifications/NotificationFeedItem.tsx:592
 msgid "Expand list of users"
 msgstr "Brûkerslist útklappe"
 
@@ -3372,7 +3393,7 @@ msgid "Failed to accept chat"
 msgstr "Chat akseptearje mislearre"
 
 #: src/components/dms/ActionsWrapper.web.tsx:67
-#: src/components/dms/MessageContextMenu.tsx:104
+#: src/components/dms/MessageContextMenu.tsx:99
 msgid "Failed to add emoji reaction"
 msgstr "Tafoegjen emoji-reaksje mislearre"
 
@@ -3388,8 +3409,8 @@ msgstr "Koe app-wachtwurd net oanmeitsje. Probearje it nochris."
 msgid "Failed to create conversation"
 msgstr "Oanmeitsjen fan petear mislearre"
 
-#: src/screens/StarterPack/Wizard/index.tsx:233
-#: src/screens/StarterPack/Wizard/index.tsx:241
+#: src/screens/StarterPack/Wizard/index.tsx:239
+#: src/screens/StarterPack/Wizard/index.tsx:247
 msgid "Failed to create starter pack"
 msgstr "It oanmeitsjen fan it startpakket is mislearre"
 
@@ -3403,7 +3424,7 @@ msgctxt "toast"
 msgid "Failed to delete chat"
 msgstr "Fuortsmiten fan chat mislearre"
 
-#: src/components/dms/MessageContextMenu.tsx:84
+#: src/components/dms/MessageContextMenu.tsx:79
 msgid "Failed to delete message"
 msgstr "Priveeberjocht kin net fuorsmiten wurde"
 
@@ -3474,7 +3495,7 @@ msgid "Failed to pin post"
 msgstr "Fêstsetten fan berjocht is mislearre"
 
 #: src/components/dms/ActionsWrapper.web.tsx:61
-#: src/components/dms/MessageContextMenu.tsx:98
+#: src/components/dms/MessageContextMenu.tsx:93
 msgid "Failed to remove emoji reaction"
 msgstr "Fuortsmiten emoji-reaksje mislearre"
 
@@ -3675,7 +3696,7 @@ msgstr "Sykje minsken om te folgjen"
 msgid "Find posts, users, and feeds on Bluesky"
 msgstr "Sykje berjochten, brûkers en feeds op Bluesky"
 
-#: src/screens/StarterPack/Wizard/index.tsx:195
+#: src/screens/StarterPack/Wizard/index.tsx:201
 msgid "Finish"
 msgstr "Foltôgje"
 
@@ -3688,9 +3709,9 @@ msgid "Flexible"
 msgstr "Fleksibel"
 
 #. User is not following this account, click to follow
-#: src/components/ProfileCard.tsx:490
-#: src/components/ProfileHoverCard/index.web.tsx:494
-#: src/components/ProfileHoverCard/index.web.tsx:505
+#: src/components/ProfileCard.tsx:517
+#: src/components/ProfileHoverCard/index.web.tsx:496
+#: src/components/ProfileHoverCard/index.web.tsx:507
 #: src/screens/Profile/Header/ProfileHeaderStandard.tsx:245
 #: src/screens/VideoFeed/index.tsx:850
 #: src/view/com/post-thread/PostThreadFollowBtn.tsx:131
@@ -3766,9 +3787,9 @@ msgid "Followers you know"
 msgstr "Folgers dy’tsto kinst"
 
 #. User is following this account, click to unfollow
-#: src/components/ProfileCard.tsx:484
-#: src/components/ProfileHoverCard/index.web.tsx:493
-#: src/components/ProfileHoverCard/index.web.tsx:504
+#: src/components/ProfileCard.tsx:511
+#: src/components/ProfileHoverCard/index.web.tsx:495
+#: src/components/ProfileHoverCard/index.web.tsx:506
 #: src/screens/Profile/Header/ProfileHeaderStandard.tsx:241
 #: src/screens/VideoFeed/index.tsx:848
 #: src/view/com/post-thread/PostThreadFollowBtn.tsx:134
@@ -3781,7 +3802,7 @@ msgctxt "feed-name"
 msgid "Following"
 msgstr "Folgjend"
 
-#: src/components/ProfileCard.tsx:447
+#: src/components/ProfileCard.tsx:474
 #: src/screens/Profile/Header/ProfileHeaderStandard.tsx:89
 msgid "Following {0}"
 msgstr "Folget {0}"
@@ -4039,7 +4060,7 @@ msgstr "Gean live"
 msgid "Go live for"
 msgstr "Gean live foar"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:218
+#: src/view/com/notifications/NotificationFeedItem.tsx:221
 msgid "Go to {firstAuthorName}'s profile"
 msgstr "Gean nei it profyl fan {firstAuthorName}"
 
@@ -4047,7 +4068,7 @@ msgstr "Gean nei it profyl fan {firstAuthorName}"
 #: src/components/ageAssurance/AgeRestrictedScreen.tsx:75
 #: src/components/ageAssurance/AgeRestrictedScreen.tsx:84
 msgid "Go to account settings"
-msgstr ""
+msgstr "Gean nei accountynstellingen"
 
 #: src/screens/Messages/components/ChatListItem.tsx:360
 msgid "Go to conversation with {0}"
@@ -4114,7 +4135,7 @@ msgid "Hashtag {tag}"
 msgstr "Hashtag {tag}"
 
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Disable.tsx:198
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:315
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:317
 msgid "Have a code? <0>Click here.</0>"
 msgstr "Hasto in koade? <0>Klik hjir.</0>"
 
@@ -4137,6 +4158,11 @@ msgstr "Lit minsken witte datsto gjin bot bist troch in foto op te laden of in a
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:187
 msgid "Here is your app password!"
 msgstr "Hjir is dyn app-wachtwurd!"
+
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:73
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:119
+msgid "Hey there 👋"
+msgstr "Ha goeie 👋"
 
 #: src/components/VideoPostCard.tsx:178
 #: src/components/VideoPostCard.tsx:460
@@ -4165,7 +4191,7 @@ msgstr "Ferburgen list"
 msgid "Hide"
 msgstr "Ferstopje"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:808
+#: src/view/com/notifications/NotificationFeedItem.tsx:812
 msgctxt "action"
 msgid "Hide"
 msgstr "Ferstopje"
@@ -4221,7 +4247,7 @@ msgstr "Populêre ûnderwerpen ferstopje?"
 msgid "Hide trending videos?"
 msgstr "Populêre fideo’s ferstopje?"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:799
+#: src/view/com/notifications/NotificationFeedItem.tsx:803
 msgid "Hide user list"
 msgstr "Brûkerslist ferstopje"
 
@@ -4319,7 +4345,7 @@ msgstr "Ik begryp it"
 msgid "If alt text is long, toggles alt text expanded state"
 msgstr "As de alt-tekst lang is wurdt de alt-tekst yn- of útklapt"
 
-#: src/screens/Signup/StepInfo/Policies.tsx:112
+#: src/screens/Signup/StepInfo/Policies.tsx:142
 msgid "If you are not yet an adult according to the laws of your country, your parent or legal guardian must read these Terms on your behalf."
 msgstr "Asto neffens de wetten fan dyn lân noch gjin folwoeksene bist moat dyn âlder of wetlike fâd dizze nammens dy lêze."
 
@@ -4335,7 +4361,7 @@ msgstr ""
 msgid "If you have your own domain, you can use that as your handle. This lets you self-verify your identity. <0>Learn more here.</0>"
 msgstr "Asto in eigen domein hast, kinsto dat as handle brûke. Sa kinsto dyn identiteit sels ferifiearje. <0>Klik hjir foar mear ynformaasje.</0>"
 
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:270
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:272
 msgid "If you need to update your email, <0>click here</0>."
 msgstr "Asto dyn e-mailadres bywurkje moatst, <0>klik hjir</0>."
 
@@ -4542,7 +4568,7 @@ msgstr ""
 msgid "It's correct"
 msgstr "Dat is korrekt"
 
-#: src/screens/StarterPack/Wizard/index.tsx:435
+#: src/screens/StarterPack/Wizard/index.tsx:474
 msgid "It's just you right now! Add more people to your starter pack by searching above."
 msgstr "Do bist no noch de iennige! Foegje mear persoanen ta oan dyn startpakket troch hjirboppe te sykjen."
 
@@ -4573,15 +4599,15 @@ msgstr "Hâld my op de hichte"
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:344
 msgid "KWS Privacy Policy"
-msgstr ""
+msgstr "KWS-privacybelied"
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:334
 msgid "KWS Terms of Use"
-msgstr ""
+msgstr "KWS-gebrûksbetingsten"
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:201
 msgid "KWS website"
-msgstr ""
+msgstr "KWS-website"
 
 #: src/components/moderation/ContentHider.tsx:234
 msgid "Labeled by {0}."
@@ -4636,11 +4662,11 @@ msgstr "Grutter"
 
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:139
 msgid "Last initiated {timeAgo} ago"
-msgstr ""
+msgstr "Lêst start {timeAgo} lyn"
 
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:137
 msgid "Last initiated just now"
-msgstr ""
+msgstr "Lêst start, sakrekt"
 
 #: src/screens/Hashtag.tsx:95
 #: src/screens/Search/SearchResults.tsx:57
@@ -4666,7 +4692,7 @@ msgstr "Mear ynfo"
 
 #: src/components/ageAssurance/AgeAssuranceDismissibleFeedBanner.tsx:74
 msgid "Learn more about age assurance"
-msgstr ""
+msgstr "Mear ynfo oer leeftiidsferifikaasje"
 
 #: src/view/com/auth/server-input/index.tsx:218
 msgid "Learn more about self hosting your PDS."
@@ -4679,6 +4705,14 @@ msgstr "Mear info oer de moderaasje tapast op dizze ynhâld"
 #: src/components/moderation/ContentHider.tsx:218
 msgid "Learn more about the moderation applied to this content."
 msgstr "Mear info oer de moderaasje tapast op dizze ynhâld."
+
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:149
+msgid "Learn more about these changes and how to share your thoughts with us by <0>reading our blog post.</0>"
+msgstr "Lês mear oer dizze wizigingen en hoe’tsto dyn tinzen mei ús diele kinst troch <0>ús blogberjocht te lêzen.</0>"
+
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:89
+msgid "Learn more about these changes and how to share your thoughts with us by reading our blog post."
+msgstr "Lês mear oer dizze wizigingen en hoe’tsto dyn tinzen mei ús diele kinst troch ús blogberjocht te lêzen."
 
 #: src/components/moderation/PostHider.tsx:110
 #: src/components/moderation/ScreenHider.tsx:127
@@ -4697,7 +4731,7 @@ msgstr "Mear ynfo oer wat iepenbier is op Bluesky."
 
 #: src/components/ageAssurance/AgeAssuranceAdmonition.tsx:86
 msgid "Learn more in your <0>account settings.</0>"
-msgstr ""
+msgstr "Mear ynformaasje yn dyn <0>accountynstellingen.</0>"
 
 #: src/components/moderation/ContentHider.tsx:242
 #: src/view/com/auth/server-input/index.tsx:220
@@ -5073,7 +5107,7 @@ msgstr "Menu"
 msgid "Message {0}"
 msgstr "Berjocht nei {0}"
 
-#: src/components/dms/MessageContextMenu.tsx:82
+#: src/components/dms/MessageContextMenu.tsx:77
 msgctxt "toast"
 msgid "Message deleted"
 msgstr "Berjocht fuortsmiten"
@@ -5082,7 +5116,7 @@ msgstr "Berjocht fuortsmiten"
 msgid "Message deleted"
 msgstr "Berjocht fuortsmiten"
 
-#: src/components/dms/MessageContextMenu.tsx:130
+#: src/components/dms/MessageContextMenu.tsx:125
 msgid "Message from @{0}: {1}"
 msgstr "Berjocht fan @{0}: {1}"
 
@@ -5099,7 +5133,7 @@ msgstr "Ynfierfjild priveeberjocht"
 msgid "Message is too long"
 msgstr "Berjocht is te lang"
 
-#: src/components/dms/MessageContextMenu.tsx:128
+#: src/components/dms/MessageContextMenu.tsx:123
 msgid "Message options"
 msgstr "Berjochtopsjes"
 
@@ -5215,7 +5249,7 @@ msgstr "Films"
 msgid "Music"
 msgstr "Muzyk"
 
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:156
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:153
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/web-controls/VolumeControl.tsx:96
 msgctxt "video"
 msgid "Mute"
@@ -5368,7 +5402,7 @@ msgstr "Navigearret nei dyn profyl"
 #: src/components/moderation/ReportDialog/index.tsx:271
 #: src/components/moderation/ReportDialog/index.tsx:288
 msgid "Need to report a copyright violation, legal request, or regulatory compliance issue?"
-msgstr ""
+msgstr "Moatst melding meitsje fan in skeining fan it auteursrjocht, in wetlike oanfraach, of in kwestje fan neilibjen fan de regeljouwing?"
 
 #: src/components/ReportDialog/SelectReportOptionView.tsx:128
 msgid "Need to report a copyright violation?"
@@ -5392,11 +5426,11 @@ msgctxt "action"
 msgid "New"
 msgstr "Nij"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:549
+#: src/view/com/notifications/NotificationFeedItem.tsx:553
 msgid "New {postsCount, plural, one {post} other {posts}} from {firstAuthorLink}"
 msgstr "{postsCount, plural, one {Nij berjocht} other {Nije berjochten}} fan {firstAuthorLink}"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:532
+#: src/view/com/notifications/NotificationFeedItem.tsx:536
 msgid "New {postsCount, plural, one {post} other {posts}} from {firstAuthorName}"
 msgstr "{postsCount, plural, one {Nij berjocht} other {Nije berjochten}} fan {firstAuthorName}"
 
@@ -5472,11 +5506,11 @@ msgctxt "action"
 msgid "New Post"
 msgstr "Nij berjocht"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:538
+#: src/view/com/notifications/NotificationFeedItem.tsx:542
 msgid "New posts from {firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0>"
 msgstr "Nije berjochten fan {firstAuthorLink} en <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}}</0>"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:523
+#: src/view/com/notifications/NotificationFeedItem.tsx:527
 msgid "New posts from {firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}"
 msgstr "Nije berjochten fan {firstAuthorName} en {additionalAuthorsCount, plural, one {{formattedAuthorsCount} oare} other {{formattedAuthorsCount} oaren}}"
 
@@ -5514,10 +5548,10 @@ msgstr "Nijs"
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:157
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:165
 #: src/screens/Signup/BackNextButtons.tsx:67
-#: src/screens/StarterPack/Wizard/index.tsx:187
-#: src/screens/StarterPack/Wizard/index.tsx:191
-#: src/screens/StarterPack/Wizard/index.tsx:341
-#: src/screens/StarterPack/Wizard/index.tsx:348
+#: src/screens/StarterPack/Wizard/index.tsx:193
+#: src/screens/StarterPack/Wizard/index.tsx:197
+#: src/screens/StarterPack/Wizard/index.tsx:376
+#: src/screens/StarterPack/Wizard/index.tsx:383
 #: src/view/com/modals/ChangePassword.tsx:265
 #: src/view/com/modals/ChangePassword.tsx:267
 msgid "Next"
@@ -5557,14 +5591,10 @@ msgstr "Gjin ôfbylding"
 msgid "No likes yet"
 msgstr "Noch gjin mei-’k-wol-oers"
 
-#: src/components/ProfileCard.tsx:469
+#: src/components/ProfileCard.tsx:496
 #: src/screens/Profile/Header/ProfileHeaderStandard.tsx:110
 msgid "No longer following {0}"
 msgstr "Do folgest {0} net mear"
-
-#: src/screens/Signup/StepHandle.tsx:184
-msgid "No longer than {MAX_SERVICE_HANDLE_LENGTH, plural, other {# characters}}"
-msgstr "Net langer as {MAX_SERVICE_HANDLE_LENGTH, plural, other {# karakters}}"
 
 #: src/screens/Messages/components/ChatListItem.tsx:139
 msgid "No messages yet"
@@ -5616,7 +5646,7 @@ msgstr "Gjin resultaten"
 msgid "No results for \"{0}\"."
 msgstr "Gjin resultaten foar ‘{0}’."
 
-#: src/components/Lists.tsx:189
+#: src/components/Lists.tsx:190
 msgid "No results found"
 msgstr "Gjin resultaten fûn"
 
@@ -5832,10 +5862,6 @@ msgstr "Allinnich .jpg- en .png-bestannen wurde stipe"
 msgid "Only {0} can reply."
 msgstr "Allinnich {0} kin reagearje."
 
-#: src/screens/Signup/StepHandle.tsx:166
-msgid "Only contains letters, numbers, and hyphens"
-msgstr "Befettet allinnich letters, sifers en keppeltekens"
-
 #: src/screens/Settings/ActivityPrivacySettings.tsx:120
 #: src/screens/Settings/ActivityPrivacySettings.tsx:125
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:158
@@ -5850,11 +5876,11 @@ msgstr "Allinnich ôfbyldingsbestannen wurde stipe"
 msgid "Only WebVTT (.vtt) files are supported"
 msgstr "Allinnich WebVTT (.vtt)-bestannen wurde stipe"
 
-#: src/components/Lists.tsx:94
+#: src/components/Lists.tsx:95
 msgid "Oops, something went wrong!"
 msgstr "Och heden! Der is wat misgien!"
 
-#: src/components/Lists.tsx:173
+#: src/components/Lists.tsx:174
 #: src/components/StarterPack/ProfileStarterPacks.tsx:332
 #: src/components/StarterPack/ProfileStarterPacks.tsx:341
 #: src/screens/Settings/AppPasswords.tsx:59
@@ -5962,7 +5988,7 @@ msgstr "Ferhaleboekside iepenje"
 msgid "Open system log"
 msgstr "Systeemlochboek iepenje"
 
-#: src/view/com/util/forms/DropdownButton.tsx:162
+#: src/view/com/util/forms/DropdownButton.tsx:167
 msgid "Opens {numItems} options"
 msgstr "Iepenet {numItems} opsjes"
 
@@ -6104,6 +6130,10 @@ msgstr "Oare account"
 msgid "Other..."
 msgstr "Oars…"
 
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:50
+msgid "Our blog post"
+msgstr "Us blogberjocht"
+
 #: src/components/dms/ReportDialog.tsx:348
 msgid "Our moderation team has received your report."
 msgstr "Us moderaasjeteam hat dyn melding ûntfongen."
@@ -6112,7 +6142,7 @@ msgstr "Us moderaasjeteam hat dyn melding ûntfongen."
 msgid "Our moderators have reviewed reports and decided to disable your access to chats on Bluesky."
 msgstr "Us moderators hawwe de meldingen besjoen en besletten dyn tagong ta chats op Bluesky út te skeakeljen."
 
-#: src/components/Lists.tsx:190
+#: src/components/Lists.tsx:191
 #: src/view/screens/NotFound.tsx:47
 msgid "Page not found"
 msgstr "Side net fûn"
@@ -6147,7 +6177,7 @@ msgid "Password updated!"
 msgstr "Wachtwurd bywurke!"
 
 #: src/components/Post/Embed/ExternalEmbed/Gif.tsx:43
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:140
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:137
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/web-controls/VideoControls.tsx:369
 msgid "Pause"
 msgstr "Pauzearje"
@@ -6236,7 +6266,7 @@ msgid "Pinned to your feeds"
 msgstr "Fêstset oan dyn feeds"
 
 #: src/components/Post/Embed/ExternalEmbed/Gif.tsx:43
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:140
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:137
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/web-controls/VideoControls.tsx:370
 msgid "Play"
 msgstr "Ofspylje"
@@ -6245,7 +6275,7 @@ msgstr "Ofspylje"
 msgid "Play {0}"
 msgstr "{0} ôfspylje"
 
-#: src/components/Post/Embed/VideoEmbed/index.tsx:134
+#: src/components/Post/Embed/VideoEmbed/index.tsx:132
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/web-controls/VideoControls.tsx:321
 msgid "Play video"
 msgstr "Fideo ôfspylje"
@@ -6258,7 +6288,7 @@ msgstr "Fideo ôfspylje"
 msgid "Plays or pauses the GIF"
 msgstr "Spilet of pauzearret de GIF"
 
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:141
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:138
 msgid "Plays or pauses the video"
 msgstr "Spilet of pauzearret de fideo"
 
@@ -6276,7 +6306,7 @@ msgstr "Foegje alle belutsene ynhâldswarkôgingen foar de media dy’tsto pleat
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:188
 msgid "Please check your email inbox for further instructions. It may take a minute or two to arrive."
-msgstr ""
+msgstr "Kontrolearje dyn Postfek YN foar fierdere ynstruksjes. It kin efkes duorje eardat dit berjocht binnenkomt."
 
 #: src/screens/Signup/StepInfo/index.tsx:93
 msgid "Please choose a 3rd party service host, or sign up on bsky.app."
@@ -6333,9 +6363,9 @@ msgstr "Fier in jildich wurd, tag of wurdgroep yn om te negearjen"
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:144
 msgid "Please enter a valid, non-temporary email address. You may need to access this email in the future."
-msgstr ""
+msgstr "Fier in jildich, net-tydlik e-mailadres yn. Mooglik moetsto dit e-mailadres yn de takomst brûke."
 
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:257
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:259
 msgid "Please enter the code we sent to <0>{0}</0> below."
 msgstr "Fier hjirûnder de koade dy’t wy nei <0>{0}</0> ferstjoerd hawwe yn."
 
@@ -6376,13 +6406,18 @@ msgstr "Lis út wêromsto tinkst dat dit label net krekt tapast is troch {0}"
 msgid "Please explain why you think your chats were incorrectly disabled"
 msgstr "Lis út wêromsto tinkst dat dyn chats ûnrjochtlik útskeakele binne"
 
+#: src/components/FocusScope/index.tsx:93
+#: src/components/FocusScope/index.tsx:117
+msgid "Please go back, or activate this element to return to the start of the active content."
+msgstr "Gean werom of aktivearje dit elemint om werom te kearen nei de start fan de aktive ynhâld."
+
 #: src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:98
 msgid "Please provide any additional details you feel moderators may need in order to properly assess your Age Assurance status."
-msgstr ""
+msgstr "Jou alle oanfoljende gegevens op wêrfan do tinkst dat de moderators dizze nedich hawwe, om dyn leeftiidsferifikaasjestatus goed beoardiele te kinnen."
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:303
 msgid "Please select a language"
-msgstr ""
+msgstr "Selektearje in taal"
 
 #: src/components/moderation/ReportDialog/action.ts:31
 msgid "Please select a moderation service"
@@ -6403,7 +6438,7 @@ msgstr "Ferifiearje dyn e-mailadres"
 
 #: src/lib/hooks/useCreateSupportLink.ts:28
 msgid "Please write your message below:"
-msgstr ""
+msgstr "Skriuw hjirûnder dyn berjocht:"
 
 #: src/screens/Onboarding/index.tsx:34
 #: src/screens/Onboarding/state.ts:111
@@ -6544,7 +6579,7 @@ msgid "Press to attempt reconnection"
 msgstr "Druk om opnij ferbining te meitsjen"
 
 #: src/components/Error.tsx:60
-#: src/components/Lists.tsx:99
+#: src/components/Lists.tsx:100
 #: src/screens/Messages/components/MessageListError.tsx:24
 #: src/screens/Signup/BackNextButtons.tsx:47
 msgid "Press to retry"
@@ -6777,8 +6812,8 @@ msgstr "Mear reaksjes lêze"
 msgid "Read the Bluesky Privacy Policy"
 msgstr "Lês it Bluesky-privacybelied"
 
-#: src/screens/Signup/StepInfo/Policies.tsx:51
-#: src/screens/Signup/StepInfo/Policies.tsx:71
+#: src/screens/Signup/StepInfo/Policies.tsx:81
+#: src/screens/Signup/StepInfo/Policies.tsx:101
 msgid "Read the Bluesky Terms of Service"
 msgstr "Lês de Bluesky-tsjinstbetingsten"
 
@@ -6910,7 +6945,7 @@ msgstr "Ut bewarre feeds fuortsmite"
 msgid "Remove from your feeds?"
 msgstr "Ut myn feeds fuortsmite?"
 
-#: src/view/com/composer/photos/Gallery.tsx:203
+#: src/view/com/composer/photos/Gallery.tsx:204
 msgid "Remove image"
 msgstr "Ofbylding fuortsmite"
 
@@ -7084,7 +7119,7 @@ msgstr "Sichtberheid fan reaksje bywurke"
 msgid "Reply was successfully hidden"
 msgstr "Reaksje is mei sukses ferstoppe"
 
-#: src/components/dms/MessageContextMenu.tsx:171
+#: src/components/dms/MessageContextMenu.tsx:166
 #: src/components/dms/MessagesListBlockedFooter.tsx:85
 #: src/components/dms/MessagesListBlockedFooter.tsx:92
 msgid "Report"
@@ -7118,7 +7153,7 @@ msgstr "Feed melde"
 msgid "Report list"
 msgstr "List melde"
 
-#: src/components/dms/MessageContextMenu.tsx:169
+#: src/components/dms/MessageContextMenu.tsx:164
 msgid "Report message"
 msgstr "Priveeberjocht melde"
 
@@ -7315,7 +7350,7 @@ msgstr "Werhellet de lêste aksje, dêr’t in flater by barde"
 
 #: src/components/dms/MessageItem.tsx:321
 #: src/components/Error.tsx:65
-#: src/components/Lists.tsx:110
+#: src/components/Lists.tsx:111
 #: src/components/moderation/ReportDialog/index.tsx:229
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoFallback.tsx:55
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoFallback.tsx:57
@@ -7357,7 +7392,7 @@ msgstr "Tebek nei de startside"
 msgid "Returns to previous page"
 msgstr "Tebek nei de foarige side"
 
-#: src/screens/StarterPack/Wizard/index.tsx:287
+#: src/screens/StarterPack/Wizard/index.tsx:304
 msgid "Returns to the previous step"
 msgstr "Tebek nei de foarige stap"
 
@@ -7444,8 +7479,8 @@ msgstr "Bewarret ynstellingen foar bysnijen fan ôfbyldingen"
 
 #: src/components/dms/ChatEmptyPill.tsx:33
 #: src/components/NewskieDialog.tsx:105
-#: src/view/com/notifications/NotificationFeedItem.tsx:747
-#: src/view/com/notifications/NotificationFeedItem.tsx:772
+#: src/view/com/notifications/NotificationFeedItem.tsx:751
+#: src/view/com/notifications/NotificationFeedItem.tsx:776
 msgid "Say hello!"
 msgstr "Sis hallo!"
 
@@ -7501,7 +7536,7 @@ msgstr "Sykje nei ‘{query}’"
 msgid "Search for \"{searchText}\""
 msgstr "Sykje nei ‘{searchText}’"
 
-#: src/screens/StarterPack/Wizard/index.tsx:474
+#: src/screens/StarterPack/Wizard/index.tsx:513
 msgid "Search for feeds that you want to suggest to others."
 msgstr "Sykje nei feeds dy’tsto oan oaren foarstelle wolst."
 
@@ -7580,6 +7615,11 @@ msgstr "Besjoch dizze gids"
 msgid "Seek slider. Use the arrow keys to seek forwards and backwards, and space to play/pause"
 msgstr "Sykslider. Brûk de pylktoetsen om foarút en efterút te sykjen en spaasje om ôf te spyljen/pauzearjen"
 
+#. Accessibility label for a username suggestion in the account creation flow
+#: src/screens/Signup/StepHandle/HandleSuggestions.tsx:42
+msgid "Select {0}"
+msgstr "Selektearje {0}"
+
 #: src/screens/Onboarding/StepProfile/AvatarCreatorItems.tsx:67
 msgid "Select a color"
 msgstr "In kleur selektearje"
@@ -7635,7 +7675,7 @@ msgstr "Selektearje hoe lang asto dit wurd negearje wolst."
 #: src/components/LanguageSelect.tsx:35
 #: src/components/LanguageSelect.tsx:36
 msgid "Select language"
-msgstr ""
+msgstr "Taal selektearje"
 
 #: src/view/com/composer/videos/SubtitleDialog.tsx:248
 msgid "Select language..."
@@ -7708,7 +7748,7 @@ msgstr "Selektearje de taal wêryn’tsto de oersettingen yn dyn feed werjaan wo
 msgid "Select your preferred notification channels"
 msgstr "Selektearje dyn winske meldingskanalen"
 
-#: src/view/com/util/forms/DropdownButton.tsx:297
+#: src/view/com/util/forms/DropdownButton.tsx:302
 msgid "Selects option {0} of {numItems}"
 msgstr "Selektearret opsje {0} fan {numItems}"
 
@@ -7718,7 +7758,7 @@ msgstr "Stjoer in kreaze website!"
 
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Disable.tsx:174
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Disable.tsx:181
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:300
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:302
 #: src/view/com/modals/DeleteAccount.tsx:145
 msgid "Send email"
 msgstr "E-mailberocht ferstjoere"
@@ -7737,7 +7777,7 @@ msgstr "Feedback ferstjoere"
 msgid "Send message"
 msgstr "Berjocht ferstjoere"
 
-#: src/components/PostControls/ShareMenu/RecentChats.tsx:111
+#: src/components/PostControls/ShareMenu/RecentChats.tsx:123
 msgid "Send post to {name}"
 msgstr "Berjocht nei {name} ferstjoere"
 
@@ -7760,7 +7800,7 @@ msgstr "Melding nei {0} ferstjoere"
 msgid "Send report to {title}"
 msgstr "Melding nei {title} ferstjoere"
 
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:293
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:295
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:120
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:123
 msgid "Send verification email"
@@ -8093,6 +8133,7 @@ msgstr ""
 #: src/screens/Login/index.tsx:122
 #: src/screens/Login/index.tsx:143
 #: src/screens/Login/LoginForm.tsx:181
+#: src/screens/Search/SearchResults.tsx:258
 #: src/view/com/auth/SplashScreen.tsx:61
 #: src/view/com/auth/SplashScreen.tsx:69
 #: src/view/com/auth/SplashScreen.web.tsx:123
@@ -8172,12 +8213,12 @@ msgstr "Oanmelden fereaske"
 msgid "Signed in as @{0}"
 msgstr "Oanmeld as @{0}"
 
-#: src/components/FeedInterstitials.tsx:343
+#: src/components/FeedInterstitials.tsx:389
 msgid "Similar accounts"
 msgstr "Fergelykbere accounts"
 
 #: src/screens/Onboarding/StepInterests/index.tsx:231
-#: src/screens/StarterPack/Wizard/index.tsx:195
+#: src/screens/StarterPack/Wizard/index.tsx:201
 msgid "Skip"
 msgstr "Oerslaan"
 
@@ -8206,7 +8247,7 @@ msgstr ""
 msgid "Some of your verifications are invalid."
 msgstr "Guon fan dyn ferifikaasjes binne ûnjildich."
 
-#: src/components/FeedInterstitials.tsx:480
+#: src/components/FeedInterstitials.tsx:529
 msgid "Some other feeds you might like"
 msgstr "Inkelde oare feeds dêr’tsto miskien wol oer meist"
 
@@ -8243,7 +8284,7 @@ msgstr "Der is wat misgien, probearje it nochris"
 msgid "Something went wrong, please try again."
 msgstr "Der is wat misgien, probearje it nochris."
 
-#: src/components/Lists.tsx:174
+#: src/components/Lists.tsx:175
 msgid "Something went wrong!"
 msgstr "Der is wat misgien!"
 
@@ -8259,8 +8300,8 @@ msgstr "Der is wat misgien. Probearje it nochris."
 msgid "Something wrong? Let us know."
 msgstr "Klopt er wat net? Lit it ús witte."
 
-#: src/App.native.tsx:123
-#: src/App.web.tsx:100
+#: src/App.native.tsx:124
+#: src/App.web.tsx:101
 msgid "Sorry! Your session expired. Please sign in again."
 msgstr "Sorry, dyn sesje is ferrûn. Meld dy opnij oan."
 
@@ -8302,7 +8343,7 @@ msgstr "Spam; oermjittich protte fermeldingen of reaksjes"
 msgid "Sports"
 msgstr "Sport"
 
-#: src/components/PostControls/ShareMenu/RecentChats.tsx:196
+#: src/components/PostControls/ShareMenu/RecentChats.tsx:208
 msgid "Start a conversation, and it will appear here."
 msgstr "Start in petear, en it sil hjir ferskine."
 
@@ -8423,7 +8464,7 @@ msgstr "Abonnearje op dizze list"
 
 #: src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:164
 msgid "Success"
-msgstr ""
+msgstr "Slagge"
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:182
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:286
@@ -8438,7 +8479,7 @@ msgstr "Mei sukses ferifiearre"
 msgid "Suggested Accounts"
 msgstr "Foarstelde accounts"
 
-#: src/components/FeedInterstitials.tsx:345
+#: src/components/FeedInterstitials.tsx:391
 msgid "Suggested for you"
 msgstr "Foarsteld foar dy"
 
@@ -8497,6 +8538,10 @@ msgstr "Tik foar ynformaasje"
 #: src/view/com/feeds/MissingFeed.tsx:44
 msgid "Tap for more information"
 msgstr "Tik foar mear ynformaasje"
+
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:164
+msgid "Tap to acknowledge that you understand and agree to these updates and continue using Bluesky"
+msgstr "Tik om te erkennen datsto dizze updates begrypst en dermei akkoard giest en trochgiest mei it gebrûk fan Bluesky"
 
 #: src/components/ContextMenu/Backdrop.ios.tsx:54
 #: src/components/ContextMenu/Backdrop.ios.tsx:80
@@ -8591,18 +8636,18 @@ msgstr "Tank, do hast dyn e-mailadres mei sukses ferifiearre. Do kinst dit dialo
 msgid "That contains the following:"
 msgstr "Dat it folgjende befettet:"
 
-#: src/screens/Signup/StepHandle.tsx:55
-msgid "That handle is already taken."
-msgstr "Dy handle is al yn gebrûk."
-
 #: src/screens/StarterPack/StarterPackScreen.tsx:110
 #: src/screens/StarterPack/StarterPackScreen.tsx:111
 #: src/screens/StarterPack/StarterPackScreen.tsx:155
 #: src/screens/StarterPack/StarterPackScreen.tsx:156
-#: src/screens/StarterPack/Wizard/index.tsx:104
-#: src/screens/StarterPack/Wizard/index.tsx:114
+#: src/screens/StarterPack/Wizard/index.tsx:110
+#: src/screens/StarterPack/Wizard/index.tsx:120
 msgid "That starter pack could not be found."
 msgstr "Dat startpakket kin net fûn wurde."
+
+#: src/screens/Signup/StepHandle/index.tsx:81
+msgid "That username is already taken"
+msgstr "Dy brûkersnamme is al yn gebrûk"
 
 #: src/view/com/post-thread/PostQuotes.tsx:132
 msgid "That's all, folks!"
@@ -8673,11 +8718,11 @@ msgstr "De folgjende ynstellingen wurde brûkt as standert by it meitsjen fan ni
 
 #: src/components/ageAssurance/useAgeAssuranceCopy.ts:11
 msgid "The laws in your location require you to verify you're an adult before accessing certain features on Bluesky, like adult content and direct messaging."
-msgstr ""
+msgstr "De wetten op dyn lokaasje fereaske datsto dy as folwoeksene ferifiearst, eardatsto tagong krijst ta bepaalde funksjes op Bluesky, lykas ynhâld faor folwoeksenen en direkte berjochten."
 
 #: src/components/ageAssurance/useAgeAssuranceCopy.ts:14
 msgid "The laws in your location require you to verify you're an adult to access certain features. Tap to learn more."
-msgstr ""
+msgstr "De wetten op dyn lokaasje fereaske datsto dy as folwoeksene ferifiearst, om tagong te krijen ta bepaalde funksjes. Tik foar mear ynfo."
 
 #: src/view/com/post-thread/PostThread.tsx:267
 #: src/view/com/post-thread/PostThread.tsx:279
@@ -8691,7 +8736,7 @@ msgstr "It privacybelied is ferpleatst nei <0/>"
 #: src/view/com/composer/state/video.ts:396
 #: src/view/com/composer/state/video.ts:435
 msgid "The selected video is larger than 100 MB. Please try again with a smaller file."
-msgstr ""
+msgstr "De selektearre fideo is grutter as 100 MB. Probearje it opnij mei in lytser bestân."
 
 #: src/lib/hooks/useCleanError.ts:40
 #: src/lib/strings/errors.ts:18
@@ -9005,7 +9050,7 @@ msgstr "Dit profyl is allinnich sichtber foar oanmelde brûkers. It is net sicht
 msgid "This reply will be sorted into a hidden section at the bottom of your thread and will mute notifications for subsequent replies - both for yourself and others."
 msgstr "Dizze reaksje wurdt sortearre yn in ferstoppe seksje ûnderoan it petear en negearret meldingen foar folgjende reaksjes – sawol foar dy as foar oaren."
 
-#: src/screens/Signup/StepInfo/Policies.tsx:37
+#: src/screens/Signup/StepInfo/Policies.tsx:66
 msgid "This service has not provided terms of service or a privacy policy."
 msgstr "Dizze tsjinst hat gjin tsjinstbetingsten of in privacybelied."
 
@@ -9015,7 +9060,7 @@ msgstr "Dit soe in domeinrecord oanmeitsje moatte op:"
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:215
 msgid "This should only take a few minutes."
-msgstr ""
+msgstr "Dit soe mar in pear minuten duorje moatte."
 
 #: src/components/verification/VerificationCreatePrompt.tsx:93
 msgid "This user does not have a display name, and therefore cannot be verified."
@@ -9135,7 +9180,7 @@ msgstr "Menu toane/ferstopje"
 msgid "Toggle to enable or disable adult content"
 msgstr "Wikselje om ynhâld foar folwoeksenen yn of út te skeakeljen"
 
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:158
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:155
 msgid "Toggles the sound"
 msgstr "Set it lûd oan of út"
 
@@ -9206,10 +9251,6 @@ msgstr ""
 msgid "Two-factor authentication (2FA)"
 msgstr "Twafaktorautentikaasje (2FA)"
 
-#: src/screens/Signup/StepHandle.tsx:126
-msgid "Type your desired username"
-msgstr "Fier dyn winske brûkersnamme yn"
-
 #: src/screens/Messages/components/MessageInput.tsx:153
 msgid "Type your message here"
 msgstr "Typ hjir dyn priveebericht"
@@ -9247,7 +9288,7 @@ msgstr ""
 
 #: src/components/ageAssurance/AgeRestrictedScreen.tsx:51
 msgid "Unavailable"
-msgstr ""
+msgstr "Net beskikber"
 
 #: src/view/com/feeds/MissingFeed.tsx:126
 msgid "Unavailable feed information"
@@ -9330,7 +9371,7 @@ msgstr "Mei ’k net mear oer"
 msgid "Unlike ({0, plural, one {# like} other {# likes}})"
 msgstr "Mei ik net mear oer ({0, plural, one {# mei-’k-net-mear-oer} other {# mei-’k-net-mear-oers}})"
 
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:155
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:152
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/web-controls/VolumeControl.tsx:95
 msgctxt "video"
 msgid "Unmute"
@@ -9553,7 +9594,7 @@ msgstr "Brûk dit om dy tegearre mei dyn handle oan te melden by de oare app."
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:279
 msgid "Use your account email address, or another real email address you control, in case KWS or Bluesky needs to contact you."
-msgstr ""
+msgstr "Brûk it e-mailadres fan dyn account, of in oar echt e-mailadres datsto hast, yn it gefal dat KWS of Bluesky kontakt mei dy opnimme wol."
 
 #: src/view/com/modals/InviteCodes.tsx:201
 msgid "Used by:"
@@ -9606,6 +9647,18 @@ msgstr "Brûkerslist oanmakke"
 msgctxt "toast"
 msgid "User list updated"
 msgstr "Brûkerslist bywurke"
+
+#: src/screens/Signup/StepHandle/index.tsx:235
+msgid "Username cannot be longer than {MAX_SERVICE_HANDLE_LENGTH, plural, other {# characters}}"
+msgstr "Brûkersnamme mei net langer as {MAX_SERVICE_HANDLE_LENGTH, plural, one {}other {# tekens}} wêze"
+
+#: src/screens/Signup/StepHandle/index.tsx:219
+msgid "Username cannot begin or end with a hyphen"
+msgstr "Brûkersnamme mei net mei in keppelteken begjinne of einigje"
+
+#: src/screens/Signup/StepHandle/index.tsx:223
+msgid "Username must only contain letters (a-z), numbers, and hyphens"
+msgstr "Brûkersnamme mei allinnich letters (a-z), sifers en keppeltekens befetsje"
 
 #: src/screens/Login/LoginForm.tsx:201
 msgid "Username or email address"
@@ -9670,10 +9723,13 @@ msgstr "Account ferifiearje"
 
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:122
 msgid "Verify again"
-msgstr ""
+msgstr "Opnij ferifiearje"
 
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:348
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:359
+#. Button text and accessibility label for action to verify the user's email address using the code entered
+#. Button text and accessibility label for action to verify the user's email address using the code entered
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:351
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:367
+msgctxt "action"
 msgid "Verify code"
 msgstr "Koade ferifiearje"
 
@@ -9682,6 +9738,7 @@ msgstr "Koade ferifiearje"
 msgid "Verify DNS Record"
 msgstr "DNS-record ferifiearje"
 
+#. Dialog title when a user is verifying their email address by entering a code they have been sent
 #: src/components/dialogs/EmailDialog/screens/Verify.tsx:214
 msgid "Verify email code"
 msgstr "E-mailkoade ferifiearje"
@@ -9693,7 +9750,7 @@ msgstr "Dialoochfinster E-mailadres ferifiearje"
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:110
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:124
 msgid "Verify now"
-msgstr ""
+msgstr "No ferifiearje"
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:529
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:551
@@ -9706,7 +9763,7 @@ msgstr "Dizze account ferifiearje?"
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:182
 msgid "Verify your age"
-msgstr ""
+msgstr "Dyn leeftiid ferifiearje"
 
 #: src/components/dialogs/EmailDialog/screens/Verify.tsx:211
 #: src/screens/Settings/AccountSettings.tsx:79
@@ -9716,19 +9773,19 @@ msgstr "Ferifiearje dyn e-mailadres"
 
 #: src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:213
 msgid "Verifying"
-msgstr ""
+msgstr "Ferifiearje"
 
 #: src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:74
 msgid "Verifying your age assurance status"
-msgstr ""
+msgstr "Status fan leeftiidsferifikaasje"
 
 #: src/screens/Settings/AboutSettings.tsx:124
 #: src/screens/Settings/AboutSettings.tsx:153
 msgid "Version {appVersion}"
 msgstr "Ferzje {appVersion}"
 
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:83
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:134
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:81
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:131
 msgid "Video"
 msgstr "Fideo"
 
@@ -9758,7 +9815,7 @@ msgstr "Fideo is pauzearre"
 msgid "Video is playing"
 msgstr "Fideo spilet"
 
-#: src/components/Post/Embed/VideoEmbed/index.web.tsx:192
+#: src/components/Post/Embed/VideoEmbed/index.web.tsx:219
 msgid "Video not found."
 msgstr "Fideo net fûn."
 
@@ -9770,7 +9827,7 @@ msgstr "Fideo-ynstellingen"
 msgid "Video uploaded"
 msgstr "Fideo opladen"
 
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:83
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:81
 msgid "Video: {0}"
 msgstr "Fideo: {0}"
 
@@ -9787,11 +9844,11 @@ msgstr "Fideo’s moatte minder as 3 minuten lang wêze"
 msgid "View {0}'s avatar"
 msgstr "Avatar fan {0} besjen"
 
-#: src/components/ProfileCard.tsx:118
+#: src/components/ProfileCard.tsx:124
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:454
 #: src/screens/Search/components/SearchProfileCard.tsx:36
 #: src/screens/VideoFeed/index.tsx:790
-#: src/view/com/notifications/NotificationFeedItem.tsx:595
+#: src/view/com/notifications/NotificationFeedItem.tsx:599
 msgid "View {0}'s profile"
 msgstr "Profyl fan {0} besjen"
 
@@ -9799,7 +9856,7 @@ msgstr "Profyl fan {0} besjen"
 msgid "View {displayName}'s profile"
 msgstr "Profyl fan {displayName} besjen"
 
-#: src/components/ProfileHoverCard/index.web.tsx:478
+#: src/components/ProfileHoverCard/index.web.tsx:480
 msgid "View blocked user's profile"
 msgstr "Profyl fan blokkearre brûker besjen"
 
@@ -9836,9 +9893,9 @@ msgstr "Ynformaasje oer dizze labels besjen"
 msgid "View more"
 msgstr "Mear besjen"
 
-#: src/components/ProfileHoverCard/index.web.tsx:464
-#: src/components/ProfileHoverCard/index.web.tsx:484
-#: src/components/ProfileHoverCard/index.web.tsx:511
+#: src/components/ProfileHoverCard/index.web.tsx:466
+#: src/components/ProfileHoverCard/index.web.tsx:486
+#: src/components/ProfileHoverCard/index.web.tsx:513
 #: src/view/com/posts/PostFeedErrorMessage.tsx:179
 #: src/view/com/util/PostMeta.tsx:91
 #: src/view/com/util/PostMeta.tsx:128
@@ -9965,7 +10022,7 @@ msgstr "Wy skatte {estimatedTime} oant dat dyn account klear is."
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:196
 msgid "We have partnered with <0>KWS</0> to verify that you’re an adult. When you click \"Begin\" below, KWS will check if you have previously verified your age using this email address for other games/services powered by KWS technology. If not, KWS will email you instructions for verifying your age. When you’re done, you'll be brought back to continue using Bluesky."
-msgstr ""
+msgstr "Wy wurkje gear mei <0>KWS</0> om te kontrolearjen oftsto in folwoeksene bist. Wannear’tsto hjirûnder op ‘Starte’ klikst, sil KWS kontrolearje oftsto earder dyn leeftiid ferifiearre hast mei help fan dit e-mailadres foar oare spultsjes/tsjinsten oandreaun troch KWS-technology. Sa net, dan sil KWS dy ynstruksjes maile om dyn leeftiid te ferifiearjen. Wannear’tsto klear bist, wurdsto werombrocht om Bluesky brûke te bliuwen."
 
 #: src/components/intents/VerifyEmailIntentDialog.tsx:107
 msgid "We have sent another verification email to <0>{0}</0>."
@@ -9983,7 +10040,7 @@ msgstr "Wy hawwe gjin berjochten mear fan folge accounts. Hjir is it lêste nijs
 msgid "We recommend selecting at least two interests."
 msgstr "Wy rekommandearje oan om op syn minst twa ynteressen te selektearjen."
 
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:238
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:240
 msgid "We sent an email to <0>{0}</0> containing a link. Please click on it to complete the email verification process."
 msgstr "Wy hawwe in e-mailberjocht nei <0>{0}</0> mei in keppeling ferstjoerd. Klik derop om it e-mailferifikaasjeproses te foltôgjen."
 
@@ -10001,7 +10058,7 @@ msgstr "Wy koene dyn konfigurearre labelers op dit stuit net lade."
 
 #: src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:221
 msgid "We were unable to receive the verification due to a connection issue. It may arrive later. If it does, your account will update automatically."
-msgstr ""
+msgstr "Wy koene troch in ferbiningsprobleem de ferifikaasje net ûntfange. It kin letter oankomme. As dit it gefal is, sil dyn account automatysk bywurke wurde."
 
 #: src/screens/Onboarding/StepInterests/index.tsx:129
 msgid "We weren't able to connect. Please try again to continue setting up your account. If it continues to fail, you can skip this flow."
@@ -10011,7 +10068,7 @@ msgstr "Wy koene gjin ferbining meitsje. Probearje it opnij om troch te gean mei
 msgid "We will let you know when your account is ready."
 msgstr "Wy litte dy witte wannear’t dyn account klear is."
 
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:247
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:249
 msgid "We'll send an email to <0>{0}</0> containing a link. Please click on it to complete the email verification process."
 msgstr "Wy stjoere in e-mailberjocht nei <0>{0}</0> mei in keppeling. Klik derop om it e-mailferifikaasjeproses te foltôgjen."
 
@@ -10019,13 +10076,21 @@ msgstr "Wy stjoere in e-mailberjocht nei <0>{0}</0> mei in keppeling. Klik derop
 msgid "We'll use this to help customize your experience."
 msgstr "Wy brûke dizze ynformaasje om dyn ûnderfining te personalisearjen."
 
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:139
+msgid "We're also updating our <0>Community Guidelines</0>, and we want your input! These new guidelines will take effect on October 15th, 2025."
+msgstr "Wy wurkje ek ús <0>Mienskipsrjochtlinen</0> by, en wy wolle dyn ynput! Dizze nije rjochtlinen sille fan krêft wurde op 15 oktober 2025."
+
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:82
+msgid "We're also updating our Community Guidelines, and we want your input! These new guidelines will take effect on October 15th, 2025."
+msgstr "Wy wurkje ek ús Mienskipsrjochtlinen by, en wy wolle dyn ynput! Dizze nije rjochtlinen sille fan krêft wurde op 15 oktober 2025."
+
 #: src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:227
 msgid "We're confirming your age assurance status with our servers. This should only take a few seconds."
-msgstr ""
+msgstr "Wy befêstigje de status fan dyn leeftiidsferifikaasje by ús servers. Dit duorret mar inkelde sekonden."
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:150
 msgid "We're having issues initializing the age assurance process for your account. Please <0>contact support</0> for assistance."
-msgstr ""
+msgstr "Wy hawwe problemen mei it inisjalisearjen fan it leeftiidsbewiisproses foar dyn account. Nim <0>kontakt op mei stipe </0> foar help."
 
 #: src/components/dialogs/SearchablePeopleList.tsx:107
 #: src/components/ProgressGuide/FollowDialog.tsx:172
@@ -10052,7 +10117,7 @@ msgstr "It spyt ús, mar dyn sykopdracht kin net foltôge wurde. Probearje it oe
 msgid "We're sorry! The post you are replying to has been deleted."
 msgstr "It spyt ús! It berjocht wêropsto reagearrest is fuortsmiten."
 
-#: src/components/Lists.tsx:194
+#: src/components/Lists.tsx:195
 #: src/view/screens/NotFound.tsx:50
 msgid "We're sorry! We can't find the page you were looking for."
 msgstr "It spyt ús! Wy kinne de side dy’tsto sochtst net fine."
@@ -10061,9 +10126,25 @@ msgstr "It spyt ús! Wy kinne de side dy’tsto sochtst net fine."
 msgid "We're sorry! You can only subscribe to twenty labelers, and you've reached your limit of twenty."
 msgstr "It spyt ús! Do kinst dy mar op tweintich labelers abonnearje en do hast dizze limyt berikt."
 
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:122
+msgid "We’re updating our <0>Terms of Service</0>, <1>Privacy Policy</1>, and <2>Copyright Policy</2>, effective September 15th, 2025."
+msgstr "Wy wurkje ús <0>Gebrûksbetingsten</0>, <1>Privacybelied</1> en <2>Auteursrjochtbelied</2> by, effektyf fan 15 septimber 2025 ôf."
+
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:63
+msgid "We're updating our policies"
+msgstr "Wy wurkje ús belied by"
+
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:76
+msgid "We’re updating our Terms of Service, Privacy Policy, and Copyright Policy, effective September 15th, 2025."
+msgstr "Wy wurkje ús Gebrûksbetingsten, Privacybelied en Auteursrjochtbelied by, effektyf fan 15 septimber 2025 ôf."
+
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:61
+msgid "We’re updating our Terms of Service, Privacy Policy, and Copyright Policy, effective September 15th, 2025. We're also updating our Community Guidelines, and we want your input! These new guidelines will take effect on October 15th, 2025. Learn more about these changes and how to share your thoughts with us by reading our blog post."
+msgstr "Wy wurkje ús gebrûksbetingsten, privacybelied en it auteursrjochtbelied by op 15 septimber 2025. Wy wurkje ek ús Mienskipsrjochtlinen by en wy wolle dyn ynput! Dizze nije rjochtsnoeren sille fan krêft wurde op 15 oktober 2025. Lês mear oer dizze wizigingen en hoe’tsto dyn tinzen mei ús diele kinne troch ús blogberjocht te lêzen."
+
 #: src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:169
 msgid "We've confirmed your age assurance status. You can now close this dialog."
-msgstr ""
+msgstr "Wy hawwe de status fan dyn leeftiidsbewiis befêstige. Do kinst dit dialoochfinster no slute."
 
 #: src/screens/Deactivated.tsx:125
 msgid "Welcome back!"
@@ -10239,7 +10320,7 @@ msgstr "Do makkest in account op"
 
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:80
 msgid "You are currently unable to access Bluesky's Age Assurance flow. Please <0>contact our moderation team</0> if you believe this is an error."
-msgstr ""
+msgstr "Do kinst op dit stuit gjin tagong krije ta Bluesky’s leeftiidsbewiisproses. Nim <0>kontakt op mei ús moderaasjeteam</0> asto tinkst dat dit in flater is."
 
 #: src/screens/SignupQueued.tsx:157
 msgid "You are in line."
@@ -10413,7 +10494,7 @@ msgstr "Do hast noch gjin accounts blokkearre. Om in account te blokkearjen gies
 msgid "You have not muted any accounts yet. To mute an account, go to their profile and select \"Mute account\" from the menu on their account."
 msgstr "Do hast noch gjin accounts negearre. Om in account te negearjen giesto nei it profyl en selektearresto ‘Account negearje’ yn it menu fan de account."
 
-#: src/components/Lists.tsx:57
+#: src/components/Lists.tsx:58
 msgid "You have reached the end"
 msgstr "Do bist oan it ein kaam"
 
@@ -10440,7 +10521,7 @@ msgstr "Do hast dizze reaksje ferstoppe."
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:241
 msgid "You initiated this flow already, {0} ago. It may take up to 5 minutes for emails to reach your inbox. Please consider waiting a few minutes before trying again."
-msgstr ""
+msgstr "Do bist dit proses al begûn, {0} lyn. It kin oant 5 minuten duorje eardat e-mailberichten dyn Postfek YN berikke. Oerweagje om in pear minuten te wachtsjen eardatsto it opnij probearje."
 
 #: src/components/moderation/LabelsOnMeDialog.tsx:79
 msgid "You may appeal non-self labels if you feel they were placed in error."
@@ -10462,7 +10543,7 @@ msgstr "Do meist maksimaal 3 feeds tafoegje"
 msgid "You may only select up to 4 images"
 msgstr "Do meist maksimaal 4 ôfbyldingen selektearje"
 
-#: src/screens/Signup/StepInfo/Policies.tsx:106
+#: src/screens/Signup/StepInfo/Policies.tsx:136
 msgid "You must be 13 years of age or older to create an account."
 msgstr "Do moatst op syn minst 13 jier âld wêze om in account oant te meitsjen."
 
@@ -10472,11 +10553,11 @@ msgstr "Do moatst op syn minst 7 oare persoanen folgje om in startpakket te gene
 
 #: src/screens/Moderation/index.tsx:355
 msgid "You must complete age assurance in order to access the settings below."
-msgstr ""
+msgstr "Om tagong te krijen ta de ynstellingen hjirûnder, moatsto dyn leeftiidsferifikaasje foltôgje."
 
 #: src/components/ageAssurance/AgeRestrictedScreen.tsx:64
 msgid "You must complete age assurance in order to access this screen."
-msgstr ""
+msgstr "Om tagong te krijen ta dit skerm, moatsto dyn leeftiidsferifikaasje foltôgje."
 
 #: src/components/StarterPack/QrCodeDialog.tsx:61
 msgid "You must grant access to your photo library to save a QR code"
@@ -10590,6 +10671,10 @@ msgstr "Do hast derfoar keazen om in wurd of tag yn dit berjocht te ferstopjen."
 msgid "You've found some people to follow"
 msgstr "Do hastt inkelde minsken fûn om te folgjen"
 
+#: src/components/FocusScope/index.tsx:114
+msgid "You've reached the end of the active content."
+msgstr "Do hast it ein fan de aktive ynhâld berikt."
+
 #: src/view/com/posts/FollowingEndOfFeed.tsx:44
 msgid "You've reached the end of your feed! Find some more accounts to follow."
 msgstr "Do hast it ein fan dyn feed berikt! Sykje noch mear accounts om te folgjen."
@@ -10597,6 +10682,10 @@ msgstr "Do hast it ein fan dyn feed berikt! Sykje noch mear accounts om te folgj
 #: src/lib/hooks/useCleanError.ts:58
 msgid "You've reached the maximum number of requests allowed. Please try again later."
 msgstr "Do bist oer it maksimaal tal tasteane fersiken. Probearje it letter nochris."
+
+#: src/components/FocusScope/index.tsx:90
+msgid "You've reached the start of the active content."
+msgstr "Do hast it begjin fan de aktive ynhâld berikt."
 
 #: src/view/com/composer/state/video.ts:423
 msgid "You've reached your daily limit for video uploads (too many bytes)"
@@ -10638,7 +10727,7 @@ msgstr "Dyn beswier is yntsjinne. Asto yn it gelyk stelst wurdst, ûntfangsto in
 msgid "Your birth date"
 msgstr "Dyn bertedatum"
 
-#: src/components/Post/Embed/VideoEmbed/index.web.tsx:196
+#: src/components/Post/Embed/VideoEmbed/index.web.tsx:223
 msgid "Your browser does not support the video format. Please try a different browser."
 msgstr "Dyn browser stipet de fideo-yndieling net. Probearje in oare browser."
 
@@ -10658,7 +10747,7 @@ msgstr "Dyn aktuele handle <0>{0}</0> bliuwt automatysk foar dy reservearre. Do 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:257
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:258
 msgid "Your email"
-msgstr ""
+msgstr "Jouw e-mailadres"
 
 #: src/screens/Login/ForgotPasswordForm.tsx:51
 #: src/screens/Signup/state.ts:270
@@ -10734,7 +10823,7 @@ msgstr "Dyn berjochten, mei-’k-wol-oers en blokkearringen binne iepenbier. Neg
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:290
 msgid "Your preferred language"
-msgstr ""
+msgstr "Voorkeurstaal"
 
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:75
 msgid "Your profile, posts, feeds, and lists will no longer be visible to other Bluesky users. You can reactivate your account at any time by logging in."

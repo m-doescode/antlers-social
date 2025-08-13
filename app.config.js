@@ -1,6 +1,6 @@
 const pkg = require('./package.json')
 
-const DARK_SPLASH_ANDROID_BACKGROUND = '#0e1610'
+// const DARK_SPLASH_ANDROID_BACKGROUND = '#0e1610'
 
 module.exports = function (_config) {
   /**
@@ -238,8 +238,9 @@ module.exports = function (_config) {
         ],
         './plugins/starterPackAppClipExtension/withStarterPackAppClip.js',
         './plugins/withGradleJVMHeapSizeIncrease.js',
-        './plugins/withAndroidManifestPlugin.js',
+        './plugins/withAndroidManifestLargeHeapPlugin.js',
         './plugins/withAndroidManifestFCMIconPlugin.js',
+        './plugins/withAndroidManifestIntentQueriesPlugin.js',
         './plugins/withAndroidStylesAccentColorPlugin.js',
         './plugins/withAndroidDayNightThemePlugin.js',
         './plugins/withAndroidNoJitpackPlugin.js',
@@ -254,10 +255,12 @@ module.exports = function (_config) {
               // Android only
               './assets/fonts/inter/Inter-Regular.otf',
               './assets/fonts/inter/Inter-Italic.otf',
+              './assets/fonts/inter/Inter-Medium.otf',
+              './assets/fonts/inter/Inter-MediumItalic.otf',
               './assets/fonts/inter/Inter-SemiBold.otf',
               './assets/fonts/inter/Inter-SemiBoldItalic.otf',
-              './assets/fonts/inter/Inter-ExtraBold.otf',
-              './assets/fonts/inter/Inter-ExtraBoldItalic.otf',
+              './assets/fonts/inter/Inter-Bold.otf',
+              './assets/fonts/inter/Inter-BoldItalic.otf',
             ],
           },
         ],

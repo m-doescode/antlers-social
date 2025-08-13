@@ -4,7 +4,7 @@ import {msg, Trans} from '@lingui/macro'
 import {useLingui} from '@lingui/react'
 
 import {isInvalidHandle, sanitizeHandle} from '#/lib/strings/handles'
-import {isIOS} from '#/platform/detection'
+import {isIOS, isNative} from '#/platform/detection'
 import {type Shadow} from '#/state/cache/types'
 import {useShowLinkInHandle} from '#/state/preferences/show-link-in-handle.tsx'
 import {atoms as a, useTheme, web} from '#/alf'
@@ -51,7 +51,11 @@ export function ProfileHeaderHandle({
                 {borderColor: t.palette.contrast_200},
               ]
             : [a.text_md, a.leading_snug, t.atoms.text_contrast_medium],
-          web({wordBreak: 'break-all'}),
+          web({
+            wordBreak: 'break-all',
+            direction: 'ltr',
+            unicodeBidi: 'isolate',
+          }),
         ]}>
         {invalidHandle ? (
           _(msg`⚠Invalid Handle`)
@@ -60,11 +64,19 @@ export function ProfileHeaderHandle({
             to={`https://${profile.handle}`}
             label={profile.handle}>
             <Text style={[a.text_md, {color: t.palette.primary_500}]}>
-              {sanitizeHandle(profile.handle, '@')}
+              {sanitizeHandle(
+                profile.handle,
+                '@',
+                /* forceLTR handled by CSS above on web*/ isNative,
+              )}
             </Text>
           </InlineLinkText>
         ) : (
-          sanitizeHandle(profile.handle, '@')
+          sanitizeHandle(
+            profile.handle,
+            '@',
+            /* forceLTR handled by CSS above on web*/ isNative,
+          )
         )}
       </Text>
     </View>

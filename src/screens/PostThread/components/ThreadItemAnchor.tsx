@@ -13,7 +13,7 @@ import {useLingui} from '@lingui/react'
 import {useActorStatus} from '#/lib/actor-status'
 import {parseBridgedPostText} from '#/lib/bridgy-utils'
 import {useOpenComposer} from '#/lib/hooks/useOpenComposer'
-import {useOpenLink} from '#/lib/hooks/useOpenLink'
+import {useTranslate} from '#/lib/hooks/useTranslate'
 import {makeProfileLink} from '#/lib/routes/links'
 import {sanitizeDisplayName} from '#/lib/strings/display-names'
 import {sanitizeHandle} from '#/lib/strings/handles'
@@ -513,14 +513,10 @@ function ExpandedPostDetails({
 }) {
   const t = useTheme()
   const {_, i18n} = useLingui()
-  const openLink = useOpenLink()
+  const translate = useTranslate()
   const isRootPost = !('reply' in post.record)
   const langPrefs = useLanguagePrefs()
 
-  const translatorUrl = getTranslatorLink(
-    post.record?.text || '',
-    langPrefs.primaryLanguage,
-  )
   const needsTranslation = useMemo(
     () =>
       Boolean(
@@ -533,7 +529,7 @@ function ExpandedPostDetails({
   const onTranslatePress = useCallback(
     (e: GestureResponderEvent) => {
       e.preventDefault()
-      openLink(translatorUrl, true)
+      translate(post.record.text || '', langPrefs.primaryLanguage)
 
       if (
         bsky.dangerousIsType<AppBskyFeedPost.Record>(
@@ -550,7 +546,7 @@ function ExpandedPostDetails({
 
       return false
     },
-    [openLink, translatorUrl, langPrefs, post],
+    [translate, langPrefs, post],
   )
 
   return (
@@ -570,7 +566,12 @@ function ExpandedPostDetails({
             </Text>
 
             <InlineLinkText
-              to={translatorUrl}
+              // overridden to open an intent on android, but keep
+              // as anchor tag for accessibility
+              to={getTranslatorLink(
+                post.record.text,
+                langPrefs.primaryLanguage,
+              )}
               label={_(msg`Translate`)}
               style={[a.text_sm]}
               onPress={onTranslatePress}>

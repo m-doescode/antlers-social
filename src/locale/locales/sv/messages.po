@@ -8,7 +8,7 @@ msgstr ""
 "Language: sv\n"
 "Project-Id-Version: 49a8cb746fbc2ae5707392ee41ddec4c\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-07-22 03:05\n"
+"PO-Revision-Date: 2025-08-12 01:46\n"
 "Last-Translator: \n"
 "Language-Team: Swedish\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -90,12 +90,12 @@ msgstr "{0, plural, one {# oläst notis} other {# olästa notiser}}"
 msgid "{0, plural, one {#mo} other {#mo}}"
 msgstr "{0, plural, one {#må} other {#må}}"
 
-#: src/components/ProfileHoverCard/index.web.tsx:442
+#: src/components/ProfileHoverCard/index.web.tsx:444
 #: src/screens/Profile/Header/Metrics.tsx:22
 msgid "{0, plural, one {follower} other {followers}}"
 msgstr "{0, plural, one {följare} other {följare}}"
 
-#: src/components/ProfileHoverCard/index.web.tsx:446
+#: src/components/ProfileHoverCard/index.web.tsx:448
 #: src/screens/Profile/Header/Metrics.tsx:26
 msgid "{0, plural, one {following} other {following}}"
 msgstr "{0, plural, one {följd} other {följda}}"
@@ -150,6 +150,10 @@ msgstr "{0} sänder live"
 #: src/components/live/queries.ts:39
 msgid "{0} is not a valid URL"
 msgstr "{0} är inte en giltig URL"
+
+#: src/screens/Signup/StepHandle/index.tsx:189
+msgid "{0} is not available"
+msgstr "{0} är inte tillgängligt"
 
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:223
 msgid "{0} joined this week"
@@ -218,7 +222,7 @@ msgid "{count, plural, one {# unread item} other {# unread items}}"
 msgstr "{count, plural, one {# oläst notis} other {# olästa notiser}}"
 
 #: src/lib/generate-starterpack.ts:111
-#: src/screens/StarterPack/Wizard/index.tsx:178
+#: src/screens/StarterPack/Wizard/index.tsx:184
 msgid "{displayName}'s Starter Pack"
 msgstr "{displayName}s startpaket"
 
@@ -230,159 +234,159 @@ msgstr "{estimatedTimeHrs, plural, one {timme} other {timmar}}"
 msgid "{estimatedTimeMins, plural, one {minute} other {minutes}}"
 msgstr "{estimatedTimeMins, plural, one {minut} other {minuter}}"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:349
+#: src/view/com/notifications/NotificationFeedItem.tsx:353
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> followed you"
 msgstr "{firstAuthorLink} och <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}}</0> följde dig"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:375
+#: src/view/com/notifications/NotificationFeedItem.tsx:379
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> liked your custom feed"
 msgstr "{firstAuthorLink} och <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}}</0> gillade ditt anpassade flöde"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:268
+#: src/view/com/notifications/NotificationFeedItem.tsx:272
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> liked your post"
 msgstr "{firstAuthorLink} och <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}}</0> gillade ditt inlägg"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:480
+#: src/view/com/notifications/NotificationFeedItem.tsx:484
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> liked your repost"
 msgstr "{firstAuthorLink} och <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}}</0> gillade din återpublicering"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:453
+#: src/view/com/notifications/NotificationFeedItem.tsx:457
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> removed their verifications from your account"
 msgstr "{firstAuthorLink} och <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}}</0> tog bort sina verifieringar av ditt konto"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:292
+#: src/view/com/notifications/NotificationFeedItem.tsx:296
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> reposted your post"
 msgstr "{firstAuthorLink} och <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}}</0> återpublicerade ditt inlägg"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:504
+#: src/view/com/notifications/NotificationFeedItem.tsx:508
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> reposted your repost"
 msgstr "{firstAuthorLink} och <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}}</0> återpublicerade din återpublicering"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:399
+#: src/view/com/notifications/NotificationFeedItem.tsx:403
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> signed up with your starter pack"
 msgstr "{firstAuthorLink} och <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}}</0> registrerade sig med ditt startpaket"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:428
+#: src/view/com/notifications/NotificationFeedItem.tsx:432
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> verified you"
 msgstr "{firstAuthorLink} och <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}}</0> verifierade dig"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:361
+#: src/view/com/notifications/NotificationFeedItem.tsx:365
 msgid "{firstAuthorLink} followed you"
 msgstr "{firstAuthorLink} följde dig"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:338
+#: src/view/com/notifications/NotificationFeedItem.tsx:342
 msgid "{firstAuthorLink} followed you back"
 msgstr "{firstAuthorLink} följde dig tillbaka"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:387
+#: src/view/com/notifications/NotificationFeedItem.tsx:391
 msgid "{firstAuthorLink} liked your custom feed"
 msgstr "{firstAuthorLink} gillade ditt anpassade flöde"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:280
+#: src/view/com/notifications/NotificationFeedItem.tsx:284
 msgid "{firstAuthorLink} liked your post"
 msgstr "{firstAuthorLink} gillade ditt inlägg"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:492
+#: src/view/com/notifications/NotificationFeedItem.tsx:496
 msgid "{firstAuthorLink} liked your repost"
 msgstr "{firstAuthorLink} gillade din återpublicering"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:465
+#: src/view/com/notifications/NotificationFeedItem.tsx:469
 msgid "{firstAuthorLink} removed their verification from your account"
 msgstr "{firstAuthorLink} tog bort sin verifiering av ditt konto"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:304
+#: src/view/com/notifications/NotificationFeedItem.tsx:308
 msgid "{firstAuthorLink} reposted your post"
 msgstr "{firstAuthorLink} återpublicerade ditt inlägg"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:516
+#: src/view/com/notifications/NotificationFeedItem.tsx:520
 msgid "{firstAuthorLink} reposted your repost"
 msgstr "{firstAuthorLink} återpublicerade din återpublicering"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:411
+#: src/view/com/notifications/NotificationFeedItem.tsx:415
 msgid "{firstAuthorLink} signed up with your starter pack"
 msgstr "{firstAuthorLink} registrerade sig med ditt startpaket"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:440
+#: src/view/com/notifications/NotificationFeedItem.tsx:444
 msgid "{firstAuthorLink} verified you"
 msgstr "{firstAuthorLink} verifierade dig"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:342
+#: src/view/com/notifications/NotificationFeedItem.tsx:346
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} followed you"
 msgstr "{firstAuthorName} och {additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}} följde dig"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:368
+#: src/view/com/notifications/NotificationFeedItem.tsx:372
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} liked your custom feed"
 msgstr "{firstAuthorName} och {additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}} gillade ditt anpassade flöde"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:261
+#: src/view/com/notifications/NotificationFeedItem.tsx:265
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} liked your post"
 msgstr "{firstAuthorName} och {additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}} gillade ditt inlägg"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:473
+#: src/view/com/notifications/NotificationFeedItem.tsx:477
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} liked your repost"
 msgstr "{firstAuthorName} och {additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}} gillade din återpublicering"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:446
+#: src/view/com/notifications/NotificationFeedItem.tsx:450
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} removed their verifications from your account"
 msgstr "{firstAuthorName} och {additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}} tog bort sina verifieringar av ditt konto"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:285
+#: src/view/com/notifications/NotificationFeedItem.tsx:289
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} reposted your post"
 msgstr "{firstAuthorName} och {additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}} återpublicerade ditt inlägg"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:497
+#: src/view/com/notifications/NotificationFeedItem.tsx:501
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} reposted your repost"
 msgstr "{firstAuthorName} och {additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}} återpublicerade din återpublicering"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:392
+#: src/view/com/notifications/NotificationFeedItem.tsx:396
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} signed up with your starter pack"
 msgstr "{firstAuthorName} och {additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}} registrerade sig med ditt startpaket"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:421
+#: src/view/com/notifications/NotificationFeedItem.tsx:425
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} verified you"
 msgstr "{firstAuthorName} och {additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}} verifierade dig"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:347
+#: src/view/com/notifications/NotificationFeedItem.tsx:351
 msgid "{firstAuthorName} followed you"
 msgstr "{firstAuthorName} följde dig"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:337
+#: src/view/com/notifications/NotificationFeedItem.tsx:341
 msgid "{firstAuthorName} followed you back"
 msgstr "{firstAuthorName} följde dig tillbaka"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:373
+#: src/view/com/notifications/NotificationFeedItem.tsx:377
 msgid "{firstAuthorName} liked your custom feed"
 msgstr "{firstAuthorName} gillade ditt anpassade flöde"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:266
+#: src/view/com/notifications/NotificationFeedItem.tsx:270
 msgid "{firstAuthorName} liked your post"
 msgstr "{firstAuthorName} gillade ditt inlägg"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:478
+#: src/view/com/notifications/NotificationFeedItem.tsx:482
 msgid "{firstAuthorName} liked your repost"
 msgstr "{firstAuthorName} gillade din återpublicering"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:451
+#: src/view/com/notifications/NotificationFeedItem.tsx:455
 msgid "{firstAuthorName} removed their verification from your account"
 msgstr "{firstAuthorName} tog bort sin verifiering av ditt konto"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:290
+#: src/view/com/notifications/NotificationFeedItem.tsx:294
 msgid "{firstAuthorName} reposted your post"
 msgstr "{firstAuthorName} återpublicerade ditt inlägg"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:502
+#: src/view/com/notifications/NotificationFeedItem.tsx:506
 msgid "{firstAuthorName} reposted your repost"
 msgstr "{firstAuthorName} återpublicerade din återpublicering"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:397
+#: src/view/com/notifications/NotificationFeedItem.tsx:401
 msgid "{firstAuthorName} signed up with your starter pack"
 msgstr "{firstAuthorName} registrerade sig med ditt startpaket"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:426
+#: src/view/com/notifications/NotificationFeedItem.tsx:430
 msgid "{firstAuthorName} verified you"
 msgstr "{firstAuthorName} verifierade dig"
 
-#: src/components/ProfileHoverCard/index.web.tsx:570
+#: src/components/ProfileHoverCard/index.web.tsx:572
 msgid "{following} following"
 msgstr "{following} följda"
 
@@ -447,12 +451,12 @@ msgstr "{userName}s verifieringar"
 msgid "+{computedTotal}"
 msgstr "+{computedTotal}"
 
-#: src/screens/StarterPack/Wizard/index.tsx:449
+#: src/screens/StarterPack/Wizard/index.tsx:488
 msgctxt "profiles"
 msgid "<0>{0}, </0><1>{1}, </1>and {2, plural, one {# other} other {# others}} are included in your starter pack"
 msgstr "<0>{0}, </0><1>{1}, </1>och {2, plural, one {# annan} other {# andra}} ingår i ditt startpaket"
 
-#: src/screens/StarterPack/Wizard/index.tsx:502
+#: src/screens/StarterPack/Wizard/index.tsx:541
 msgctxt "feeds"
 msgid "<0>{0}, </0><1>{1}, </1>and {2, plural, one {# other} other {# others}} are included in your starter pack"
 msgstr "<0>{0}, </0><1>{1}, </1>och {2, plural, one {# annan} other {# andra}} ingår i ditt startpaket"
@@ -465,11 +469,11 @@ msgstr "<0>{0}</0> {1, plural, one {följare} other {följare}}"
 msgid "<0>{0}</0> {1, plural, one {following} other {following}}"
 msgstr "<0>{0}</0> {1, plural, one {följda} other {följda}}"
 
-#: src/screens/StarterPack/Wizard/index.tsx:490
+#: src/screens/StarterPack/Wizard/index.tsx:529
 msgid "<0>{0}</0> and<1> </1><2>{1} </2>are included in your starter pack"
 msgstr "<0>{0}</0> och<1> </1><2>{1} </2>ingår i ditt startpaket"
 
-#: src/screens/StarterPack/Wizard/index.tsx:483
+#: src/screens/StarterPack/Wizard/index.tsx:522
 msgid "<0>{0}</0> is included in your starter pack"
 msgstr "<0>{0}</0> ingår i ditt startpaket"
 
@@ -633,7 +637,7 @@ msgstr "Aktivitetsnotiser"
 msgid "Add"
 msgstr "Lägg till"
 
-#: src/screens/StarterPack/Wizard/index.tsx:551
+#: src/screens/StarterPack/Wizard/index.tsx:572
 msgid "Add {0} more to continue"
 msgstr "Lägg till ytterligare {0} för att fortsätta"
 
@@ -663,8 +667,8 @@ msgstr "Lägg till konto"
 #: src/view/com/composer/GifAltText.tsx:76
 #: src/view/com/composer/GifAltText.tsx:144
 #: src/view/com/composer/GifAltText.tsx:210
-#: src/view/com/composer/photos/Gallery.tsx:169
-#: src/view/com/composer/photos/Gallery.tsx:216
+#: src/view/com/composer/photos/Gallery.tsx:170
+#: src/view/com/composer/photos/Gallery.tsx:217
 #: src/view/com/composer/photos/ImageAltTextDialog.tsx:88
 #: src/view/com/composer/photos/ImageAltTextDialog.tsx:93
 msgid "Add alt text"
@@ -733,7 +737,7 @@ msgstr "Lägg till reaktion"
 msgid "Add recommended feeds"
 msgstr "Lägg till rekommenderade flöden"
 
-#: src/screens/StarterPack/Wizard/index.tsx:471
+#: src/screens/StarterPack/Wizard/index.tsx:510
 msgid "Add some feeds to your starter pack!"
 msgstr "Lägg till några flöden i ditt startpaket!"
 
@@ -876,7 +880,7 @@ msgstr "Redan inloggad som @{0}"
 
 #: src/components/Post/Embed/ExternalEmbed/Gif.tsx:186
 #: src/view/com/composer/GifAltText.tsx:100
-#: src/view/com/composer/photos/Gallery.tsx:187
+#: src/view/com/composer/photos/Gallery.tsx:188
 msgid "ALT"
 msgstr "ALT"
 
@@ -894,7 +898,7 @@ msgstr "Alternativtext"
 msgid "Alt Text"
 msgstr "Alternativtext"
 
-#: src/view/com/composer/photos/Gallery.tsx:255
+#: src/view/com/composer/photos/Gallery.tsx:260
 msgid "Alt text describes images for blind and low-vision users, and helps give context to everyone."
 msgstr "Alternativtexter beskriver bilder för blinda och användare med nedsatt syn. De hjälper också gemene man med kontext och sammanhang."
 
@@ -927,11 +931,11 @@ msgstr "Ett fel uppstod under hämtningen av flödet."
 msgid "An error occurred while generating your starter pack. Want to try again?"
 msgstr "Ett fel uppstod när ditt startpaket skulle genereras. Vill du försöka igen?"
 
-#: src/components/Post/Embed/VideoEmbed/index.tsx:160
+#: src/components/Post/Embed/VideoEmbed/index.tsx:157
 msgid "An error occurred while loading the video. Please try again later."
 msgstr "Ett fel uppstod under inläsningen av videoklippet. Försök igen senare."
 
-#: src/components/Post/Embed/VideoEmbed/index.web.tsx:199
+#: src/components/Post/Embed/VideoEmbed/index.web.tsx:226
 msgid "An error occurred while loading the video. Please try again."
 msgstr "Ett fel uppstod under inläsningen av videoklippet. Försök igen."
 
@@ -972,8 +976,8 @@ msgstr "Ett problem uppstod när chatten skulle öppnas"
 
 #: src/components/hooks/useFollowMethods.ts:35
 #: src/components/hooks/useFollowMethods.ts:50
-#: src/components/ProfileCard.tsx:457
-#: src/components/ProfileCard.tsx:478
+#: src/components/ProfileCard.tsx:484
+#: src/components/ProfileCard.tsx:505
 #: src/view/com/profile/FollowButton.tsx:38
 #: src/view/com/profile/FollowButton.tsx:48
 msgid "An issue occurred, please try again."
@@ -1004,6 +1008,10 @@ msgstr "Djur"
 #: src/components/Post/Embed/ExternalEmbed/Gif.tsx:149
 msgid "Animated GIF"
 msgstr "Animerade gif-bilder"
+
+#: src/components/PolicyUpdateOverlay/Badge.tsx:33
+msgid "Announcement"
+msgstr "Meddelande"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:37
 msgid "Announcing verification on Bluesky"
@@ -1134,7 +1142,7 @@ msgstr "Arkiverat inlägg"
 msgid "Are you sure you want to delete the app password \"{0}\"?"
 msgstr "Är du säker på att du vill radera applösenordet ”{0}”?"
 
-#: src/components/dms/MessageContextMenu.tsx:188
+#: src/components/dms/MessageContextMenu.tsx:183
 msgid "Are you sure you want to delete this message? The message will be deleted for you, but not for the other participant."
 msgstr "Är du säker på att du vill radera det här meddelandet? Meddelandet kommer att raderas för dig, men inte för den andra deltagaren."
 
@@ -1201,6 +1209,11 @@ msgstr ""
 msgid "Autoplay videos and GIFs"
 msgstr "Spela upp videoklipp och gif-bilder automatiskt"
 
+#. Shown next to an available username suggestion in the account creation flow
+#: src/screens/Signup/StepHandle/HandleSuggestions.tsx:72
+msgid "Available"
+msgstr "Tillgängligt"
+
 #: src/components/dms/MessagesListHeader.tsx:84
 #: src/components/moderation/LabelsOnMeDialog.tsx:315
 #: src/components/moderation/LabelsOnMeDialog.tsx:316
@@ -1216,7 +1229,7 @@ msgstr "Spela upp videoklipp och gif-bilder automatiskt"
 #: src/screens/Messages/components/ChatDisabled.tsx:134
 #: src/screens/Profile/Header/Shell.tsx:158
 #: src/screens/Signup/BackNextButtons.tsx:41
-#: src/screens/StarterPack/Wizard/index.tsx:286
+#: src/screens/StarterPack/Wizard/index.tsx:303
 msgid "Back"
 msgstr "Tillbaka"
 
@@ -1376,7 +1389,7 @@ msgstr "Bluesky kan inte bekräfta äktheten av det angivna datumet."
 
 #: src/view/com/auth/server-input/index.tsx:212
 msgid "Bluesky is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
-msgstr "Bluesky är ett öppet nätverk där du kan välja din värdleverantör. Om du är en utvecklare kan du vara värd för din egen server."
+msgstr "Bluesky är ett öppet nätverk där du kan välja vilken tjänst som hanterar din data. Om du är utvecklare kan du också driva en egen server."
 
 #: src/view/com/auth/server-input/index.tsx:149
 msgid "Bluesky is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Bluesky Social option."
@@ -1402,6 +1415,14 @@ msgstr "Bluesky visar inte din profil eller dina inlägg för utloggade använda
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:132
 msgid "Bluesky will proactively verify notable and authentic accounts."
 msgstr "Bluesky kommer proaktivt att verifiera framstående och äkta konton."
+
+#: src/screens/Signup/StepInfo/Policies.tsx:26
+msgid "Bluesky's Community Guidelines"
+msgstr "Blueskys gemenskapsriktlinjer"
+
+#: src/screens/Signup/StepInfo/Policies.tsx:32
+msgid "Bluesky's Updated Community Guidelines"
+msgstr "Blueskys uppdaterade gemenskapsriktlinjer"
 
 #: src/screens/Settings/AppIconSettings/index.tsx:99
 msgid "Bluesky+"
@@ -1430,23 +1451,20 @@ msgstr ""
 
 #: src/components/FeedInterstitials.tsx:379
 msgid "Browse more accounts on the Explore page"
-msgstr "Bläddra bland fler konton på sidan Utforska"
+msgstr "Bläddra bland fler konton på Utforska-sidan"
 
-#: src/components/FeedInterstitials.tsx:517
+#: src/components/FeedInterstitials.tsx:566
 msgid "Browse more feeds on the Explore page"
-msgstr "Bläddra bland fler flöden på sidan Utforska"
+msgstr "Bläddra bland fler flöden på Utforska-sidan"
 
-#: src/components/FeedInterstitials.tsx:359
-#: src/components/FeedInterstitials.tsx:362
-#: src/components/FeedInterstitials.tsx:498
-#: src/components/FeedInterstitials.tsx:501
+#: src/components/FeedInterstitials.tsx:547
+#: src/components/FeedInterstitials.tsx:550
 msgid "Browse more suggestions"
 msgstr "Bläddra bland fler förslag"
 
-#: src/components/FeedInterstitials.tsx:387
-#: src/components/FeedInterstitials.tsx:526
+#: src/components/FeedInterstitials.tsx:575
 msgid "Browse more suggestions on the Explore page"
-msgstr "Bläddra bland fler förslag på sidan Utforska"
+msgstr "Bläddra bland fler förslag på Utforska-sidan"
 
 #: src/screens/Home/NoFeedsPinned.tsx:103
 #: src/screens/Home/NoFeedsPinned.tsx:109
@@ -1480,7 +1498,7 @@ msgstr ""
 #: src/components/LabelingServiceCard/index.tsx:62
 #: src/components/moderation/ReportDialog/index.tsx:683
 #: src/screens/Search/components/StarterPackCard.tsx:106
-#: src/screens/Search/Explore.tsx:934
+#: src/screens/Search/Explore.tsx:930
 msgid "By {0}"
 msgstr "Av {0}"
 
@@ -1488,19 +1506,23 @@ msgstr "Av {0}"
 msgid "By <0>{0}</0>"
 msgstr "Av <0>{0}</0>"
 
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:181
+msgid "By clicking \"Continue\" you acknowledge that you understand and agree to these updates."
+msgstr "Genom att klicka på ”Fortsätt” bekräftar du att du förstår och godkänner dessa uppdateringar."
+
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:329
 msgid "By continuing, you agree to the <0>KWS Terms of Use</0> and acknowledge that KWS will store your verified status with your hashed email address in accordance with the <1>KWS Privacy Policy</1>. This means you won’t need to verify again the next time you use this email for other apps, games, and services powered by KWS technology."
 msgstr "Genom att fortsätta samtycker du till <0>KWS användarvillkor</0> och bekräftar att KWS kommer att lagra din verifierade status tillsammans med din hashade e-postadress i enlighet med <1>KWS integritetspolicy</1>. Det innebär att du inte behöver verifiera dig igen nästa gång du använder den här e-postadressen för andra appar, spel eller tjänster som drivs av KWS-teknik."
 
-#: src/screens/Signup/StepInfo/Policies.tsx:81
+#: src/screens/Signup/StepInfo/Policies.tsx:111
 msgid "By creating an account you agree to the <0>Privacy Policy</0>."
 msgstr "Genom att skapa ett konto godkänner du vår <0>integritetspolicy</0>."
 
-#: src/screens/Signup/StepInfo/Policies.tsx:48
+#: src/screens/Signup/StepInfo/Policies.tsx:78
 msgid "By creating an account you agree to the <0>Terms of Service</0> and <1>Privacy Policy</1>."
 msgstr "Genom att skapa ett konto godkänner du våra <0>användarvillkor</0> och vår <1>sekretesspolicy</1>."
 
-#: src/screens/Signup/StepInfo/Policies.tsx:68
+#: src/screens/Signup/StepInfo/Policies.tsx:98
 msgid "By creating an account you agree to the <0>Terms of Service</0>."
 msgstr "Genom att skapa ett konto godkänner du våra <0>användarvillkor</0>."
 
@@ -1678,7 +1700,7 @@ msgstr "Chatt ignorerad"
 msgid "Chat request inbox"
 msgstr "Inkorg för chattförfrågningar"
 
-#: src/screens/Messages/components/InboxPreview.tsx:64
+#: src/screens/Messages/components/InboxPreview.tsx:62
 #: src/screens/Messages/Inbox.tsx:56
 #: src/screens/Messages/Inbox.tsx:98
 msgid "Chat requests"
@@ -1723,7 +1745,7 @@ msgstr "Titta i din inkorg efter ett e‑postmeddelande med den bekräftelsekod 
 msgid "Choose domain verification method"
 msgstr "Välj metod för att verifiera din domän"
 
-#: src/screens/StarterPack/Wizard/index.tsx:194
+#: src/screens/StarterPack/Wizard/index.tsx:200
 msgid "Choose Feeds"
 msgstr "Välj flöden"
 
@@ -1731,7 +1753,7 @@ msgstr "Välj flöden"
 msgid "Choose for me"
 msgstr "Välj åt mig"
 
-#: src/screens/StarterPack/Wizard/index.tsx:190
+#: src/screens/StarterPack/Wizard/index.tsx:196
 msgid "Choose People"
 msgstr "Välj personer"
 
@@ -1784,11 +1806,11 @@ msgstr "Klicka för information"
 msgid "click here"
 msgstr "klicka här"
 
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:371
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:383
 msgid "Click here to restart the verification process."
 msgstr "Klicka här för att börja om verifieringsprocessen."
 
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:273
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:275
 msgid "Click here to update your email"
 msgstr "Klicka här för att uppdatera din e-post"
 
@@ -1869,7 +1891,7 @@ msgstr "Stäng den nedersta lådan"
 msgid "Close dialog"
 msgstr "Stäng dialogruta"
 
-#: src/view/shell/index.web.tsx:89
+#: src/view/shell/index.web.tsx:100
 msgid "Close drawer menu"
 msgstr "Stäng sidpanel"
 
@@ -1917,11 +1939,11 @@ msgstr "Stänger emojiväljaren"
 msgid "Closes viewer for header image"
 msgstr "Stänger visaren för omslagsbilden"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:587
+#: src/view/com/notifications/NotificationFeedItem.tsx:591
 msgid "Collapse list of users"
 msgstr "Dölj lista över användare"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:801
+#: src/view/com/notifications/NotificationFeedItem.tsx:805
 msgid "Collapses list of users for a given notification"
 msgstr "Fäller ihop användarlista för berörd notis"
 
@@ -2104,6 +2126,8 @@ msgstr "Innehållsvarningar"
 msgid "Context menu backdrop, click to close the menu."
 msgstr "Utanför kontextmenyn. Klicka för att stänga menyn."
 
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:162
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:170
 #: src/screens/Onboarding/StepInterests/index.tsx:244
 #: src/screens/Onboarding/StepProfile/index.tsx:276
 msgid "Continue"
@@ -2235,8 +2259,8 @@ msgstr "Kopiera länk till profil"
 msgid "Copy link to starter pack"
 msgstr "Kopiera länk till startpaket"
 
-#: src/components/dms/MessageContextMenu.tsx:149
-#: src/components/dms/MessageContextMenu.tsx:152
+#: src/components/dms/MessageContextMenu.tsx:144
+#: src/components/dms/MessageContextMenu.tsx:147
 msgid "Copy message text"
 msgstr "Kopiera meddelandetext"
 
@@ -2343,6 +2367,7 @@ msgstr ""
 
 #: src/components/dialogs/Signin.tsx:86
 #: src/components/dialogs/Signin.tsx:88
+#: src/screens/Search/SearchResults.tsx:266
 msgid "Create an account"
 msgstr "Skapa ett konto"
 
@@ -2512,7 +2537,7 @@ msgstr "Radera konversation"
 msgid "Delete Conversation"
 msgstr "Radera konversation"
 
-#: src/components/dms/MessageContextMenu.tsx:163
+#: src/components/dms/MessageContextMenu.tsx:158
 msgid "Delete for me"
 msgstr "Radera för mig"
 
@@ -2520,11 +2545,11 @@ msgstr "Radera för mig"
 msgid "Delete list"
 msgstr "Radera lista"
 
-#: src/components/dms/MessageContextMenu.tsx:186
+#: src/components/dms/MessageContextMenu.tsx:181
 msgid "Delete message"
 msgstr "Radera meddelande"
 
-#: src/components/dms/MessageContextMenu.tsx:161
+#: src/components/dms/MessageContextMenu.tsx:156
 msgid "Delete message for me"
 msgstr "Radera meddelandet för mig"
 
@@ -2695,7 +2720,7 @@ msgstr "Upptäck nya flöden"
 
 #: src/components/Dialog/index.tsx:321
 msgid "Dismiss"
-msgstr "Avfärda"
+msgstr "Avvisa"
 
 #: src/view/com/composer/Composer.tsx:1658
 msgid "Dismiss error"
@@ -2703,15 +2728,15 @@ msgstr "Avvisa fel"
 
 #: src/components/ProgressGuide/List.tsx:42
 msgid "Dismiss getting started guide"
-msgstr "Avfärda kom-igång-guide"
+msgstr "Avvisa kom-igång-guide"
 
 #: src/screens/Search/modules/ExploreInterestsCard.tsx:43
 msgid "Dismiss interests"
-msgstr "Avfärda intressen"
+msgstr "Avvisa intressen"
 
 #: src/components/interstitials/TrendingVideos.tsx:89
 msgid "Dismiss this section"
-msgstr "Avfärda den här sektionen"
+msgstr "Avvisa den här sektionen"
 
 #: src/screens/Settings/AccessibilitySettings.tsx:69
 #: src/screens/Settings/AccessibilitySettings.tsx:74
@@ -2758,15 +2783,11 @@ msgstr ""
 msgid "Does not include nudity."
 msgstr "Innehåller ingen nakenhet."
 
-#: src/screens/Signup/StepHandle.tsx:173
-msgid "Doesn't begin or end with a hyphen"
-msgstr "Börjar eller slutar inte med ett bindestreck"
-
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:507
 msgid "Domain verified!"
 msgstr "Domän verifierad!"
 
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:368
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:380
 msgid "Don't have a code or need a new one? <0>Click here.</0>"
 msgstr "Har du ingen kod eller behöver du en ny? <0>Klicka här.</0>"
 
@@ -2900,8 +2921,8 @@ msgstr "Varje kod fungerar en gång. Du kommer att få fler inbjudningskoder med
 #: src/screens/Settings/AccountSettings.tsx:143
 #: src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:249
 #: src/screens/StarterPack/StarterPackScreen.tsx:588
-#: src/screens/StarterPack/Wizard/index.tsx:534
-#: src/screens/StarterPack/Wizard/index.tsx:541
+#: src/screens/StarterPack/Wizard/index.tsx:319
+#: src/screens/StarterPack/Wizard/index.tsx:324
 msgid "Edit"
 msgstr "Redigera"
 
@@ -2922,7 +2943,7 @@ msgstr "Redigera flöden"
 
 #: src/view/com/composer/photos/EditImageDialog.web.tsx:85
 #: src/view/com/composer/photos/EditImageDialog.web.tsx:89
-#: src/view/com/composer/photos/Gallery.tsx:194
+#: src/view/com/composer/photos/Gallery.tsx:195
 msgid "Edit image"
 msgstr "Redigera bild"
 
@@ -3135,7 +3156,7 @@ msgid "Enter a word or tag"
 msgstr "Ange ett ord eller en tagg"
 
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Disable.tsx:201
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:318
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:320
 msgid "Enter code"
 msgstr "Ange kod"
 
@@ -3176,7 +3197,7 @@ msgstr "Ange ditt lösenord"
 msgid "Enter your username and password"
 msgstr "Ange ditt användarnamn och lösenord"
 
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:135
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:132
 msgid "Enters full screen"
 msgstr "Öppnar helskärm"
 
@@ -3205,7 +3226,7 @@ msgstr "Felmeddelande"
 msgid "Error occurred while saving file"
 msgstr "Ett fel uppstod när filen skulle sparas"
 
-#: src/screens/Signup/StepCaptcha/index.tsx:55
+#: src/screens/Signup/StepCaptcha/index.tsx:124
 msgid "Error receiving captcha response."
 msgstr "Fel vid mottagning av captcha-svar."
 
@@ -3279,7 +3300,7 @@ msgstr "Avslutar bildvisning"
 msgid "Expand alt text"
 msgstr "Utöka alternativtext"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:588
+#: src/view/com/notifications/NotificationFeedItem.tsx:592
 msgid "Expand list of users"
 msgstr "Utöka lista över användare"
 
@@ -3372,7 +3393,7 @@ msgid "Failed to accept chat"
 msgstr "Det gick inte att acceptera chatten"
 
 #: src/components/dms/ActionsWrapper.web.tsx:67
-#: src/components/dms/MessageContextMenu.tsx:104
+#: src/components/dms/MessageContextMenu.tsx:99
 msgid "Failed to add emoji reaction"
 msgstr "Det gick inte att lägga till emoji-reaktion"
 
@@ -3388,8 +3409,8 @@ msgstr "Det gick inte att skapa ett applösenord. Försök igen."
 msgid "Failed to create conversation"
 msgstr "Det gick inte att skapa konversation"
 
-#: src/screens/StarterPack/Wizard/index.tsx:233
-#: src/screens/StarterPack/Wizard/index.tsx:241
+#: src/screens/StarterPack/Wizard/index.tsx:239
+#: src/screens/StarterPack/Wizard/index.tsx:247
 msgid "Failed to create starter pack"
 msgstr "Det gick inte att skapa ett startpaket"
 
@@ -3403,7 +3424,7 @@ msgctxt "toast"
 msgid "Failed to delete chat"
 msgstr "Det gick inte att radera chatten"
 
-#: src/components/dms/MessageContextMenu.tsx:84
+#: src/components/dms/MessageContextMenu.tsx:79
 msgid "Failed to delete message"
 msgstr "Det gick inte att radera inlägget"
 
@@ -3474,7 +3495,7 @@ msgid "Failed to pin post"
 msgstr "Det gick inte att fästa inlägget"
 
 #: src/components/dms/ActionsWrapper.web.tsx:61
-#: src/components/dms/MessageContextMenu.tsx:98
+#: src/components/dms/MessageContextMenu.tsx:93
 msgid "Failed to remove emoji reaction"
 msgstr "Det gick inte att ta bort emoji-reaktion"
 
@@ -3675,7 +3696,7 @@ msgstr "Hitta personer att följa"
 msgid "Find posts, users, and feeds on Bluesky"
 msgstr "Hitta inlägg, användare och flöden på Bluesky"
 
-#: src/screens/StarterPack/Wizard/index.tsx:195
+#: src/screens/StarterPack/Wizard/index.tsx:201
 msgid "Finish"
 msgstr "Slutför"
 
@@ -3688,9 +3709,9 @@ msgid "Flexible"
 msgstr "Flexibelt"
 
 #. User is not following this account, click to follow
-#: src/components/ProfileCard.tsx:490
-#: src/components/ProfileHoverCard/index.web.tsx:494
-#: src/components/ProfileHoverCard/index.web.tsx:505
+#: src/components/ProfileCard.tsx:517
+#: src/components/ProfileHoverCard/index.web.tsx:496
+#: src/components/ProfileHoverCard/index.web.tsx:507
 #: src/screens/Profile/Header/ProfileHeaderStandard.tsx:245
 #: src/screens/VideoFeed/index.tsx:850
 #: src/view/com/post-thread/PostThreadFollowBtn.tsx:131
@@ -3766,9 +3787,9 @@ msgid "Followers you know"
 msgstr "Följare som du känner"
 
 #. User is following this account, click to unfollow
-#: src/components/ProfileCard.tsx:484
-#: src/components/ProfileHoverCard/index.web.tsx:493
-#: src/components/ProfileHoverCard/index.web.tsx:504
+#: src/components/ProfileCard.tsx:511
+#: src/components/ProfileHoverCard/index.web.tsx:495
+#: src/components/ProfileHoverCard/index.web.tsx:506
 #: src/screens/Profile/Header/ProfileHeaderStandard.tsx:241
 #: src/screens/VideoFeed/index.tsx:848
 #: src/view/com/post-thread/PostThreadFollowBtn.tsx:134
@@ -3781,7 +3802,7 @@ msgctxt "feed-name"
 msgid "Following"
 msgstr "Följer"
 
-#: src/components/ProfileCard.tsx:447
+#: src/components/ProfileCard.tsx:474
 #: src/screens/Profile/Header/ProfileHeaderStandard.tsx:89
 msgid "Following {0}"
 msgstr "Följer {0}"
@@ -4039,7 +4060,7 @@ msgstr "Sänd live"
 msgid "Go live for"
 msgstr "Sänd live i"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:218
+#: src/view/com/notifications/NotificationFeedItem.tsx:221
 msgid "Go to {firstAuthorName}'s profile"
 msgstr "Gå till {firstAuthorName}s profil"
 
@@ -4114,7 +4135,7 @@ msgid "Hashtag {tag}"
 msgstr "Hashtagg: {tag}"
 
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Disable.tsx:198
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:315
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:317
 msgid "Have a code? <0>Click here.</0>"
 msgstr "Har du en kod? <0>Klicka här.</0>"
 
@@ -4137,6 +4158,11 @@ msgstr "Låt folk veta att du inte är en bot genom att ladda upp en bild eller 
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:187
 msgid "Here is your app password!"
 msgstr "Här är ditt applösenord!"
+
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:73
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:119
+msgid "Hey there 👋"
+msgstr "Hej där 👋"
 
 #: src/components/VideoPostCard.tsx:178
 #: src/components/VideoPostCard.tsx:460
@@ -4165,7 +4191,7 @@ msgstr "Dold lista"
 msgid "Hide"
 msgstr "Dölj"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:808
+#: src/view/com/notifications/NotificationFeedItem.tsx:812
 msgctxt "action"
 msgid "Hide"
 msgstr "Dölj"
@@ -4221,7 +4247,7 @@ msgstr "Dölj trendande ämnen?"
 msgid "Hide trending videos?"
 msgstr "Dölj trendande videoklipp?"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:799
+#: src/view/com/notifications/NotificationFeedItem.tsx:803
 msgid "Hide user list"
 msgstr "Dölj användarlista"
 
@@ -4319,7 +4345,7 @@ msgstr "Jag förstår"
 msgid "If alt text is long, toggles alt text expanded state"
 msgstr "Sätter alternativtext i utökat läge om den är lång"
 
-#: src/screens/Signup/StepInfo/Policies.tsx:112
+#: src/screens/Signup/StepInfo/Policies.tsx:142
 msgid "If you are not yet an adult according to the laws of your country, your parent or legal guardian must read these Terms on your behalf."
 msgstr "Om du inte är vuxen enligt ditt lands lagar måste din förälder eller vårdnadshavare läsa villkoren för din räkning."
 
@@ -4335,7 +4361,7 @@ msgstr ""
 msgid "If you have your own domain, you can use that as your handle. This lets you self-verify your identity. <0>Learn more here.</0>"
 msgstr "Om du har en egen domän kan du använda den som ditt användarnamn. Det gör det möjligt för dig att själv verifiera din identitet. <0>Läs mer här.</0>"
 
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:270
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:272
 msgid "If you need to update your email, <0>click here</0>."
 msgstr "Om du behöver uppdatera din e-post, <0>klicka här</0>."
 
@@ -4357,7 +4383,7 @@ msgstr "Om du vill begränsa vem som kan få notiser om ditt kontos aktivitet ka
 
 #: src/view/com/auth/server-input/index.tsx:208
 msgid "If you're a developer, you can host your own server."
-msgstr "Om du är en utvecklare kan du stå som värd för din egen server."
+msgstr "Om du är utvecklare kan du driva en egen server."
 
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:92
 msgid "If you're trying to change your handle or email, do so before you deactivate."
@@ -4542,7 +4568,7 @@ msgstr ""
 msgid "It's correct"
 msgstr "Det stämmer"
 
-#: src/screens/StarterPack/Wizard/index.tsx:435
+#: src/screens/StarterPack/Wizard/index.tsx:474
 msgid "It's just you right now! Add more people to your starter pack by searching above."
 msgstr "Just nu är det bara du! Lägg till fler personer i ditt startpaket genom att söka ovan."
 
@@ -4670,7 +4696,7 @@ msgstr "Läs mer om ålderskontroll"
 
 #: src/view/com/auth/server-input/index.tsx:218
 msgid "Learn more about self hosting your PDS."
-msgstr "Läs mer om att stå som värd för din egen PDS."
+msgstr "Läs mer om att driva din egen PDS."
 
 #: src/components/moderation/ContentHider.tsx:152
 msgid "Learn more about the moderation applied to this content"
@@ -4679,6 +4705,14 @@ msgstr "Läs mer om den moderering som tillämpas på det här innehållet"
 #: src/components/moderation/ContentHider.tsx:218
 msgid "Learn more about the moderation applied to this content."
 msgstr "Läs mer om den moderering som görs på det här innehållet."
+
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:149
+msgid "Learn more about these changes and how to share your thoughts with us by <0>reading our blog post.</0>"
+msgstr "Läs mer om förändringarna och hur du kan dela med dig av dina synpunkter i <0>vårt blogginlägg</0>."
+
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:89
+msgid "Learn more about these changes and how to share your thoughts with us by reading our blog post."
+msgstr "Läs mer om förändringarna och hur du kan dela med dig av dina synpunkter i vårt blogginlägg."
 
 #: src/components/moderation/PostHider.tsx:110
 #: src/components/moderation/ScreenHider.tsx:127
@@ -5073,7 +5107,7 @@ msgstr "Meny"
 msgid "Message {0}"
 msgstr "Meddelande {0}"
 
-#: src/components/dms/MessageContextMenu.tsx:82
+#: src/components/dms/MessageContextMenu.tsx:77
 msgctxt "toast"
 msgid "Message deleted"
 msgstr "Meddelande raderat"
@@ -5082,7 +5116,7 @@ msgstr "Meddelande raderat"
 msgid "Message deleted"
 msgstr "Meddelande raderat"
 
-#: src/components/dms/MessageContextMenu.tsx:130
+#: src/components/dms/MessageContextMenu.tsx:125
 msgid "Message from @{0}: {1}"
 msgstr "Meddelande från @{0}: {1}"
 
@@ -5099,7 +5133,7 @@ msgstr "Inmatningsfält för meddelande"
 msgid "Message is too long"
 msgstr "Meddelandet är för långt"
 
-#: src/components/dms/MessageContextMenu.tsx:128
+#: src/components/dms/MessageContextMenu.tsx:123
 msgid "Message options"
 msgstr "Meddelandealternativ"
 
@@ -5215,7 +5249,7 @@ msgstr "Filmer"
 msgid "Music"
 msgstr "Musik"
 
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:156
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:153
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/web-controls/VolumeControl.tsx:96
 msgctxt "video"
 msgid "Mute"
@@ -5392,11 +5426,11 @@ msgctxt "action"
 msgid "New"
 msgstr "Ny"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:549
+#: src/view/com/notifications/NotificationFeedItem.tsx:553
 msgid "New {postsCount, plural, one {post} other {posts}} from {firstAuthorLink}"
 msgstr "{postsCount, plural, one {Nytt} other {Nya}} inlägg från {firstAuthorLink}"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:532
+#: src/view/com/notifications/NotificationFeedItem.tsx:536
 msgid "New {postsCount, plural, one {post} other {posts}} from {firstAuthorName}"
 msgstr "{postsCount, plural, one {Nytt} other {Nya}} inlägg från {firstAuthorName}"
 
@@ -5472,11 +5506,11 @@ msgctxt "action"
 msgid "New Post"
 msgstr "Nytt inlägg"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:538
+#: src/view/com/notifications/NotificationFeedItem.tsx:542
 msgid "New posts from {firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0>"
 msgstr "Nya inlägg från {firstAuthorLink} och <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}}</0>"
 
-#: src/view/com/notifications/NotificationFeedItem.tsx:523
+#: src/view/com/notifications/NotificationFeedItem.tsx:527
 msgid "New posts from {firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}"
 msgstr "Nya inlägg från {firstAuthorName} och {additionalAuthorsCount, plural, one {{formattedAuthorsCount} annan} other {{formattedAuthorsCount} andra}}"
 
@@ -5514,10 +5548,10 @@ msgstr "Nyheter"
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:157
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:165
 #: src/screens/Signup/BackNextButtons.tsx:67
-#: src/screens/StarterPack/Wizard/index.tsx:187
-#: src/screens/StarterPack/Wizard/index.tsx:191
-#: src/screens/StarterPack/Wizard/index.tsx:341
-#: src/screens/StarterPack/Wizard/index.tsx:348
+#: src/screens/StarterPack/Wizard/index.tsx:193
+#: src/screens/StarterPack/Wizard/index.tsx:197
+#: src/screens/StarterPack/Wizard/index.tsx:376
+#: src/screens/StarterPack/Wizard/index.tsx:383
 #: src/view/com/modals/ChangePassword.tsx:265
 #: src/view/com/modals/ChangePassword.tsx:267
 msgid "Next"
@@ -5557,14 +5591,10 @@ msgstr "Ingen bild"
 msgid "No likes yet"
 msgstr "Inga gillamarkeringar ännu"
 
-#: src/components/ProfileCard.tsx:469
+#: src/components/ProfileCard.tsx:496
 #: src/screens/Profile/Header/ProfileHeaderStandard.tsx:110
 msgid "No longer following {0}"
 msgstr "{0} följs inte längre"
-
-#: src/screens/Signup/StepHandle.tsx:184
-msgid "No longer than {MAX_SERVICE_HANDLE_LENGTH, plural, other {# characters}}"
-msgstr "Får inte vara längre än {MAX_SERVICE_HANDLE_LENGTH, plural, other {# tecken}}"
 
 #: src/screens/Messages/components/ChatListItem.tsx:139
 msgid "No messages yet"
@@ -5616,7 +5646,7 @@ msgstr "Inga resultat"
 msgid "No results for \"{0}\"."
 msgstr "Inga resultat för ”{0}”."
 
-#: src/components/Lists.tsx:189
+#: src/components/Lists.tsx:190
 msgid "No results found"
 msgstr "Inget resultat hittades"
 
@@ -5768,7 +5798,7 @@ msgstr "Av"
 #: src/components/dialogs/GifSelect.tsx:269
 #: src/view/com/util/ErrorBoundary.tsx:57
 msgid "Oh no!"
-msgstr "Åh, nej!"
+msgstr "Åh nej!"
 
 #: src/screens/Onboarding/StepInterests/index.tsx:124
 msgid "Oh no! Something went wrong."
@@ -5832,10 +5862,6 @@ msgstr "Endast .jpg- och .png-filer stöds"
 msgid "Only {0} can reply."
 msgstr "Endast {0} kan svara."
 
-#: src/screens/Signup/StepHandle.tsx:166
-msgid "Only contains letters, numbers, and hyphens"
-msgstr "Innehåller endast bokstäver, siffror och bindestreck"
-
 #: src/screens/Settings/ActivityPrivacySettings.tsx:120
 #: src/screens/Settings/ActivityPrivacySettings.tsx:125
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:158
@@ -5850,11 +5876,11 @@ msgstr "Endast bildfiler stöds"
 msgid "Only WebVTT (.vtt) files are supported"
 msgstr "Endast WebVTT-filer (.vtt) stöds"
 
-#: src/components/Lists.tsx:94
+#: src/components/Lists.tsx:95
 msgid "Oops, something went wrong!"
 msgstr "Hoppsan, något gick fel!"
 
-#: src/components/Lists.tsx:173
+#: src/components/Lists.tsx:174
 #: src/components/StarterPack/ProfileStarterPacks.tsx:332
 #: src/components/StarterPack/ProfileStarterPacks.tsx:341
 #: src/screens/Settings/AppPasswords.tsx:59
@@ -5962,7 +5988,7 @@ msgstr "Öppna Storybook-sida"
 msgid "Open system log"
 msgstr "Öppna systemlogg"
 
-#: src/view/com/util/forms/DropdownButton.tsx:162
+#: src/view/com/util/forms/DropdownButton.tsx:167
 msgid "Opens {numItems} options"
 msgstr "Öppnar {numItems} alternativ"
 
@@ -6104,6 +6130,10 @@ msgstr "Annat konto"
 msgid "Other..."
 msgstr "Annat…"
 
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:50
+msgid "Our blog post"
+msgstr "Vårt blogginlägg"
+
 #: src/components/dms/ReportDialog.tsx:348
 msgid "Our moderation team has received your report."
 msgstr "Vårt modereringsteam har tagit emot din anmälan."
@@ -6112,7 +6142,7 @@ msgstr "Vårt modereringsteam har tagit emot din anmälan."
 msgid "Our moderators have reviewed reports and decided to disable your access to chats on Bluesky."
 msgstr "Våra moderatorer har granskat anmälningarna och beslutat att ta bort din åtkomst till chattar på Bluesky."
 
-#: src/components/Lists.tsx:190
+#: src/components/Lists.tsx:191
 #: src/view/screens/NotFound.tsx:47
 msgid "Page not found"
 msgstr "Sidan hittades inte"
@@ -6147,7 +6177,7 @@ msgid "Password updated!"
 msgstr "Lösenordet har uppdaterats!"
 
 #: src/components/Post/Embed/ExternalEmbed/Gif.tsx:43
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:140
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:137
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/web-controls/VideoControls.tsx:369
 msgid "Pause"
 msgstr "Pausa"
@@ -6236,7 +6266,7 @@ msgid "Pinned to your feeds"
 msgstr "Fäst i dina flöden"
 
 #: src/components/Post/Embed/ExternalEmbed/Gif.tsx:43
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:140
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:137
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/web-controls/VideoControls.tsx:370
 msgid "Play"
 msgstr "Spela"
@@ -6245,7 +6275,7 @@ msgstr "Spela"
 msgid "Play {0}"
 msgstr "Spela {0}"
 
-#: src/components/Post/Embed/VideoEmbed/index.tsx:134
+#: src/components/Post/Embed/VideoEmbed/index.tsx:132
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/web-controls/VideoControls.tsx:321
 msgid "Play video"
 msgstr "Spela upp videoklipp"
@@ -6258,7 +6288,7 @@ msgstr "Spela upp videoklipp"
 msgid "Plays or pauses the GIF"
 msgstr "Spelar upp eller pausar gif-bilden"
 
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:141
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:138
 msgid "Plays or pauses the video"
 msgstr "Spelar upp eller pausar videoklippet"
 
@@ -6335,7 +6365,7 @@ msgstr "Ange ett giltigt ord, en tagg eller en fras att ignorera"
 msgid "Please enter a valid, non-temporary email address. You may need to access this email in the future."
 msgstr "Se till att ange en giltig, icke-tillfällig e-postadress. Du kan behöva komma åt den här e-posten i framtiden."
 
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:257
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:259
 msgid "Please enter the code we sent to <0>{0}</0> below."
 msgstr "Ange den kod vi skickade till <0>{0}</0> nedan."
 
@@ -6375,6 +6405,11 @@ msgstr "Förklara varför du anser att den här etiketten har använts på ett f
 #: src/screens/Messages/components/ChatDisabled.tsx:110
 msgid "Please explain why you think your chats were incorrectly disabled"
 msgstr "Förklara varför du anser att dina chattar felaktigt har inaktiverats"
+
+#: src/components/FocusScope/index.tsx:93
+#: src/components/FocusScope/index.tsx:117
+msgid "Please go back, or activate this element to return to the start of the active content."
+msgstr "Gå tillbaka, eller aktivera det här elementet för att återgå till början av det aktiva innehållet."
 
 #: src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:98
 msgid "Please provide any additional details you feel moderators may need in order to properly assess your Age Assurance status."
@@ -6544,7 +6579,7 @@ msgid "Press to attempt reconnection"
 msgstr "Tryck för att försöka återansluta"
 
 #: src/components/Error.tsx:60
-#: src/components/Lists.tsx:99
+#: src/components/Lists.tsx:100
 #: src/screens/Messages/components/MessageListError.tsx:24
 #: src/screens/Signup/BackNextButtons.tsx:47
 msgid "Press to retry"
@@ -6753,7 +6788,7 @@ msgstr "Återaktivera ditt konto"
 
 #: src/screens/PostThread/components/ThreadItemReadMore.tsx:92
 msgid "Read {0} more {1, plural, one {reply} other {replies}}"
-msgstr "Läs {0} fler {1, plural,one {svar} other {svar}}"
+msgstr "Läs {0} {1, plural, one {svar} other {svar}} till"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:158
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:173
@@ -6777,8 +6812,8 @@ msgstr "Läs fler svar"
 msgid "Read the Bluesky Privacy Policy"
 msgstr "Läs Blueskys integritetspolicy"
 
-#: src/screens/Signup/StepInfo/Policies.tsx:51
-#: src/screens/Signup/StepInfo/Policies.tsx:71
+#: src/screens/Signup/StepInfo/Policies.tsx:81
+#: src/screens/Signup/StepInfo/Policies.tsx:101
 msgid "Read the Bluesky Terms of Service"
 msgstr "Läs Blueskys användarvillkor"
 
@@ -6910,7 +6945,7 @@ msgstr "Ta bort från sparade flöden"
 msgid "Remove from your feeds?"
 msgstr "Ta bort från dina flöden?"
 
-#: src/view/com/composer/photos/Gallery.tsx:203
+#: src/view/com/composer/photos/Gallery.tsx:204
 msgid "Remove image"
 msgstr "Ta bort bild"
 
@@ -7024,7 +7059,7 @@ msgstr "Svara"
 #. Accessibility label for the reply button, verb form followed by number of replies and noun form
 #: src/components/PostControls/index.tsx:207
 msgid "Reply ({0, plural, one {# reply} other {# replies}})"
-msgstr "Svar ({0, plural, one {# svar} other {# svar}})"
+msgstr "Svara ({0, plural, one {# svar} other {# svar}})"
 
 #: src/components/moderation/ModerationDetailsDialog.tsx:116
 #: src/lib/moderation/useModerationCauseDescription.ts:125
@@ -7084,7 +7119,7 @@ msgstr "Synlighet för svar har uppdaterats"
 msgid "Reply was successfully hidden"
 msgstr "Svaret doldes utan problem"
 
-#: src/components/dms/MessageContextMenu.tsx:171
+#: src/components/dms/MessageContextMenu.tsx:166
 #: src/components/dms/MessagesListBlockedFooter.tsx:85
 #: src/components/dms/MessagesListBlockedFooter.tsx:92
 msgid "Report"
@@ -7118,7 +7153,7 @@ msgstr "Anmäl flöde"
 msgid "Report list"
 msgstr "Anmäl lista"
 
-#: src/components/dms/MessageContextMenu.tsx:169
+#: src/components/dms/MessageContextMenu.tsx:164
 msgid "Report message"
 msgstr "Anmäl meddelande"
 
@@ -7183,7 +7218,7 @@ msgstr "Återpublicera"
 #. Accessibility label for the repost button when the post has not been reposted, verb form followed by number of reposts and noun form
 #: src/components/PostControls/RepostButton.tsx:76
 msgid "Repost ({0, plural, one {# repost} other {# reposts}})"
-msgstr "Återpublicering ({0, plural, one {# återpublicering} other {# återpubliceringar}})"
+msgstr "Återpublicera ({0, plural, one {# återpublicering} other {# återpubliceringar}})"
 
 #: src/Navigation.tsx:468
 msgid "Repost notifications"
@@ -7315,7 +7350,7 @@ msgstr "Försöker igen med den senaste misslyckade åtgärden"
 
 #: src/components/dms/MessageItem.tsx:321
 #: src/components/Error.tsx:65
-#: src/components/Lists.tsx:110
+#: src/components/Lists.tsx:111
 #: src/components/moderation/ReportDialog/index.tsx:229
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoFallback.tsx:55
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoFallback.tsx:57
@@ -7357,7 +7392,7 @@ msgstr "Går tillbaka till startsidan"
 msgid "Returns to previous page"
 msgstr "Går tillbaka till föregående sida"
 
-#: src/screens/StarterPack/Wizard/index.tsx:287
+#: src/screens/StarterPack/Wizard/index.tsx:304
 msgid "Returns to the previous step"
 msgstr "Går tillbaka till föregående steg"
 
@@ -7444,8 +7479,8 @@ msgstr "Sparar inställningar för bildbeskärning"
 
 #: src/components/dms/ChatEmptyPill.tsx:33
 #: src/components/NewskieDialog.tsx:105
-#: src/view/com/notifications/NotificationFeedItem.tsx:747
-#: src/view/com/notifications/NotificationFeedItem.tsx:772
+#: src/view/com/notifications/NotificationFeedItem.tsx:751
+#: src/view/com/notifications/NotificationFeedItem.tsx:776
 msgid "Say hello!"
 msgstr "Säg hej!"
 
@@ -7501,7 +7536,7 @@ msgstr "Sök efter ”{query}”"
 msgid "Search for \"{searchText}\""
 msgstr "Sök efter ”{searchText}”"
 
-#: src/screens/StarterPack/Wizard/index.tsx:474
+#: src/screens/StarterPack/Wizard/index.tsx:513
 msgid "Search for feeds that you want to suggest to others."
 msgstr "Sök efter flöden att föreslå åt andra."
 
@@ -7580,6 +7615,11 @@ msgstr "Se den här guiden"
 msgid "Seek slider. Use the arrow keys to seek forwards and backwards, and space to play/pause"
 msgstr "Uppspelningsreglage. Använd piltangenterna för att spola framåt och bakåt, samt mellanslag för att spela upp/pausa"
 
+#. Accessibility label for a username suggestion in the account creation flow
+#: src/screens/Signup/StepHandle/HandleSuggestions.tsx:42
+msgid "Select {0}"
+msgstr "Välj {0}"
+
 #: src/screens/Onboarding/StepProfile/AvatarCreatorItems.tsx:67
 msgid "Select a color"
 msgstr "Välj en färg"
@@ -7618,7 +7658,7 @@ msgstr "Välj längd"
 
 #: src/screens/Login/index.tsx:144
 msgid "Select from an existing account"
-msgstr "Välj från ett befintligt konto"
+msgstr "Välj ett befintligt konto"
 
 #: src/view/com/composer/photos/SelectGifBtn.tsx:35
 msgid "Select GIF"
@@ -7630,7 +7670,7 @@ msgstr "Välj gif-bild ”{0}”"
 
 #: src/components/dialogs/MutedWords.tsx:142
 msgid "Select how long to mute this word for."
-msgstr "Välj hur länge du vill att det här ordet ska ignoreras."
+msgstr "Välj hur länge det här ordet ska ignoreras."
 
 #: src/components/LanguageSelect.tsx:35
 #: src/components/LanguageSelect.tsx:36
@@ -7708,7 +7748,7 @@ msgstr "Välj önskat språk för översättningar i ditt flöde."
 msgid "Select your preferred notification channels"
 msgstr "Välj önskade notiskanaler"
 
-#: src/view/com/util/forms/DropdownButton.tsx:297
+#: src/view/com/util/forms/DropdownButton.tsx:302
 msgid "Selects option {0} of {numItems}"
 msgstr "Väljer alternativ {0} av {numItems}"
 
@@ -7718,7 +7758,7 @@ msgstr "Skicka en snygg hemsida!"
 
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Disable.tsx:174
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Disable.tsx:181
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:300
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:302
 #: src/view/com/modals/DeleteAccount.tsx:145
 msgid "Send email"
 msgstr "Skicka e-postmeddelande"
@@ -7737,7 +7777,7 @@ msgstr "Skicka feedback"
 msgid "Send message"
 msgstr "Skicka meddelande"
 
-#: src/components/PostControls/ShareMenu/RecentChats.tsx:111
+#: src/components/PostControls/ShareMenu/RecentChats.tsx:123
 msgid "Send post to {name}"
 msgstr "Skicka inlägg till {name}"
 
@@ -7760,7 +7800,7 @@ msgstr "Skicka anmälan till {0}"
 msgid "Send report to {title}"
 msgstr "Skicka anmälan till {title}"
 
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:293
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:295
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:120
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:123
 msgid "Send verification email"
@@ -8077,7 +8117,7 @@ msgstr "Visar information om när det här inlägget skapades"
 
 #: src/screens/Settings/Settings.tsx:122
 msgid "Shows other accounts you can switch to"
-msgstr "Visar andra konton som du kan växla till"
+msgstr "Visar andra konton som du kan byta till"
 
 #: src/components/moderation/ContentHider.tsx:155
 #: src/components/moderation/PostHider.tsx:89
@@ -8093,6 +8133,7 @@ msgstr ""
 #: src/screens/Login/index.tsx:122
 #: src/screens/Login/index.tsx:143
 #: src/screens/Login/LoginForm.tsx:181
+#: src/screens/Search/SearchResults.tsx:258
 #: src/view/com/auth/SplashScreen.tsx:61
 #: src/view/com/auth/SplashScreen.tsx:69
 #: src/view/com/auth/SplashScreen.web.tsx:123
@@ -8172,12 +8213,12 @@ msgstr "Inloggning krävs"
 msgid "Signed in as @{0}"
 msgstr "Inloggad som @{0}"
 
-#: src/components/FeedInterstitials.tsx:343
+#: src/components/FeedInterstitials.tsx:389
 msgid "Similar accounts"
 msgstr "Liknande konton"
 
 #: src/screens/Onboarding/StepInterests/index.tsx:231
-#: src/screens/StarterPack/Wizard/index.tsx:195
+#: src/screens/StarterPack/Wizard/index.tsx:201
 msgid "Skip"
 msgstr "Hoppa över"
 
@@ -8206,7 +8247,7 @@ msgstr ""
 msgid "Some of your verifications are invalid."
 msgstr "Några av dina verifieringar är ogiltiga."
 
-#: src/components/FeedInterstitials.tsx:480
+#: src/components/FeedInterstitials.tsx:529
 msgid "Some other feeds you might like"
 msgstr "Några andra flöden som du kanske gillar"
 
@@ -8243,7 +8284,7 @@ msgstr "Något gick fel. Försök igen"
 msgid "Something went wrong, please try again."
 msgstr "Något gick fel. Försök igen."
 
-#: src/components/Lists.tsx:174
+#: src/components/Lists.tsx:175
 msgid "Something went wrong!"
 msgstr "Något gick fel!"
 
@@ -8259,8 +8300,8 @@ msgstr "Något gick fel. Försök igen."
 msgid "Something wrong? Let us know."
 msgstr "Är något på tok? Hör av dig till oss."
 
-#: src/App.native.tsx:123
-#: src/App.web.tsx:100
+#: src/App.native.tsx:124
+#: src/App.web.tsx:101
 msgid "Sorry! Your session expired. Please sign in again."
 msgstr "Beklagar! Din session har löpt ut. Vänligen logga in igen."
 
@@ -8302,7 +8343,7 @@ msgstr "Spam; överdrivet många omnämnanden eller svar"
 msgid "Sports"
 msgstr "Sport"
 
-#: src/components/PostControls/ShareMenu/RecentChats.tsx:196
+#: src/components/PostControls/ShareMenu/RecentChats.tsx:208
 msgid "Start a conversation, and it will appear here."
 msgstr "Starta en konversation, så visas den här."
 
@@ -8438,7 +8479,7 @@ msgstr "Verifiering lyckades"
 msgid "Suggested Accounts"
 msgstr "Föreslagna konton"
 
-#: src/components/FeedInterstitials.tsx:345
+#: src/components/FeedInterstitials.tsx:391
 msgid "Suggested for you"
 msgstr "Föreslaget åt dig"
 
@@ -8458,20 +8499,20 @@ msgstr "Support"
 #: src/screens/Settings/Settings.tsx:569
 #: src/view/shell/desktop/LeftNav.tsx:245
 msgid "Switch account"
-msgstr "Växla konto"
+msgstr "Byt konto"
 
 #: src/components/dialogs/SwitchAccount.tsx:46
 #: src/components/dialogs/SwitchAccount.tsx:49
 msgid "Switch Account"
-msgstr "Växla konto"
+msgstr "Byt konto"
 
 #: src/view/shell/desktop/LeftNav.tsx:109
 msgid "Switch accounts"
-msgstr "Växla mellan konton"
+msgstr "Byt mellan konton"
 
 #: src/view/shell/desktop/LeftNav.tsx:293
 msgid "Switch to {0}"
-msgstr "Växla till {0}"
+msgstr "Byt till {0}"
 
 #: src/components/dialogs/Embed.tsx:157
 #: src/components/dialogs/Embed.tsx:159
@@ -8498,6 +8539,10 @@ msgstr "Tryck för information"
 msgid "Tap for more information"
 msgstr "Tryck för mer information"
 
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:164
+msgid "Tap to acknowledge that you understand and agree to these updates and continue using Bluesky"
+msgstr "Tryck för att bekräfta att du förstår och godkänner uppdateringarna – och fortsätt använda appen"
+
 #: src/components/ContextMenu/Backdrop.ios.tsx:54
 #: src/components/ContextMenu/Backdrop.ios.tsx:80
 #: src/components/ContextMenu/Backdrop.tsx:46
@@ -8506,7 +8551,7 @@ msgstr "Tryck för att stänga kontextmeny"
 
 #: src/components/ProgressGuide/Toast.tsx:156
 msgid "Tap to dismiss"
-msgstr "Tryck för att avfärda"
+msgstr "Tryck för att avvisa"
 
 #: src/state/shell/progress-guide.tsx:233
 msgid "Task complete - 10 follows!"
@@ -8591,18 +8636,18 @@ msgstr "Tack. Din e-postadress har verifierats utan problem. Du kan stänga den 
 msgid "That contains the following:"
 msgstr "Som innehåller följande:"
 
-#: src/screens/Signup/StepHandle.tsx:55
-msgid "That handle is already taken."
-msgstr "Det användarnamnet används redan av en annan."
-
 #: src/screens/StarterPack/StarterPackScreen.tsx:110
 #: src/screens/StarterPack/StarterPackScreen.tsx:111
 #: src/screens/StarterPack/StarterPackScreen.tsx:155
 #: src/screens/StarterPack/StarterPackScreen.tsx:156
-#: src/screens/StarterPack/Wizard/index.tsx:104
-#: src/screens/StarterPack/Wizard/index.tsx:114
+#: src/screens/StarterPack/Wizard/index.tsx:110
+#: src/screens/StarterPack/Wizard/index.tsx:120
 msgid "That starter pack could not be found."
 msgstr "Det startpaketet kunde inte hittas."
+
+#: src/screens/Signup/StepHandle/index.tsx:81
+msgid "That username is already taken"
+msgstr "Det användarnamnet är redan taget"
 
 #: src/view/com/post-thread/PostQuotes.tsx:132
 msgid "That's all, folks!"
@@ -8691,7 +8736,7 @@ msgstr "Integritetspolicyn har flyttats till <0/>"
 #: src/view/com/composer/state/video.ts:396
 #: src/view/com/composer/state/video.ts:435
 msgid "The selected video is larger than 100 MB. Please try again with a smaller file."
-msgstr ""
+msgstr "Det valda videoklippet är större än 100 MB. Försök igen med en mindre fil."
 
 #: src/lib/hooks/useCleanError.ts:40
 #: src/lib/strings/errors.ts:18
@@ -9005,7 +9050,7 @@ msgstr "Den här profilen är syns bara för inloggade användare. Den syns inte
 msgid "This reply will be sorted into a hidden section at the bottom of your thread and will mute notifications for subsequent replies - both for yourself and others."
 msgstr "Det här svaret kommer att sorteras in i en dold sektion längst ner i tråden. Notiser för påföljande svar stängs av både för dig själv och andra."
 
-#: src/screens/Signup/StepInfo/Policies.tsx:37
+#: src/screens/Signup/StepInfo/Policies.tsx:66
 msgid "This service has not provided terms of service or a privacy policy."
 msgstr "Den här tjänsten har inte tillhandahållit några användarvillkor eller någon integritetspolicy."
 
@@ -9135,7 +9180,7 @@ msgstr "Öppna/stäng rullgardinsmeny"
 msgid "Toggle to enable or disable adult content"
 msgstr "Växla mellan att tillåta eller inaktivera vuxet innehåll"
 
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:158
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:155
 msgid "Toggles the sound"
 msgstr "Sätter på eller stänger av ljudet"
 
@@ -9205,10 +9250,6 @@ msgstr ""
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:65
 msgid "Two-factor authentication (2FA)"
 msgstr "Tvåfaktorsautentisering (2FA)"
-
-#: src/screens/Signup/StepHandle.tsx:126
-msgid "Type your desired username"
-msgstr "Skriv in ditt önskade användarnamn"
 
 #: src/screens/Messages/components/MessageInput.tsx:153
 msgid "Type your message here"
@@ -9330,7 +9371,7 @@ msgstr "Sluta gilla"
 msgid "Unlike ({0, plural, one {# like} other {# likes}})"
 msgstr "Sluta gilla ({0, plural, one {# gillamarkering} other {# gillamarkeringar}})"
 
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:155
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:152
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/web-controls/VolumeControl.tsx:95
 msgctxt "video"
 msgid "Unmute"
@@ -9607,6 +9648,18 @@ msgctxt "toast"
 msgid "User list updated"
 msgstr "Användarlista uppdaterad"
 
+#: src/screens/Signup/StepHandle/index.tsx:235
+msgid "Username cannot be longer than {MAX_SERVICE_HANDLE_LENGTH, plural, other {# characters}}"
+msgstr "Användarnamn får inte vara längre än {MAX_SERVICE_HANDLE_LENGTH, plural, other {# tecken}}"
+
+#: src/screens/Signup/StepHandle/index.tsx:219
+msgid "Username cannot begin or end with a hyphen"
+msgstr "Användarnamn får inte börja eller sluta med ett bindestreck"
+
+#: src/screens/Signup/StepHandle/index.tsx:223
+msgid "Username must only contain letters (a-z), numbers, and hyphens"
+msgstr "Användarnamn får endast innehålla bokstäver (a-z), siffror och bindestreck"
+
 #: src/screens/Login/LoginForm.tsx:201
 msgid "Username or email address"
 msgstr "Användarnamn eller e-postadress"
@@ -9672,8 +9725,11 @@ msgstr "Verifiera konto"
 msgid "Verify again"
 msgstr "Verifiera igen"
 
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:348
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:359
+#. Button text and accessibility label for action to verify the user's email address using the code entered
+#. Button text and accessibility label for action to verify the user's email address using the code entered
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:351
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:367
+msgctxt "action"
 msgid "Verify code"
 msgstr "Verifiera kod"
 
@@ -9682,6 +9738,7 @@ msgstr "Verifiera kod"
 msgid "Verify DNS Record"
 msgstr "Verifiera DNS-post"
 
+#. Dialog title when a user is verifying their email address by entering a code they have been sent
 #: src/components/dialogs/EmailDialog/screens/Verify.tsx:214
 msgid "Verify email code"
 msgstr "Verifiera e-postkod"
@@ -9727,8 +9784,8 @@ msgstr "Verifierar statusen för din ålderskontroll"
 msgid "Version {appVersion}"
 msgstr "Version {appVersion}"
 
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:83
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:134
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:81
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:131
 msgid "Video"
 msgstr "Videoklipp"
 
@@ -9758,7 +9815,7 @@ msgstr "Videoklippet är pausat"
 msgid "Video is playing"
 msgstr "Videoklippet spelas upp"
 
-#: src/components/Post/Embed/VideoEmbed/index.web.tsx:192
+#: src/components/Post/Embed/VideoEmbed/index.web.tsx:219
 msgid "Video not found."
 msgstr "Videoklippet hittades inte."
 
@@ -9770,7 +9827,7 @@ msgstr "Inställningar för videoklipp"
 msgid "Video uploaded"
 msgstr "Videoklipp uppladdat"
 
-#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:83
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:81
 msgid "Video: {0}"
 msgstr "Videoklipp: {0}"
 
@@ -9787,11 +9844,11 @@ msgstr "Videoklipp får inte vara längre än 3 minuter"
 msgid "View {0}'s avatar"
 msgstr "Visa {0}s avatar"
 
-#: src/components/ProfileCard.tsx:118
+#: src/components/ProfileCard.tsx:124
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:454
 #: src/screens/Search/components/SearchProfileCard.tsx:36
 #: src/screens/VideoFeed/index.tsx:790
-#: src/view/com/notifications/NotificationFeedItem.tsx:595
+#: src/view/com/notifications/NotificationFeedItem.tsx:599
 msgid "View {0}'s profile"
 msgstr "Visa {0}s profil"
 
@@ -9799,7 +9856,7 @@ msgstr "Visa {0}s profil"
 msgid "View {displayName}'s profile"
 msgstr "Visa {displayName}s profil"
 
-#: src/components/ProfileHoverCard/index.web.tsx:478
+#: src/components/ProfileHoverCard/index.web.tsx:480
 msgid "View blocked user's profile"
 msgstr "Visa blockerad användares profil"
 
@@ -9836,9 +9893,9 @@ msgstr "Visa information om de här etiketterna"
 msgid "View more"
 msgstr "Visa mer"
 
-#: src/components/ProfileHoverCard/index.web.tsx:464
-#: src/components/ProfileHoverCard/index.web.tsx:484
-#: src/components/ProfileHoverCard/index.web.tsx:511
+#: src/components/ProfileHoverCard/index.web.tsx:466
+#: src/components/ProfileHoverCard/index.web.tsx:486
+#: src/components/ProfileHoverCard/index.web.tsx:513
 #: src/view/com/posts/PostFeedErrorMessage.tsx:179
 #: src/view/com/util/PostMeta.tsx:91
 #: src/view/com/util/PostMeta.tsx:128
@@ -9983,7 +10040,7 @@ msgstr "Vi har slut på inlägg från dina följare. Här är det senaste från 
 msgid "We recommend selecting at least two interests."
 msgstr "Vi rekommenderar att du väljer minst två intressen."
 
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:238
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:240
 msgid "We sent an email to <0>{0}</0> containing a link. Please click on it to complete the email verification process."
 msgstr "Vi har skickat ett e-postmeddelande till <0>{0}</0> med en länk. Klicka på den för att slutföra verifieringsprocessen."
 
@@ -10011,13 +10068,21 @@ msgstr "Vi kunde inte ansluta. Försök igen för att fortsätta konfigurera dit
 msgid "We will let you know when your account is ready."
 msgstr "Vi meddelar dig när ditt konto är klart."
 
-#: src/components/dialogs/EmailDialog/screens/Verify.tsx:247
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:249
 msgid "We'll send an email to <0>{0}</0> containing a link. Please click on it to complete the email verification process."
 msgstr "Vi kommer skicka ett e-postmeddelande till <0>{0}</0> med en länk. Klicka på den för att slutföra verifieringsprocessen."
 
 #: src/screens/Onboarding/StepInterests/index.tsx:134
 msgid "We'll use this to help customize your experience."
 msgstr "Vi använder det här för att anpassa din upplevelse."
+
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:139
+msgid "We're also updating our <0>Community Guidelines</0>, and we want your input! These new guidelines will take effect on October 15th, 2025."
+msgstr "Vi uppdaterar också våra <0>gemenskapsriktlinjer</0> – och vi vill gärna höra vad du tycker! De nya riktlinjerna träder i kraft den 15 oktober 2025."
+
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:82
+msgid "We're also updating our Community Guidelines, and we want your input! These new guidelines will take effect on October 15th, 2025."
+msgstr "Vi uppdaterar också våra gemenskapsriktlinjer – och vi vill gärna höra vad du tycker! De nya riktlinjerna träder i kraft den 15 oktober 2025."
 
 #: src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:227
 msgid "We're confirming your age assurance status with our servers. This should only take a few seconds."
@@ -10052,7 +10117,7 @@ msgstr "Vi beklagar, men din sökning kunde inte slutföras. Försök igen om n�
 msgid "We're sorry! The post you are replying to has been deleted."
 msgstr "Vi beklagar! Inlägget som du vill svara på har raderats."
 
-#: src/components/Lists.tsx:194
+#: src/components/Lists.tsx:195
 #: src/view/screens/NotFound.tsx:50
 msgid "We're sorry! We can't find the page you were looking for."
 msgstr "Vi beklagar! Vi kan inte hitta den sida du letade efter."
@@ -10060,6 +10125,22 @@ msgstr "Vi beklagar! Vi kan inte hitta den sida du letade efter."
 #: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:343
 msgid "We're sorry! You can only subscribe to twenty labelers, and you've reached your limit of twenty."
 msgstr "Vi beklagar! Du kan inte prenumerera på fler än tjugo etikettsättare, och du har nått den övre gränsen."
+
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:122
+msgid "We’re updating our <0>Terms of Service</0>, <1>Privacy Policy</1>, and <2>Copyright Policy</2>, effective September 15th, 2025."
+msgstr "Vi uppdaterar våra <0>användarvillkor</0>, vår <1>integritetspolicy</1> och vår <2>upphovsrättspolicy</2>. Ändringarna börjar gälla den 15 september 2025."
+
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:63
+msgid "We're updating our policies"
+msgstr "Vi uppdaterar våra policyer"
+
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:76
+msgid "We’re updating our Terms of Service, Privacy Policy, and Copyright Policy, effective September 15th, 2025."
+msgstr "Vi uppdaterar våra användarvillkor, vår integritetspolicy och vår upphovsrättspolicy. Ändringarna börjar gälla den 15 september 2025."
+
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:61
+msgid "We’re updating our Terms of Service, Privacy Policy, and Copyright Policy, effective September 15th, 2025. We're also updating our Community Guidelines, and we want your input! These new guidelines will take effect on October 15th, 2025. Learn more about these changes and how to share your thoughts with us by reading our blog post."
+msgstr "Vi uppdaterar våra användarvillkor, vår integritetspolicy och vår upphovsrättspolicy. Ändringarna börjar gälla den 15 september 2025. Vi uppdaterar också våra gemenskapsriktlinjer – och vi vill gärna höra vad du tycker! De nya riktlinjerna träder i kraft den 15 oktober 2025. Läs mer om förändringarna och hur du kan dela med dig av dina synpunkter i vårt blogginlägg."
 
 #: src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:169
 msgid "We've confirmed your age assurance status. You can now close this dialog."
@@ -10413,7 +10494,7 @@ msgstr "Du har inte blockerat några konton än. För att blockera ett konto, g�
 msgid "You have not muted any accounts yet. To mute an account, go to their profile and select \"Mute account\" from the menu on their account."
 msgstr "Du har inte ignorerat några konton än. För att ignorera ett konto, gå till dess profil och välj ”Ignorera konto” i kontomenyn."
 
-#: src/components/Lists.tsx:57
+#: src/components/Lists.tsx:58
 msgid "You have reached the end"
 msgstr "Du har nått slutet"
 
@@ -10462,7 +10543,7 @@ msgstr "Du kan bara lägga till högst 3 flöden"
 msgid "You may only select up to 4 images"
 msgstr "Du kan bara välja upp till 4 bilder"
 
-#: src/screens/Signup/StepInfo/Policies.tsx:106
+#: src/screens/Signup/StepInfo/Policies.tsx:136
 msgid "You must be 13 years of age or older to create an account."
 msgstr "Du måste vara 13 år eller äldre för att skapa ett konto."
 
@@ -10590,6 +10671,10 @@ msgstr "Du har valt att dölja ett ord eller en tagg i det här inlägget."
 msgid "You've found some people to follow"
 msgstr "Du har hittat några personer att följa"
 
+#: src/components/FocusScope/index.tsx:114
+msgid "You've reached the end of the active content."
+msgstr "Du har nått slutet av det aktiva innehållet."
+
 #: src/view/com/posts/FollowingEndOfFeed.tsx:44
 msgid "You've reached the end of your feed! Find some more accounts to follow."
 msgstr "Du har nått slutet av ditt flöde! Hitta några fler konton att följa."
@@ -10597,6 +10682,10 @@ msgstr "Du har nått slutet av ditt flöde! Hitta några fler konton att följa.
 #: src/lib/hooks/useCleanError.ts:58
 msgid "You've reached the maximum number of requests allowed. Please try again later."
 msgstr "Du har nått maxgränsen för antalet tillåtna begäranden. Försök igen senare."
+
+#: src/components/FocusScope/index.tsx:90
+msgid "You've reached the start of the active content."
+msgstr "Du har nått början av det aktiva innehållet."
 
 #: src/view/com/composer/state/video.ts:423
 msgid "You've reached your daily limit for video uploads (too many bytes)"
@@ -10638,7 +10727,7 @@ msgstr "Din omprövningsbegäran har skickats. Du kommer att meddelas via e-post
 msgid "Your birth date"
 msgstr "Ditt födelsedatum"
 
-#: src/components/Post/Embed/VideoEmbed/index.web.tsx:196
+#: src/components/Post/Embed/VideoEmbed/index.web.tsx:223
 msgid "Your browser does not support the video format. Please try a different browser."
 msgstr "Din webbläsare stöder inte videoformatet. Försök med en annan webbläsare."
 

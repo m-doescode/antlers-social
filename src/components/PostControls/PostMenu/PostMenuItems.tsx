@@ -1,5 +1,4 @@
-import {memo, useMemo, useCallback} from 'react'
-import {isWeb} from '#/platform/detection'
+import {memo, useCallback, useMemo} from 'react'
 import {
   Platform,
   type PressableProps,
@@ -20,9 +19,9 @@ import {msg} from '@lingui/macro'
 import {useLingui} from '@lingui/react'
 import {useNavigation} from '@react-navigation/native'
 
-import {IS_INTERNAL} from '#/lib/app-info'
 import {DISCOVER_DEBUG_DIDS} from '#/lib/constants'
 import {useOpenLink} from '#/lib/hooks/useOpenLink'
+import {useTranslate} from '#/lib/hooks/useTranslate'
 import {saveVideoToMediaLibrary} from '#/lib/media/manip'
 import {downloadVideoWeb} from '#/lib/media/manip.web'
 import {getCurrentRoute} from '#/lib/routes/helpers'
@@ -34,8 +33,8 @@ import {
 import {logEvent, useGate} from '#/lib/statsig/statsig'
 import {richTextToString} from '#/lib/strings/rich-text-helpers'
 import {toShareUrl} from '#/lib/strings/url-helpers'
-import {getTranslatorLink} from '#/locale/helpers'
 import {logger} from '#/logger'
+import {isWeb} from '#/platform/detection'
 import {type Shadow} from '#/state/cache/post-shadow'
 import {useProfileShadow} from '#/state/cache/profile-shadow'
 import {useFeedFeedbackContext} from '#/state/feed-feedback'
@@ -90,6 +89,7 @@ import {
   useReportDialogControl,
 } from '#/components/moderation/ReportDialog'
 import * as Prompt from '#/components/Prompt'
+import {IS_INTERNAL} from '#/env'
 import * as bsky from '#/types/bsky'
 
 let PostMenuItems = ({
@@ -125,6 +125,7 @@ let PostMenuItems = ({
   const {hidePost} = useHiddenPostsApi()
   const feedFeedback = useFeedFeedbackContext()
   const openLink = useOpenLink()
+  const translate = useTranslate()
   const navigation = useNavigation<NavigationProp>()
   const {mutedWordsDialogControl} = useGlobalDialogsControlContext()
   const blockPromptControl = useDialogControl()
@@ -178,11 +179,6 @@ let PostMenuItems = ({
     const urip = new AtUri(postUri)
     return makeProfileLink(postAuthor, 'post', urip.rkey)
   }, [postUri, postAuthor])
-
-  const translatorUrl = getTranslatorLink(
-    record.text,
-    langPrefs.primaryLanguage,
-  )
 
   const onDeletePost = () => {
     deletePostMutate({uri: postUri}).then(
@@ -241,8 +237,8 @@ let PostMenuItems = ({
     Toast.show(_(msg`Copied to clipboard`), 'clipboard-check')
   }
 
-  const onPressTranslate = async () => {
-    await openLink(translatorUrl, true)
+  const onPressTranslate = () => {
+    translate(record.text, langPrefs.primaryLanguage)
 
     if (
       bsky.dangerousIsType<AppBskyFeedPost.Record>(
