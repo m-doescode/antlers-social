@@ -238,6 +238,7 @@ const ThreadItemPostInner = memo(function ThreadItemPostInner({
         author: post.author,
         embed: post.embed,
         moderation,
+        langs: post.record.langs,
       },
       onPostSuccess: onPostSuccess,
     })
