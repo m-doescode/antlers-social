@@ -45,11 +45,11 @@ import {
   QuoteEmbedViewContext,
 } from './types'
 import {VideoEmbed} from './VideoEmbed'
-import { useLingui } from '@lingui/react'
-import { useDirectFetchRecords } from '#/state/preferences/direct-fetch-records'
-import { useDirectFetchEmbedRecord } from '#/state/queries/direct-fetch-record'
-import { ViewRecord } from '@atproto/api/dist/client/types/app/bsky/embed/record'
-import { Loader } from '#/components/Loader'
+import {useLingui} from '@lingui/react'
+import {useDirectFetchRecords} from '#/state/preferences/direct-fetch-records'
+import {useDirectFetchEmbedRecord} from '#/state/queries/direct-fetch-record'
+import {ViewRecord} from '@atproto/api/dist/client/types/app/bsky/embed/record'
+import {Loader} from '#/components/Loader'
 
 export {PostEmbedViewContext, QuoteEmbedViewContext} from './types'
 
@@ -95,14 +95,18 @@ function MediaEmbed({
   switch (embed.type) {
     case 'images': {
       return (
-        <ContentHider modui={rest.moderation?.ui('contentMedia')}>
+        <ContentHider
+          modui={rest.moderation?.ui('contentMedia')}
+          activeStyle={[a.mt_sm]}>
           <ImageEmbed embed={embed} {...rest} />
         </ContentHider>
       )
     }
     case 'link': {
       return (
-        <ContentHider modui={rest.moderation?.ui('contentMedia')}>
+        <ContentHider
+          modui={rest.moderation?.ui('contentMedia')}
+          activeStyle={[a.mt_sm]}>
           <ExternalEmbed
             link={embed.view.external}
             onOpen={rest.onOpen}
@@ -113,7 +117,9 @@ function MediaEmbed({
     }
     case 'video': {
       return (
-        <ContentHider modui={rest.moderation?.ui('contentMedia')}>
+        <ContentHider
+          modui={rest.moderation?.ui('contentMedia')}
+          activeStyle={[a.mt_sm]}>
           <VideoEmbed embed={embed.view} />
         </ContentHider>
       )
@@ -136,14 +142,12 @@ function RecordEmbed({
 
   const directFetchEnabled = useDirectFetchRecords()
   const shouldDirectFetch =
-    (embed.type == 'post_blocked' ||
-      embed.type == 'post_detached') &&
+    (embed.type == 'post_blocked' || embed.type == 'post_detached') &&
     directFetchEnabled
 
   const directRecord = useDirectFetchEmbedRecord({
     uri:
-      embed.type == 'post_blocked' ||
-      embed.type == 'post_detached'
+      embed.type == 'post_blocked' || embed.type == 'post_detached'
         ? embed.view.uri
         : '',
     enabled: shouldDirectFetch,
@@ -255,7 +259,12 @@ function RecordEmbed({
         )
       }
 
-      return <PostDetachedEmbed embed={embed} directFetchEnabled={directFetchEnabled} />
+      return (
+        <PostDetachedEmbed
+          embed={embed}
+          directFetchEnabled={directFetchEnabled}
+        />
+      )
     }
     default: {
       return null
@@ -365,19 +374,21 @@ export function QuoteEmbed({
               onBeforePress={onBeforePress}>
               <View pointerEvents="none">
                 {visibilityLabel !== undefined ? (
-                  <View style={[{
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                    gap: 4,
-                    marginBottom: 8,
-                  }, t.atoms.border_contrast_low]}>
+                  <View
+                    style={[
+                      {
+                        flexDirection: 'row',
+                        alignItems: 'center',
+                        gap: 4,
+                        marginBottom: 8,
+                      },
+                      t.atoms.border_contrast_low,
+                    ]}>
                     <EyeSlashIcon size="sm" style={pal.text} />
-                    <Text style={[a.text_md, pal.text]}>
-                      {visibilityLabel}
-                    </Text>
+                    <Text style={[a.text_md, pal.text]}>{visibilityLabel}</Text>
                   </View>
                 ) : undefined}
-            <PostMeta
+                <PostMeta
                   author={quote.author}
                   moderation={moderation}
                   showAvatar

@@ -372,6 +372,7 @@ const ThreadItemTreePostInner = memo(function ThreadItemTreePostInner({
                     </View>
                   )}
                   <PostControls
+                    variant="compact"
                     post={postShadow}
                     record={record}
                     richText={richText}
