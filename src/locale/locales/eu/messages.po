@@ -1408,8 +1408,8 @@ msgstr "Blokeatu erabiltzailea"
 msgid "Block User"
 msgstr "Blokeatu Erabiltzailea"
 
-#: src/components/Post/Embed/index.tsx:225
-#: src/components/Post/Embed/index.tsx:233
+#: src/components/Post/Embed/index.tsx:223
+#: src/components/Post/Embed/index.tsx:231
 msgid "Blocked"
 msgstr "Blokeatua"
 
@@ -2700,7 +2700,7 @@ msgstr "Zerrenda hau ezabatu nahi duzu?"
 msgid "Delete this post?"
 msgstr "Post hau ezabatu nahi duzu?"
 
-#: src/components/Post/Embed/index.tsx:206
+#: src/components/Post/Embed/index.tsx:204
 msgid "Deleted"
 msgstr "Ezabatu da"
 
@@ -5675,11 +5675,6 @@ msgstr "Erantzun berrienak lehenengo"
 msgid "News"
 msgstr "Berriak"
 
-#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:42
-msgctxt "Name of app icon variant"
-msgid "Next"
-msgstr ""
-
 #: src/screens/Login/ForgotPasswordForm.tsx:137
 #: src/screens/Login/ForgotPasswordForm.tsx:143
 #: src/screens/Login/LoginForm.tsx:343
@@ -5697,6 +5692,11 @@ msgstr ""
 #: src/screens/StarterPack/Wizard/index.tsx:399
 msgid "Next"
 msgstr "Hurrengoa"
+
+#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:42
+msgctxt "Name of app icon variant"
+msgid "Next"
+msgstr ""
 
 #: src/view/com/lightbox/Lightbox.web.tsx:170
 msgid "Next image"
@@ -7160,12 +7160,12 @@ msgstr "Kendu egiaztapena"
 msgid "Remove your verification for this account?"
 msgstr "Zure egiaztapena kendu kontu honi?"
 
-#: src/components/Post/Embed/index.tsx:257
-#: src/components/Post/Embed/index.tsx:290
+#: src/components/Post/Embed/index.tsx:255
+#: src/components/Post/Embed/index.tsx:293
 msgid "Removed by author"
 msgstr "Egileak kenduta"
 
-#: src/components/Post/Embed/index.tsx:288
+#: src/components/Post/Embed/index.tsx:291
 msgid "Removed by you"
 msgstr "Zuk kenduta"
 

@@ -1408,8 +1408,8 @@ msgstr "屏蔽用户"
 msgid "Block User"
 msgstr "屏蔽用户"
 
-#: src/components/Post/Embed/index.tsx:225
-#: src/components/Post/Embed/index.tsx:233
+#: src/components/Post/Embed/index.tsx:223
+#: src/components/Post/Embed/index.tsx:231
 msgid "Blocked"
 msgstr "已被屏蔽"
 
@@ -2700,7 +2700,7 @@ msgstr "要删除此列表吗？"
 msgid "Delete this post?"
 msgstr "要删除这则帖文吗？"
 
-#: src/components/Post/Embed/index.tsx:206
+#: src/components/Post/Embed/index.tsx:204
 msgid "Deleted"
 msgstr "已删除"
 
@@ -5675,11 +5675,6 @@ msgstr "最新回复优先"
 msgid "News"
 msgstr "新闻"
 
-#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:42
-msgctxt "Name of app icon variant"
-msgid "Next"
-msgstr ""
-
 #: src/screens/Login/ForgotPasswordForm.tsx:137
 #: src/screens/Login/ForgotPasswordForm.tsx:143
 #: src/screens/Login/LoginForm.tsx:343
@@ -5697,6 +5692,11 @@ msgstr ""
 #: src/screens/StarterPack/Wizard/index.tsx:399
 msgid "Next"
 msgstr "下一步"
+
+#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:42
+msgctxt "Name of app icon variant"
+msgid "Next"
+msgstr ""
 
 #: src/view/com/lightbox/Lightbox.web.tsx:170
 msgid "Next image"
@@ -7160,12 +7160,12 @@ msgstr "撤回认证"
 msgid "Remove your verification for this account?"
 msgstr "要撤回你对这个账户的认证吗？"
 
-#: src/components/Post/Embed/index.tsx:257
-#: src/components/Post/Embed/index.tsx:290
+#: src/components/Post/Embed/index.tsx:255
+#: src/components/Post/Embed/index.tsx:293
 msgid "Removed by author"
 msgstr "已被发布者删除"
 
-#: src/components/Post/Embed/index.tsx:288
+#: src/components/Post/Embed/index.tsx:291
 msgid "Removed by you"
 msgstr "你已删除"
 

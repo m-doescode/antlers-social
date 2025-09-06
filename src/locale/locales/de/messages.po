@@ -1408,8 +1408,8 @@ msgstr "Nutzer blockieren"
 msgid "Block User"
 msgstr "Nutzer blockieren"
 
-#: src/components/Post/Embed/index.tsx:225
-#: src/components/Post/Embed/index.tsx:233
+#: src/components/Post/Embed/index.tsx:223
+#: src/components/Post/Embed/index.tsx:231
 msgid "Blocked"
 msgstr "Blockiert"
 
@@ -2700,7 +2700,7 @@ msgstr "Diese Liste löschen?"
 msgid "Delete this post?"
 msgstr "Diesen Post löschen?"
 
-#: src/components/Post/Embed/index.tsx:206
+#: src/components/Post/Embed/index.tsx:204
 msgid "Deleted"
 msgstr "Gelöscht"
 
@@ -5675,11 +5675,6 @@ msgstr "Neueste Antworten zuerst"
 msgid "News"
 msgstr "Aktuelles"
 
-#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:42
-msgctxt "Name of app icon variant"
-msgid "Next"
-msgstr ""
-
 #: src/screens/Login/ForgotPasswordForm.tsx:137
 #: src/screens/Login/ForgotPasswordForm.tsx:143
 #: src/screens/Login/LoginForm.tsx:343
@@ -5697,6 +5692,11 @@ msgstr ""
 #: src/screens/StarterPack/Wizard/index.tsx:399
 msgid "Next"
 msgstr "Weiter"
+
+#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:42
+msgctxt "Name of app icon variant"
+msgid "Next"
+msgstr ""
 
 #: src/view/com/lightbox/Lightbox.web.tsx:170
 msgid "Next image"
@@ -7160,12 +7160,12 @@ msgstr "Verifizierung entfernen"
 msgid "Remove your verification for this account?"
 msgstr "Deine Verifizierung für diesen Account entfernen?"
 
-#: src/components/Post/Embed/index.tsx:257
-#: src/components/Post/Embed/index.tsx:290
+#: src/components/Post/Embed/index.tsx:255
+#: src/components/Post/Embed/index.tsx:293
 msgid "Removed by author"
 msgstr "Vom Autor entfernt"
 
-#: src/components/Post/Embed/index.tsx:288
+#: src/components/Post/Embed/index.tsx:291
 msgid "Removed by you"
 msgstr "Von dir entfernt"
 

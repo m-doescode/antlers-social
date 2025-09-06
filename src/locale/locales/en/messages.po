@@ -1,17 +1,11 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2023-11-05 16:01-0800\n"
+"POT-Creation-Date: 2025-09-06 17:44+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: en\n"
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Plural-Forms: \n"
 
 #. Accessibility label for a category (e.g. Art, Video Games, Sports, etc.) that shows suggested accounts for the user to follow. The tab is currently selected.
 #: src/components/InterestTabs.tsx:325
@@ -93,7 +87,7 @@ msgstr ""
 #: src/components/ProfileHoverCard/index.web.tsx:448
 #: src/screens/Profile/Header/Metrics.tsx:26
 msgid "{0, plural, one {following} other {following}}"
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/screens/PostThread/components/ThreadItemAnchor.tsx:483
 msgid "{0, plural, one {like} other {likes}}"
@@ -1186,7 +1180,7 @@ msgstr ""
 #: src/screens/Settings/Settings.tsx:505
 #: src/screens/Settings/Settings.tsx:507
 msgid "Apply Pull Request"
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/screens/PostThread/components/ThreadItemAnchor.tsx:669
 msgid "Archived from {0}"
@@ -1403,8 +1397,8 @@ msgstr ""
 msgid "Block User"
 msgstr ""
 
-#: src/components/Post/Embed/index.tsx:225
-#: src/components/Post/Embed/index.tsx:233
+#: src/components/Post/Embed/index.tsx:223
+#: src/components/Post/Embed/index.tsx:231
 msgid "Blocked"
 msgstr ""
 
@@ -1441,7 +1435,7 @@ msgstr ""
 #: src/view/com/auth/server-input/index.tsx:136
 #: src/view/com/auth/server-input/index.tsx:137
 msgid "Bluesky"
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/screens/PostThread/components/ThreadItemAnchor.tsx:694
 msgid "Bluesky cannot confirm the authenticity of the claimed date."
@@ -2670,7 +2664,7 @@ msgstr ""
 
 #: src/view/com/modals/DeleteAccount.tsx:267
 msgid "Delete my account"
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:763
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:765
@@ -2695,7 +2689,7 @@ msgstr ""
 msgid "Delete this post?"
 msgstr ""
 
-#: src/components/Post/Embed/index.tsx:206
+#: src/components/Post/Embed/index.tsx:204
 msgid "Deleted"
 msgstr ""
 
@@ -2959,7 +2953,7 @@ msgstr ""
 #: src/screens/Settings/components/ExportCarDialog.tsx:79
 #: src/screens/Settings/components/ExportCarDialog.tsx:84
 msgid "Download CAR file"
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:507
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:509
@@ -4033,7 +4027,7 @@ msgstr ""
 
 #: src/screens/Hashtag.tsx:120
 msgid "From @{sanitizedAuthor}"
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/view/com/posts/PostFeedItem.tsx:335
 msgctxt "from-feed"
@@ -4128,7 +4122,7 @@ msgstr ""
 
 #: src/components/MediaPreview.tsx:114
 msgid "GIF"
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/view/com/auth/SplashScreen.web.tsx:170
 msgid "Github"
@@ -4662,7 +4656,7 @@ msgstr ""
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:607
 msgid "Invalid handle. Please try a different one."
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/components/moderation/ReportDialog/index.tsx:73
 msgid "Invalid report subject"
@@ -5006,7 +5000,7 @@ msgstr ""
 
 #: src/Navigation.tsx:485
 msgid "Likes of your reposts notifications"
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/screens/PostThread/components/ThreadItemAnchor.tsx:476
 msgid "Likes on this post"
@@ -5357,7 +5351,7 @@ msgstr ""
 #: src/components/moderation/ModerationDetailsDialog.tsx:52
 #: src/lib/moderation/useModerationCauseDescription.ts:47
 msgid "Moderator has chosen to set a general warning on the content."
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/view/shell/desktop/Feeds.tsx:108
 #: src/view/shell/desktop/Feeds.tsx:118
@@ -5670,11 +5664,6 @@ msgstr ""
 msgid "News"
 msgstr ""
 
-#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:42
-msgctxt "Name of app icon variant"
-msgid "Next"
-msgstr ""
-
 #: src/screens/Login/ForgotPasswordForm.tsx:137
 #: src/screens/Login/ForgotPasswordForm.tsx:143
 #: src/screens/Login/LoginForm.tsx:343
@@ -5690,6 +5679,11 @@ msgstr ""
 #: src/screens/StarterPack/Wizard/index.tsx:214
 #: src/screens/StarterPack/Wizard/index.tsx:392
 #: src/screens/StarterPack/Wizard/index.tsx:399
+msgid "Next"
+msgstr ""
+
+#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:42
+msgctxt "Name of app icon variant"
 msgid "Next"
 msgstr ""
 
@@ -6047,7 +6041,7 @@ msgstr ""
 
 #: src/screens/Onboarding/StepFinished.tsx:555
 msgid "Open"
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/screens/Signup/index.tsx:222
 msgid "Open a Github Issue"
@@ -6395,7 +6389,7 @@ msgstr ""
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:468
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:475
 msgid "Pin to your profile"
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/view/com/posts/PostFeedItem.tsx:416
 msgid "Pinned"
@@ -6455,7 +6449,7 @@ msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:188
 msgid "Please check your email inbox for further instructions. It may take a minute or two to arrive."
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/screens/Signup/StepInfo/index.tsx:96
 msgid "Please choose a 3rd party service host, or sign up on bsky.app."
@@ -6524,7 +6518,7 @@ msgstr ""
 
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:247
 msgid "Please enter the security code we sent to your previous email address."
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/screens/Signup/state.ts:263
 #: src/screens/Signup/StepInfo/index.tsx:111
@@ -6898,7 +6892,7 @@ msgstr ""
 #: src/screens/Settings/NotificationSettings/index.tsx:170
 #: src/screens/Settings/NotificationSettings/QuoteNotificationSettings.tsx:41
 msgid "Quotes"
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/screens/PostThread/components/ThreadItemAnchor.tsx:460
 msgid "Quotes of this post"
@@ -7155,12 +7149,12 @@ msgstr ""
 msgid "Remove your verification for this account?"
 msgstr ""
 
-#: src/components/Post/Embed/index.tsx:257
-#: src/components/Post/Embed/index.tsx:290
+#: src/components/Post/Embed/index.tsx:255
+#: src/components/Post/Embed/index.tsx:293
 msgid "Removed by author"
 msgstr ""
 
-#: src/components/Post/Embed/index.tsx:288
+#: src/components/Post/Embed/index.tsx:291
 msgid "Removed by you"
 msgstr ""
 
@@ -7274,7 +7268,7 @@ msgstr ""
 
 #: src/screens/PostThread/components/HeaderDropdown.tsx:69
 msgid "Reply sorting"
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:346
 msgctxt "toast"
@@ -7399,7 +7393,7 @@ msgstr ""
 
 #: src/screens/Post/PostRepostedBy.tsx:38
 msgid "Reposted By"
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/view/com/posts/PostFeedItem.tsx:356
 msgid "Reposted by {0}"
@@ -7418,7 +7412,7 @@ msgstr ""
 #: src/screens/Settings/NotificationSettings/index.tsx:181
 #: src/screens/Settings/NotificationSettings/RepostNotificationSettings.tsx:41
 msgid "Reposts"
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/screens/PostThread/components/ThreadItemAnchor.tsx:442
 msgid "Reposts of this post"
@@ -8313,7 +8307,7 @@ msgstr ""
 
 #: src/lib/moderation/useLabelBehaviorDescription.ts:56
 msgid "Show warning and filter from feeds"
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/screens/PostThread/components/ThreadItemAnchor.tsx:640
 msgid "Shows information about when this post was created"
@@ -9250,7 +9244,7 @@ msgstr ""
 
 #: src/screens/Profile/ErrorState.tsx:40
 msgid "This moderation service is unavailable. See below for more details. If this issue persists, contact us."
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/screens/PostThread/components/ThreadItemAnchor.tsx:680
 msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Bluesky on <1>{1}</1>."
@@ -9420,7 +9414,7 @@ msgstr ""
 
 #: src/Navigation.tsx:553
 msgid "Topic"
-msgstr "<<<<<<< HEAD"
+msgstr ""
 
 #: src/components/dms/MessageContextMenu.tsx:137
 #: src/components/dms/MessageContextMenu.tsx:139
