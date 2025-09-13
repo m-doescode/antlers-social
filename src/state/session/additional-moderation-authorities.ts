@@ -72,7 +72,9 @@ export function isNonConfigurableModerationAuthority(did: string) {
 export function configureAdditionalModerationAuthorities() {
   const geolocation = device.get(['geolocation'])
   // default to all
-  let additionalLabelers: string[] = MODERATION_AUTHORITIES_DIDS
+  // let additionalLabelers: string[] = MODERATION_AUTHORITIES_DIDS
+  // Temp fix: default to none before we fix geolocation stuff
+  let additionalLabelers: string[] = []
 
   if (geolocation?.countryCode) {
     // overwrite with only those necessary
@@ -81,9 +83,10 @@ export function configureAdditionalModerationAuthorities() {
     logger.info(`no geolocation, cannot apply mod authorities`)
   }
 
-  if (__DEV__) {
-    additionalLabelers = []
-  }
+  // Comment out this line when debugging labelers
+  // if (__DEV__) {
+  //   additionalLabelers = []
+  // }
 
   const appLabelers = Array.from(
     new Set([...BskyAgent.appLabelers, ...additionalLabelers]),
