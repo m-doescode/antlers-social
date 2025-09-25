@@ -14,7 +14,7 @@ import {
   useGatesCache,
 } from '#/lib/statsig/statsig'
 import {isWeb} from '#/platform/detection'
-import {setGeolocation, useGeolocation} from '#/state/geolocation'
+// import {setGeolocation, useGeolocation} from '#/state/geolocation'
 import * as persisted from '#/state/persisted'
 import {useGoLinksEnabled, useSetGoLinksEnabled} from '#/state/preferences'
 import {
@@ -78,7 +78,7 @@ import {Atom_Stroke2_Corner0_Rounded as DeerIcon} from '#/components/icons/Atom'
 import {Bell_Stroke2_Corner0_Rounded as BellIcon} from '#/components/icons/Bell'
 import {ChainLink_Stroke2_Corner0_Rounded as ChainLinkIcon} from '#/components/icons/ChainLink'
 import {Eye_Stroke2_Corner0_Rounded as VisibilityIcon} from '#/components/icons/Eye'
-import {Earth_Stroke2_Corner2_Rounded as GlobeIcon} from '#/components/icons/Globe'
+// import {Earth_Stroke2_Corner2_Rounded as GlobeIcon} from '#/components/icons/Globe'
 import {Lab_Stroke2_Corner0_Rounded as BeakerIcon} from '#/components/icons/Lab'
 import {PaintRoller_Stroke2_Corner2_Rounded as PaintRollerIcon} from '#/components/icons/PaintRoller'
 import {RaisingHand4Finger_Stroke2_Corner0_Rounded as RaisingHandIcon} from '#/components/icons/RaisingHand'
@@ -102,7 +102,7 @@ function GeolocationSettingsDialog({
   const [countryCode, setCountryCode] = useState('')
 
   const submit = () => {
-    setGeolocation({countryCode})
+    // setGeolocation({countryCode})
     control.close()
   }
 
@@ -371,7 +371,7 @@ export function DeerSettingsScreen({}: Props) {
   const hideFollowNotifications = useHideFollowNotifications()
   const setHideFollowNotifications = useSetHideFollowNotifications()
 
-  const location = useGeolocation()
+  // const location = useGeolocation()
   const setLocationControl = Dialog.useDialogControl()
 
   const constellationInstance = useConstellationInstance()
@@ -527,7 +527,7 @@ export function DeerSettingsScreen({}: Props) {
             </Admonition>
           </SettingsList.Item>
 
-          <SettingsList.Item>
+          {/* <SettingsList.Item>
             <SettingsList.ItemIcon icon={GlobeIcon} />
             <SettingsList.ItemText>
               <Trans>{`ISO 3166-1 Location (currently ${
@@ -546,7 +546,7 @@ export function DeerSettingsScreen({}: Props) {
                 and currency behavior.
               </Trans>
             </Admonition>
-          </SettingsList.Item>
+          </SettingsList.Item> */}
 
           <SettingsList.Item>
             <SettingsList.ItemIcon icon={ChainLinkIcon} />
