@@ -145,6 +145,7 @@ const schema = z.object({
   renderFullMastodonPostText: z.boolean().optional(),
   showExternalShareButtons: z.boolean().optional(),
   customShareLink: z.string().optional(),
+  repostAsEnabled: z.boolean().optional(),
 
   /** @deprecated */
   mutedThreads: z.array(z.string()),
@@ -223,6 +224,7 @@ export const defaults: Schema = {
   renderFullMastodonPostText: false,
   showExternalShareButtons: false,
   customShareLink: 'https://deer.social/',
+  repostAsEnabled: true,
 }
 
 export function tryParse(rawData: string): Schema | undefined {

@@ -4,7 +4,8 @@ import {msg, plural, Trans} from '@lingui/macro'
 import {useLingui} from '@lingui/react'
 
 import {useHaptics} from '#/lib/haptics'
-import {type SessionAccount, useRequireAuth} from '#/state/session'
+import {useRepostAsEnabled} from '#/state/preferences/repost-as-enabled'
+import {type SessionAccount, useRequireAuth, useSession} from '#/state/session'
 import {atoms as a, useTheme} from '#/alf'
 import {Button, ButtonText} from '#/components/Button'
 import * as Dialog from '#/components/Dialog'
@@ -130,6 +131,9 @@ let RepostButtonDialogInner = ({
   const playHaptic = useHaptics()
   const control = Dialog.useDialogContext()
 
+  const {accounts} = useSession()
+  const showRepostAccountList = useRepostAsEnabled() && accounts.length > 1
+
   const onPressRepost = useCallback(() => {
     if (!isReposted) playHaptic()
 
@@ -216,7 +220,9 @@ let RepostButtonDialogInner = ({
             </Text>
           </Button>
         </View>
-        <RepostAccountList onRepostAs={onPressRepostAs} />
+        {showRepostAccountList && (
+          <RepostAccountList onRepostAs={onPressRepostAs} />
+        )}
         <Button
           label={_(msg`Cancel quote post`)}
           onPress={onPressClose}

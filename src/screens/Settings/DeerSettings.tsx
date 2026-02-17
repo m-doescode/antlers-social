@@ -60,6 +60,10 @@ import {
   useSetNoDiscoverFallback,
 } from '#/state/preferences/no-discover-fallback'
 import {
+  useRepostAsEnabled,
+  useSetRepostAsEnabled,
+} from '#/state/preferences/repost-as-enabled'
+import {
   useRepostCarouselEnabled,
   useSetRepostCarouselEnabled,
 } from '#/state/preferences/repost-carousel-enabled'
@@ -386,6 +390,9 @@ export function DeerSettingsScreen({}: Props) {
   const repostCarouselEnabled = useRepostCarouselEnabled()
   const setRepostCarouselEnabled = useSetRepostCarouselEnabled()
 
+  const repostAsEnabled = useRepostAsEnabled()
+  const setRepostAsEnabled = useSetRepostAsEnabled()
+
   const showLinkInHandle = useShowLinkInHandle()
   const setShowLinkInHandle = useSetShowLinkInHandle()
 
@@ -637,6 +644,24 @@ export function DeerSettingsScreen({}: Props) {
               </Trans>
             </Admonition>
           </SettingsList.Item>
+
+          <SettingsList.Group contentContainerStyle={[a.gap_sm]}>
+            <SettingsList.ItemIcon icon={PaintRollerIcon} />
+            <SettingsList.ItemText>
+              <Trans>Reposts</Trans>
+            </SettingsList.ItemText>
+            <Toggle.Item
+              name="repost_as"
+              label={_(msg`Repost as other logged-in accounts`)}
+              value={repostAsEnabled}
+              onChange={value => setRepostAsEnabled(value)}
+              style={[a.w_full]}>
+              <Toggle.LabelText style={[a.flex_1]}>
+                <Trans>Repost as other logged-in accounts</Trans>
+              </Toggle.LabelText>
+              <Toggle.Platform />
+            </Toggle.Item>
+          </SettingsList.Group>
 
           <SettingsList.Group contentContainerStyle={[a.gap_sm]}>
             <SettingsList.ItemIcon icon={PaintRollerIcon} />

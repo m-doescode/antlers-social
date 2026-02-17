@@ -20,6 +20,7 @@ import {Provider as LanguagesProvider} from './languages'
 import {Provider as LargeAltBadgeProvider} from './large-alt-badge'
 import {Provider as NoAppLabelersProvider} from './no-app-labelers'
 import {Provider as NoDiscoverProvider} from './no-discover-fallback'
+import {Provider as RepostAsEnabledProvider} from './repost-as-enabled'
 import {Provider as RepostCarouselProvider} from './repost-carousel-enabled'
 import {Provider as ShowLinkInHandleProvider} from './show-link-in-handle'
 import {Provider as SubtitlesProvider} from './subtitles'
@@ -68,9 +69,11 @@ export function Provider({children}: React.PropsWithChildren<{}>) {
                                               <SubtitlesProvider>
                                                 <TrendingSettingsProvider>
                                                   <RepostCarouselProvider>
-                                                    <KawaiiProvider>
-                                                      {children}
-                                                    </KawaiiProvider>
+                                                    <RepostAsEnabledProvider>
+                                                      <KawaiiProvider>
+                                                        {children}
+                                                      </KawaiiProvider>
+                                                    </RepostAsEnabledProvider>
                                                   </RepostCarouselProvider>
                                                 </TrendingSettingsProvider>
                                               </SubtitlesProvider>
