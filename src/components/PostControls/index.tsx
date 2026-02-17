@@ -13,13 +13,16 @@ import {CountWheel} from '#/lib/custom-animations/CountWheel'
 import {AnimatedLikeIcon} from '#/lib/custom-animations/LikeIcon'
 import {useHaptics} from '#/lib/haptics'
 import {useOpenComposer} from '#/lib/hooks/useOpenComposer'
+import {sanitizeDisplayName} from '#/lib/strings/display-names'
 import {type Shadow} from '#/state/cache/types'
 import {useFeedFeedbackContext} from '#/state/feed-feedback'
 import {
   usePostLikeMutationQueue,
   usePostRepostMutationQueue,
 } from '#/state/queries/post'
-import {useRequireAuth} from '#/state/session'
+import {useProfilesQuery} from '#/state/queries/profile'
+import {type SessionAccount, useRequireAuth, useSession} from '#/state/session'
+import {createAgentAndResume} from '#/state/session/agent'
 import {
   ProgressGuideAction,
   useProgressGuideControls,
@@ -179,6 +182,27 @@ let PostControls = ({
     })
   }
 
+  const {accounts} = useSession()
+  const {data: profiles} = useProfilesQuery({
+    handles: accounts.map(acc => acc.did),
+  })
+  const onRepostAs = (account: SessionAccount) => {
+    const profile = profiles?.profiles?.find(prof => prof.did === account.did)
+    const name = sanitizeDisplayName(
+      profile?.displayName || profile?.handle || account.handle,
+    )
+    ;(async () => {
+      try {
+        const {agent} = await createAgentAndResume(account, (_1, _2, _3) => {})
+        console.log(`Reposting as ${account.did}`)
+        agent.repost(post.uri, post.cid, viaRepost)
+        Toast.show(_(msg`Reposted as ${name}`), 'check')
+      } catch (e) {
+        Toast.show(_(msg`Failed to repost as ${name}`), 'exclamation-circle')
+      }
+    })()
+  }
+
   const onShare = () => {
     sendInteraction({
       item: post.uri,
@@ -244,6 +268,7 @@ let PostControls = ({
             repostCount={(post.repostCount ?? 0) + (post.quoteCount ?? 0)}
             onRepost={onRepost}
             onQuote={onQuote}
+            onRepostAs={onRepostAs}
             big={big}
             embeddingDisabled={Boolean(post.viewer?.embeddingDisabled)}
           />

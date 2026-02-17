@@ -4,7 +4,7 @@ import {msg, plural, Trans} from '@lingui/macro'
 import {useLingui} from '@lingui/react'
 
 import {useHaptics} from '#/lib/haptics'
-import {useRequireAuth} from '#/state/session'
+import {type SessionAccount, useRequireAuth} from '#/state/session'
 import {atoms as a, useTheme} from '#/alf'
 import {Button, ButtonText} from '#/components/Button'
 import * as Dialog from '#/components/Dialog'
@@ -17,12 +17,14 @@ import {
   PostControlButtonIcon,
   PostControlButtonText,
 } from './PostControlButton'
+import RepostAccountList from './RepostAccountList'
 
 interface Props {
   isReposted: boolean
   repostCount?: number
   onRepost: () => void
   onQuote: () => void
+  onRepostAs: (account: SessionAccount) => void
   big?: boolean
   embeddingDisabled: boolean
 }
@@ -32,6 +34,7 @@ let RepostButton = ({
   repostCount,
   onRepost,
   onQuote,
+  onRepostAs,
   big,
   embeddingDisabled,
 }: Props): React.ReactNode => {
@@ -99,6 +102,7 @@ let RepostButton = ({
           isReposted={isReposted}
           onRepost={onRepost}
           onQuote={onQuote}
+          onRepostAs={onRepostAs}
           embeddingDisabled={embeddingDisabled}
         />
       </Dialog.Outer>
@@ -112,11 +116,13 @@ let RepostButtonDialogInner = ({
   isReposted,
   onRepost,
   onQuote,
+  onRepostAs,
   embeddingDisabled,
 }: {
   isReposted: boolean
   onRepost: () => void
   onQuote: () => void
+  onRepostAs: (account: SessionAccount) => void
   embeddingDisabled: boolean
 }): React.ReactNode => {
   const t = useTheme()
@@ -138,6 +144,16 @@ let RepostButtonDialogInner = ({
       onQuote()
     })
   }, [control, onQuote, playHaptic])
+
+  const onPressRepostAs = useCallback(
+    (account: SessionAccount) => {
+      playHaptic()
+      control.close(() => {
+        onRepostAs(account)
+      })
+    },
+    [control, onRepostAs, playHaptic],
+  )
 
   const onPressClose = useCallback(() => control.close(), [control])
 
@@ -200,6 +216,7 @@ let RepostButtonDialogInner = ({
             </Text>
           </Button>
         </View>
+        <RepostAccountList onRepostAs={onPressRepostAs} />
         <Button
           label={_(msg`Cancel quote post`)}
           onPress={onPressClose}
