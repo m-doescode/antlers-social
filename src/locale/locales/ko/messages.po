@@ -1106,7 +1106,7 @@ msgstr "나를 팔로우하는 모든 사용자"
 msgid "App Icon"
 msgstr "앱 아이콘"
 
-#: src/screens/Settings/DeerSettings.tsx:637
+#: src/screens/Settings/DeerSettings.tsx:640
 msgid "App labelers are mandatory top-level labelers that can perform \"takedowns\". This setting does not influence geolocation based labelers."
 msgstr ""
 
@@ -1510,7 +1510,7 @@ msgstr "이미지 블러 및 피드에서 필터링"
 msgid "Books"
 msgstr "책"
 
-#: src/screens/Settings/DeerSettings.tsx:573
+#: src/screens/Settings/DeerSettings.tsx:576
 msgid "Bridging and Fediverse"
 msgstr ""
 
@@ -1611,7 +1611,7 @@ msgstr "카메라"
 #: src/components/live/GoLiveDialog.tsx:247
 #: src/components/live/GoLiveDialog.tsx:253
 #: src/components/Menu/index.tsx:350
-#: src/components/PostControls/RepostButton.tsx:231
+#: src/components/PostControls/RepostButton.tsx:233
 #: src/components/Prompt.tsx:144
 #: src/components/Prompt.tsx:146
 #: src/screens/Deactivated.tsx:158
@@ -1653,7 +1653,7 @@ msgstr "계정 삭제 취소"
 msgid "Cancel image crop"
 msgstr "이미지 자르기 취소"
 
-#: src/components/PostControls/RepostButton.tsx:225
+#: src/components/PostControls/RepostButton.tsx:227
 msgid "Cancel quote post"
 msgstr "게시물 인용 취소"
 
@@ -1665,9 +1665,9 @@ msgstr "재활성화 취소 및 로그아웃"
 msgid "Cancel search"
 msgstr "검색 취소"
 
-#: src/components/PostControls/index.tsx:108
-#: src/components/PostControls/index.tsx:139
-#: src/components/PostControls/index.tsx:167
+#: src/components/PostControls/index.tsx:121
+#: src/components/PostControls/index.tsx:152
+#: src/components/PostControls/index.tsx:180
 #: src/state/shell/composer/index.tsx:94
 msgid "Cannot interact with a blocked user"
 msgstr "차단된 사용자와 상호작용할 수 없습니다"
@@ -1682,8 +1682,8 @@ msgid "Captions & alt text"
 msgstr "자막 및 대체 텍스트"
 
 #: src/screens/Settings/components/Email2FAToggle.tsx:31
-#: src/screens/Settings/DeerSettings.tsx:520
-#: src/screens/Settings/DeerSettings.tsx:565
+#: src/screens/Settings/DeerSettings.tsx:523
+#: src/screens/Settings/DeerSettings.tsx:568
 msgid "Change"
 msgstr "변경"
 
@@ -2047,8 +2047,8 @@ msgstr "색상 모드"
 msgid "Color theme"
 msgstr "색상 테마"
 
-#: src/screens/Settings/DeerSettings.tsx:670
-#: src/screens/Settings/DeerSettings.tsx:675
+#: src/screens/Settings/DeerSettings.tsx:673
+#: src/screens/Settings/DeerSettings.tsx:678
 msgid "Combine reposts into a horizontal carousel"
 msgstr ""
 
@@ -2155,16 +2155,16 @@ msgstr "연결 중…"
 msgid "Connection issue"
 msgstr "연결 오류"
 
-#: src/screens/Settings/DeerSettings.tsx:517
+#: src/screens/Settings/DeerSettings.tsx:520
 msgid "Constellation Instance"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:526
+#: src/screens/Settings/DeerSettings.tsx:529
 msgid "Constellation is used to supplement AppView responses for custom verifications and nuclear block bypass, via backlinks. Current instance: {constellationInstance}"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:189
 #: src/screens/Settings/DeerSettings.tsx:192
+#: src/screens/Settings/DeerSettings.tsx:195
 msgid "Constellations instance URL"
 msgstr ""
 
@@ -2531,8 +2531,8 @@ msgstr "문화"
 msgid "Custom"
 msgstr "사용자 지정"
 
-#: src/screens/Settings/DeerSettings.tsx:278
 #: src/screens/Settings/DeerSettings.tsx:281
+#: src/screens/Settings/DeerSettings.tsx:284
 msgid "Custom share link URL"
 msgstr ""
 
@@ -2586,7 +2586,7 @@ msgstr "검토 디버그"
 msgid "Debug panel"
 msgstr "디버그 패널"
 
-#: src/screens/Settings/DeerSettings.tsx:412
+#: src/screens/Settings/DeerSettings.tsx:415
 #: src/screens/Settings/Settings.tsx:219
 #: src/screens/Settings/Settings.tsx:222
 msgid "Deer"
@@ -2866,16 +2866,16 @@ msgstr "DNS 패널"
 msgid "Do not apply this mute word to users you follow"
 msgstr "내가 팔로우하는 사용자에게는 이 뮤트 단어를 적용하지 않기"
 
-#: src/screens/Settings/DeerSettings.tsx:610
+#: src/screens/Settings/DeerSettings.tsx:613
 msgid "Do not declare any app labelers"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:615
+#: src/screens/Settings/DeerSettings.tsx:618
 msgid "Do not declare any default app labelers"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:681
-#: src/screens/Settings/DeerSettings.tsx:686
+#: src/screens/Settings/DeerSettings.tsx:684
+#: src/screens/Settings/DeerSettings.tsx:689
 msgid "Do not fall back to discover feed"
 msgstr ""
 
@@ -2919,8 +2919,8 @@ msgstr "걱정 마세요! 모든 기존 메시지와 설정은 저장되며 성�
 #: src/screens/Onboarding/StepProfile/index.tsx:336
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:215
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:222
-#: src/screens/Settings/DeerSettings.tsx:141
-#: src/screens/Settings/DeerSettings.tsx:147
+#: src/screens/Settings/DeerSettings.tsx:144
+#: src/screens/Settings/DeerSettings.tsx:150
 #: src/view/com/auth/server-input/index.tsx:232
 #: src/view/com/auth/server-input/index.tsx:233
 #: src/view/com/composer/labels/LabelsBtn.tsx:223
@@ -3617,7 +3617,7 @@ msgstr ""
 msgid "Failed to remove verification"
 msgstr "인증을 취소하지 못했습니다"
 
-#: src/components/PostControls/index.tsx:201
+#: src/components/PostControls/index.tsx:214
 msgid "Failed to repost as {name}"
 msgstr ""
 
@@ -3692,7 +3692,7 @@ msgstr "이메일을 인증하지 못했습니다. 다시 시도해 주세요."
 msgid "Failed to verify handle. Please try again."
 msgstr "핸들을 인증하지 못했습니다. 다시 시도해 주세요."
 
-#: src/screens/Settings/DeerSettings.tsx:461
+#: src/screens/Settings/DeerSettings.tsx:464
 msgid "Fall back to constellation api to find blocked replies"
 msgstr ""
 
@@ -3762,11 +3762,11 @@ msgstr "피드를 업데이트했습니다!"
 msgid "Feeds we think you might like."
 msgstr "좋아할 만한 피드를 모았습니다."
 
-#: src/screens/Settings/DeerSettings.tsx:451
+#: src/screens/Settings/DeerSettings.tsx:454
 msgid "Fetch records directly from PDS to see contents of blocked and detatched quotes"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:445
+#: src/screens/Settings/DeerSettings.tsx:448
 msgid "Fetch records directly from PDS to see through quote blocks"
 msgstr ""
 
@@ -4048,7 +4048,7 @@ msgctxt "from-feed"
 msgid "From <0/>"
 msgstr "<0/>에서"
 
-#: src/screens/Settings/DeerSettings.tsx:728
+#: src/screens/Settings/DeerSettings.tsx:731
 msgid "Gates"
 msgstr ""
 
@@ -4056,8 +4056,8 @@ msgstr ""
 msgid "Generate a starter pack"
 msgstr "스타터 팩 만들기"
 
-#: src/screens/Settings/DeerSettings.tsx:113
 #: src/screens/Settings/DeerSettings.tsx:116
+#: src/screens/Settings/DeerSettings.tsx:119
 msgid "Geolocation ISO 3166-1 Code"
 msgstr ""
 
@@ -4355,8 +4355,8 @@ msgstr "숨기기"
 msgid "Hide customization options"
 msgstr "사용자 지정 옵션 숨기기"
 
-#: src/screens/Settings/DeerSettings.tsx:714
-#: src/screens/Settings/DeerSettings.tsx:719
+#: src/screens/Settings/DeerSettings.tsx:717
+#: src/screens/Settings/DeerSettings.tsx:722
 msgid "Hide follow notifications"
 msgstr ""
 
@@ -4615,7 +4615,7 @@ msgstr "수신함 제로!"
 msgid "Incorrect username or password"
 msgstr "사용자 이름 또는 비밀번호가 올바르지 않습니다"
 
-#: src/screens/Settings/DeerSettings.tsx:135
+#: src/screens/Settings/DeerSettings.tsx:138
 msgid "Input 2 letter ISO 3166-1 country code to use as location"
 msgstr ""
 
@@ -4639,7 +4639,7 @@ msgstr "계정을 삭제하기 위해 비밀번호를 입력합니다"
 msgid "Input the code which has been emailed to you"
 msgstr "이메일로 전송된 코드를 입력합니다"
 
-#: src/screens/Settings/DeerSettings.tsx:208
+#: src/screens/Settings/DeerSettings.tsx:211
 msgid "Input the url of the constellations instance to use"
 msgstr ""
 
@@ -4770,7 +4770,7 @@ msgstr "{0}이(가) 라벨 지정함."
 msgid "Labeled by the author."
 msgstr "작성자가 라벨 지정함."
 
-#: src/screens/Settings/DeerSettings.tsx:606
+#: src/screens/Settings/DeerSettings.tsx:609
 msgid "Labelers"
 msgstr ""
 
@@ -4943,7 +4943,7 @@ msgid "Like"
 msgstr "좋아요"
 
 #. Accessibility label for the like button when the post has not been liked, verb form followed by number of likes and noun form
-#: src/components/PostControls/index.tsx:294
+#: src/components/PostControls/index.tsx:307
 msgid "Like ({0, plural, one {# like} other {# likes}})"
 msgstr "좋아요 ({0, plural, other {#개}})"
 
@@ -5879,7 +5879,7 @@ msgstr "빈 페이지"
 msgid "Nothing saved yet"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:710
+#: src/screens/Settings/DeerSettings.tsx:713
 msgid "Notification Filters"
 msgstr ""
 
@@ -5977,8 +5977,8 @@ msgstr "확인"
 msgid "Oldest replies first"
 msgstr "오래된 순"
 
-#: src/screens/Settings/DeerSettings.tsx:693
-#: src/screens/Settings/DeerSettings.tsx:699
+#: src/screens/Settings/DeerSettings.tsx:696
+#: src/screens/Settings/DeerSettings.tsx:702
 msgid "On non-bsky.social handles, show a link to that URL"
 msgstr ""
 
@@ -6869,8 +6869,8 @@ msgstr "인용 알림"
 
 #: src/components/PostControls/RepostButton.tsx:195
 #: src/components/PostControls/RepostButton.tsx:218
-#: src/components/PostControls/RepostButton.web.tsx:85
 #: src/components/PostControls/RepostButton.web.tsx:92
+#: src/components/PostControls/RepostButton.web.tsx:99
 msgid "Quote post"
 msgstr "게시물 인용"
 
@@ -6884,8 +6884,8 @@ msgstr "인용을 성공적으로 해제했습니다"
 
 #: src/components/PostControls/RepostButton.tsx:194
 #: src/components/PostControls/RepostButton.tsx:216
-#: src/components/PostControls/RepostButton.web.tsx:84
 #: src/components/PostControls/RepostButton.web.tsx:91
+#: src/components/PostControls/RepostButton.web.tsx:98
 msgid "Quote posts disabled"
 msgstr "게시물 인용 비활성화됨"
 
@@ -7002,12 +7002,12 @@ msgstr "추천"
 msgid "Reconnect"
 msgstr "다시 연결"
 
-#: src/screens/Settings/DeerSettings.tsx:426
-#: src/screens/Settings/DeerSettings.tsx:431
+#: src/screens/Settings/DeerSettings.tsx:429
+#: src/screens/Settings/DeerSettings.tsx:434
 msgid "Redirect through go.bsky.app"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:422
+#: src/screens/Settings/DeerSettings.tsx:425
 msgid "Redirects"
 msgstr ""
 
@@ -7192,8 +7192,8 @@ msgstr "내 피드에서 제거했습니다"
 msgid "Removed verification"
 msgstr "인증을 취소했습니다"
 
-#: src/screens/Settings/DeerSettings.tsx:577
-#: src/screens/Settings/DeerSettings.tsx:582
+#: src/screens/Settings/DeerSettings.tsx:580
+#: src/screens/Settings/DeerSettings.tsx:585
 msgid "Render full Mastodon post text"
 msgstr ""
 
@@ -7246,7 +7246,7 @@ msgid "Reply"
 msgstr "답글 게시하기"
 
 #. Accessibility label for the reply button, verb form followed by number of replies and noun form
-#: src/components/PostControls/index.tsx:247
+#: src/components/PostControls/index.tsx:260
 msgid "Reply ({0, plural, one {# reply} other {# replies}})"
 msgstr "답글 ({0, plural, other {#개}})"
 
@@ -7375,8 +7375,8 @@ msgstr "이 사용자 신고하기"
 
 #: src/components/PostControls/RepostButton.tsx:173
 #: src/components/PostControls/RepostButton.tsx:184
-#: src/components/PostControls/RepostButton.web.tsx:69
 #: src/components/PostControls/RepostButton.web.tsx:76
+#: src/components/PostControls/RepostButton.web.tsx:83
 msgctxt "action"
 msgid "Repost"
 msgstr "재게시"
@@ -7387,15 +7387,17 @@ msgid "Repost ({0, plural, one {# repost} other {# reposts}})"
 msgstr "재게시 ({0, plural, other {#개}})"
 
 #: src/components/PostControls/RepostAccountList.tsx:40
+#: src/components/PostControls/RepostAccountList.web.tsx:37
 msgid "Repost as"
 msgstr ""
 
-#: src/components/PostControls/RepostAccountList.tsx:46
+#: src/components/PostControls/RepostAccountList.tsx:49
+#: src/components/PostControls/RepostAccountList.web.tsx:46
 msgid "Repost as {0}"
 msgstr ""
 
-#: src/screens/Settings/DeerSettings.tsx:652
-#: src/screens/Settings/DeerSettings.tsx:657
+#: src/screens/Settings/DeerSettings.tsx:655
+#: src/screens/Settings/DeerSettings.tsx:660
 msgid "Repost as other logged-in accounts"
 msgstr ""
 
@@ -7404,13 +7406,13 @@ msgid "Repost notifications"
 msgstr "재게시 알림"
 
 #: src/components/PostControls/RepostButton.tsx:165
-#: src/components/PostControls/RepostButton.web.tsx:44
-#: src/components/PostControls/RepostButton.web.tsx:104
+#: src/components/PostControls/RepostButton.web.tsx:51
+#: src/components/PostControls/RepostButton.web.tsx:117
 #: src/screens/StarterPack/StarterPackScreen.tsx:561
 msgid "Repost or quote post"
 msgstr "재게시 또는 게시물 인용"
 
-#: src/components/PostControls/index.tsx:199
+#: src/components/PostControls/index.tsx:212
 msgid "Reposted as {name}"
 msgstr ""
 
@@ -7432,7 +7434,7 @@ msgid "Reposted by you"
 msgstr "내가 재게시함"
 
 #: src/lib/hooks/useNotificationHandler.ts:133
-#: src/screens/Settings/DeerSettings.tsx:648
+#: src/screens/Settings/DeerSettings.tsx:651
 #: src/screens/Settings/NotificationSettings/index.tsx:181
 #: src/screens/Settings/NotificationSettings/RepostNotificationSettings.tsx:41
 msgid "Reposts"
@@ -7500,7 +7502,7 @@ msgstr "활동 구독 미세 조정 초기화"
 msgid "Reset code"
 msgstr "재설정 코드"
 
-#: src/screens/Settings/DeerSettings.tsx:743
+#: src/screens/Settings/DeerSettings.tsx:746
 msgid "Reset gates"
 msgstr ""
 
@@ -7513,7 +7515,7 @@ msgstr "온보딩 상태 초기화"
 msgid "Reset password"
 msgstr "비밀번호 재설정"
 
-#: src/screens/Settings/DeerSettings.tsx:623
+#: src/screens/Settings/DeerSettings.tsx:626
 msgid "Restart app after changing this setting."
 msgstr ""
 
@@ -7585,11 +7587,11 @@ msgstr "이전 단계로 돌아갑니다"
 #: src/screens/Profile/Header/EditProfileDialog.tsx:238
 #: src/screens/Profile/Header/EditProfileDialog.tsx:252
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:267
-#: src/screens/Settings/DeerSettings.tsx:147
-#: src/screens/Settings/DeerSettings.tsx:214
-#: src/screens/Settings/DeerSettings.tsx:221
-#: src/screens/Settings/DeerSettings.tsx:302
-#: src/screens/Settings/DeerSettings.tsx:309
+#: src/screens/Settings/DeerSettings.tsx:150
+#: src/screens/Settings/DeerSettings.tsx:217
+#: src/screens/Settings/DeerSettings.tsx:224
+#: src/screens/Settings/DeerSettings.tsx:305
+#: src/screens/Settings/DeerSettings.tsx:312
 #: src/view/com/composer/GifAltText.tsx:193
 #: src/view/com/composer/GifAltText.tsx:202
 #: src/view/com/composer/photos/EditImageDialog.web.tsx:62
@@ -7627,7 +7629,7 @@ msgstr "이미지 저장"
 msgid "Save image crop"
 msgstr "이미지 자르기 저장"
 
-#: src/screens/Settings/DeerSettings.tsx:141
+#: src/screens/Settings/DeerSettings.tsx:144
 msgid "Save location"
 msgstr ""
 
@@ -7972,8 +7974,8 @@ msgstr "생년월일을 선택하세요"
 msgid "Select your interests from the options below"
 msgstr "아래 옵션에서 관심 주제를 선택하세요"
 
-#: src/screens/Settings/DeerSettings.tsx:484
-#: src/screens/Settings/DeerSettings.tsx:490
+#: src/screens/Settings/DeerSettings.tsx:487
+#: src/screens/Settings/DeerSettings.tsx:493
 msgid "Select your own set of trusted verifiers, and operate as a verifier"
 msgstr ""
 
@@ -8066,7 +8068,7 @@ msgstr "앱 아이콘을 {0}(으)로 설정"
 msgid "Set birthdate"
 msgstr "생년월일 설정"
 
-#: src/screens/Settings/DeerSettings.tsx:297
+#: src/screens/Settings/DeerSettings.tsx:300
 msgid "Set custom base url for share links"
 msgstr ""
 
@@ -8209,7 +8211,7 @@ msgstr "이 스타터 팩 공유하기"
 msgid "Share this starter pack and help people join your community on Bluesky."
 msgstr "이 스타터 팩을 공유하여 사람들이 Bluesky에서 커뮤니티에 참여할 수 있도록 도와주세요."
 
-#: src/screens/Settings/DeerSettings.tsx:558
+#: src/screens/Settings/DeerSettings.tsx:561
 msgid "Share url:"
 msgstr ""
 
@@ -8236,8 +8238,8 @@ msgstr "공유 설정 테스터"
 msgid "Show"
 msgstr "표시"
 
-#: src/screens/Settings/DeerSettings.tsx:589
-#: src/screens/Settings/DeerSettings.tsx:595
+#: src/screens/Settings/DeerSettings.tsx:592
+#: src/screens/Settings/DeerSettings.tsx:598
 msgid "Show \"Open original post\" and \"Open post in PDSls\" buttons"
 msgstr ""
 
@@ -8472,7 +8474,7 @@ msgstr ""
 msgid "Software Dev"
 msgstr "소프트웨어 개발"
 
-#: src/screens/Settings/DeerSettings.tsx:628
+#: src/screens/Settings/DeerSettings.tsx:631
 msgid "Some appviews will default to using an app labeler if you have no labelers, so consider subscribing to at least one labeler if you have issues."
 msgstr ""
 
@@ -9114,7 +9116,7 @@ msgstr "애플리케이션에 예기치 않은 문제가 발생했습니다. 이
 msgid "There's been a rush of new users to Bluesky! We'll activate your account as soon as we can."
 msgstr "Bluesky에 신규 사용자가 몰리고 있습니다! 최대한 빨리 계정을 활성화하겠습니다."
 
-#: src/screens/Settings/DeerSettings.tsx:753
+#: src/screens/Settings/DeerSettings.tsx:756
 msgid "These settings might summon nasel demons! Restart the app after changing if anything breaks."
 msgstr ""
 
@@ -9411,7 +9413,7 @@ msgstr "이 신고를 누구에게 보내시겠습니까?"
 msgid "Today"
 msgstr "오늘"
 
-#: src/screens/Settings/DeerSettings.tsx:468
+#: src/screens/Settings/DeerSettings.tsx:471
 msgid "TODO: Fall back to constellation api to find blocked replies"
 msgstr ""
 
@@ -9480,7 +9482,7 @@ msgstr "다시 시도"
 msgid "TV"
 msgstr "TV"
 
-#: src/screens/Settings/DeerSettings.tsx:666
+#: src/screens/Settings/DeerSettings.tsx:669
 msgid "Tweaks"
 msgstr ""
 
@@ -9575,8 +9577,8 @@ msgctxt "Button label to undo saving/removing a post from saved posts."
 msgid "Undo"
 msgstr ""
 
-#: src/components/PostControls/RepostButton.web.tsx:68
 #: src/components/PostControls/RepostButton.web.tsx:75
+#: src/components/PostControls/RepostButton.web.tsx:82
 msgid "Undo repost"
 msgstr "재게시 취소"
 
@@ -9620,7 +9622,7 @@ msgid "Unlike"
 msgstr "좋아요 취소"
 
 #. Accessibility label for the like button when the post has been liked, verb followed by number of likes and noun
-#: src/components/PostControls/index.tsx:284
+#: src/components/PostControls/index.tsx:297
 msgid "Unlike ({0, plural, one {# like} other {# likes}})"
 msgstr "좋아요 취소 ({0, plural, other {#개}})"
 
@@ -9938,7 +9940,7 @@ msgstr "내가 팔로우하는 사용자"
 msgid "Value:"
 msgstr "값:"
 
-#: src/screens/Settings/DeerSettings.tsx:479
+#: src/screens/Settings/DeerSettings.tsx:482
 msgid "Verification"
 msgstr ""
 
@@ -10221,7 +10223,7 @@ msgstr "전체 이미지를 봅니다"
 msgid "Views video in immersive mode"
 msgstr "몰입형 모드로 동영상을 봅니다"
 
-#: src/screens/Settings/DeerSettings.tsx:440
+#: src/screens/Settings/DeerSettings.tsx:443
 msgid "Visibility"
 msgstr ""
 
@@ -10510,7 +10512,7 @@ msgstr "이 스타터 팩을 검토해야 하는 이유는 무엇인가요?"
 msgid "Why should this user be reviewed?"
 msgstr "이 사용자를 검토해야 하는 이유는 무엇인가요?"
 
-#: src/screens/Settings/DeerSettings.tsx:501
+#: src/screens/Settings/DeerSettings.tsx:504
 msgid "WIP. May slow down the client or fail to find all labels. Revoke and grant trust in the meatball menu on a profile. {0} trust the following verifiers:"
 msgstr ""
 
