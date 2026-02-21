@@ -22,7 +22,7 @@ import {
 } from '#/state/queries/post'
 import {useProfilesQuery} from '#/state/queries/profile'
 import {type SessionAccount, useRequireAuth, useSession} from '#/state/session'
-import {createAgentAndResume} from '#/state/session/agent'
+import {type BskyAppAgent, createAgentAndResume} from '#/state/session/agent'
 import {
   ProgressGuideAction,
   useProgressGuideControls,
@@ -40,6 +40,19 @@ import {
 import {PostMenuButton} from './PostMenu'
 import {RepostButton} from './RepostButton'
 import {ShareMenuButton} from './ShareMenu'
+
+const cachedAgents: {[did: string]: BskyAppAgent} = {}
+
+// May throw an exception!
+async function getOrResumeAgent(account: SessionAccount) {
+  if (cachedAgents[account.did]) {
+    return cachedAgents[account.did]
+  }
+
+  const {agent} = await createAgentAndResume(account, (_1, _2, _3) => {})
+  cachedAgents[account.did] = agent
+  return agent
+}
 
 let PostControls = ({
   big,
@@ -193,7 +206,7 @@ let PostControls = ({
     )
     ;(async () => {
       try {
-        const {agent} = await createAgentAndResume(account, (_1, _2, _3) => {})
+        const agent = await getOrResumeAgent(account)
         console.log(`Reposting as ${account.did}`)
         agent.repost(post.uri, post.cid, viaRepost)
         Toast.show(_(msg`Reposted as ${name}`), 'check')

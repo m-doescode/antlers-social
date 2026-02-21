@@ -39,54 +39,58 @@ export default function RepostAccountList({
       <Text style={[a.text_2xl, a.font_bold]}>
         <Trans>Repost as</Trans>
       </Text>
-      {accounts.map(account => (
-        <Button
-          key={account.did}
-          style={[a.w_full]}
-          label={_(msg`Repost as ${account.handle}`)}
-          onPress={() => onRepostAs(account)}>
-          {({hovered, pressed}) => (
-            <View
-              style={[
-                a.flex_row,
-                a.flex_1,
-                a.gap_md,
-                a.p_sm,
-                a.rounded_sm,
-                (hovered || pressed) && t.atoms.bg_contrast_25,
-              ]}>
-              <UserAvatar
-                avatar={profileMap[account.did]?.avatar}
-                size={36}
-                type={
-                  profileMap[account.did]?.associated?.labeler
-                    ? 'labeler'
-                    : 'user'
-                }
-                live={false}
-                hideLiveBadge
-              />
-              <View style={[a.flex_1, a.gap_2xs, a.pr_2xl]}>
-                <View style={[a.flex_row, a.align_center, a.gap_xs]}>
-                  <Text
-                    emoji
-                    style={[a.font_bold, a.leading_tight]}
-                    numberOfLines={1}>
-                    {sanitizeDisplayName(
-                      profileMap[account.did]?.displayName ||
-                        profileMap[account.did]?.handle ||
-                        account.handle,
-                    )}
+      {accounts.map(account => {
+        const profile = profileMap[account.did]
+        return (
+          <Button
+            key={account.did}
+            style={[a.w_full]}
+            label={_(
+              msg`Repost as ${sanitizeHandle(
+                profile?.handle ?? account.handle,
+                '@',
+              )}`,
+            )}
+            onPress={() => onRepostAs(account)}>
+            {({hovered, pressed}) => (
+              <View
+                style={[
+                  a.flex_row,
+                  a.flex_1,
+                  a.gap_md,
+                  a.p_sm,
+                  a.rounded_sm,
+                  (hovered || pressed) && t.atoms.bg_contrast_25,
+                ]}>
+                <UserAvatar
+                  avatar={profile?.avatar}
+                  size={36}
+                  type={profile?.associated?.labeler ? 'labeler' : 'user'}
+                  live={false}
+                  hideLiveBadge
+                />
+                <View style={[a.flex_1, a.gap_2xs, a.pr_2xl]}>
+                  <View style={[a.flex_row, a.align_center, a.gap_xs]}>
+                    <Text
+                      emoji
+                      style={[a.font_bold, a.leading_tight]}
+                      numberOfLines={1}>
+                      {sanitizeDisplayName(
+                        profile?.displayName ||
+                          profile?.handle ||
+                          account.handle,
+                      )}
+                    </Text>
+                  </View>
+                  <Text style={[a.leading_tight, t.atoms.text_contrast_medium]}>
+                    {sanitizeHandle(account.handle, '@')}
                   </Text>
                 </View>
-                <Text style={[a.leading_tight, t.atoms.text_contrast_medium]}>
-                  {sanitizeHandle(account.handle, '@')}
-                </Text>
               </View>
-            </View>
-          )}
-        </Button>
-      ))}
+            )}
+          </Button>
+        )
+      })}
     </View>
   )
 }

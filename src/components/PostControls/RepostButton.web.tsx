@@ -1,7 +1,8 @@
 import {msg} from '@lingui/macro'
 import {useLingui} from '@lingui/react'
 
-import {useRequireAuth} from '#/state/session'
+import {useRepostAsEnabled} from '#/state/preferences/repost-as-enabled'
+import {type SessionAccount, useRequireAuth} from '#/state/session'
 import {useSession} from '#/state/session'
 import {EventStopper} from '#/view/com/util/EventStopper'
 import {useTheme} from '#/alf'
@@ -13,6 +14,7 @@ import {
   PostControlButtonIcon,
   PostControlButtonText,
 } from './PostControlButton'
+import RepostAccountList from './RepostAccountList'
 import {useFormatPostStatCount} from './util'
 
 interface Props {
@@ -20,6 +22,7 @@ interface Props {
   repostCount?: number
   onRepost: () => void
   onQuote: () => void
+  onRepostAs: (account: SessionAccount) => void
   big?: boolean
   embeddingDisabled: boolean
 }
@@ -29,6 +32,7 @@ export const RepostButton = ({
   repostCount,
   onRepost,
   onQuote,
+  onRepostAs,
   big,
   embeddingDisabled,
 }: Props) => {
@@ -37,6 +41,9 @@ export const RepostButton = ({
   const {hasSession} = useSession()
   const requireAuth = useRequireAuth()
   const formatPostStatCount = useFormatPostStatCount()
+
+  const {accounts} = useSession()
+  const showRepostAccountList = useRepostAsEnabled() && accounts.length > 1
 
   return hasSession ? (
     <EventStopper onKeyDown={false}>
@@ -93,6 +100,12 @@ export const RepostButton = ({
             </Menu.ItemText>
             <Menu.ItemIcon icon={Quote} position="right" />
           </Menu.Item>
+          {showRepostAccountList && (
+            <>
+              <Menu.Divider />
+              <RepostAccountList onRepostAs={onRepostAs} />
+            </>
+          )}
         </Menu.Outer>
       </Menu.Root>
     </EventStopper>
