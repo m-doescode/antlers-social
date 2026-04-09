@@ -164,6 +164,9 @@ let RepostButtonDialogInner = ({
   return (
     <Dialog.ScrollableInner label={_(msg`Repost or quote post`)}>
       <View style={a.gap_xl}>
+        {showRepostAccountList && (
+          <RepostAccountList onRepostAs={onPressRepostAs} />
+        )}
         <View style={a.gap_xs}>
           <Button
             style={[a.justify_start, a.px_md, a.gap_sm]}
@@ -220,9 +223,6 @@ let RepostButtonDialogInner = ({
             </Text>
           </Button>
         </View>
-        {showRepostAccountList && (
-          <RepostAccountList onRepostAs={onPressRepostAs} />
-        )}
         <Button
           label={_(msg`Cancel quote post`)}
           onPress={onPressClose}
