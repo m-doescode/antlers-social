@@ -50,6 +50,7 @@ async function getOrResumeAgent(account: SessionAccount) {
   }
 
   const {agent} = await createAgentAndResume(account, (_1, _2, _3) => {})
+  await agent.sessionManager.refreshSession()
   cachedAgents[account.did] = agent
   return agent
 }
