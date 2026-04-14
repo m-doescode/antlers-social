@@ -287,11 +287,7 @@
     "@expo/image-utils": "0.6.3",
     "@react-native/babel-preset": "0.79.3",
     "@react-native/normalize-colors": "0.79.3",
-    "@types/react": "^18",
-    "**/expo-constants": "17.0.3",
-    "**/expo-device": "7.1.4",
-    "**/zod": "3.23.8",
-    "**/multiformats": "9.9.0"
+    "@types/react": "^18"
   },
   "jest": {
     "preset": "jest-expo/ios",
