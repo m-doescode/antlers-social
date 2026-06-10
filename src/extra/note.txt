@@ -1,0 +1,4 @@
+We are deliberately avoiding upgrading @atproto/api to prevent bugs due to breaking changes, at least until the
+entire codebase of antlers is upgraded
+
+So here we stick anything that we need in the meantime

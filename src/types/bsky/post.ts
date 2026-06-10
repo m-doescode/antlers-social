@@ -1,5 +1,5 @@
 import {
-  $Typed,
+  type $Typed,
   AppBskyEmbedExternal,
   AppBskyEmbedImages,
   AppBskyEmbedRecord,
@@ -9,6 +9,8 @@ import {
   AppBskyGraphDefs,
   AppBskyLabelerDefs,
 } from '@atproto/api'
+
+import type * as AppBskyEmbedGallery from '#/extra/gallery'
 
 export type Embed =
   | {
@@ -46,6 +48,10 @@ export type Embed =
   | {
       type: 'images'
       view: $Typed<AppBskyEmbedImages.View>
+    }
+  | {
+      type: 'gallery'
+      view: $Typed<AppBskyEmbedGallery.View>
     }
   | {
       type: 'link'
@@ -117,9 +123,17 @@ export function parseEmbedRecordView({record}: AppBskyEmbedRecord.View): Embed {
 }
 
 export function parseEmbed(embed: AppBskyFeedDefs.PostView['embed']): Embed {
+  console.log(embed?.$type)
   if (AppBskyEmbedImages.isView(embed)) {
     return {
       type: 'images',
+      view: embed,
+    }
+    // We're not using the latest @atproto/api lib, so this will have to do
+    // } else if (AppBskyEmbedGallery.isView(embed)) {
+  } else if (embed?.$type === 'app.bsky.embed.gallery#view') {
+    return {
+      type: 'gallery',
       view: embed,
     }
   } else if (AppBskyEmbedExternal.isView(embed)) {

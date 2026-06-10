@@ -34,6 +34,7 @@ import {
 import {atoms as a, useTheme} from '#/alf'
 import {useInteractionState} from '#/components/hooks/useInteractionState'
 import {Trash_Stroke2_Corner0_Rounded as TrashIcon} from '#/components/icons/Trash'
+import {GalleryBleed} from '#/components/images/Gallery'
 import {LabelsOnMyPost} from '#/components/moderation/LabelsOnMe'
 import {PostAlerts} from '#/components/moderation/PostAlerts'
 import {PostHider} from '#/components/moderation/PostHider'
@@ -130,20 +131,22 @@ const ThreadItemPostOuterWrapper = memo(function ThreadItemPostOuterWrapper({
     !item.ui.showParentReplyLine && overrides?.topBorder !== true
 
   return (
-    <View
-      style={[
-        showTopBorder && [a.border_t, t.atoms.border_contrast_low],
-        {
-          paddingHorizontal: OUTER_SPACE,
-        },
-        // If there's no next child, add a little padding to bottom
-        !item.ui.showChildReplyLine &&
-          !item.ui.precedesChildReadMore && {
-            paddingBottom: OUTER_SPACE / 2,
+    <GalleryBleed>
+      <View
+        style={[
+          showTopBorder && [a.border_t, t.atoms.border_contrast_low],
+          {
+            paddingHorizontal: OUTER_SPACE,
           },
-      ]}>
-      {children}
-    </View>
+          // If there's no next child, add a little padding to bottom
+          !item.ui.showChildReplyLine &&
+            !item.ui.precedesChildReadMore && {
+              paddingBottom: OUTER_SPACE / 2,
+            },
+        ]}>
+        {children}
+      </View>
+    </GalleryBleed>
   )
 })
 
@@ -326,6 +329,7 @@ const ThreadItemPostInner = memo(function ThreadItemPostInner({
                 <View style={[a.pb_xs]}>
                   <Embed
                     embed={post.embed}
+                    post={post}
                     moderation={moderation}
                     viewContext={PostEmbedViewContext.Feed}
                   />

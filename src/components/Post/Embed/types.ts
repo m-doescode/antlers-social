@@ -5,6 +5,7 @@ export enum PostEmbedViewContext {
   ThreadHighlighted = 'ThreadHighlighted',
   Feed = 'Feed',
   FeedEmbedRecordWithMedia = 'FeedEmbedRecordWithMedia',
+  ChatMessage = 'ChatMessage',
 }
 
 export enum QuoteEmbedViewContext {

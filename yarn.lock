@@ -4564,6 +4564,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bsky.app/alf@npm:^0.1.14":
+  version: 0.1.14
+  resolution: "@bsky.app/alf@npm:0.1.14"
+  dependencies:
+    react-responsive: "npm:^10.0.1"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/d4b4e6dd3fa783591420335284a088fdb7e80c2010844ade81e90c47bb6b633b286bafe6c7ccb4b25fe5c979c85269a8bdc103cd9efcf4c27c56c95d920e3feb
+  languageName: node
+  linkType: hard
+
+"@bsky.app/peek-menu@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@bsky.app/peek-menu@npm:0.3.0"
+  peerDependencies:
+    expo: "*"
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/dc296875772c82f78253bc19b036c2894a1bf4b468be9fa6731d1b0d3c21bfe3ad30a822481385cae50023b73705b3b139ecdb6c0713855ea05b1044d12b6bd9
+  languageName: node
+  linkType: hard
+
 "@bufbuild/protobuf@npm:^1.5.0":
   version: 1.7.0
   resolution: "@bufbuild/protobuf@npm:1.7.0"
@@ -14027,6 +14050,8 @@ __metadata:
     "@babel/runtime": "npm:^7.26.0"
     "@bitdrift/react-native": "npm:^0.6.8"
     "@braintree/sanitize-url": "npm:^6.0.2"
+    "@bsky.app/alf": "npm:^0.1.14"
+    "@bsky.app/peek-menu": "npm:^0.3.0"
     "@discord/bottom-sheet": bluesky-social/react-native-bottom-sheet
     "@emoji-mart/react": "npm:^1.1.1"
     "@expo/config-plugins": "npm:~10.0.2"
@@ -20348,6 +20373,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"matchmediaquery@npm:^0.4.2":
+  version: 0.4.2
+  resolution: "matchmediaquery@npm:0.4.2"
+  dependencies:
+    css-mediaquery: "npm:^0.1.2"
+  checksum: 10c0/5a2d2621e18882f0a2854b830c9bf0b8e5d766cce680bd841274a37035429dc587bdf6093e70a5d04915a3f76f9e0cb2adf8582ef0dab2f56977dd5dbc88f58e
+  languageName: node
+  linkType: hard
+
 "math-intrinsics@npm:^1.1.0":
   version: 1.1.0
   resolution: "math-intrinsics@npm:1.1.0"
@@ -24106,6 +24140,20 @@ react-native-progress@bluesky-social/react-native-progress:
   languageName: node
   linkType: hard
 
+"react-responsive@npm:^10.0.1":
+  version: 10.0.1
+  resolution: "react-responsive@npm:10.0.1"
+  dependencies:
+    hyphenate-style-name: "npm:^1.0.0"
+    matchmediaquery: "npm:^0.4.2"
+    prop-types: "npm:^15.6.1"
+    shallow-equal: "npm:^3.1.0"
+  peerDependencies:
+    react: ">=16.8.0"
+  checksum: 10c0/978bb2dae949774af629fe2fb84df9ecd6076a9a11b3e3790324f466f7e6dcac6ab22f6f4f51a4f69341656d375f181e5ce5a2b945128a557d468afe88d244ec
+  languageName: node
+  linkType: hard
+
 "react-responsive@npm:^9.0.2":
   version: 9.0.2
   resolution: "react-responsive@npm:9.0.2"
@@ -25316,6 +25364,13 @@ react-native-progress@bluesky-social/react-native-progress:
   version: 1.2.1
   resolution: "shallow-equal@npm:1.2.1"
   checksum: 10c0/51e03abadd97c9ebe590547d92db9148446962a3f23a3a0fb1ba2fccab80af881eef0ff1f8ccefd3f066c0bc5a4c8ca53706194813b95c8835fa66448a843a26
+  languageName: node
+  linkType: hard
+
+"shallow-equal@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "shallow-equal@npm:3.1.0"
+  checksum: 10c0/57079f8741a86b25229b58b86df5d503414aca324e486ec7ddb2423db65914c80c8282149ef66a6803092847dc0d840da8fc338ea5027bbf4fc877f944df9bf6
   languageName: node
   linkType: hard
 

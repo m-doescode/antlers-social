@@ -46,6 +46,7 @@ import {colors} from '#/components/Admonition'
 import {Button} from '#/components/Button'
 import {CalendarClock_Stroke2_Corner0_Rounded as CalendarClockIcon} from '#/components/icons/CalendarClock'
 import {Trash_Stroke2_Corner0_Rounded as TrashIcon} from '#/components/icons/Trash'
+import {GalleryBleed} from '#/components/images/Gallery'
 import {InlineLinkText, Link} from '#/components/Link'
 import {LoggedOutCTA} from '#/components/LoggedOutCTA'
 import {ContentHider} from '#/components/moderation/ContentHider'
@@ -310,223 +311,229 @@ const ThreadItemAnchorInner = memo(function ThreadItemAnchorInner({
     <>
       <ThreadItemAnchorParentReplyLine isRoot={isRoot} />
 
-      <View
-        testID={`postThreadItem-by-${post.author.handle}`}
-        style={[
-          {
-            paddingHorizontal: OUTER_SPACE,
-          },
-          isRoot && [a.pt_lg],
-        ]}>
-        {/* Show CTA for logged-out visitors - hide on desktop and check gate */}
-        {!gtTablet && <LoggedOutCTA gateName="cta_above_post_heading" />}
-        <View style={[a.flex_row, a.gap_md, a.pb_md]}>
-          <View collapsable={false}>
-            <PreviewableUserAvatar
-              size={42}
-              profile={post.author}
-              moderation={moderation.ui('avatar')}
-              type={post.author.associated?.labeler ? 'labeler' : 'user'}
-              live={live}
-              onBeforePress={onOpenAuthor}
-            />
-          </View>
-          <Link
-            to={authorHref}
-            style={[a.flex_1]}
-            label={sanitizeDisplayName(
-              post.author.displayName || sanitizeHandle(post.author.handle),
-              moderation.ui('displayName'),
-            )}
-            onPress={onOpenAuthor}>
-            <View style={[a.flex_1, a.align_start]}>
-              <ProfileHoverCard did={post.author.did} style={[a.w_full]}>
-                <View style={[a.flex_row, a.align_center]}>
+      <GalleryBleed>
+        <View
+          testID={`postThreadItem-by-${post.author.handle}`}
+          style={[
+            {
+              paddingHorizontal: OUTER_SPACE,
+            },
+            isRoot && [a.pt_lg],
+          ]}>
+          {/* Show CTA for logged-out visitors - hide on desktop and check gate */}
+          {!gtTablet && <LoggedOutCTA gateName="cta_above_post_heading" />}
+          <View style={[a.flex_row, a.gap_md, a.pb_md]}>
+            <View collapsable={false}>
+              <PreviewableUserAvatar
+                size={42}
+                profile={post.author}
+                moderation={moderation.ui('avatar')}
+                type={post.author.associated?.labeler ? 'labeler' : 'user'}
+                live={live}
+                onBeforePress={onOpenAuthor}
+              />
+            </View>
+            <Link
+              to={authorHref}
+              style={[a.flex_1]}
+              label={sanitizeDisplayName(
+                post.author.displayName || sanitizeHandle(post.author.handle),
+                moderation.ui('displayName'),
+              )}
+              onPress={onOpenAuthor}>
+              <View style={[a.flex_1, a.align_start]}>
+                <ProfileHoverCard did={post.author.did} style={[a.w_full]}>
+                  <View style={[a.flex_row, a.align_center]}>
+                    <Text
+                      emoji
+                      style={[
+                        a.flex_shrink,
+                        a.text_lg,
+                        a.font_bold,
+                        a.leading_snug,
+                      ]}
+                      numberOfLines={1}>
+                      {sanitizeDisplayName(
+                        post.author.displayName ||
+                          sanitizeHandle(post.author.handle),
+                        moderation.ui('displayName'),
+                      )}
+                    </Text>
+
+                    <View style={[{paddingLeft: 3, top: -1}]}>
+                      <VerificationCheckButton
+                        profile={authorShadow}
+                        size="md"
+                      />
+                    </View>
+                  </View>
                   <Text
-                    emoji
                     style={[
-                      a.flex_shrink,
-                      a.text_lg,
-                      a.font_bold,
+                      a.text_md,
                       a.leading_snug,
+                      t.atoms.text_contrast_medium,
                     ]}
                     numberOfLines={1}>
-                    {sanitizeDisplayName(
-                      post.author.displayName ||
-                        sanitizeHandle(post.author.handle),
-                      moderation.ui('displayName'),
-                    )}
+                    {sanitizeHandle(post.author.handle, '@')}
                   </Text>
-
-                  <View style={[{paddingLeft: 3, top: -1}]}>
-                    <VerificationCheckButton profile={authorShadow} size="md" />
-                  </View>
-                </View>
-                <Text
-                  style={[
-                    a.text_md,
-                    a.leading_snug,
-                    t.atoms.text_contrast_medium,
-                  ]}
-                  numberOfLines={1}>
-                  {sanitizeHandle(post.author.handle, '@')}
-                </Text>
-              </ProfileHoverCard>
-            </View>
-          </Link>
-          {showFollowButton && (
-            <View collapsable={false}>
-              <ThreadItemAnchorFollowButton did={post.author.did} />
-            </View>
-          )}
-        </View>
-        <View style={[a.pb_sm]}>
-          <LabelsOnMyPost post={post} style={[a.pb_sm]} />
-          <ContentHider
-            modui={moderation.ui('contentView')}
-            ignoreMute
-            childContainerStyle={[a.pt_sm]}>
-            <PostAlerts
-              modui={moderation.ui('contentView')}
-              size="lg"
-              includeMute
-              style={[a.pb_sm]}
-              additionalCauses={additionalPostAlerts}
-            />
-            {richText?.text ? (
-              <RichText
-                enableTags
-                selectable
-                value={richText}
-                style={[a.flex_1, a.text_xl]}
-                authorHandle={post.author.handle}
-                shouldProxyLinks={true}
-              />
-            ) : undefined}
-            {post.embed && (
-              <View style={[a.py_xs]}>
-                <Embed
-                  embed={post.embed}
-                  moderation={moderation}
-                  viewContext={PostEmbedViewContext.ThreadHighlighted}
-                  onOpen={onOpenEmbed}
-                />
+                </ProfileHoverCard>
+              </View>
+            </Link>
+            {showFollowButton && (
+              <View collapsable={false}>
+                <ThreadItemAnchorFollowButton did={post.author.did} />
               </View>
             )}
-          </ContentHider>
-          <ExpandedPostDetails
-            post={item.value.post}
-            isThreadAuthor={isThreadAuthor}
-          />
-          {post.repostCount !== 0 ||
-          post.likeCount !== 0 ||
-          post.quoteCount !== 0 ||
-          post.bookmarkCount !== 0 ? (
-            // Show this section unless we're *sure* it has no engagement.
+          </View>
+          <View style={[a.pb_sm]}>
+            <LabelsOnMyPost post={post} style={[a.pb_sm]} />
+            <ContentHider
+              modui={moderation.ui('contentView')}
+              ignoreMute
+              childContainerStyle={[a.pt_sm]}>
+              <PostAlerts
+                modui={moderation.ui('contentView')}
+                size="lg"
+                includeMute
+                style={[a.pb_sm]}
+                additionalCauses={additionalPostAlerts}
+              />
+              {richText?.text ? (
+                <RichText
+                  enableTags
+                  selectable
+                  value={richText}
+                  style={[a.flex_1, a.text_xl]}
+                  authorHandle={post.author.handle}
+                  shouldProxyLinks={true}
+                />
+              ) : undefined}
+              {post.embed && (
+                <View style={[a.py_xs]}>
+                  <Embed
+                    embed={post.embed}
+                    post={post}
+                    moderation={moderation}
+                    viewContext={PostEmbedViewContext.ThreadHighlighted}
+                    onOpen={onOpenEmbed}
+                  />
+                </View>
+              )}
+            </ContentHider>
+            <ExpandedPostDetails
+              post={item.value.post}
+              isThreadAuthor={isThreadAuthor}
+            />
+            {post.repostCount !== 0 ||
+            post.likeCount !== 0 ||
+            post.quoteCount !== 0 ||
+            post.bookmarkCount !== 0 ? (
+              // Show this section unless we're *sure* it has no engagement.
+              <View
+                style={[
+                  a.flex_row,
+                  a.flex_wrap,
+                  a.align_center,
+                  {
+                    rowGap: a.gap_sm.gap,
+                    columnGap: a.gap_lg.gap,
+                  },
+                  a.border_t,
+                  a.border_b,
+                  a.mt_md,
+                  a.py_md,
+                  t.atoms.border_contrast_low,
+                ]}>
+                {post.repostCount != null && post.repostCount !== 0 ? (
+                  <Link to={repostsHref} label={_(msg`Reposts of this post`)}>
+                    <Text
+                      testID="repostCount-expanded"
+                      style={[a.text_md, t.atoms.text_contrast_medium]}>
+                      <Text style={[a.text_md, a.font_bold, t.atoms.text]}>
+                        {formatPostStatCount(post.repostCount)}
+                      </Text>{' '}
+                      <Plural
+                        value={post.repostCount}
+                        one="repost"
+                        other="reposts"
+                      />
+                    </Text>
+                  </Link>
+                ) : null}
+                {post.quoteCount != null &&
+                post.quoteCount !== 0 &&
+                !post.viewer?.embeddingDisabled ? (
+                  <Link to={quotesHref} label={_(msg`Quotes of this post`)}>
+                    <Text
+                      testID="quoteCount-expanded"
+                      style={[a.text_md, t.atoms.text_contrast_medium]}>
+                      <Text style={[a.text_md, a.font_bold, t.atoms.text]}>
+                        {formatPostStatCount(post.quoteCount)}
+                      </Text>{' '}
+                      <Plural
+                        value={post.quoteCount}
+                        one="quote"
+                        other="quotes"
+                      />
+                    </Text>
+                  </Link>
+                ) : null}
+                {post.likeCount != null && post.likeCount !== 0 ? (
+                  <Link to={likesHref} label={_(msg`Likes on this post`)}>
+                    <Text
+                      testID="likeCount-expanded"
+                      style={[a.text_md, t.atoms.text_contrast_medium]}>
+                      <Text style={[a.text_md, a.font_bold, t.atoms.text]}>
+                        {formatPostStatCount(post.likeCount)}
+                      </Text>{' '}
+                      <Plural value={post.likeCount} one="like" other="likes" />
+                    </Text>
+                  </Link>
+                ) : null}
+                {post.bookmarkCount != null && post.bookmarkCount !== 0 ? (
+                  <Link to={likesHref} label={_(msg`Saves of this post`)}>
+                    <Text
+                      testID="bookmarkCount-expanded"
+                      style={[a.text_md, t.atoms.text_contrast_medium]}>
+                      <Text style={[a.text_md, a.font_bold, t.atoms.text]}>
+                        {formatPostStatCount(post.bookmarkCount)}
+                      </Text>{' '}
+                      <Plural
+                        value={post.bookmarkCount}
+                        one="save"
+                        other="saves"
+                      />
+                    </Text>
+                  </Link>
+                ) : null}
+              </View>
+            ) : null}
             <View
               style={[
-                a.flex_row,
-                a.flex_wrap,
-                a.align_center,
+                a.pt_sm,
+                a.pb_2xs,
                 {
-                  rowGap: a.gap_sm.gap,
-                  columnGap: a.gap_lg.gap,
+                  marginLeft: -5,
                 },
-                a.border_t,
-                a.border_b,
-                a.mt_md,
-                a.py_md,
-                t.atoms.border_contrast_low,
               ]}>
-              {post.repostCount != null && post.repostCount !== 0 ? (
-                <Link to={repostsHref} label={_(msg`Reposts of this post`)}>
-                  <Text
-                    testID="repostCount-expanded"
-                    style={[a.text_md, t.atoms.text_contrast_medium]}>
-                    <Text style={[a.text_md, a.font_bold, t.atoms.text]}>
-                      {formatPostStatCount(post.repostCount)}
-                    </Text>{' '}
-                    <Plural
-                      value={post.repostCount}
-                      one="repost"
-                      other="reposts"
-                    />
-                  </Text>
-                </Link>
-              ) : null}
-              {post.quoteCount != null &&
-              post.quoteCount !== 0 &&
-              !post.viewer?.embeddingDisabled ? (
-                <Link to={quotesHref} label={_(msg`Quotes of this post`)}>
-                  <Text
-                    testID="quoteCount-expanded"
-                    style={[a.text_md, t.atoms.text_contrast_medium]}>
-                    <Text style={[a.text_md, a.font_bold, t.atoms.text]}>
-                      {formatPostStatCount(post.quoteCount)}
-                    </Text>{' '}
-                    <Plural
-                      value={post.quoteCount}
-                      one="quote"
-                      other="quotes"
-                    />
-                  </Text>
-                </Link>
-              ) : null}
-              {post.likeCount != null && post.likeCount !== 0 ? (
-                <Link to={likesHref} label={_(msg`Likes on this post`)}>
-                  <Text
-                    testID="likeCount-expanded"
-                    style={[a.text_md, t.atoms.text_contrast_medium]}>
-                    <Text style={[a.text_md, a.font_bold, t.atoms.text]}>
-                      {formatPostStatCount(post.likeCount)}
-                    </Text>{' '}
-                    <Plural value={post.likeCount} one="like" other="likes" />
-                  </Text>
-                </Link>
-              ) : null}
-              {post.bookmarkCount != null && post.bookmarkCount !== 0 ? (
-                <Link to={likesHref} label={_(msg`Saves of this post`)}>
-                  <Text
-                    testID="bookmarkCount-expanded"
-                    style={[a.text_md, t.atoms.text_contrast_medium]}>
-                    <Text style={[a.text_md, a.font_bold, t.atoms.text]}>
-                      {formatPostStatCount(post.bookmarkCount)}
-                    </Text>{' '}
-                    <Plural
-                      value={post.bookmarkCount}
-                      one="save"
-                      other="saves"
-                    />
-                  </Text>
-                </Link>
-              ) : null}
+              <FeedFeedbackProvider value={feedFeedback}>
+                <PostControls
+                  big
+                  post={postShadow}
+                  record={record}
+                  richText={richText}
+                  onPressReply={onPressReply}
+                  logContext="PostThreadItem"
+                  threadgateRecord={threadgateRecord}
+                  feedContext={postSource?.post?.feedContext}
+                  reqId={postSource?.post?.reqId}
+                  viaRepost={viaRepost}
+                />
+              </FeedFeedbackProvider>
             </View>
-          ) : null}
-          <View
-            style={[
-              a.pt_sm,
-              a.pb_2xs,
-              {
-                marginLeft: -5,
-              },
-            ]}>
-            <FeedFeedbackProvider value={feedFeedback}>
-              <PostControls
-                big
-                post={postShadow}
-                record={record}
-                richText={richText}
-                onPressReply={onPressReply}
-                logContext="PostThreadItem"
-                threadgateRecord={threadgateRecord}
-                feedContext={postSource?.post?.feedContext}
-                reqId={postSource?.post?.reqId}
-                viaRepost={viaRepost}
-              />
-            </FeedFeedbackProvider>
           </View>
         </View>
-      </View>
+      </GalleryBleed>
     </>
   )
 })

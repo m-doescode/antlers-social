@@ -95,7 +95,7 @@ msgstr ""
 msgid "{0, plural, one {following} other {following}}"
 msgstr ""
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:483
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:486
 msgid "{0, plural, one {like} other {likes}}"
 msgstr ""
 
@@ -103,16 +103,16 @@ msgstr ""
 msgid "{0, plural, one {post} other {posts}}"
 msgstr ""
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:467
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:470
 msgid "{0, plural, one {quote} other {quotes}}"
 msgstr ""
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:449
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:452
 #: src/view/com/posts/PostFeedItemCarousel.tsx:63
 msgid "{0, plural, one {repost} other {reposts}}"
 msgstr ""
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:495
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:498
 msgid "{0, plural, one {save} other {saves}}"
 msgstr ""
 
@@ -195,6 +195,10 @@ msgstr ""
 
 #: src/screens/StarterPack/Wizard/StepDetails.tsx:46
 msgid "{0}'s starter pack"
+msgstr ""
+
+#: src/components/images/Gallery/index.tsx:517
+msgid "{0}/{imageCount}"
 msgstr ""
 
 #. How many days have passed, displayed in a narrow form
@@ -934,6 +938,7 @@ msgstr ""
 msgid "Already signed in as @{0}"
 msgstr ""
 
+#: src/components/images/Gallery/index.tsx:580
 #: src/components/Post/Embed/ExternalEmbed/Gif.tsx:186
 #: src/view/com/composer/GifAltText.tsx:100
 #: src/view/com/composer/photos/Gallery.tsx:188
@@ -1188,12 +1193,12 @@ msgstr ""
 msgid "Apply Pull Request"
 msgstr ""
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:669
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:673
 msgid "Archived from {0}"
 msgstr ""
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:638
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:677
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:642
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:681
 msgid "Archived post"
 msgstr ""
 
@@ -1403,8 +1408,8 @@ msgstr ""
 msgid "Block User"
 msgstr ""
 
-#: src/components/Post/Embed/index.tsx:223
-#: src/components/Post/Embed/index.tsx:231
+#: src/components/Post/Embed/index.tsx:228
+#: src/components/Post/Embed/index.tsx:236
 msgid "Blocked"
 msgstr ""
 
@@ -1443,7 +1448,7 @@ msgstr ""
 msgid "Bluesky"
 msgstr ""
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:694
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:698
 msgid "Bluesky cannot confirm the authenticity of the claimed date."
 msgstr ""
 
@@ -1660,9 +1665,9 @@ msgstr ""
 msgid "Cancel search"
 msgstr ""
 
-#: src/components/PostControls/index.tsx:121
-#: src/components/PostControls/index.tsx:152
-#: src/components/PostControls/index.tsx:180
+#: src/components/PostControls/index.tsx:122
+#: src/components/PostControls/index.tsx:153
+#: src/components/PostControls/index.tsx:181
 #: src/state/shell/composer/index.tsx:94
 msgid "Cannot interact with a blocked user"
 msgstr ""
@@ -1674,6 +1679,10 @@ msgstr ""
 #: src/view/com/composer/videos/SubtitleDialog.tsx:40
 #: src/view/com/composer/videos/SubtitleDialog.tsx:55
 msgid "Captions & alt text"
+msgstr ""
+
+#: src/components/images/Gallery/index.tsx:266
+msgid "carousel"
 msgstr ""
 
 #: src/screens/Settings/components/Email2FAToggle.tsx:31
@@ -2694,7 +2703,7 @@ msgstr ""
 msgid "Delete this post?"
 msgstr ""
 
-#: src/components/Post/Embed/index.tsx:204
+#: src/components/Post/Embed/index.tsx:209
 msgid "Deleted"
 msgstr ""
 
@@ -3612,7 +3621,7 @@ msgstr ""
 msgid "Failed to remove verification"
 msgstr ""
 
-#: src/components/PostControls/index.tsx:214
+#: src/components/PostControls/index.tsx:215
 msgid "Failed to repost as {name}"
 msgstr ""
 
@@ -4038,7 +4047,7 @@ msgstr ""
 msgid "From @{sanitizedAuthor}"
 msgstr ""
 
-#: src/view/com/posts/PostFeedItem.tsx:335
+#: src/view/com/posts/PostFeedItem.tsx:337
 msgctxt "from-feed"
 msgid "From <0/>"
 msgstr ""
@@ -4541,6 +4550,14 @@ msgstr ""
 msgid "Image"
 msgstr ""
 
+#: src/components/images/Gallery/index.tsx:450
+msgid "Image {0}"
+msgstr ""
+
+#: src/components/images/Gallery/index.tsx:435
+msgid "Image {0} of {imageCount}"
+msgstr ""
+
 #: src/screens/Settings/AboutSettings.tsx:62
 msgid "Image cache cleared"
 msgstr ""
@@ -4548,6 +4565,10 @@ msgstr ""
 #. Android-only toast message which includes amount of space freed using localized number formatting
 #: src/screens/Settings/AboutSettings.tsx:48
 msgid "Image cache cleared, freed {0}"
+msgstr ""
+
+#: src/components/images/Gallery/index.tsx:267
+msgid "Image gallery, {0} images"
 msgstr ""
 
 #: src/lib/media/save-image.ts:26
@@ -4938,7 +4959,7 @@ msgid "Like"
 msgstr ""
 
 #. Accessibility label for the like button when the post has not been liked, verb form followed by number of likes and noun form
-#: src/components/PostControls/index.tsx:307
+#: src/components/PostControls/index.tsx:308
 msgid "Like ({0, plural, one {# like} other {# likes}})"
 msgstr ""
 
@@ -5003,7 +5024,7 @@ msgstr ""
 msgid "Likes of your reposts notifications"
 msgstr ""
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:476
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:479
 msgid "Likes on this post"
 msgstr ""
 
@@ -5961,7 +5982,7 @@ msgid "OK"
 msgstr ""
 
 #: src/screens/Login/PasswordUpdatedForm.tsx:37
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:699
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:703
 msgid "Okay"
 msgstr ""
 
@@ -6194,6 +6215,10 @@ msgstr ""
 msgid "Opens flow to sign in to your existing Bluesky account"
 msgstr ""
 
+#: src/components/images/Gallery/index.tsx:451
+msgid "Opens full image"
+msgstr ""
+
 #: src/view/com/composer/photos/SelectGifBtn.tsx:36
 msgid "Opens GIF select dialog"
 msgstr ""
@@ -6392,7 +6417,7 @@ msgstr ""
 msgid "Pin to your profile"
 msgstr ""
 
-#: src/view/com/posts/PostFeedItem.tsx:416
+#: src/view/com/posts/PostFeedItem.tsx:418
 msgid "Pinned"
 msgstr ""
 
@@ -6633,9 +6658,9 @@ msgstr ""
 msgid "Post failed to upload. Please check your Internet connection and try again."
 msgstr ""
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:135
-#: src/screens/PostThread/components/ThreadItemPost.tsx:112
-#: src/screens/PostThread/components/ThreadItemTreePost.tsx:109
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:136
+#: src/screens/PostThread/components/ThreadItemPost.tsx:113
+#: src/screens/PostThread/components/ThreadItemTreePost.tsx:110
 #: src/screens/VideoFeed/index.tsx:532
 msgid "Post has been deleted"
 msgstr ""
@@ -6862,8 +6887,8 @@ msgstr ""
 msgid "Quote notifications"
 msgstr ""
 
-#: src/components/PostControls/RepostButton.tsx:195
-#: src/components/PostControls/RepostButton.tsx:218
+#: src/components/PostControls/RepostButton.tsx:198
+#: src/components/PostControls/RepostButton.tsx:221
 #: src/components/PostControls/RepostButton.web.tsx:92
 #: src/components/PostControls/RepostButton.web.tsx:99
 msgid "Quote post"
@@ -6877,8 +6902,8 @@ msgstr ""
 msgid "Quote post was successfully detached"
 msgstr ""
 
-#: src/components/PostControls/RepostButton.tsx:194
-#: src/components/PostControls/RepostButton.tsx:216
+#: src/components/PostControls/RepostButton.tsx:197
+#: src/components/PostControls/RepostButton.tsx:219
 #: src/components/PostControls/RepostButton.web.tsx:91
 #: src/components/PostControls/RepostButton.web.tsx:98
 msgid "Quote posts disabled"
@@ -6895,7 +6920,7 @@ msgstr ""
 msgid "Quotes"
 msgstr ""
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:460
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:463
 msgid "Quotes of this post"
 msgstr ""
 
@@ -7117,8 +7142,8 @@ msgstr ""
 msgid "Remove profile"
 msgstr ""
 
-#: src/components/PostControls/RepostButton.tsx:172
-#: src/components/PostControls/RepostButton.tsx:182
+#: src/components/PostControls/RepostButton.tsx:175
+#: src/components/PostControls/RepostButton.tsx:185
 msgid "Remove repost"
 msgstr ""
 
@@ -7150,12 +7175,12 @@ msgstr ""
 msgid "Remove your verification for this account?"
 msgstr ""
 
-#: src/components/Post/Embed/index.tsx:255
-#: src/components/Post/Embed/index.tsx:293
+#: src/components/Post/Embed/index.tsx:260
+#: src/components/Post/Embed/index.tsx:298
 msgid "Removed by author"
 msgstr ""
 
-#: src/components/Post/Embed/index.tsx:291
+#: src/components/Post/Embed/index.tsx:296
 msgid "Removed by you"
 msgstr ""
 
@@ -7241,7 +7266,7 @@ msgid "Reply"
 msgstr ""
 
 #. Accessibility label for the reply button, verb form followed by number of replies and noun form
-#: src/components/PostControls/index.tsx:260
+#: src/components/PostControls/index.tsx:261
 msgid "Reply ({0, plural, one {# reply} other {# replies}})"
 msgstr ""
 
@@ -7368,8 +7393,8 @@ msgstr ""
 msgid "Report this user"
 msgstr ""
 
-#: src/components/PostControls/RepostButton.tsx:173
-#: src/components/PostControls/RepostButton.tsx:184
+#: src/components/PostControls/RepostButton.tsx:176
+#: src/components/PostControls/RepostButton.tsx:187
 #: src/components/PostControls/RepostButton.web.tsx:76
 #: src/components/PostControls/RepostButton.web.tsx:83
 msgctxt "action"
@@ -7407,7 +7432,7 @@ msgstr ""
 msgid "Repost or quote post"
 msgstr ""
 
-#: src/components/PostControls/index.tsx:212
+#: src/components/PostControls/index.tsx:213
 msgid "Reposted as {name}"
 msgstr ""
 
@@ -7415,16 +7440,16 @@ msgstr ""
 msgid "Reposted By"
 msgstr ""
 
-#: src/view/com/posts/PostFeedItem.tsx:356
+#: src/view/com/posts/PostFeedItem.tsx:358
 msgid "Reposted by {0}"
 msgstr ""
 
-#: src/view/com/posts/PostFeedItem.tsx:375
+#: src/view/com/posts/PostFeedItem.tsx:377
 msgid "Reposted by <0><1/></0>"
 msgstr ""
 
-#: src/view/com/posts/PostFeedItem.tsx:354
-#: src/view/com/posts/PostFeedItem.tsx:373
+#: src/view/com/posts/PostFeedItem.tsx:356
+#: src/view/com/posts/PostFeedItem.tsx:375
 msgid "Reposted by you"
 msgstr ""
 
@@ -7435,7 +7460,7 @@ msgstr ""
 msgid "Reposts"
 msgstr ""
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:442
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:445
 msgid "Reposts of this post"
 msgstr ""
 
@@ -7615,6 +7640,7 @@ msgstr ""
 msgid "Save changes"
 msgstr ""
 
+#: src/components/Post/Embed/ImageContextMenu.tsx:71
 #: src/components/StarterPack/ShareDialog.tsx:131
 #: src/components/StarterPack/ShareDialog.tsx:138
 msgid "Save image"
@@ -7666,7 +7692,7 @@ msgstr ""
 msgid "Saves image crop settings"
 msgstr ""
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:488
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:491
 msgid "Saves of this post"
 msgstr ""
 
@@ -8143,6 +8169,7 @@ msgstr ""
 msgid "Sexually Suggestive"
 msgstr ""
 
+#: src/components/Post/Embed/ImageContextMenu.tsx:75
 #: src/components/StarterPack/QrCodeDialog.tsx:182
 #: src/screens/Hashtag.tsx:126
 #: src/screens/StarterPack/StarterPackScreen.tsx:433
@@ -8330,7 +8357,7 @@ msgstr ""
 msgid "Show warning and filter from feeds"
 msgstr ""
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:640
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:644
 msgid "Shows information about when this post was created"
 msgstr ""
 
@@ -8450,6 +8477,10 @@ msgstr ""
 #: src/screens/Onboarding/StepInterests/index.tsx:237
 #: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:219
 msgid "Skip this flow"
+msgstr ""
+
+#: src/components/images/Gallery/index.tsx:434
+msgid "slide"
 msgstr ""
 
 #: src/screens/Settings/AppearanceSettings.tsx:165
@@ -9267,7 +9298,7 @@ msgstr ""
 msgid "This moderation service is unavailable. See below for more details. If this issue persists, contact us."
 msgstr ""
 
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:680
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:684
 msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Bluesky on <1>{1}</1>."
 msgstr ""
 
@@ -9441,8 +9472,8 @@ msgstr ""
 #: src/components/dms/MessageContextMenu.tsx:139
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:522
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:524
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:602
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:605
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:606
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:609
 msgid "Translate"
 msgstr ""
 
@@ -9617,7 +9648,7 @@ msgid "Unlike"
 msgstr ""
 
 #. Accessibility label for the like button when the post has been liked, verb followed by number of likes and noun
-#: src/components/PostControls/index.tsx:297
+#: src/components/PostControls/index.tsx:298
 msgid "Unlike ({0, plural, one {# like} other {# likes}})"
 msgstr ""
 

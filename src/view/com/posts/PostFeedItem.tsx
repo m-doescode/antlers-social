@@ -45,6 +45,7 @@ import {PreviewableUserAvatar} from '#/view/com/util/UserAvatar'
 import {atoms as a} from '#/alf'
 import {Pin_Stroke2_Corner0_Rounded as PinIcon} from '#/components/icons/Pin'
 import {Repost_Stroke2_Corner2_Rounded as RepostIcon} from '#/components/icons/Repost'
+import {GalleryBleed} from '#/components/images/Gallery'
 import {ContentHider} from '#/components/moderation/ContentHider'
 import {LabelsOnMyPost} from '#/components/moderation/LabelsOnMe'
 import {PostAlerts} from '#/components/moderation/PostAlerts'
@@ -293,199 +294,201 @@ let FeedItemInner = ({
   }, [reason])
 
   return (
-    <Link
-      testID={`feedItem-by-${post.author.handle}`}
-      style={outerStyles}
-      href={href}
-      noFeedback
-      accessible={false}
-      onBeforePress={onBeforePress}
-      dataSet={{feedContext}}
-      onPointerEnter={() => {
-        setHover(true)
-      }}
-      onPointerLeave={() => {
-        setHover(false)
-      }}>
-      <SubtleWebHover hover={hover} />
-      <View style={{flexDirection: 'row', gap: 10, paddingLeft: 8}}>
-        <View style={{width: isCarouselItem ? 0 : 42}}>
-          {isThreadChild && (
-            <View
-              style={[
-                styles.replyLine,
-                {
-                  flexGrow: 1,
-                  backgroundColor: pal.colors.replyLine,
-                  marginBottom: 4,
-                },
-              ]}
-            />
-          )}
-        </View>
-
-        <View style={{paddingTop: 10, flexShrink: 1}}>
-          {isReasonFeedSource(reason) ? (
-            <Link href={reason.href}>
-              <Text
-                type="sm-bold"
-                style={pal.textLight}
-                lineHeight={1.2}
-                numberOfLines={1}>
-                <Trans context="from-feed">
-                  From{' '}
-                  <FeedNameText
-                    type="sm-bold"
-                    uri={reason.uri}
-                    href={reason.href}
-                    lineHeight={1.2}
-                    numberOfLines={1}
-                    style={pal.textLight}
-                  />
-                </Trans>
-              </Text>
-            </Link>
-          ) : AppBskyFeedDefs.isReasonRepost(reason) ? (
-            <Link
-              style={styles.includeReason}
-              href={makeProfileLink(reason.by)}
-              title={
-                isOwner
-                  ? _(msg`Reposted by you`)
-                  : _(
-                      msg`Reposted by ${sanitizeDisplayName(
-                        reason.by.displayName || reason.by.handle,
-                      )}`,
-                    )
-              }
-              onBeforePress={onOpenReposter}>
-              <RepostIcon
-                style={{color: pal.colors.textLight, marginRight: 3}}
-                width={13}
-                height={13}
-              />
-              <Text
-                type="sm-bold"
-                style={pal.textLight}
-                lineHeight={1.2}
-                numberOfLines={1}>
-                {isOwner ? (
-                  <Trans>Reposted by you</Trans>
-                ) : (
-                  <Trans>
-                    Reposted by{' '}
-                    <ProfileHoverCard did={reason.by.did}>
-                      <TextLinkOnWebOnly
-                        type="sm-bold"
-                        style={pal.textLight}
-                        lineHeight={1.2}
-                        numberOfLines={1}
-                        text={
-                          <Text
-                            emoji
-                            type="sm-bold"
-                            style={pal.textLight}
-                            lineHeight={1.2}>
-                            {sanitizeDisplayName(
-                              reason.by.displayName ||
-                                sanitizeHandle(reason.by.handle),
-                              moderation.ui('displayName'),
-                            )}
-                          </Text>
-                        }
-                        href={makeProfileLink(reason.by)}
-                        onBeforePress={onOpenReposter}
-                      />
-                    </ProfileHoverCard>
-                  </Trans>
-                )}
-              </Text>
-            </Link>
-          ) : AppBskyFeedDefs.isReasonPin(reason) ? (
-            <View style={styles.includeReason}>
-              <PinIcon
-                style={{color: pal.colors.textLight, marginRight: 3}}
-                width={13}
-                height={13}
-              />
-              <Text
-                type="sm-bold"
-                style={pal.textLight}
-                lineHeight={1.2}
-                numberOfLines={1}>
-                <Trans>Pinned</Trans>
-              </Text>
-            </View>
-          ) : null}
-        </View>
-      </View>
-
-      <View style={styles.layout}>
-        <View style={styles.layoutAvi}>
-          <PreviewableUserAvatar
-            size={42}
-            profile={post.author}
-            moderation={moderation.ui('avatar')}
-            type={post.author.associated?.labeler ? 'labeler' : 'user'}
-            onBeforePress={onOpenAuthor}
-            live={live}
-          />
-          {isThreadParent && (
-            <View
-              style={[
-                styles.replyLine,
-                {
-                  flexGrow: 1,
-                  backgroundColor: pal.colors.replyLine,
-                  marginTop: live ? 8 : 4,
-                },
-              ]}
-            />
-          )}
-        </View>
-        <View style={styles.layoutContent}>
-          <PostMeta
-            author={post.author}
-            moderation={moderation}
-            timestamp={post.indexedAt}
-            postHref={href}
-            onOpenAuthor={onOpenAuthor}
-          />
-          {showReplyTo &&
-            (parentAuthor || isParentBlocked || isParentNotFound) && (
-              <PostRepliedTo
-                parentAuthor={parentAuthor}
-                isParentBlocked={isParentBlocked}
-                isParentNotFound={isParentNotFound}
+    <GalleryBleed>
+      <Link
+        testID={`feedItem-by-${post.author.handle}`}
+        style={outerStyles}
+        href={href}
+        noFeedback
+        accessible={false}
+        onBeforePress={onBeforePress}
+        dataSet={{feedContext}}
+        onPointerEnter={() => {
+          setHover(true)
+        }}
+        onPointerLeave={() => {
+          setHover(false)
+        }}>
+        <SubtleWebHover hover={hover} />
+        <View style={{flexDirection: 'row', gap: 10, paddingLeft: 8}}>
+          <View style={{width: isCarouselItem ? 0 : 42}}>
+            {isThreadChild && (
+              <View
+                style={[
+                  styles.replyLine,
+                  {
+                    flexGrow: 1,
+                    backgroundColor: pal.colors.replyLine,
+                    marginBottom: 4,
+                  },
+                ]}
               />
             )}
-          <LabelsOnMyPost post={post} />
-          <PostContent
-            moderation={moderation}
-            richText={richText}
-            postEmbed={post.embed}
-            postAuthor={post.author}
-            onOpenEmbed={onOpenEmbed}
-            post={post}
-            threadgateRecord={threadgateRecord}
-          />
-          <PostControls
-            post={post}
-            record={record}
-            richText={richText}
-            onPressReply={onPressReply}
-            logContext="FeedItem"
-            feedContext={feedContext}
-            reqId={reqId}
-            threadgateRecord={threadgateRecord}
-            onShowLess={onShowLess}
-            viaRepost={viaRepost}
-          />
+          </View>
+
+          <View style={{paddingTop: 10, flexShrink: 1}}>
+            {isReasonFeedSource(reason) ? (
+              <Link href={reason.href}>
+                <Text
+                  type="sm-bold"
+                  style={pal.textLight}
+                  lineHeight={1.2}
+                  numberOfLines={1}>
+                  <Trans context="from-feed">
+                    From{' '}
+                    <FeedNameText
+                      type="sm-bold"
+                      uri={reason.uri}
+                      href={reason.href}
+                      lineHeight={1.2}
+                      numberOfLines={1}
+                      style={pal.textLight}
+                    />
+                  </Trans>
+                </Text>
+              </Link>
+            ) : AppBskyFeedDefs.isReasonRepost(reason) ? (
+              <Link
+                style={styles.includeReason}
+                href={makeProfileLink(reason.by)}
+                title={
+                  isOwner
+                    ? _(msg`Reposted by you`)
+                    : _(
+                        msg`Reposted by ${sanitizeDisplayName(
+                          reason.by.displayName || reason.by.handle,
+                        )}`,
+                      )
+                }
+                onBeforePress={onOpenReposter}>
+                <RepostIcon
+                  style={{color: pal.colors.textLight, marginRight: 3}}
+                  width={13}
+                  height={13}
+                />
+                <Text
+                  type="sm-bold"
+                  style={pal.textLight}
+                  lineHeight={1.2}
+                  numberOfLines={1}>
+                  {isOwner ? (
+                    <Trans>Reposted by you</Trans>
+                  ) : (
+                    <Trans>
+                      Reposted by{' '}
+                      <ProfileHoverCard did={reason.by.did}>
+                        <TextLinkOnWebOnly
+                          type="sm-bold"
+                          style={pal.textLight}
+                          lineHeight={1.2}
+                          numberOfLines={1}
+                          text={
+                            <Text
+                              emoji
+                              type="sm-bold"
+                              style={pal.textLight}
+                              lineHeight={1.2}>
+                              {sanitizeDisplayName(
+                                reason.by.displayName ||
+                                  sanitizeHandle(reason.by.handle),
+                                moderation.ui('displayName'),
+                              )}
+                            </Text>
+                          }
+                          href={makeProfileLink(reason.by)}
+                          onBeforePress={onOpenReposter}
+                        />
+                      </ProfileHoverCard>
+                    </Trans>
+                  )}
+                </Text>
+              </Link>
+            ) : AppBskyFeedDefs.isReasonPin(reason) ? (
+              <View style={styles.includeReason}>
+                <PinIcon
+                  style={{color: pal.colors.textLight, marginRight: 3}}
+                  width={13}
+                  height={13}
+                />
+                <Text
+                  type="sm-bold"
+                  style={pal.textLight}
+                  lineHeight={1.2}
+                  numberOfLines={1}>
+                  <Trans>Pinned</Trans>
+                </Text>
+              </View>
+            ) : null}
+          </View>
         </View>
 
-        <DiscoverDebug feedContext={feedContext} />
-      </View>
-    </Link>
+        <View style={styles.layout}>
+          <View style={styles.layoutAvi}>
+            <PreviewableUserAvatar
+              size={42}
+              profile={post.author}
+              moderation={moderation.ui('avatar')}
+              type={post.author.associated?.labeler ? 'labeler' : 'user'}
+              onBeforePress={onOpenAuthor}
+              live={live}
+            />
+            {isThreadParent && (
+              <View
+                style={[
+                  styles.replyLine,
+                  {
+                    flexGrow: 1,
+                    backgroundColor: pal.colors.replyLine,
+                    marginTop: live ? 8 : 4,
+                  },
+                ]}
+              />
+            )}
+          </View>
+          <View style={styles.layoutContent}>
+            <PostMeta
+              author={post.author}
+              moderation={moderation}
+              timestamp={post.indexedAt}
+              postHref={href}
+              onOpenAuthor={onOpenAuthor}
+            />
+            {showReplyTo &&
+              (parentAuthor || isParentBlocked || isParentNotFound) && (
+                <PostRepliedTo
+                  parentAuthor={parentAuthor}
+                  isParentBlocked={isParentBlocked}
+                  isParentNotFound={isParentNotFound}
+                />
+              )}
+            <LabelsOnMyPost post={post} />
+            <PostContent
+              moderation={moderation}
+              richText={richText}
+              postEmbed={post.embed}
+              postAuthor={post.author}
+              onOpenEmbed={onOpenEmbed}
+              post={post}
+              threadgateRecord={threadgateRecord}
+            />
+            <PostControls
+              post={post}
+              record={record}
+              richText={richText}
+              onPressReply={onPressReply}
+              logContext="FeedItem"
+              feedContext={feedContext}
+              reqId={reqId}
+              threadgateRecord={threadgateRecord}
+              onShowLess={onShowLess}
+              viaRepost={viaRepost}
+            />
+          </View>
+
+          <DiscoverDebug feedContext={feedContext} />
+        </View>
+      </Link>
+    </GalleryBleed>
   )
 }
 FeedItemInner = memo(FeedItemInner)

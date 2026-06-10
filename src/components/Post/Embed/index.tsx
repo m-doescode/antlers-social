@@ -8,25 +8,29 @@ import {
   moderatePost,
   RichText as RichTextAPI,
 } from '@atproto/api'
+import {type ViewRecord} from '@atproto/api/dist/client/types/app/bsky/embed/record'
 import {msg, Trans} from '@lingui/macro'
+import {useLingui} from '@lingui/react'
 import {useQueryClient} from '@tanstack/react-query'
 
 import {usePalette} from '#/lib/hooks/usePalette'
-import {InfoCircleIcon} from '#/lib/icons'
 import {makeProfileLink} from '#/lib/routes/links'
+import {useDirectFetchRecords} from '#/state/preferences/direct-fetch-records'
 import {useModerationOpts} from '#/state/preferences/moderation-opts'
+import {useDirectFetchEmbedRecord} from '#/state/queries/direct-fetch-record'
 import {unstableCacheProfileView} from '#/state/queries/profile'
 import {useSession} from '#/state/session'
 import {Link} from '#/view/com/util/Link'
 import {PostMeta} from '#/view/com/util/PostMeta'
 import {atoms as a, useTheme} from '#/alf'
-import {Text} from '#/components/Typography'
 import {EyeSlash_Stroke2_Corner0_Rounded as EyeSlashIcon} from '#/components/icons/EyeSlash'
+import {GalleryBleed} from '#/components/images/Gallery'
 import {ContentHider} from '#/components/moderation/ContentHider'
 import {PostAlerts} from '#/components/moderation/PostAlerts'
 import {RichText} from '#/components/RichText'
 import {Embed as StarterPackCard} from '#/components/StarterPack/StarterPackCard'
 import {SubtleWebHover} from '#/components/SubtleWebHover'
+import {Text} from '#/components/Typography'
 import * as bsky from '#/types/bsky'
 import {
   type Embed as TEmbed,
@@ -45,11 +49,6 @@ import {
   QuoteEmbedViewContext,
 } from './types'
 import {VideoEmbed} from './VideoEmbed'
-import {useLingui} from '@lingui/react'
-import {useDirectFetchRecords} from '#/state/preferences/direct-fetch-records'
-import {useDirectFetchEmbedRecord} from '#/state/queries/direct-fetch-record'
-import {ViewRecord} from '@atproto/api/dist/client/types/app/bsky/embed/record'
-import {Loader} from '#/components/Loader'
 
 export {PostEmbedViewContext, QuoteEmbedViewContext} from './types'
 
@@ -58,6 +57,7 @@ export function Embed({embed: rawEmbed, ...rest}: EmbedProps) {
 
   switch (embed.type) {
     case 'images':
+    case 'gallery':
     case 'link':
     case 'video': {
       return <MediaEmbed embed={embed} {...rest} />
@@ -93,7 +93,8 @@ function MediaEmbed({
   embed: TEmbed
 }) {
   switch (embed.type) {
-    case 'images': {
+    case 'images':
+    case 'gallery': {
       return (
         <ContentHider
           modui={rest.moderation?.ui('contentMedia')}
@@ -137,17 +138,16 @@ function RecordEmbed({
   embed: TEmbed
 }) {
   const {_} = useLingui()
-  const pal = usePalette('default')
   const {currentAccount} = useSession()
 
   const directFetchEnabled = useDirectFetchRecords()
   const shouldDirectFetch =
-    (embed.type == 'post_blocked' || embed.type == 'post_detached') &&
+    (embed.type === 'post_blocked' || embed.type === 'post_detached') &&
     directFetchEnabled
 
   const directRecord = useDirectFetchEmbedRecord({
     uri:
-      embed.type == 'post_blocked' || embed.type == 'post_detached'
+      embed.type === 'post_blocked' || embed.type === 'post_detached'
         ? embed.view.uri
         : '',
     enabled: shouldDirectFetch,
@@ -185,17 +185,19 @@ function RecordEmbed({
       }
 
       return (
-        <QuoteEmbed
-          {...rest}
-          embed={embed}
-          viewContext={
-            rest.viewContext === PostEmbedViewContext.Feed
-              ? QuoteEmbedViewContext.FeedEmbedRecordWithMedia
-              : undefined
-          }
-          isWithinQuote={rest.isWithinQuote}
-          allowNestedQuotes={rest.allowNestedQuotes}
-        />
+        <GalleryBleed>
+          <QuoteEmbed
+            {...rest}
+            embed={embed}
+            viewContext={
+              rest.viewContext === PostEmbedViewContext.Feed
+                ? QuoteEmbedViewContext.FeedEmbedRecordWithMedia
+                : undefined
+            }
+            isWithinQuote={rest.isWithinQuote}
+            allowNestedQuotes={rest.allowNestedQuotes}
+          />
+        </GalleryBleed>
       )
     }
     case 'post_not_found': {
@@ -280,7 +282,6 @@ export function PostDetachedEmbed({
   directFetchEnabled?: boolean
 }) {
   const {currentAccount} = useSession()
-  const pal = usePalette('default')
   const isViewerOwner = currentAccount?.did
     ? embed.view.uri.includes(currentAccount.did)
     : false
@@ -413,6 +414,7 @@ export function QuoteEmbed({
               {quote.embed && (
                 <Embed
                   embed={quote.embed}
+                  post={quote}
                   moderation={moderation}
                   isWithinQuote={parentIsWithinQuote ?? true}
                   // already within quote? override nested
